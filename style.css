@@ -4,12 +4,36 @@ This: 100 200 300, Light: 400, Regular: 500, Bold: 700 800 */
 @import url(font-dia.css);
 @import url(font-haas.css);
 
+p{
+    font-size: 2em;
+}
 .dia{
     font-family: 'diatype', sans-serif;
 }
-.hhas{
+.haas{
     font-family: 'haas', sans-serif;
 }
 .weight-100{
     font-weight: 100;
+}
+.weight-200{
+    font-weight: 200;
+}
+.weight-300{
+    font-weight: 300;
+}
+.weight-400{
+    font-weight: 400;
+}
+.weight-500{
+    font-weight: 500;
+}
+.weight-600{
+    font-weight: 600;
+}
+.weight-700{
+    font-weight: 700;
+}
+.weight-800{
+    font-weight: 800;
 }
