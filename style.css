@@ -52,6 +52,14 @@ h3{
     font-weight: 500;
     font-size: 24px;
 }
+.details .content{
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+.details .content .detail-child:first-of-type{
+    width: 30%;
+}
 .dia{
     font-family: 'diatype', sans-serif;
 }
