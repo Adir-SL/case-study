@@ -3,6 +3,7 @@ This: 100 200 300, Light: 400, Regular: 500, Bold: 700 800 */
 
 @import url(font-dia.css);
 @import url(font-haas.css);
+@import url(font-haas-display.css);
 
 p{
     font-size: 2em;
