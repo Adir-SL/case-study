@@ -9,6 +9,11 @@ body{
     background-color: #181818;
     color: #ffffff;
 }
+header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+}
 .logo{
     font-size: 32px;
 }
