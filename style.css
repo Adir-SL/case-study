@@ -16,6 +16,7 @@ p{
 }
 .haasText{
     font-family: 'haas-text', sans-serif;
+    font-weight: 500 !important;
 }
 .weight-100{
     font-weight: 100;
