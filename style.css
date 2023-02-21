@@ -71,6 +71,12 @@ h3{
 .details .content .detail-child:last-of-type{
     width: 24%;
 }
+.video-content{
+    background-color: #000000;
+}
+video{
+    width: 100%;
+}
 .dia{
     font-family: 'diatype', sans-serif;
 }
