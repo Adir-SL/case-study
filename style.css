@@ -12,10 +12,27 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
+    align-items: center;
 }
 .logo{
     font-size: 32px;
+    width: 50%;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.k-symbol{
+    width: 24px;
+    height: 24px;
+    background-image: url(images/k.svg);
+    background-size: cover;
 }
 .dia{
     font-family: 'diatype', sans-serif;
