@@ -46,3 +46,30 @@ h1{
 .weight-800{
     font-weight: 800;
 }
+p::before{
+    color: lightgray;
+}
+.weight-100::before{
+    content: '100 ';
+}
+.weight-200::before{
+    content: '200 ';
+}
+.weight-300::before{
+    content: '300 ';
+}
+.weight-400::before{
+    content: '400 ';
+}
+.weight-500::before{
+    content: '500 ';
+}
+.weight-600::before{
+    content: '600 ';
+}
+.weight-700::before{
+    content: '700 ';
+}
+.weight-800::before{
+    content: '800 ';
+}
