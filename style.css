@@ -4,6 +4,9 @@ This: 100 200 300, Light: 400, Regular: 500, Bold: 700 800 */
 @import url(font-dia.css);
 @import url(font-haas.css);
 
-p{
+.dia{
     font-family: 'diatype', sans-serif;
+}
+.weight-100{
+    font-weight: 100;
 }
