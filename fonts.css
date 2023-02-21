@@ -4,3 +4,61 @@
     font-weight: 100;
     font-style: normal;
 }
+@font-face {
+    font-family: "diatype";
+    src: url("fonts/diatype-mono/ABCDiatypeMono-ThinItalic-Trial.otf") format("otf");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "diatype";
+    src: url("fonts/diatype-mono/ABCDiatypeMono-Light-Trial.otf") format("otf");
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: "diatype";
+    src: url("fonts/diatype-mono/ABCDiatypeMono-MediumItalic-Trial.otf") format("otf");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "diatype";
+    src: url("fonts/diatype-mono/ABCDiatypeMono-Regular-Trial.otf") format("otf");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "diatype";
+    src: url("fonts/diatype-mono/ABCDiatypeMono-RegularItalic-Trial.otf") format("otf");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "diatype";
+    src: url("fonts/diatype-mono/ABCDiatypeMono-Medium-Trial.otf") format("otf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "diatype";
+    src: url("fonts/diatype-mono/ABCDiatypeMono-MediumItalic-Trial.otf") format("otf");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "diatype";
+    src: url("fonts/diatype-mono/ABCDiatypeMono-Bold-Trial.otf") format("otf");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "diatype";
+    src: url("fonts/diatype-mono/ABCDiatypeMono-BoldItalic-Trial.otf") format("otf");
+    font-weight: 500;
+    font-style: italic;
+}
