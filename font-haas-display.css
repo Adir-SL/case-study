@@ -1,103 +1,20 @@
 @font-face {
-    font-family: "haas";
-    src: url("fonts/displ") format("truetype");
-    font-weight: 100;
+    font-family: "haas-text";
+    src: url("fonts/haas-grotesk-text/NHaasGroteskTXPro-55Rg.ttf") format("truetype");
+    font-weight: 100 200 300 400;
     font-style: normal;
-}
-@font-face {
-    font-family: "haas";
-    src: url("fonts/haas-grotesk-display/NeueHaasDisplayXXThinItalic.ttf") format("truetype");
-    font-weight: 100;
-    font-style: italic;
 }
 
 @font-face {
-    font-family: "haas";
-    src: url("fonts/haas-grotesk-display/NeueHaasDisplayXThin.ttf") format("truetype");
-    font-weight: 200;
-    font-style: normal;
-}
-@font-face {
-    font-family: "haas";
-    src: url("fonts/haas-grotesk-display/NeueHaasDisplayXThinItalic.ttf") format("truetype");
-    font-weight: 200;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "haas";
-    src: url("fonts/haas-grotesk-display/NeueHaasDisplayThin.ttf") format("truetype");
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: "haas";
-    src: url("fonts/haas-grotesk-display/NeueHaasDisplayThinItalic.ttf") format("truetype");
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "haas";
-    src: url("fonts/haas-grotesk-display/NeueHaasDisplayLight.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: "haas";
-    src: url("fonts/haas-grotesk-display/NeueHaasDisplayLightItalic.ttf") format("truetype");
-    font-weight: 400;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "haas";
-    src: url("fonts/haas-grotesk-display/NeueHaasDisplayRoman.ttf") format("truetype");
+    font-family: "haas-text";
+    src: url("fonts/haas-grotesk-text/NHaasGroteskTXPro-65Md.ttf") format("truetype");
     font-weight: 500;
     font-style: normal;
 }
-@font-face {
-    font-family: "haas";
-    src: url("fonts/haas-grotesk-display/NeueHaasDisplayRomanItalic.ttf") format("truetype");
-    font-weight: 500;
-    font-style: italic;
-}
 
 @font-face {
-    font-family: "haas";
-    src: url("fonts/haas-grotesk-display/NeueHaasDisplayMediu.ttf") format("truetype");
-    font-weight: 600;
+    font-family: "haas-text";
+    src: url("fonts/haas-grotesk-text/NHaasGroteskTXPro-75Bd.ttf") format("truetype");
+    font-weight: 600 700 800;
     font-style: normal;
-}
-@font-face {
-    font-family: "haas";
-    src: url("fonts/haas-grotesk-display/NeueHaasDisplayMediumItalic.ttf") format("truetype");
-    font-weight: 600;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "haas";
-    src: url("fonts/haas-grotesk-display/NeueHaasDisplayBold.ttf") format("truetype");
-    font-weight: 700;
-    font-style: normal;
-}
-@font-face {
-    font-family: "haas";
-    src: url("fonts/haas-grotesk-display/NeueHaasDisplayBoldItalic.ttf") format("truetype");
-    font-weight: 700;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "haas";
-    src: url("fonts/haas-grotesk-display/NeueHaasDisplayBlack.ttf") format("truetype");
-    font-weight: 800;
-    font-style: normal;
-}
-@font-face {
-    font-family: "haas";
-    src: url("fonts/haas-grotesk-display/NeueHaasDisplayBlackItalic.ttf") format("truetype");
-    font-weight: 800;
-    font-style: italic;
 }
