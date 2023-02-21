@@ -7,6 +7,9 @@ This: 100 200 300, Light: 400, Regular: 500, Bold: 700 800 */
 .dia{
     font-family: 'diatype', sans-serif;
 }
+.hhas{
+    font-family: 'haas', sans-serif;
+}
 .weight-100{
     font-weight: 100;
 }
