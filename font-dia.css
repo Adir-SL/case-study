@@ -1,64 +1,64 @@
 @font-face {
     font-family: "diatype";
     src: url("fonts/diatype-mono/ABCDiatypeMono-Thin-Trial.otf") format("otf");
-    font-weight: 100 200;
+    font-weight: 100 200 300;
     font-style: normal;
 }
 @font-face {
     font-family: "diatype";
     src: url("fonts/diatype-mono/ABCDiatypeMono-ThinItalic-Trial.otf") format("otf");
-    font-weight: 100 200;
+    font-weight: 100 200 300;
     font-style: italic;
 }
 
 @font-face {
     font-family: "diatype";
     src: url("fonts/diatype-mono/ABCDiatypeMono-Light-Trial.otf") format("otf");
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: "diatype";
-    src: url("fonts/diatype-mono/ABCDiatypeMono-MediumItalic-Trial.otf") format("otf");
-    font-weight: 300;
+    src: url("fonts/diatype-mono/ABCDiatypeMono-LightItalic-Trial.otf") format("otf");
+    font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: "diatype";
     src: url("fonts/diatype-mono/ABCDiatypeMono-Regular-Trial.otf") format("otf");
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: "diatype";
     src: url("fonts/diatype-mono/ABCDiatypeMono-RegularItalic-Trial.otf") format("otf");
-    font-weight: 400;
+    font-weight: 500;
     font-style: italic;
 }
 
 @font-face {
     font-family: "diatype";
     src: url("fonts/diatype-mono/ABCDiatypeMono-Medium-Trial.otf") format("otf");
-    font-weight: 500;
+    font-weight: 600;
     font-style: normal;
 }
 @font-face {
     font-family: "diatype";
     src: url("fonts/diatype-mono/ABCDiatypeMono-MediumItalic-Trial.otf") format("otf");
-    font-weight: 500;
+    font-weight: 600;
     font-style: italic;
 }
 
 @font-face {
     font-family: "diatype";
     src: url("fonts/diatype-mono/ABCDiatypeMono-Bold-Trial.otf") format("otf");
-    font-weight: 600 700;
+    font-weight: 700 800;
     font-style: normal;
 }
 @font-face {
     font-family: "diatype";
     src: url("fonts/diatype-mono/ABCDiatypeMono-BoldItalic-Trial.otf") format("otf");
-    font-weight: 600 700;
+    font-weight: 700 800;
     font-style: italic;
 }
