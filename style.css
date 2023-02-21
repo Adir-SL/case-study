@@ -3,3 +3,8 @@ This: 100 200 300, Light: 400, Regular: 500, Bold: 700 800 */
 
 @import url(font-dia.css);
 @import url(font-haas.css);
+
+p{
+    font-family: 'diatype', sans-serif;
+    font-size: 2em;
+}
