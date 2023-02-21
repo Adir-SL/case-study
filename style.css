@@ -3,7 +3,7 @@ This: 100 200 300, Light: 400, Regular: 500, Bold: 700 800 */
 
 @import url(font-dia.css);
 @import url(font-haas.css);
-@import url(font-haas-display.css);
+@import url(font-haas-text.css);
 
 p{
     font-size: 2em;
@@ -13,6 +13,9 @@ p{
 }
 .haas{
     font-family: 'haas', sans-serif;
+}
+.haasText{
+    font-family: 'haas-text', sans-serif;
 }
 .weight-100{
     font-weight: 100;
