@@ -53,6 +53,7 @@ a:hover{
     height: 20px;
     background-image: url(images/k.svg);
     background-size: cover;
+    cursor: pointer;
 }
 section{
     position: relative;
