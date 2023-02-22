@@ -9,4 +9,5 @@ function videosOnScroll(){
             x[i].play();
         }
     }
+    console.log(scrollPos)
 }
