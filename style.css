@@ -102,6 +102,9 @@ video{
 .haasText{
     font-family: 'haas-text', sans-serif;
 }
+.full-width{
+    width: 100%;
+}
 
 ::selection{
     background-color: #FFCD00;
