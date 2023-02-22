@@ -1,6 +1,6 @@
 sal({
-    threshold: 0,
-    once: true,
+    threshold: 0.2,
+    once: false,
 });
 sal();
 
@@ -20,7 +20,7 @@ function restartVideos(){
     var x = document.querySelectorAll(".sal-animate");
     var i;
     for (i = 0; i < x.length; i++) {
-        if(x[i].querySelector("video") !== null){
+        if(x[i].querySelector("video") !== null && x[i].querySelector("video").classList.contains("animated") !== true){
             x[i].querySelector("video").currentTime = 0;
             x[i].querySelector("video").play();
             x[i].querySelector("video").classList.add("animated");
