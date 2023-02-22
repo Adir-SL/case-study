@@ -54,6 +54,7 @@ a:hover{
     background-size: cover;
 }
 section{
+    position: relative;
     margin: 14px;
 }
 .big-contnet .content{
@@ -105,6 +106,14 @@ video{
 }
 .full-width{
     width: 100%;
+}
+.caret-blink{
+    position: absolute;
+    top: 51%;
+    right: 42%;
+    width: 10px;
+    height: 32px;
+    background-color: #FFCD00;
 }
 
 ::selection{
