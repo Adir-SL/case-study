@@ -8,6 +8,8 @@ This: 100 200 300, Light: 400, Regular: 500, Bold: 700 800 */
 body{
     background-color: #181818;
     color: #ffffff;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 header{
     display: flex;
