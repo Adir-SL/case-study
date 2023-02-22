@@ -114,6 +114,13 @@ video{
     width: 10px;
     height: 32px;
     background-color: #FFCD00;
+    animation: blinkAnim 500ms steps(1) infinite;
+}
+
+@keyframes blinkAnim {
+    0%{opacity: 1;}
+    60%{opacity: 0;}
+    100%{opacity: 1;}
 }
 
 ::selection{
