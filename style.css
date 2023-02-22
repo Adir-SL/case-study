@@ -98,3 +98,8 @@ video{
 .haasText{
     font-family: 'haas-text', sans-serif;
 }
+
+::selection{
+    background-color: #FFCD00;
+    color: #181818;
+}
