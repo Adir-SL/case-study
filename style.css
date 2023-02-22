@@ -20,6 +20,14 @@ header{
     position: sticky;
     top: 32px;
 }
+.absolute{
+    position: absolute;
+    top: 2px;
+    width: calc(100% - 44px);
+}
+.hideMe{
+    visibility: hidden;
+}
 .logo{
     width: 42.4%;
     letter-spacing: 1px;
