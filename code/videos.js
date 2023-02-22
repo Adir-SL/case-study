@@ -5,7 +5,7 @@ sal({
 sal();
 
 function changeSection(){
-    setTimeout(function(){ restartVideos(); }, 300);
+    // setTimeout(function(){ restartVideos(); }, 300);
 }
 
 function stopAllVideos(){
