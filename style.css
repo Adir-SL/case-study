@@ -19,6 +19,7 @@ header{
 .sticky{
     position: sticky;
     top: 32px;
+    z-index: 9999;
 }
 .absolute{
     position: absolute;
