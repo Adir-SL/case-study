@@ -61,9 +61,10 @@ a:hover{
     color: #FFCD00;
 }
 .k-symbol{
-    width: 20px;
-    height: 20px;
-    background-image: url(images/k.svg);
+    width: 60px;
+    height: 60px;
+    /* background-image: url(images/k.svg); */
+    background-image: url(images/new-k.gif);
     background-size: cover;
     cursor: pointer;
 }
