@@ -27,11 +27,12 @@ header{
     align-items: center;
     font-size: 24px;
     margin: 30px 14px;
+    z-index: 9999;
 }
 .sticky{
     position: sticky;
     top: 32px;
-    z-index: 9999;
+    z-index: 9998;
 }
 .absolute{
     position: absolute;
@@ -142,7 +143,7 @@ video{
     width: 10px;
     height: 32px;
     background-color: #FFCD00;
-    animation: blinkAnim 500ms steps(1) infinite;
+    animation: blinkAnim 1000ms steps(1) infinite;
 }
 
 @keyframes blinkAnim {
