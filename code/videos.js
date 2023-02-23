@@ -15,9 +15,11 @@ function videosOnScroll(){
         }
     }
 
-    if(scrollPos > document.getElementById("white-wrapper").offsetTop - scrollOffset && scrollPos < document.getElementById("white-wrapper").offsetTop + document.getElementById("white-wrapper").scrollTop + scrollOffset){
+    if(scrollPos > document.getElementById("white-wrapper").offsetTop - scrollOffset && scrollPos < document.getElementById("white-wrapper").offsetTop + document.getElementById("white-wrapper").offsetHeight + scrollOffset){
         document.body.style.backgroundColor = "#ffffff";
+        document.body.style.color = "#181818";
     }else{
         document.body.style.backgroundColor = "#181818";
+        document.body.style.color = "#ffffff";
     }
 }
