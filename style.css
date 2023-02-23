@@ -9,6 +9,7 @@ body{
     background-color: #181818;
     color: #ffffff;
     overflow: hidden;
+    transition: background-color 200ms linear;
 }
 #wrapper{
     position: absolute;
