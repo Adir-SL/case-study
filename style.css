@@ -156,8 +156,8 @@ video{
 
 #white-wrapper{
     /* background-color: #ffffff; */
-    padding-top: 120px;
-    margin-top: 80px;
+    padding-top: 80px;
+    /* margin-top: 80px; */
 }
 
 @keyframes blinkAnim {
