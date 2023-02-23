@@ -1,17 +1,25 @@
 function videosOnScroll(){
     scrollPos = document.getElementById("wrapper").scrollTop;
     scrollOffset = 400;
-    var x = document.querySelectorAll("video");
+    var x = document.querySelectorAll(".video-content");
     var i;
     for (i = 0; i < x.length; i++) {
-        if(scrollPos > x[i].parentElement.offsetTop - scrollOffset && scrollPos < x[i].parentElement.offsetTop + x[i].parentElement.offsetHeight + scrollOffset){
-            if(x[i].currentTime !== x[i].duration){
-                x[i].play();
+        if(scrollPos > x[i].offsetTop - scrollOffset && scrollPos < x[i].offsetTop + x[i].offsetHeight + scrollOffset){
+            if(x[i].children[0].tagName == "VIDEO" || x[i].children[0].tagName == "video"){
+                if(x[i].children[0].currentTime !== x[i].children[0].duration){
+                    x[i].children[0].play();
+                }else{
+                    x[i].classList.remove("anim-out");
+                }
             }
             console.log("in view: " + i);
         }else{
-            x[i].currentTime = 0;
-            x[i].pause();
+            if(x[i].children[0].tagName == "VIDEO" || x[i].children[0].tagName == "video"){
+                x[i].children[0].currentTime = 0;
+                x[i].children[0].pause();
+            }else{
+                x[i].classList.add("anim-out");
+            }
         }
     }
 
