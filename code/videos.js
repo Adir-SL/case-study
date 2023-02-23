@@ -18,8 +18,10 @@ function videosOnScroll(){
     if(scrollPos > document.getElementById("white-wrapper").offsetTop - scrollOffset && scrollPos < document.getElementById("white-wrapper").offsetTop + document.getElementById("white-wrapper").offsetHeight + scrollOffset){
         document.body.style.backgroundColor = "#ffffff";
         document.body.style.color = "#181818";
+        document.getElementById("k-sticky").style.backgroundImage = "url(images/new-k-invert.gif)";
     }else{
         document.body.style.backgroundColor = "#181818";
         document.body.style.color = "#ffffff";
+        document.getElementById("k-sticky").style.backgroundImage = "url(images/new-k.gif)";
     }
 }
