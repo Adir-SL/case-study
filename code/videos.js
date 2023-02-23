@@ -4,7 +4,7 @@ function videosOnScroll(){
     var x = document.querySelectorAll("video");
     var i;
     for (i = 0; i < x.length; i++) {
-        if(scrollPos > x[i].parentElement.offsetTop - scrollOffset && scrollPos < x[i].parentElement.offsetTop + x[i].parentElement.scrollTop + scrollOffset){
+        if(scrollPos > x[i].parentElement.offsetTop - scrollOffset && scrollPos < x[i].parentElement.offsetTop + x[i].parentElement.offsetHeight + scrollOffset){
             if(x[i].currentTime !== x[i].duration){
                 x[i].play();
             }
