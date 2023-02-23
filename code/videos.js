@@ -14,4 +14,10 @@ function videosOnScroll(){
             x[i].pause();
         }
     }
+
+    if(scrollPos > document.getElementById("white-wrapper").offsetTop - scrollOffset && scrollPos < document.getElementById("white-wrapper").offsetTop + document.getElementById("white-wrapper").scrollTop + scrollOffset){
+        document.body.style.backgroundColor = "#ffffff";
+    }else{
+        document.body.style.backgroundColor = "#181818";
+    }
 }
