@@ -30,6 +30,6 @@ function videosOnScroll(){
         document.getElementById("mobiles").classList.add("anim-out");
         setTimeout(function(){
             document.getElementById("mobiles").classList.remove("anim-out");
-        }, 10);
+        }, 50);
     }
 }

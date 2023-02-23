@@ -1,5 +1,5 @@
 /* font legened:
-This: 100 200 300, Light: 400, Regular: 500, Bold: 700 800 */
+Thin: 100 200 300, Light: 400, Regular: 500, Bold: 700 800 */
 
 @import url(font-dia.css);
 @import url(font-haas.css);
@@ -87,6 +87,9 @@ h3{
     font-weight: 400;
     font-size: 26px;
 }
+.weight-500{
+    font-weight: 500;
+}
 .details{
     border-top: 1px solid #898989;
     border-bottom: 1px solid #898989;
@@ -122,6 +125,10 @@ h3{
 }
 .top-16{
     margin-top: 16px;
+}
+.vertical-120{
+    margin-top: 120px;
+    margin-bottom: 120px;
 }
 video{
     width: 100%;
