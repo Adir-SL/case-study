@@ -111,6 +111,10 @@ h3{
     width: 42% !important;
     margin-right: 16%;
 }
+.margin-horizontal{
+    margin-right: 6%;
+    margin-left: 6%;
+}
 .size-24{
     font-size: 24px;
     line-height: 1.5;
