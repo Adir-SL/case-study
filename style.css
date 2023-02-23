@@ -158,6 +158,26 @@ video{
     margin-top: 40px;
     width: 100%;
     aspect-ratio: 16 / 8;
+    display: flex;
+    flex-grow: 0;
+    align-items: center;
+    justify-content: center;
+}
+.mobile{
+    position: relative;
+    width: 20vw;
+    height: 40vw;
+    background-image: url(images/mobile-1-min.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0 2vw;
+}
+.mobile:nth-of-type(2){
+    background-image: url(images/mobile-2-min.png);
+}
+.mobile:nth-of-type(3){
+    background-image: url(images/mobile-3-min.png);
 }
 
 #white-wrapper{
