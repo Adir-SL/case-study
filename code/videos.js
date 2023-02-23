@@ -1,25 +1,17 @@
 function videosOnScroll(){
     scrollPos = document.getElementById("wrapper").scrollTop;
     scrollOffset = 400;
-    var x = document.querySelectorAll(".video-content");
+    var x = document.querySelectorAll("video");
     var i;
     for (i = 0; i < x.length; i++) {
-        if(scrollPos > x[i].offsetTop - scrollOffset && scrollPos < x[i].offsetTop + x[i].offsetHeight + scrollOffset){
-            if(x[i].children[0].tagName == "VIDEO" || x[i].children[0].tagName == "video"){
-                if(x[i].children[0].currentTime !== x[i].children[0].duration){
-                    x[i].children[0].play();
-                }else{
-                    x[i].classList.remove("anim-out");
-                }
+        if(scrollPos > x[i].parentElement.offsetTop - scrollOffset && scrollPos < x[i].parentElement.offsetTop + x[i].parentElement.offsetHeight + scrollOffset){
+            if(x[i].currentTime !== x[i].duration){
+                x[i].play();
             }
             console.log("in view: " + i);
         }else{
-            if(x[i].children[0].tagName == "VIDEO" || x[i].children[0].tagName == "video"){
-                x[i].children[0].currentTime = 0;
-                x[i].children[0].pause();
-            }else{
-                x[i].classList.add("anim-out");
-            }
+            x[i].currentTime = 0;
+            x[i].pause();
         }
     }
 
@@ -31,5 +23,13 @@ function videosOnScroll(){
         document.body.style.backgroundColor = "#181818";
         document.body.style.color = "#ffffff";
         document.getElementById("k-sticky").style.backgroundImage = "url(images/new-k.gif)";
+    }
+
+    if(scrollPos > document.getElementById("mobiles").offsetTop - (scrollOffset * 2) && scrollPos < document.getElementById("mobiles").offsetTop + document.getElementById("mobiles").offsetHeight + scrollOffset){
+    }else{
+        document.getElementById("mobiles").classList.add("anim-out");
+        setTimeout(function(){
+            document.getElementById("mobiles").classList.remove("anim-out");
+        }, 10);
     }
 }

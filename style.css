@@ -191,6 +191,9 @@ video{
     background-image: url(images/mobile-3-min.png);
     animation-delay: 200ms;
 }
+.anim-out .mobile{
+    animation-name: none;
+}
 @keyframes mobileIn {
     0%{transform: translateY(200%);}
     100%{transform: translateY(0);}
