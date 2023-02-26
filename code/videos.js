@@ -4,7 +4,13 @@ function videosOnScroll(){
     var x = document.querySelectorAll("video");
     var i;
     for (i = 0; i < x.length; i++) {
-        if(scrollPos > x[i].parentElement.offsetTop - (scrollOffset * 2) && scrollPos < x[i].parentElement.offsetTop + x[i].parentElement.offsetHeight + scrollOffset){
+        if(x[i].parentElement.tagName == "section" || x[i].parentElement.tagName == "SECTION"){
+            tempParent = x[i].parentElement;
+        }else{
+            tempParent = x[i].parentElement.parentElement;
+        }
+
+        if(scrollPos > tempParent.offsetTop - (scrollOffset * 2) && scrollPos < tempParent.offsetTop + tempParent.offsetHeight + scrollOffset){
             if(x[i].currentTime !== x[i].duration){
                 x[i].play();
                 console.log("in view: " + i + ", source: " + x[i].src);
