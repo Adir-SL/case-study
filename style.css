@@ -210,6 +210,16 @@ video{
     100%{transform: translateY(200%);}
 }
 
+.quote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.quote div{
+    text-align: center;
+}
+
 #white-wrapper{
     /* background-color: #ffffff; */
     padding-top: 80px;
