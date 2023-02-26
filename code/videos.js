@@ -7,8 +7,8 @@ function videosOnScroll(){
         if(scrollPos > x[i].parentElement.offsetTop - (scrollOffset * 2) && scrollPos < x[i].parentElement.offsetTop + x[i].parentElement.offsetHeight + scrollOffset){
             if(x[i].currentTime !== x[i].duration){
                 x[i].play();
+                console.log("in view: " + i + ", source: " + x[i].src);
             }
-            console.log("in view: " + i);
         }else{
             x[i].currentTime = 0;
             x[i].pause();
