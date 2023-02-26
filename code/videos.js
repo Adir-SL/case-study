@@ -15,7 +15,7 @@ function videosOnScroll(){
         }
     }
 
-    if(scrollPos > document.getElementById("white-wrapper").offsetTop - scrollOffset && scrollPos < document.getElementById("white-wrapper").offsetTop + document.getElementById("white-wrapper").offsetHeight + scrollOffset){
+    if(scrollPos > document.getElementById("white-wrapper").offsetTop - scrollOffset && scrollPos < document.getElementById("white-wrapper").offsetTop + document.getElementById("white-wrapper").offsetHeight - (scrollOffset / 4)){
         document.body.style.backgroundColor = "#ffffff";
         document.body.style.color = "#181818";
         document.getElementById("k-sticky").style.backgroundImage = "url(images/new-k-invert.gif)";
