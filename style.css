@@ -223,6 +223,7 @@ video{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 80vh;
 }
 .quote div{
     text-align: center;
