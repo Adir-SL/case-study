@@ -152,6 +152,9 @@ video{
 .half-width{
     width: 50%;
 }
+.poster-width{
+    width: 20vw;
+}
 .caret-blink{
     position: absolute;
     top: 51%;
