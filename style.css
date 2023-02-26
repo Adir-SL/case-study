@@ -218,13 +218,17 @@ video{
 }
 .quote div{
     text-align: center;
+    width: 100%;
+    max-width: 600px;
 }
 .big-quote{
-    font-size: 60px;
+    font-size: 40px;
+    font-weight: 600;
 }
 .quote-by{
     text-transform: uppercase;
     font-size: 12px;
+    margin-top: 24px;
 }
 
 #white-wrapper{
