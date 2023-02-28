@@ -8,14 +8,21 @@
     justify-content: center;
     align-items: center;
     background-color: #181818;
-    background-image: url(kido.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 60%;
-    transform-style: preserve-3d;
     /* perspective: 60vw; */
     perspective: 2000vw;
     overflow: hidden;
+}
+.logoDiv{
+    position: absolute;
+    width: 90vw;
+    height: 45vw;
+    background-image: url(kido.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    transform-style: preserve-3d;
+    margin-bottom: 15vw;
+    z-index: -1;
 }
 .triDiv{
     position: absolute;
@@ -29,19 +36,20 @@
     backface-visibility: hidden;
     animation: triAnim 4000ms linear infinite;
 }
-.triDiv:nth-of-type(2){
-    animation-delay: -500ms;
+.triDiv:nth-of-type(2), .triDiv:nth-of-type(2) div{
+    animation-delay: -500ms !important;
 }
-.triDiv:nth-of-type(3){
-    animation-delay: -1000ms;
+.triDiv:nth-of-type(3), .triDiv:nth-of-type(3) div{
+    animation-delay: -1000ms !important;
 }
-.triDiv:nth-of-type(4){
-    animation-delay: -1500ms;
+.triDiv:nth-of-type(4), .triDiv:nth-of-type(4) div{
+    animation-delay: -1500ms !important;
 }
 @keyframes triAnim{
     0%{transform: translateZ(3vw) rotateX(-89deg);}
     100%{transform: translateZ(3vw) rotateX(91deg);}
 }
+
 .triDiv div{
     position: absolute;
     width: 100%;
@@ -49,12 +57,27 @@
 }
 .triDiv div:nth-last-of-type(1){
     backdrop-filter: blur(4px);
+    animation: fadeOut 4000ms linear infinite;
 }
+@keyframes fadeOut{
+    0%{backdrop-filter: blur(4px);}
+    50%{backdrop-filter: blur(4px);}
+    60%{backdrop-filter: blur(0);}
+    100%{backdrop-filter: blur(0);}
+}
+
 .triDiv .borderDiv{
     background-image: url(tri.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
+    animation-name: borderOut !important;
+}
+@keyframes borderOut{
+    0%{opacity: 1;}
+    50%{opacity: 1;}
+    60%{opacity: 0;}
+    100%{opacity: 0;}
 }
 
 .bottomDiv{
