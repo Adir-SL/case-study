@@ -7,6 +7,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #181818;
+    background-image: url(kido.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
 }
 .triDiv{
     position: relative;
@@ -14,6 +19,7 @@
     height: 45vw;
     /* filter: drop-shadow(0 0 2px #000000); */
     opacity: 1;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
 }
 .triDiv div{
     position: absolute;
@@ -23,78 +29,78 @@
 }
 .triDiv div:nth-of-type(2){
     position: absolute;
-    width: calc(100% - 2px);
-    height: calc(100% - 2px);
-    top: 1px;
-    left: 1px;
-    backdrop-filter: blur(2px) hue-rotate(-6deg) contrast(116%);
-}
-.triDiv div:nth-of-type(3){
-    position: absolute;
     width: calc(100% - 4px);
     height: calc(100% - 4px);
     top: 2px;
     left: 2px;
-    backdrop-filter: blur(2px) hue-rotate(-4deg) contrast(114%);
+    /* backdrop-filter: blur(2px) hue-rotate(-6deg) contrast(116%); */
 }
-.triDiv div:nth-of-type(4){
-    position: absolute;
-    width: calc(100% - 6px);
-    height: calc(100% - 6px);
-    top: 3px;
-    left: 3px;
-    backdrop-filter: blur(2px) hue-rotate(-12deg) contrast(112%);
-}
-.triDiv div:nth-of-type(5){
+.triDiv div:nth-of-type(3){
     position: absolute;
     width: calc(100% - 8px);
     height: calc(100% - 8px);
     top: 4px;
     left: 4px;
-    backdrop-filter: blur(2px) hue-rotate(-10deg) contrast(110%);
+    /* backdrop-filter: blur(2px) hue-rotate(-4deg) contrast(114%); */
 }
-.triDiv div:nth-of-type(6){
-    position: absolute;
-    width: calc(100% - 10px);
-    height: calc(100% - 10px);
-    top: 5px;
-    left: 5px;
-    backdrop-filter: blur(2px) hue-rotate(-8deg) contrast(108%);
-}
-.triDiv div:nth-of-type(7){
+.triDiv div:nth-of-type(4){
     position: absolute;
     width: calc(100% - 12px);
     height: calc(100% - 12px);
     top: 6px;
     left: 6px;
-    backdrop-filter: blur(2px) hue-rotate(-6deg) contrast(106%);
+    /* backdrop-filter: blur(2px) hue-rotate(-12deg) contrast(112%); */
 }
-.triDiv div:nth-of-type(8){
-    position: absolute;
-    width: calc(100% - 14px);
-    height: calc(100% - 14px);
-    top: 7px;
-    left: 7px;
-    backdrop-filter: blur(2px) hue-rotate(-4deg) contrast(104%);
-}
-.triDiv div:nth-of-type(9){
+.triDiv div:nth-of-type(5){
     position: absolute;
     width: calc(100% - 16px);
     height: calc(100% - 16px);
     top: 8px;
     left: 8px;
-    backdrop-filter: blur(2px) hue-rotate(-2deg) contrast(102%);
+    /* backdrop-filter: blur(2px) hue-rotate(-10deg) contrast(110%); */
+}
+.triDiv div:nth-of-type(6){
+    position: absolute;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    top: 10px;
+    left: 10px;
+    /* backdrop-filter: blur(2px) hue-rotate(-8deg) contrast(108%); */
+}
+.triDiv div:nth-of-type(7){
+    position: absolute;
+    width: calc(100% - 24px);
+    height: calc(100% - 24px);
+    top: 12px;
+    left: 12px;
+    /* backdrop-filter: blur(2px) hue-rotate(-6deg) contrast(106%); */
+}
+.triDiv div:nth-of-type(8){
+    position: absolute;
+    width: calc(100% - 28px);
+    height: calc(100% - 28px);
+    top: 14px;
+    left: 14px;
+    /* backdrop-filter: blur(2px) hue-rotate(-4deg) contrast(104%); */
+}
+.triDiv div:nth-of-type(9){
+    position: absolute;
+    width: calc(100% - 32px);
+    height: calc(100% - 32px);
+    top: 16px;
+    left: 16px;
+    /* backdrop-filter: blur(2px) hue-rotate(-2deg) contrast(102%); */
 }
 .triDiv div:nth-of-type(10){
     position: absolute;
-    width: calc(100% - 18px);
-    height: calc(100% - 18px);
-    top: 9px;
-    left: 9px;
-    backdrop-filter: blur(2px) hue-rotate(0deg) contrast(100%);
+    width: calc(100% - 36px);
+    height: calc(100% - 36px);
+    top: 18px;
+    left: 18px;
+    /* backdrop-filter: blur(2px) hue-rotate(0deg) contrast(100%); */
 }
 
-body{
+/* body{
     background:
 linear-gradient(324deg, #232927 4%,   transparent 4%) -70px 43px,
 linear-gradient( 36deg, #232927 4%,   transparent 4%) 30px 43px,
@@ -111,4 +117,4 @@ linear-gradient(216deg, #e3d7bf 7.5%, transparent 7.5%) -20px 73px,
 linear-gradient(144deg, #e3d7bf 7.5%, transparent 7.5%) 80px 73px;
 background-color: #232927;
 background-size: 100px 100px;
-}
+} */
