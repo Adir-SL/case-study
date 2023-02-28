@@ -52,6 +52,7 @@
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 96vw;
+    filter:blur(4px);
     /* background-color: pink; */
     /* height: 18vw; */
     animation: blurAnimLittle 4000ms linear infinite;
