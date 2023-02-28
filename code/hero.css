@@ -1,0 +1,77 @@
+#wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.triDiv{
+    position: relative;
+    width: 90vw;
+    height: 45vw;
+    /* filter: drop-shadow(0 0 2px #000000); */
+    opacity: 1;
+}
+.triDiv div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    /* clip-path: polygon(50% 100%, 0 0, 100% 0); */
+}
+.triDiv div:nth-of-type(2){
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    backdrop-filter: blur(5px);
+    /* clip-path: polygon(50% 100%, 0 0, 100% 0); */
+}
+.triDiv div:nth-of-type(3){
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    backdrop-filter: blur(5px);
+    /* clip-path: polygon(50% 100%, 0 0, 100% 0); */
+}
+.triDiv div:nth-of-type(4){
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top: 15%;
+    left: 15%;
+    backdrop-filter: blur(5px);
+    /* clip-path: polygon(50% 100%, 0 0, 100% 0); */
+}
+.triDiv div:nth-of-type(5){
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    top: 20%;
+    left: 20%;
+    backdrop-filter: blur(5px);
+    /* clip-path: polygon(50% 100%, 0 0, 100% 0); */
+}
+.triDiv div:nth-of-type(5){
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left: 25%;
+    backdrop-filter: blur(5px);
+    /* clip-path: polygon(50% 100%, 0 0, 100% 0); */
+}
+
+body{
+    background:
+linear-gradient(135deg, #708090 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+linear-gradient(225deg, #708090 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+background-color:#708090;
+background-size: 64px 128px;
+}
