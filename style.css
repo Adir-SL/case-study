@@ -79,6 +79,7 @@ a:hover{
 }
 .lightBody .k-symbol{
     background-image: url(images/new-k-invert.gif);
+    background-color: #ffffff;
 }
 section{
     position: relative;
