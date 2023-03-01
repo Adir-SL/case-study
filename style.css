@@ -11,6 +11,10 @@ body{
     overflow: hidden;
     transition: background-color 200ms linear;
 }
+.lightBody{
+    background-color: #ffffff !important;
+    color: #181818 !important;
+}
 #wrapper{
     position: absolute;
     width: 100%;
