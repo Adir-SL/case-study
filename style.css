@@ -68,6 +68,8 @@ a:hover{
     background-image: url(images/new-k.gif);
     background-size: cover;
     cursor: pointer;
+    background-color: #181818;
+    border-radius: 50%;
 }
 section{
     position: relative;
