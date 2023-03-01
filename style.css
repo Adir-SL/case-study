@@ -78,7 +78,7 @@ a:hover{
     transition: all 200ms linear;
 }
 .lightBody .k-symbol{
-    
+    background-image: url(images/new-k-invert.gif);
 }
 section{
     position: relative;
