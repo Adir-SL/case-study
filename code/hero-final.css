@@ -43,7 +43,7 @@ body{
     align-items: flex-end;
     border-top: 0.4vw solid white;
     transform-origin: 20% 84%;
-    animation: triAnim 6000ms linear infinite, triScale 6000ms linear infinite;
+    animation: triAnim 6000ms linear infinite;
 }
 .triDiv .borderDiv{
     position: relative;
@@ -72,6 +72,9 @@ body{
 }
 .triDiv:nth-of-type(4){
     animation-delay: -4000ms !important;
+}
+.triDiv:nth-of-type(5){
+    animation-delay: -5000ms !important;
 }
 .bottomDiv{
     position: absolute;
