@@ -17,9 +17,16 @@ body{
     transform: translate3d(0,0,0) translateZ(0);
     
 }
-.tri-wrapper{
-    mix-blend-mode: difference;
+#wrapper{
+    color: #ffffff;
+    font-size: 30vw;
+    font-family: 'Avenir', sans-serif;
+    font-weight: 500;
 }
+
+/* .tri-wrapper{
+    mix-blend-mode: difference;
+} */
 .logoDiv{
     --shadowX: 10px;
     --shadowY: -10px;
@@ -31,7 +38,7 @@ body{
     background-position: top;
     background-repeat: no-repeat;
     background-size: 96vw;
-    filter: drop-shadow(var(--shadowX) var(--shadowY) 4px #ffffffff) drop-shadow(var(--shadowX) var(--shadowY) 8px #ffffffb5) drop-shadow(var(--shadowX) var(--shadowY) 12px #ffffff71) drop-shadow(var(--shadowX) var(--shadowY) 16px #ffffff71);
+    filter: drop-shadow(var(--shadowX) var(--shadowY) 4px #ffffffff) drop-shadow(var(--shadowX) var(--shadowY) 8px #ffffffb5) drop-shadow(var(--shadowX) var(--shadowY) 12px #ffffff71) drop-shadow(var(--shadowX) var(--shadowY) 16px #ffffff71) drop-shadow(calc(var(--shadowX) * 2) calc(var(--shadowY) * 2) 40px rgba(255, 255, 167, 0.562));
 }
 
 .triDiv{

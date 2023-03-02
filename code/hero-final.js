@@ -6,8 +6,8 @@ function moveFunc(e) {
     checkX = e.pageX / percentX - 50;
     checkY = e.pageY / percentY - 50;
     // document.getElementById("logo").style.transform = "translate(" + checkX + "%, " + checkY + "%" + ")";
-    checkX = checkX / 10;
-    checkY = checkY / 10;
+    checkX = checkX / 3;
+    checkY = checkY / 3;
     document.getElementById("logo").style.setProperty('--shadowX', Math.floor(checkX)+"px");
     document.getElementById("logo").style.setProperty('--shadowY', Math.floor(checkY)+"px");
 }
