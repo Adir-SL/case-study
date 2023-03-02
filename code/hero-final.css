@@ -62,12 +62,12 @@ body{
     100%{transform: scaleY(0.75) translate3d(0,0,0) translateZ(0); opacity: 0; z-index: -1;}
 }
 .triDiv:nth-of-type(2){
-    animation-delay: -1000ms !important;
-}
-.triDiv:nth-of-type(3){
     animation-delay: -2000ms !important;
 }
-.triDiv:nth-of-type(4){
+.triDiv:nth-of-type(3){
+    animation-delay: -4000ms !important;
+}
+/* .triDiv:nth-of-type(4){
     animation-delay: -3000ms !important;
 }
 .triDiv:nth-of-type(5){
@@ -75,7 +75,7 @@ body{
 }
 .triDiv:nth-of-type(6){
     animation-delay: -5000ms !important;
-}
+} */
 .bottomDiv{
     position: absolute;
     width: 93.8vw;
