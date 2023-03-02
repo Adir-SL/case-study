@@ -1,4 +1,5 @@
 function moveFunc(e) {
+    console.log("ass")
     percentX = document.getElementById("wrapper").offsetWidth / 100;
     percentY = document.getElementById("wrapper").offsetHeight / 100;
     document.getElementById("eyeObj").style.top = e.pageY / percentY + "%";
