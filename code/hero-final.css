@@ -18,46 +18,13 @@
     position: absolute;
     width: 90vw;
     height: 45vw;
-    display: flex;
     flex-direction: column;
-}
-.logoDiv::before{
-    content: '';
-    position: relative;
     background-image: url(kido-hero.svg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: 96vw;
-    /* background-color: red; */
-    /* height: 18vw; */
-    animation: blurAnim 4000ms linear infinite;
-    animation-delay: -1100ms;
-    /* should be 38vw */
-}
-@keyframes blurAnim {
-    0%{height: 38vw;}
-    100%{height: 0vw;}
-}
-@keyframes blurAnimLittle {
-    0%{height: 0vw; background-image: url(kido-blur.svg); transform: translate(0,0);}
-    80%{height: 30vw; background-image: url(kido-blur.svg); transform: translate(0,0);}
-    100%{height: 38vw; background-image: url(kido-hero.svg); transform: translate(0,0.5vw);}
 }
 
-.logoDiv::after{
-    content: '';
-    position: relative;
-    background-image: url(kido-blur.svg);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: 96vw;
-    filter:blur(4px);
-    /* background-color: pink; */
-    /* height: 18vw; */
-    animation: blurAnimLittle 4000ms linear infinite;
-    /* flex-grow: 1; */
-    animation-delay: -1100ms;
-}
 .triDiv{
     position: absolute;
     overflow: hidden;
