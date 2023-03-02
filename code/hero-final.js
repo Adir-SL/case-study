@@ -1,13 +1,83 @@
 function moveFunc(e) {
     percentX = document.getElementById("wrapper").offsetWidth / 100;
     percentY = document.getElementById("wrapper").offsetHeight / 100;
-    // document.getElementById("logo").style.top = e.pageY / percentY + "%";
-    // document.getElementById("logo").style.left = e.pageX / percentX + "%";
-    checkX = e.pageX / percentX - 50;
+
+    checkOrigX = e.pageX / percentX - 50;
+    checkOrigY = e.pageY / percentY - 50;
+
+    checkX = e.pageX / percentX - 100;
     checkY = e.pageY / percentY - 50;
-    // document.getElementById("logo").style.transform = "translate(" + checkX + "%, " + checkY + "%" + ")";
-    checkX = checkX / 3;
-    checkY = checkY / 3;
-    document.getElementById("logo").style.setProperty('--shadowX', Math.floor(checkX)+"px");
-    document.getElementById("logo").style.setProperty('--shadowY', Math.floor(checkY)+"px");
+    checkX = checkX / -7;
+    checkY = checkY / 7;
+    document.getElementById("kFont").style.setProperty('--shadowX', checkX+"px");
+    document.getElementById("kFont").style.setProperty('--shadowY', checkY+"px");
+    if(checkY < 0){
+        checkY = checkY * -1;
+    }
+    if(checkX < 0){
+        checkX = checkX * -1;
+    }
+    if(checkX > checkY){
+        checkFade = checkX;
+    }else{
+        checkFade = checkY;
+    }
+    document.getElementById("kFont").style.setProperty('--shadowFade', checkFade+"px");
+
+    checkX = e.pageX / percentX - 70;
+    checkY = e.pageY / percentY - 50;
+    checkX = checkX / -7;
+    checkY = checkY / 7;
+    document.getElementById("iFont").style.setProperty('--shadowX', checkX+"px");
+    document.getElementById("iFont").style.setProperty('--shadowY', checkY+"px");
+    if(checkY < 0){
+        checkY = checkY * -1;
+    }
+    if(checkX < 0){
+        checkX = checkX * -1;
+    }
+    if(checkX > checkY){
+        checkFade = checkX;
+    }else{
+        checkFade = checkY;
+    }
+    document.getElementById("iFont").style.setProperty('--shadowFade', checkFade+"px");
+
+    checkX = e.pageX / percentX - 30;
+    checkY = e.pageY / percentY - 50;
+    checkX = checkX / -7;
+    checkY = checkY / 7;
+    document.getElementById("dFont").style.setProperty('--shadowX', checkX+"px");
+    document.getElementById("dFont").style.setProperty('--shadowY', checkY+"px");
+    if(checkY < 0){
+        checkY = checkY * -1;
+    }
+    if(checkX < 0){
+        checkX = checkX * -1;
+    }
+    if(checkX > checkY){
+        checkFade = checkX;
+    }else{
+        checkFade = checkY;
+    }
+    document.getElementById("dFont").style.setProperty('--shadowFade', checkFade+"px");
+
+    checkX = e.pageX / percentX - 0;
+    checkY = e.pageY / percentY - 50;
+    checkX = checkX / -7;
+    checkY = checkY / 7;
+    document.getElementById("oFont").style.setProperty('--shadowX', checkX+"px");
+    document.getElementById("oFont").style.setProperty('--shadowY', checkY+"px");
+    if(checkY < 0){
+        checkY = checkY * -1;
+    }
+    if(checkX < 0){
+        checkX = checkX * -1;
+    }
+    if(checkX > checkY){
+        checkFade = checkX;
+    }else{
+        checkFade = checkY;
+    }
+    document.getElementById("oFont").style.setProperty('--shadowFade', checkFade+"px");
 }

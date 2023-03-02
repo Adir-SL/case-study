@@ -18,10 +18,23 @@ body{
     
 }
 #wrapper{
-    color: #ffffff;
+    color: transparent;
     font-size: 30vw;
     font-family: 'Avenir', sans-serif;
     font-weight: 500;
+    letter-spacing: -1.5vw;
+    transform: translate3d(0,0,0) translateZ(0);
+    backface-visibility: hidden;
+}
+#kFont, #iFont, #dFont, #oFont{
+    --shadowX: 1px;
+    --shadowY: 1px;
+    --shadowFade: 4px;
+    /* text-shadow: calc(var(--shadowX) * -1) calc(var(--shadowY) * 1) 8px rgba(234, 248, 255, 30%), calc(var(--shadowX) * -2) calc(var(--shadowY) * 2) 8px rgba(234, 248, 255, 28%), calc(var(--shadowX) * -2) calc(var(--shadowY) * 4) 8px rgba(234, 248, 255, 26%), calc(var(--shadowX) * -3) calc(var(--shadowY) * 6) 12px rgba(234, 248, 255, 24%), calc(var(--shadowX) * -4) calc(var(--shadowY) * 8) 16px rgba(234, 248, 255, 22%), calc(var(--shadowX) * -5) calc(var(--shadowY) * 10) 20px rgba(234, 248, 255, 20%), calc(var(--shadowX) * -6) calc(var(--shadowY) * 12) 24px rgba(234, 248, 255, 18%), calc(var(--shadowX) * -7) calc(var(--shadowY) * 14) 28px rgba(234, 248, 255, 16%), calc(var(--shadowX) * -8) calc(var(--shadowY) * 14) 32px rgba(234, 248, 255, 12%), calc(var(--shadowX) * -9) calc(var(--shadowY) * 18) 36px rgba(234, 248, 255, 10%), calc(var(--shadowX) * -10) calc(var(--shadowY) * 20) 40px rgba(234, 248, 255, 8%), calc(var(--shadowX) * -11) calc(var(--shadowY) * 22) 44px rgba(234, 248, 255, 6%); */
+
+    /* text-shadow: calc(var(--shadowX) * -1) calc(var(--shadowY) * 1) calc(var(--shadowFade) * 2) rgba(234, 248, 255, 0.5), calc(var(--shadowX) * -2) calc(var(--shadowY) * 2) calc(var(--shadowFade) * 2) rgba(234, 248, 255, 47%), calc(var(--shadowX) * -2) calc(var(--shadowY) * 4) calc(var(--shadowFade) * 2) rgba(234, 248, 255, 44%), calc(var(--shadowX) * -3) calc(var(--shadowY) * 6) calc(var(--shadowFade) * 3) rgba(234, 248, 255, 41%), calc(var(--shadowX) * -4) calc(var(--shadowY) * 8) calc(var(--shadowFade) * 4) rgba(234, 248, 255, 38%), calc(var(--shadowX) * -5) calc(var(--shadowY) * 10) calc(var(--shadowFade) * 5) rgba(234, 248, 255, 35%), calc(var(--shadowX) * -6) calc(var(--shadowY) * 12) calc(var(--shadowFade) * 6) rgba(234, 248, 255, 32%), calc(var(--shadowX) * -7) calc(var(--shadowY) * 14) calc(var(--shadowFade) * 7) rgba(234, 248, 255, 29%), calc(var(--shadowX) * -8) calc(var(--shadowY) * 14) calc(var(--shadowFade) * 8) rgba(234, 248, 255, 26%), calc(var(--shadowX) * -9) calc(var(--shadowY) * 18) calc(var(--shadowFade) * 9) rgba(234, 248, 255, 23%), calc(var(--shadowX) * -10) calc(var(--shadowY) * 20) calc(var(--shadowFade) * 10) rgba(234, 248, 255, 20%), calc(var(--shadowX) * -11) calc(var(--shadowY) * 22) calc(var(--shadowFade) * 11) rgba(234, 248, 255, 17%); */
+
+    text-shadow: calc(var(--shadowX) * -1) calc(var(--shadowY) * 1) calc(var(--shadowFade) * 2) rgba(234, 248, 255, 0.5), calc(var(--shadowX) * -2) calc(var(--shadowY) * 2) calc(var(--shadowFade) * 2) rgba(234, 248, 255, 47%), calc(var(--shadowX) * -2) calc(var(--shadowY) * 4) calc(var(--shadowFade) * 2) rgba(234, 248, 255, 44%), calc(var(--shadowX) * -3) calc(var(--shadowY) * 6) calc(var(--shadowFade) * 3) rgba(234, 248, 255, 41%), calc(var(--shadowX) * -4) calc(var(--shadowY) * 8) calc(var(--shadowFade) * 4) rgba(234, 248, 255, 38%), calc(var(--shadowX) * -5) calc(var(--shadowY) * 10) calc(var(--shadowFade) * 5) rgba(234, 248, 255, 35%), calc(var(--shadowX) * -6) calc(var(--shadowY) * 12) calc(var(--shadowFade) * 6) rgba(234, 248, 255, 32%);
 }
 
 /* .tri-wrapper{
