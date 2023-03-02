@@ -32,7 +32,7 @@ body{
     margin-left: 1vw;
 }
 .textWrapper{
-    /* transform: translate(-1vw, -4vw); */
+    transform: translate(-50%, -5%);
     /* margin: 0 auto; */
 }
 video{
