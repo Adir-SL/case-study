@@ -23,16 +23,8 @@ function videosOnScroll(){
 
     if(scrollPos > document.getElementById("white-wrapper").offsetTop - scrollOffset && scrollPos < document.getElementById("white-wrapper").offsetTop + document.getElementById("white-wrapper").offsetHeight - (scrollOffset / 4)){
         document.body.classList.add("lightBody");
-        // document.body.style.backgroundColor = "#ffffff";
-        // document.body.style.color = "#181818";
-        // document.getElementById("k-sticky").style.backgroundImage = "url(images/new-k-invert.gif)";
-        // document.getElementById("k-sticky").style.backgroundColor = "#ffffff";
     }else{
         document.body.classList.remove("lightBody");
-        // document.body.style.backgroundColor = "#181818";
-        // document.body.style.color = "#ffffff";
-        // document.getElementById("k-sticky").style.backgroundImage = "url(images/new-k.gif)";
-        // document.getElementById("k-sticky").style.backgroundColor = "#181818";
     }
 
     if(scrollPos > document.getElementById("mobiles").offsetTop - (scrollOffset * 2) && scrollPos < document.getElementById("mobiles").offsetTop + document.getElementById("mobiles").offsetHeight + scrollOffset){
