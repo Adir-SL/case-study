@@ -1,10 +1,13 @@
 function moveFunc(e) {
-    console.log("ass")
     percentX = document.getElementById("wrapper").offsetWidth / 100;
     percentY = document.getElementById("wrapper").offsetHeight / 100;
-    document.getElementById("eyeObj").style.top = e.pageY / percentY + "%";
-    document.getElementById("eyeObj").style.left = e.pageX / percentX + "%";
+    // document.getElementById("logo").style.top = e.pageY / percentY + "%";
+    // document.getElementById("logo").style.left = e.pageX / percentX + "%";
     checkX = e.pageX / percentX - 50;
     checkY = e.pageY / percentY - 50;
-    document.getElementById("logoDiv").style.transform = "translate(" + checkX + "%, " + checkY + "%" + ")";
+    // document.getElementById("logo").style.transform = "translate(" + checkX + "%, " + checkY + "%" + ")";
+    checkX = checkX / 10;
+    checkY = checkY / 10;
+    document.getElementById("logo").style.setProperty('--shadowX', Math.floor(checkX)+"px");
+    document.getElementById("logo").style.setProperty('--shadowY', Math.floor(checkY)+"px");
 }

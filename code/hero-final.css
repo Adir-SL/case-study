@@ -21,6 +21,8 @@ body{
     mix-blend-mode: difference;
 }
 .logoDiv{
+    --shadowX: 10px;
+    --shadowY: -10px;
     position: absolute;
     width: 90vw;
     height: 45vw;
@@ -29,7 +31,7 @@ body{
     background-position: top;
     background-repeat: no-repeat;
     background-size: 96vw;
-    filter: drop-shadow(10px -10px 10px white) drop-shadow(10px -10px 10px white) drop-shadow(10px -10px 10px white) drop-shadow(10px -10px 10px white);
+    filter: drop-shadow(var(--shadowX) var(--shadowY) 4px #ffffffff) drop-shadow(var(--shadowX) var(--shadowY) 8px #ffffffb5) drop-shadow(var(--shadowX) var(--shadowY) 12px #ffffff71) drop-shadow(var(--shadowX) var(--shadowY) 16px #ffffff71);
 }
 
 .triDiv{
