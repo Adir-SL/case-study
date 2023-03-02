@@ -41,7 +41,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    border-top: 0.3vw solid white;
+    border-top: 0.4vw solid white;
     transform-origin: 20% 84%;
     animation: triAnim 6000ms linear infinite;
 }
@@ -50,7 +50,7 @@ body{
     width: 67vw;
     height: 67vw;
     transform: translateY(-23vw) rotate(45deg);
-    border: 0.3vw solid white;
+    border: 0.4vw solid white;
     box-sizing: border-box;
 }
 @keyframes triAnim {
@@ -78,6 +78,6 @@ body{
     position: absolute;
     width: 93.8vw;
     height: 50vw;
-    border-bottom: 0.3vw solid white;
+    border-bottom: 0.4vw solid white;
     z-index: 999;
 }
