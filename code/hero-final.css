@@ -29,6 +29,7 @@ body{
     background-position: top;
     background-repeat: no-repeat;
     background-size: 96vw;
+    filter: drop-shadow(10px -10px 10px white) drop-shadow(10px -10px 10px white) drop-shadow(10px -10px 10px white) drop-shadow(10px -10px 10px white);
 }
 
 .triDiv{
