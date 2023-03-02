@@ -70,10 +70,10 @@ body{
 .triDiv:nth-of-type(4){
     animation-delay: -3000ms !important;
 }
-.triDiv:nth-of-type(4){
+.triDiv:nth-of-type(5){
     animation-delay: -4000ms !important;
 }
-.triDiv:nth-of-type(5){
+.triDiv:nth-of-type(6){
     animation-delay: -5000ms !important;
 }
 .bottomDiv{
