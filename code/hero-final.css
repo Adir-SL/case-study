@@ -1,3 +1,6 @@
+body{
+    background-color: #181818;
+}
 #wrapper{
     position: absolute;
     width: 100%;
@@ -7,7 +10,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #181818;
     perspective: 2000vw;
     overflow: hidden;
     backface-visibility: hidden;
