@@ -64,7 +64,7 @@ header{
     letter-spacing: 1px;
 }
 a{
-    color: #ffffff;
+    color: var(--color-secondary);
     text-decoration: none;
 }
 a:hover{
