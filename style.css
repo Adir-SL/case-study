@@ -6,14 +6,17 @@ Thin: 100 200 300, Light: 400, Regular: 500, Bold: 700 800 */
 @import url(font-haas-text.css);
 
 body{
-    background-color: #181818;
-    color: #ffffff;
+    --color-primary: #181818;
+    --color-secondary: #ffffff;
+
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
     overflow: hidden;
     transition: background-color 500ms linear;
 }
 .lightBody{
-    background-color: #ffffff !important;
-    color: #181818 !important;
+    background-color: var(--color-secondary) !important;
+    color: var(--color-primary) !important;
 }
 #wrapper{
     position: absolute;
