@@ -37,7 +37,7 @@ video{
     height: 100vh;
     position: absolute;
 }
-#wrapper{
+#wrapperLogo{
     color: transparent;
 }
 #kFont, #iFont, #dFont, #oFont{
