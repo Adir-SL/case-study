@@ -8,6 +8,7 @@ Thin: 100 200 300, Light: 400, Regular: 500, Bold: 700 800 */
 body{
     --color-primary: #181818;
     --color-secondary: #ffffff;
+    --color-accent: #FFCD00;
 
     background-color: var(--color-primary);
     color: var(--color-secondary);
@@ -67,7 +68,7 @@ a{
     text-decoration: none;
 }
 a:hover{
-    color: #FFCD00;
+    color: var(--color-accent);
 }
 .k-symbol{
     width: 60px;
@@ -176,7 +177,7 @@ video{
     right: 42%;
     width: 0.75%;
     height: 4.5%;
-    background-color: #FFCD00;
+    background-color: var(--color-accent);
     animation: blinkAnim 1000ms steps(1) infinite;
 }
 @keyframes blinkAnim {
@@ -257,6 +258,6 @@ video{
 }
 
 ::selection{
-    background-color: #FFCD00;
-    color: #181818;
+    background-color: var(--color-accent);
+    color: var(--color-primary);
 }
