@@ -1,4 +1,5 @@
 function moveFunc(e) {
+    console.log("yes");
     percentX = document.getElementById("wrapperLogo").offsetWidth / 100;
     percentY = document.getElementById("wrapperLogo").offsetHeight / 100;
 
