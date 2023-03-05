@@ -53,59 +53,6 @@ video{
     text-shadow: calc(var(--shadowX) * -1) calc(var(--shadowY) * 1) calc(var(--shadowFade) * 1) rgba(var(--shadowColor), 50%), calc(var(--shadowX) * -2) calc(var(--shadowY) * 2) calc(var(--shadowFade) * 1) rgba(var(--shadowColor), 47%), calc(var(--shadowX) * -2) calc(var(--shadowY) * 4) calc(var(--shadowFade) * 1.5) rgba(var(--shadowColor), 44%), calc(var(--shadowX) * -3) calc(var(--shadowY) * 6) calc(var(--shadowFade) * 1.5) rgba(var(--shadowColor), 41%), calc(var(--shadowX) * -4) calc(var(--shadowY) * 8) calc(var(--shadowFade) * 1.5) rgba(var(--shadowColor), 38%), calc(var(--shadowX) * -5) calc(var(--shadowY) * 10) calc(var(--shadowFade) * 2) rgba(var(--shadowColor), 35%), calc(var(--shadowX) * -6) calc(var(--shadowY) * 12) calc(var(--shadowFade) * 2) rgba(var(--shadowColor), 32%);
 }
 
-.logoDiv{
-    --shadowX: 10px;
-    --shadowY: -10px;
-    position: absolute;
-    width: 90vw;
-    height: 45vw;
-    flex-direction: column;
-    background-image: url(kido-hero.svg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 96vw;
-    filter: drop-shadow(var(--shadowX) var(--shadowY) 4px #ffffffff) drop-shadow(var(--shadowX) var(--shadowY) 8px #ffffffb5) drop-shadow(var(--shadowX) var(--shadowY) 12px #ffffff71) drop-shadow(var(--shadowX) var(--shadowY) 16px #ffffff71) drop-shadow(calc(var(--shadowX) * 2) calc(var(--shadowY) * 2) 40px rgba(255, 255, 167, 0.562));
-}
-
-.triDiv{
-    position: absolute;
-    overflow: hidden;
-    opacity: 1;
-    width: 93.8vw;
-    height: 56vw;
-    margin-top: 12vw;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    border-top: 0.4vw solid white;
-    transform-origin: 20% 84%;
-    animation: triAnim 6000ms linear infinite;
-}
-.triDiv .borderDiv{
-    position: relative;
-    width: 67vw;
-    height: 67vw;
-    transform: translateY(-23vw) rotate(45deg);
-    border: 0.4vw solid white;
-    box-sizing: border-box;
-}
-@keyframes triAnim {
-    0%{transform: scaleY(0) translate3d(0,0,0) translateZ(0); opacity: 1; z-index: 8;}
-    20%{transform: scaleY(0.25) translate3d(0,0,0) translateZ(0); opacity: 1; z-index: 6;}
-    40%{transform: scaleY(0.5) translate3d(0,0,0) translateZ(0); opacity: 1; z-index: 4;}
-    60%{transform: scaleY(0.75) translate3d(0,0,0) translateZ(0); opacity: 1; z-index: 2;}
-    80%{transform: scaleY(1) translate3d(0,0,0) translateZ(0); opacity: 1; z-index: 1;}
-    100%{transform: scaleY(0.75) translate3d(0,0,0) translateZ(0); opacity: 0; z-index: -1;}
-}
-.triDiv:nth-of-type(2){
-    animation-delay: -1500ms !important;
-}
-.triDiv:nth-of-type(3){
-    animation-delay: -3000ms !important;
-}
-.triDiv:nth-of-type(4){
-    animation-delay: -4500ms !important;
-}
 .bottomDiv{
     position: absolute;
     width: 93.8vw;
