@@ -1,6 +1,6 @@
 function moveFunc(e) {
-    percentX = document.getElementById("wrapper").offsetWidth / 100;
-    percentY = document.getElementById("wrapper").offsetHeight / 100;
+    percentX = document.getElementById("wrapperLogo").offsetWidth / 100;
+    percentY = document.getElementById("wrapperLogo").offsetHeight / 100;
 
     checkOrigX = e.pageX / percentX - 50;
     checkOrigY = e.pageY / percentY - 50;
