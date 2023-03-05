@@ -80,4 +80,8 @@ function moveFunc(e) {
         checkFade = checkY;
     }
     document.getElementById("oFont").style.setProperty('--shadowFade', checkFade+"px");
+
+    setTimeout(function(){
+        moveFunc(e);
+    }, 50);
 }
