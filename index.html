@@ -101,7 +101,7 @@
         </section>
 
         <div id="white-wrapper">
-            <section >
+            <section data-sal="slide-up" style="--sal-duration: 1000ms; --sal-dalay: 0s;">
                 <video src="videos/web.mp4" class="full-width" muted autoplay preload="auto"></video>
             </section>
             <section id="mobiles">
@@ -139,7 +139,7 @@
             </section>
         </div>
 
-        <section class="video-content">
+        <section class="video-content" data-sal="slide-up" style="--sal-duration: 1000ms; --sal-dalay: 0s;">
             <video src="videos/blinks.mp4" muted autoplay loop preload="auto"></video>
         </section>
         <section>
@@ -162,5 +162,12 @@
         </section>
     </div>
     <script src="code/videos.js"></script>
+    <script>
+        sal({
+            threshold: 0.2,
+            once: false,
+        });
+        sal();
+    </script>
 </body>
 </html>
