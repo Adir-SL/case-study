@@ -6,6 +6,11 @@ body{
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 .wrapper{
     position: absolute;
@@ -50,7 +55,9 @@ video{
     --shadowFade: 4px;
     --shadowColor: 234, 248, 255;
     
-    text-shadow: calc(var(--shadowX) * -1) calc(var(--shadowY) * 1) calc(var(--shadowFade) * 1) rgba(var(--shadowColor), 50%), calc(var(--shadowX) * -2) calc(var(--shadowY) * 2) calc(var(--shadowFade) * 1) rgba(var(--shadowColor), 47%), calc(var(--shadowX) * -2) calc(var(--shadowY) * 4) calc(var(--shadowFade) * 1.5) rgba(var(--shadowColor), 44%), calc(var(--shadowX) * -3) calc(var(--shadowY) * 6) calc(var(--shadowFade) * 1.5) rgba(var(--shadowColor), 41%), calc(var(--shadowX) * -4) calc(var(--shadowY) * 8) calc(var(--shadowFade) * 1.5) rgba(var(--shadowColor), 38%), calc(var(--shadowX) * -5) calc(var(--shadowY) * 10) calc(var(--shadowFade) * 2) rgba(var(--shadowColor), 35%), calc(var(--shadowX) * -6) calc(var(--shadowY) * 12) calc(var(--shadowFade) * 2) rgba(var(--shadowColor), 32%);
+    text-shadow: calc(var(--shadowX) * -1) calc(var(--shadowY) * 1) calc(var(--shadowFade) * 1) rgba(var(--shadowColor), 50%), calc(var(--shadowX) * -2) calc(var(--shadowY) * 2) calc(var(--shadowFade) * 1.5) rgba(var(--shadowColor), 47%), calc(var(--shadowX) * -2) calc(var(--shadowY) * 4) calc(var(--shadowFade) * 2) rgba(var(--shadowColor), 44%), calc(var(--shadowX) * -3) calc(var(--shadowY) * 6) calc(var(--shadowFade) * 2.5) rgba(var(--shadowColor), 41%), calc(var(--shadowX) * -4) calc(var(--shadowY) * 8) calc(var(--shadowFade) * 3) rgba(var(--shadowColor));
+
+    /* text-shadow: calc(var(--shadowX) * -1) calc(var(--shadowY) * 1) calc(var(--shadowFade) * 1) rgba(var(--shadowColor), 50%), calc(var(--shadowX) * -2) calc(var(--shadowY) * 2) calc(var(--shadowFade) * 1) rgba(var(--shadowColor), 47%), calc(var(--shadowX) * -2) calc(var(--shadowY) * 4) calc(var(--shadowFade) * 1.5) rgba(var(--shadowColor), 44%), calc(var(--shadowX) * -3) calc(var(--shadowY) * 6) calc(var(--shadowFade) * 1.5) rgba(var(--shadowColor), 41%), calc(var(--shadowX) * -4) calc(var(--shadowY) * 8) calc(var(--shadowFade) * 1.5) rgba(var(--shadowColor), 38%), calc(var(--shadowX) * -5) calc(var(--shadowY) * 10) calc(var(--shadowFade) * 2) rgba(var(--shadowColor), 35%), calc(var(--shadowX) * -6) calc(var(--shadowY) * 12) calc(var(--shadowFade) * 2) rgba(var(--shadowColor), 32%); */
 }
 
 .bottomDiv{
