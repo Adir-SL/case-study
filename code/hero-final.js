@@ -81,7 +81,7 @@ function moveFunc(e) {
     }
     document.getElementById("oFont").style.setProperty('--shadowFade', checkFade+"px");
 
-    setTimeout(function(){
-        moveFunc(e);
-    }, 50);
+    // setTimeout(function(){
+    //     moveFunc(e);
+    // }, 50);
 }
