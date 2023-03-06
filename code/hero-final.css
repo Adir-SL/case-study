@@ -38,7 +38,9 @@ body{
     flex-direction: row;
 }
 .darkDiv{
-    background-color: red;
+    background-color: #181818;
+    flex-grow: 1;
+    height: 100%;
 }
 .i-text{
     letter-spacing: -0.5vh !important;
@@ -52,7 +54,7 @@ body{
 video, img{
     height: 100%;
     max-height: 100%;
-    position: absolute;
+    /* position: absolute; */
 }
 #wrapperLogo{
     color: transparent;
