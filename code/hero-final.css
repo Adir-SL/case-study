@@ -37,6 +37,9 @@ body{
 .triWrapper{
     flex-direction: row;
 }
+.darkDiv{
+    background-color: red;
+}
 .i-text{
     letter-spacing: -0.5vh !important;
 }
