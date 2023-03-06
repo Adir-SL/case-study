@@ -1,4 +1,4 @@
-@import url(../font-avenir.css);
+@import url(../font-huben.css);
 
 body{
     background-color: #181818;
@@ -24,7 +24,7 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 35vw;
-    font-family: 'avenir', sans-serif;
+    font-family: 'huben', sans-serif;
     font-weight: 500;
     letter-spacing: -1.5vw;
     overflow: hidden;
