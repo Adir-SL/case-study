@@ -41,7 +41,7 @@ body{
     margin-left: 1vw;
 } */
 .textWrapper{
-    transform: translate(-50%, -5%);
+    transform: translate(-50%, -10%);
 }
 video, img{
     height: 100%;
