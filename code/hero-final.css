@@ -69,3 +69,7 @@ video, img{
     border-bottom: 0.3vw solid white;
     z-index: 999;
 }
+
+@media screen and (max-width: 900px) {
+    
+}
