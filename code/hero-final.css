@@ -70,7 +70,7 @@ video, img{
     z-index: 999;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .wrapper{
         font-size: 24vw;
         letter-spacing: -1vw;
