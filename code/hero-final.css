@@ -72,12 +72,13 @@ video, img{
 
 @media screen and (max-width: 900px) {
     .wrapper{
-        font-size: 36vw;
+        font-size: 24vw;
+        letter-spacing: -1vw;
     }
     .i-text{
-        letter-spacing: -0.5vw !important;
+        letter-spacing: 0 !important;
     }
     .o-text{
-        margin-left: -0.2vw;
+        margin-left: 0;
     }
 }
