@@ -34,6 +34,9 @@ body{
     user-select: none;
     transform: translateX(-50%);
 }
+.triWrapper{
+    flex-direction: row;
+}
 .i-text{
     letter-spacing: -0.5vh !important;
 }
