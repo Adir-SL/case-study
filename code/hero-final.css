@@ -59,6 +59,9 @@ video, img{
 #wrapperLogo{
     color: transparent;
 }
+#triImg{
+    border-bottom: 0.4vw solid white;
+}
 #kFont, #iFont, #dFont, #oFont{
     --shadowX: 1px;
     --shadowY: 1px;
@@ -88,5 +91,8 @@ video, img{
     }
     .o-text{
         margin-left: 0;
+    }
+    #triImg{
+        border-bottom: 0.5vh solid white;
     }
 }
