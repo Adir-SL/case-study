@@ -4,10 +4,10 @@ function moveFunc(e) {
     percentY = document.getElementById("wrapperLogo").offsetHeight / 100;
 
     checkOrigX = e.pageX / percentX - 50;
-    checkOrigY = e.pageY / percentY - 50;
+    checkOrigY = e.pageY / percentY - 40;
 
     checkX = e.pageX / percentX - 20;
-    checkY = e.pageY / percentY - 50;
+    checkY = e.pageY / percentY - 40;
     checkX = checkX / -7;
     checkY = checkY / -7;
     document.getElementById("kFont").style.setProperty('--shadowX', checkX*-1+"px");
@@ -26,7 +26,7 @@ function moveFunc(e) {
     document.getElementById("kFont").style.setProperty('--shadowFade', checkFade+"px");
 
     checkX = e.pageX / percentX - 40;
-    checkY = e.pageY / percentY - 50;
+    checkY = e.pageY / percentY - 40;
     checkX = checkX / -7;
     checkY = checkY / -7;
     document.getElementById("iFont").style.setProperty('--shadowX', checkX*-1+"px");
@@ -45,7 +45,7 @@ function moveFunc(e) {
     document.getElementById("iFont").style.setProperty('--shadowFade', checkFade+"px");
 
     checkX = e.pageX / percentX - 60;
-    checkY = e.pageY / percentY - 50;
+    checkY = e.pageY / percentY - 40;
     checkX = checkX / -7;
     checkY = checkY / -7;
     document.getElementById("dFont").style.setProperty('--shadowX', checkX*-1+"px");
@@ -64,7 +64,7 @@ function moveFunc(e) {
     document.getElementById("dFont").style.setProperty('--shadowFade', checkFade+"px");
 
     checkX = e.pageX / percentX - 80;
-    checkY = e.pageY / percentY - 50;
+    checkY = e.pageY / percentY - 40;
     checkX = checkX / -7;
     checkY = checkY / -7;
     document.getElementById("oFont").style.setProperty('--shadowX', checkX*-1+"px");
