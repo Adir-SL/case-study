@@ -85,6 +85,7 @@ a:hover{
 section{
     position: relative;
     margin: 14px;
+    scroll-snap-align: center;
 }
 .big-contnet .content{
     font-size: 46px;
