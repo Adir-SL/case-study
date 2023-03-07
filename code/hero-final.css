@@ -23,10 +23,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 42vh;
+    /* font-size: 42vh; */
+    font-size: 22vw;
     font-family: 'huben', sans-serif;
     font-weight: 500;
-    letter-spacing: -1.5vh;
+    /* letter-spacing: -1.5vh; */
+    letter-spacing: -1vw;
     overflow: hidden;
     backface-visibility: hidden;
     perspective: 1000;
@@ -43,10 +45,12 @@ body{
     height: 100%;
 }
 .i-text{
-    letter-spacing: -0.5vh !important;
+    /* letter-spacing: -0.5vh !important; */
+    letter-spacing: -0.5vw !important;
 }
 .o-text{
-    margin-left: -0.2vh;
+    /* margin-left: -0.2vh; */
+    margin-left: -0.1vw;
 }
 .textWrapper{
     transform: translate(-50%, -10%);
