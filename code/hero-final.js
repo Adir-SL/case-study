@@ -9,7 +9,7 @@ function moveFunc(e) {
     checkX = e.pageX / percentX - 20;
     checkY = e.pageY / percentY - 50;
     checkX = checkX / -7;
-    checkY = checkY / 7;
+    checkY = checkY / -7;
     document.getElementById("kFont").style.setProperty('--shadowX', checkX*-1+"px");
     document.getElementById("kFont").style.setProperty('--shadowY', checkY+"px");
     if(checkY < 0){
@@ -28,7 +28,7 @@ function moveFunc(e) {
     checkX = e.pageX / percentX - 40;
     checkY = e.pageY / percentY - 50;
     checkX = checkX / -7;
-    checkY = checkY / 7;
+    checkY = checkY / -7;
     document.getElementById("iFont").style.setProperty('--shadowX', checkX*-1+"px");
     document.getElementById("iFont").style.setProperty('--shadowY', checkY+"px");
     if(checkY < 0){
@@ -47,7 +47,7 @@ function moveFunc(e) {
     checkX = e.pageX / percentX - 60;
     checkY = e.pageY / percentY - 50;
     checkX = checkX / -7;
-    checkY = checkY / 7;
+    checkY = checkY / -7;
     document.getElementById("dFont").style.setProperty('--shadowX', checkX*-1+"px");
     document.getElementById("dFont").style.setProperty('--shadowY', checkY+"px");
     if(checkY < 0){
@@ -66,7 +66,7 @@ function moveFunc(e) {
     checkX = e.pageX / percentX - 80;
     checkY = e.pageY / percentY - 50;
     checkX = checkX / -7;
-    checkY = checkY / 7;
+    checkY = checkY / -7;
     document.getElementById("oFont").style.setProperty('--shadowX', checkX*-1+"px");
     document.getElementById("oFont").style.setProperty('--shadowY', checkY+"px");
     if(checkY < 0){
