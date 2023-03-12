@@ -1,3 +1,11 @@
+body{
+    background-color: #181818;
+}
 iframe{
-    width: 100%;
+    width: 98vw;
+    height: 98vh;
+    border: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
