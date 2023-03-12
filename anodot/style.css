@@ -158,6 +158,7 @@ h3{
     margin-bottom: 120px;
 }
 .more-gap{
+    display: flex;
     gap: 14px;
 }
 .more-gap .half-width{
