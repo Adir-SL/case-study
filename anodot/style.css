@@ -127,8 +127,9 @@ h3{
     border: none;
 }
 .width-child{
-    width: 42% !important;
-    margin-right: 16%;
+    /* width: 42% */
+    width: 38% !important;
+    margin-right: 20%;
 }
 .margin-horizontal{
     margin-right: 6%;
