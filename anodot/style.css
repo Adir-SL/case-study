@@ -146,6 +146,12 @@ h3{
     margin-top: 120px;
     margin-bottom: 120px;
 }
+.more-gap{
+    gap: 14px;
+}
+.more-gap .half-width{
+    width: calc(50% - 7px);
+}
 video{
     width: 100%;
 }
