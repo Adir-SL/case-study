@@ -173,6 +173,13 @@ video{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.alert-video{
+    position: absolute;
+    width: 17.4vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .caret-blink{
     position: absolute;
     top: 51%;
