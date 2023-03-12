@@ -78,14 +78,6 @@ video, img{
     /* text-shadow: calc(var(--shadowX) * -1) calc(var(--shadowY) * 1) calc(var(--shadowFade) * 1) rgba(var(--shadowColor), 50%), calc(var(--shadowX) * -2) calc(var(--shadowY) * 2) calc(var(--shadowFade) * 1) rgba(var(--shadowColor), 47%), calc(var(--shadowX) * -2) calc(var(--shadowY) * 4) calc(var(--shadowFade) * 1.5) rgba(var(--shadowColor), 44%), calc(var(--shadowX) * -3) calc(var(--shadowY) * 6) calc(var(--shadowFade) * 1.5) rgba(var(--shadowColor), 41%), calc(var(--shadowX) * -4) calc(var(--shadowY) * 8) calc(var(--shadowFade) * 1.5) rgba(var(--shadowColor), 38%), calc(var(--shadowX) * -5) calc(var(--shadowY) * 10) calc(var(--shadowFade) * 2) rgba(var(--shadowColor), 35%), calc(var(--shadowX) * -6) calc(var(--shadowY) * 12) calc(var(--shadowFade) * 2) rgba(var(--shadowColor), 32%); */
 }
 
-/* .bottomDiv{
-    position: absolute;
-    width: 93%;
-    bottom: 0;
-    border-bottom: 0.3vw solid white;
-    z-index: 999;
-} */
-
 @media screen and (max-width: 1200px) {
     .wrapper{
         font-size: 25vw;
