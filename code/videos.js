@@ -31,9 +31,13 @@ function videosOnScroll(){
         }, 50);
     }
 
-    if(scrollPos > document.getElementById("white-wrapper").offsetTop - scrollOffset && scrollPos < document.getElementById("white-wrapper").offsetTop + document.getElementById("white-wrapper").offsetHeight - (scrollOffset / 4)){
-        document.body.classList.add("lightBody");
-    }else{
-        document.body.classList.remove("lightBody");
+    if(document.body.innerHTML.indexOf("white-wrapper") > 0){
+        if(scrollPos > document.getElementById("white-wrapper").offsetTop - scrollOffset && scrollPos < document.getElementById("white-wrapper").offsetTop + document.getElementById("white-wrapper").offsetHeight - (scrollOffset / 4)){
+            document.body.classList.add("lightBody");
+        }else{
+            document.body.classList.remove("lightBody");
+        }
     }
+
+    
 }
