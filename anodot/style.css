@@ -194,6 +194,12 @@ video{
     left: 57.1%;
     border-radius: 0.6vw;
 }
+.train-video{
+    position: absolute;
+    width: 45vw;
+    top: 30.5%;
+    left: 25.4%;
+}
 .caret-blink{
     position: absolute;
     top: 51%;
