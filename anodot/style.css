@@ -19,6 +19,12 @@ body{
     background-color: var(--color-secondary) !important;
     color: var(--color-primary) !important;
 }
+.noBottom{
+    margin-bottom: 0;
+}
+.noTop{
+    margin-top: 0;
+}
 #wrapper{
     position: absolute;
     width: 100%;
