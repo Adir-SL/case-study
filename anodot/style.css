@@ -24,6 +24,7 @@ body{
 }
 .noTop{
     margin-top: 0;
+    transform: translateY(-1vh);
 }
 #wrapper{
     position: absolute;
