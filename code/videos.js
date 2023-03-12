@@ -21,11 +21,7 @@ function videosOnScroll(){
         }
     }
 
-    if(scrollPos > document.getElementById("white-wrapper").offsetTop - scrollOffset && scrollPos < document.getElementById("white-wrapper").offsetTop + document.getElementById("white-wrapper").offsetHeight - (scrollOffset / 4)){
-        document.body.classList.add("lightBody");
-    }else{
-        document.body.classList.remove("lightBody");
-    }
+    
 
     if(scrollPos > document.getElementById("mobiles").offsetTop - (scrollOffset * 2) && scrollPos < document.getElementById("mobiles").offsetTop + document.getElementById("mobiles").offsetHeight + scrollOffset){
     }else{
@@ -33,5 +29,11 @@ function videosOnScroll(){
         setTimeout(function(){
             document.getElementById("mobiles").classList.remove("anim-out");
         }, 50);
+    }
+
+    if(scrollPos > document.getElementById("white-wrapper").offsetTop - scrollOffset && scrollPos < document.getElementById("white-wrapper").offsetTop + document.getElementById("white-wrapper").offsetHeight - (scrollOffset / 4)){
+        document.body.classList.add("lightBody");
+    }else{
+        document.body.classList.remove("lightBody");
     }
 }

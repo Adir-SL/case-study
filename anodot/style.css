@@ -217,21 +217,15 @@ video{
     position: relative;
     width: 20vw;
     height: 40vw;
-    background-image: url(videos/story_01.mp4);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
     margin: 0 2vw;
     animation: mobileIn 1000ms ease-out forwards;
     animation-delay: 200ms;
     transform: translateY(200%);
 }
 .mobile:nth-of-type(2){
-    background-image: url(videos/story_02.mp4);
     animation-delay: 0ms;
 }
 .mobile:nth-of-type(3){
-    background-image: url(videos/story_03.mp4);
     animation-delay: 400ms;
 }
 .anim-out .mobile{
