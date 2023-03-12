@@ -6,6 +6,15 @@ iframe{
     height: 98vh;
     border: none;
     margin: 0;
+    margin-bottom: 20vh;
     padding: 0;
     overflow: hidden;
+}
+.flexDiv{
+    display: flex;
+    margin-bottom: 20vh;
+    gap: 1vh;
+}
+.case-image{
+    width: 100%;
 }
