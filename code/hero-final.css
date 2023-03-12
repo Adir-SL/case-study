@@ -54,6 +54,7 @@ body{
 }
 .textWrapper{
     transform: translate(-50%, -10%);
+    overflow: visible !important;
 }
 video, img{
     height: 100%;
