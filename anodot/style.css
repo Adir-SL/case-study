@@ -74,14 +74,14 @@ a:hover{
 .k-symbol{
     width: 60px;
     height: 60px;
-    background-image: url(images/new-k.gif);
+    background-image: url(../images/new-k.gif);
     background-size: cover;
     cursor: pointer;
     margin-right: 8px;
     transition: all 500ms linear;
 }
 .lightBody .k-symbol{
-    background-image: url(images/new-k-invert.gif);
+    background-image: url(../images/new-k-invert.gif);
 }
 section{
     position: relative;
