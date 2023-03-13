@@ -222,7 +222,6 @@ video{
 .mobile-elements{
     background-image: url(images/mobiles-bg.jpg);
     background-size: cover;
-    margin-top: 40px;
     width: 100%;
     aspect-ratio: 16 / 8;
     display: flex;
