@@ -20,7 +20,7 @@ body{
     color: var(--color-primary) !important;
 }
 .noBottom{
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
 }
 .noTop{
     margin-top: 0;
