@@ -10,7 +10,7 @@ function videosOnScroll(){
             tempParent = x[i].parentElement.parentElement;
         }
 
-        if(scrollPos > tempParent.offsetTop && scrollPos < tempParent.offsetTop + tempParent.offsetHeight){
+        if(scrollPos > tempParent.offsetTop - (scrollOffset * 2) && scrollPos < tempParent.offsetTop + tempParent.offsetHeight + scrollOffset){
             if(x[i].currentTime !== x[i].duration){
                 x[i].play();
                 console.log("in view: " + i + ", source: " + x[i].src);
