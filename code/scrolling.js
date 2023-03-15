@@ -1,4 +1,4 @@
-document.body.addEventListener("scrollend", scrollEndFunc);
+document.addEventListener("scroll", scrollEndFunc);
 
 function scrollEndFunc() {
   console.log("scroll end");
