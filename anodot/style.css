@@ -101,6 +101,9 @@ section{
     margin: 14px;
     scroll-snap-align: center;
 }
+.flex-content{
+    display: flex;
+}
 .big-contnet .content{
     font-size: 46px;
     line-height: 1.3;
