@@ -130,7 +130,7 @@ h3{
 }
 .details .content{
     font-size: 12px;
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
 }
 .details .content .detail-child:first-of-type{
