@@ -159,6 +159,7 @@ h3{
 .vertical-120{
     margin-top: 120px;
     margin-bottom: 120px;
+    float: right;
 }
 video{
     width: 100%;
