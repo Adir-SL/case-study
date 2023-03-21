@@ -91,7 +91,7 @@ section{
 .flex-content{
     display: flex;
     margin-bottom: 12vw;
-    width: 90%;
+    width: 86%;
 }
 .flex-content .details{
     min-width: 27%;
