@@ -104,12 +104,14 @@ section{
 .flex-content{
     display: flex;
     margin-bottom: 12vw;
+    width: 86%;
 }
 .flex-content .details{
-    min-width: 33%;
+    min-width: 27%;
+    margin-left: 9%;
 }
 .big-contnet .content{
-    font-size: 32px;
+    font-size: 36px;
     line-height: 1.3;
 }
 .big-contnet .titles{
