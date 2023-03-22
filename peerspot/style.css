@@ -88,6 +88,9 @@ section{
     margin: 14px;
     scroll-snap-align: center;
 }
+.flex-box{
+    display: flex;
+}
 .flex-content{
     display: flex;
     margin-bottom: 12vw;
