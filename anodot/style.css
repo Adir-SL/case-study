@@ -32,10 +32,7 @@ body{
 .noPadding{
     padding: 0 !important;
 }
-#laptop-mobile{
-    display: none;
-}
-#type-mobile{
+.mobile-only{
     display: none;
 }
 #wrapper{
@@ -425,16 +422,19 @@ video{
         position: relative;
         top: 2px;
     }
-    #laptop-image{
-        display: none;
-    }
-    #laptop-mobile{
+    .mobile-only{
         display: block;
     }
-    #type-video{
+    .desktop-only{
         display: none;
     }
-    #type-mobile{
-        display: block;
+    .mobile-flex{
+        display: flex;
+        flex-direction: row !important;
+        width: 100%;
+        gap: 14px;
+    }
+    .mobile-flex video{
+        width: calc(50% - 7px) !important;
     }
 }

@@ -53,8 +53,8 @@
         </section>
 
         <section class="video-content bigger-mobile">
-            <img src="images/laptop.jpg" id="laptop-image" class="full-width" loading="eager" />
-            <img src="images/laptop-mobile.jpg" id="laptop-mobile" class="full-width" loading="eager" />
+            <img src="images/laptop.jpg" class="full-width desktop-only" loading="eager" />
+            <img src="images/laptop-mobile.jpg" class="full-width mobile-only" loading="eager" />
             <video src="videos/alert.mp4" class="alert-video" muted playsinline autoplay loop preload="auto"></video>
         </section>
 
@@ -72,13 +72,14 @@
         </section>
 
         <section class="video-content">
-            <video src="videos/type.mp4" id="type-video" muted playsinline autoplay preload="auto"></video>
-            <video src="videos/industries.mp4" id="type-mobile" muted playsinline autoplay preload="auto"></video>
+            <video src="videos/type.mp4" class="desktop-only" muted playsinline autoplay preload="auto"></video>
+            <video src="videos/industries.mp4" class="mobile-only" muted playsinline autoplay preload="auto"></video>
         </section>
 
         <section class="details no-border noPadding noTopOnly noBottom">
             <div class="content dia align-center more-gap">
-                <video src="videos/icons.mp4" class="half-width" muted playsinline autoplay preload="auto" loop></video>
+                <video src="videos/icons.mp4" class="half-width desktop-only" muted playsinline autoplay preload="auto" loop></video>
+                <video src="videos/popup.mp4" class="half-width mobile-only" muted playsinline autoplay preload="auto"></video>
                 <div class="detail-child width-child margin-horizontal">
                     Challenge
                     <div class="haasText size-24 top-16">
@@ -90,14 +91,30 @@
 
         <section class="no-border">
             <div class="content dia align-center more-gap">
-                <video src="videos/popup.mp4" class="half-width" muted playsinline autoplay preload="auto"></video>
-                <video src="videos/industries.mp4" class="half-width" muted playsinline autoplay preload="auto" loop></video>
+                <video src="videos/popup.mp4" class="half-width desktop-only" muted playsinline autoplay preload="auto"></video>
+                <video src="videos/industries.mp4" class="half-width desktop-only" muted playsinline autoplay preload="auto" loop></video>
             </div>
         </section>
 
-        <section class="details no-border noPadding noTopOnly noBottom">
+        <section class="details no-border noPadding noTopOnly noBottom desktop-only">
             <div class="content dia align-center more-gap">
                 <video src="videos/colors.mp4" class="half-width" muted playsinline autoplay preload="auto" loop></video>
+                <div class="detail-child width-child margin-horizontal">
+                    Approach
+                    <div class="haasText size-24 top-16">
+                        We utilized basic geometric shapes in our branding process to illustrate a complicated concept, which proved to be highly effective in simplifying and clarifying our message. These shapes were then expanded into a set of distinct icons, each representing one of Anodot's product solutions and the various industries it serves.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="details no-border noPadding noTopOnly noBottom mobile-only">
+            <div class="content dia align-center more-gap">
+                <video src="videos/type.mp4" class="mobile-only" muted playsinline autoplay preload="auto"></video>
+                <div class="mobile-flex">
+                    <video src="videos/icons.mp4" class="half-width" muted playsinline autoplay preload="auto" loop></video>
+                    <video src="videos/colors.mp4" class="half-width" muted playsinline autoplay preload="auto" loop></video>
+                </div>
                 <div class="detail-child width-child margin-horizontal">
                     Approach
                     <div class="haasText size-24 top-16">
