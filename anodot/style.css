@@ -323,4 +323,11 @@ video{
     .content .detail-child, .content .detail-child:first-of-type{
         font-size: 18px;
     }
+    .flex-content .details{
+        margin-left: 0;
+        padding: 0;
+    }
+    .flex-content .details .content .detail-child:first-of-type::after{
+        content: ":";
+    }
 }
