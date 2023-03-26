@@ -357,4 +357,7 @@ video{
     .content .detail-child:first-of-type{
         margin-bottom: 0;
     }
+    .bigger-mobile{
+        clip-path: polygon(15% 0%, 85% 0%, 85% 100%, 15% 100%);
+    }
 }
