@@ -7,7 +7,11 @@ function videosOnScroll(){
         if(x[i].parentElement.tagName == "section" || x[i].parentElement.tagName == "SECTION"){
             tempParent = x[i].parentElement;
         }else{
-            tempParent = x[i].parentElement.parentElement;
+            if(x[i].parentElement.parentElement.tagName == "section" || x[i].parentElement.parentElement.tagName == "SECTION"){
+                tempParent = x[i].parentElement.parentElement;
+            }else{
+                tempParent = x[i].parentElement.parentElement.parentElement;
+            }
         }
 
         if(scrollPos > tempParent.offsetTop - (scrollOffset) && scrollPos < tempParent.offsetTop + (tempParent.offsetHeight / 2)){
