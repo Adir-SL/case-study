@@ -110,6 +110,9 @@ section{
     min-width: 27%;
     margin-left: 9%;
 }
+.content p{
+    margin: 0;
+}
 .big-contnet .content{
     font-size: 36px;
     line-height: 1.3;
