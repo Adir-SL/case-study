@@ -35,6 +35,9 @@ body{
 #laptop-mobile{
     display: none;
 }
+#type-mobile{
+    display: none;
+}
 #wrapper{
     position: absolute;
     width: 100%;
@@ -426,6 +429,12 @@ video{
         display: none;
     }
     #laptop-mobile{
+        display: block;
+    }
+    #type-video{
+        display: none;
+    }
+    #type-mobile{
         display: block;
     }
 }
