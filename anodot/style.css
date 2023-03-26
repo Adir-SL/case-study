@@ -311,9 +311,6 @@ video{
         opacity: 0;
         pointer-events: none;
     }
-    /* .video-content{
-        margin: 0;
-    } */
     .video-content{
         width: calc(100% - 28px);
     }
@@ -408,5 +405,9 @@ video{
     }
     .more-gap:has(video[src="videos/graph-icons.mp4"]){
         flex-direction: column;
+    }
+    .video-content:has(video[src="videos/train.mp4"]){
+        width: 100%;
+        margin: 0;
     }
 }
