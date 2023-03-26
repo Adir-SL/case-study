@@ -340,4 +340,18 @@ video{
     .content span:last-of-type{
         margin-bottom: 32px;
     }
+    .content p{
+        float: left;
+        width: fit-content;
+    }
+    .content p::after{
+        content: ",";
+        margin-right: 8px;
+    }
+    .content p:last-of-type::after{
+        content: '';
+    }
+    .content .detail-child:first-of-type{
+        margin-bottom: 0;
+    }
 }
