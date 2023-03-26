@@ -139,6 +139,7 @@ h3{
     margin: 40px 0;
 }
 .content .detail-child{
+    font-size: 12px;
     line-height: 1.5;
 }
 .no-border{
@@ -302,4 +303,24 @@ video{
 }
 
 @media screen and (max-width: 900px) {
+    .absolute{
+        opacity: 0;
+        pointer-events: none;
+    }
+    .video-content{
+        margin: 0;
+    }
+    .flex-content{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    #wrapper{
+        scroll-snap-type: none;
+    }
+    .big-contnet .content{
+        font-size: 26px;
+    }
+    .content .detail-child, .content .detail-child:first-of-type{
+        font-size: 18px;
+    }
 }
