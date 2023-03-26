@@ -414,4 +414,8 @@ video{
     .vertical-120{
         float: none;
     }
+    .sticky{
+        position: relative;
+        top: 2px;
+    }
 }
