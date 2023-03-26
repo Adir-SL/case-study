@@ -378,4 +378,13 @@ video{
     .vertical-120{
         margin-bottom: 80px;
     }
+    .more-gap{
+        flex-direction: column-reverse;
+    }
+    .more-gap .half-width{
+        width: 100%;
+    }
+    .more-gap:has(video[src="videos/colors.mp4"]){
+        flex-direction: column;
+    }
 }
