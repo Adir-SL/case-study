@@ -437,4 +437,7 @@ video{
     .mobile-flex video{
         width: calc(50% - 7px) !important;
     }
+    .top-40{
+        margin-top: 40px;
+    }
 }
