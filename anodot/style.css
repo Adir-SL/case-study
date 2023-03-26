@@ -405,5 +405,7 @@ video{
         margin-top: 80px;
         margin-bottom: 80px;
     }
-    .no-border{}
+    .more-gap:has(video[src="videos/graph-icons.mp4"]){
+        flex-direction: column;
+    }
 }
