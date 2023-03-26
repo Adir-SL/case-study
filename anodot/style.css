@@ -387,4 +387,9 @@ video{
     .more-gap:has(video[src="videos/colors.mp4"]){
         flex-direction: column;
     }
+    .quote div{
+        font-size: 20px;
+        padding: 0 32px;
+        width: calc(100% - 64px);
+    }
 }
