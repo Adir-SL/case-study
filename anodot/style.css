@@ -321,7 +321,7 @@ video{
         font-size: 26px;
     }
     .content .detail-child, .content .detail-child:first-of-type{
-        font-size: 18px;
+        font-size: 16px;
     }
     .flex-content .details{
         margin-left: 0;
@@ -333,5 +333,8 @@ video{
     .content span{
         float: left;
         clear: both;
+    }
+    .content span:last-of-type{
+        margin-bottom: 32px;
     }
 }
