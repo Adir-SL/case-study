@@ -300,3 +300,6 @@ video{
     background-color: var(--color-accent);
     color: var(--color-primary);
 }
+
+@media screen and (max-width: 900px) {
+}
