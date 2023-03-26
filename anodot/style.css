@@ -330,4 +330,8 @@ video{
     .flex-content .details .content .detail-child:first-of-type::after{
         content: ":";
     }
+    .content span{
+        float: left;
+        clear: both;
+    }
 }
