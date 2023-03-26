@@ -32,6 +32,9 @@ body{
 .noPadding{
     padding: 0 !important;
 }
+#laptop-mobile{
+    display: none;
+}
 #wrapper{
     position: absolute;
     width: 100%;
@@ -362,7 +365,8 @@ video{
         margin-top: 80px;
     } */
     .alert-video{
-        top: 36.1%;
+        width: 19vw;
+        top: 40%;
         left: 56.8%;
     }
     .width-child{
@@ -417,5 +421,11 @@ video{
     .sticky{
         position: relative;
         top: 2px;
+    }
+    #laptop-image{
+        display: none;
+    }
+    #laptop-mobile{
+        display: block;
     }
 }
