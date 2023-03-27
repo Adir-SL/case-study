@@ -304,6 +304,9 @@ video{
 #white-wrapper{
     padding-top: 80px;
 }
+.left-58{
+    margin-left: 42%;
+}
 
 ::selection{
     background-color: var(--color-accent);
