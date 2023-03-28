@@ -446,4 +446,16 @@ video{
     .mobile-elements{
         aspect-ratio: 16 / 10;
     }
+    .mobile{
+        margin: 0 4vw;
+    }
+
+    @keyframes mobileIn {
+        0%{transform: scale(1.3) translateY(200%);}
+        100%{transform: scale(1.3) translateY(0);}
+    }
+    @keyframes mobileOut {
+        0%{transform: scale(1.3) translateY(0);}
+        100%{transform: scale(1.3) translateY(200%);}
+    }
 }
