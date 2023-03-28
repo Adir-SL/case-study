@@ -285,6 +285,9 @@ video{
 #white-wrapper{
     padding-top: 80px;
 }
+.min-height{
+    height: 80vh;
+}
 
 ::selection{
     background-color: var(--color-accent);
