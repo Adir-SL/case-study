@@ -286,7 +286,7 @@ video{
     padding-top: 80px;
 }
 .min-height{
-    height: 80vh;
+    min-height: 80vh;
 }
 
 ::selection{
