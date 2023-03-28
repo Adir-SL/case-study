@@ -57,6 +57,9 @@ header{
     width: 42.4%;
     letter-spacing: 1px;
 }
+.mobile-only{
+    display: none;
+}
 .links{
     display: flex;
     justify-content: space-between;
