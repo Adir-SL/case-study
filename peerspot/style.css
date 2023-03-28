@@ -421,4 +421,7 @@ video{
     .top-40{
         margin-top: 40px;
     }
+    .mobile-column{
+        flex-direction: column-reverse;
+    }
 }
