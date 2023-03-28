@@ -443,4 +443,7 @@ video{
     section:has(video[src="videos/posters.mp4"]){
         margin-top: 56px;
     }
+    .mobile-elements{
+        aspect-ratio: 16 / 10;
+    }
 }
