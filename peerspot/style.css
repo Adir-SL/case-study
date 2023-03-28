@@ -424,4 +424,13 @@ video{
     .mobile-column{
         flex-direction: column-reverse;
     }
+    video.half-width{
+        width: 100%;
+    }
+    .pl-14{
+        padding: 0 !important;
+    }
+    section:has(video[src="videos/posters.mp4"]){
+        margin-top: 56px;
+    }
 }
