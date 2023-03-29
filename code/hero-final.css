@@ -36,6 +36,7 @@ body{
     user-select: none;
     transform: translateX(-50%);
     overflow: hidden;
+    box-shadow: 10vw 0 #181818, -10vw 0 #181818;
 }
 .triWrapper{
     flex-direction: row;
