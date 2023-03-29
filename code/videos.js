@@ -16,14 +16,14 @@ function videosOnScroll(){
 
         if(scrollPos > tempParent.offsetTop - (scrollOffset / 1) && scrollPos < tempParent.offsetTop + (tempParent.offsetHeight)){
             if(x[i].currentTime !== x[i].duration){
-                x[i].style.boxShadow = "0 0 0 2px pink";
+                // x[i].style.boxShadow = "0 0 0 2px pink";
                 x[i].play();
                 // console.log("in view: " + i + ", source: " + x[i].src);
                 console.log("in view: " + i);
                 console.log(x[i])
             }
         }else{
-            x[i].style.boxShadow = "none";
+            // x[i].style.boxShadow = "none";
             x[i].currentTime = 0;
             x[i].pause();
         }
