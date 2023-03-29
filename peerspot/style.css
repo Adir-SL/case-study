@@ -302,7 +302,7 @@ video{
 }
 
 @media screen and (max-width: 900px) {
-    .absolute{
+    .absolute .links{
         opacity: 0;
         pointer-events: none;
     }
