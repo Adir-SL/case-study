@@ -31,7 +31,7 @@ function videosOnScroll(){
 
     
 
-    if(scrollPos > document.getElementById("mobiles").offsetTop - (scrollOffset * 2) && scrollPos < document.getElementById("mobiles").offsetTop + document.getElementById("mobiles").offsetHeight + scrollOffset){
+    if(scrollPos > document.getElementById("mobiles").offsetTop - (scrollOffset) && scrollPos < document.getElementById("mobiles").offsetTop + document.getElementById("mobiles").offsetHeight + (scrollOffset / 2)){
     }else{
         document.getElementById("mobiles").classList.add("anim-out");
         setTimeout(function(){
