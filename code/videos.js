@@ -1,6 +1,6 @@
 function videosOnScroll(){
     scrollPos = document.getElementById("wrapper").scrollTop;
-    scrollOffset = 400;
+    scrollOffset = window.innerHeight;
     var x = document.querySelectorAll("video");
     var i;
     for (i = 0; i < x.length; i++) {
