@@ -14,7 +14,7 @@ function videosOnScroll(){
             }
         }
 
-        if(scrollPos > tempParent.offsetTop - (scrollOffset / 1.6) && scrollPos < tempParent.offsetTop + (tempParent.offsetHeight)){
+        if(scrollPos > tempParent.offsetTop - (scrollOffset / 1) && scrollPos < tempParent.offsetTop + (tempParent.offsetHeight)){
             if(x[i].currentTime !== x[i].duration){
                 x[i].style.boxShadow = "0 0 0 4px blue";
                 x[i].play();
