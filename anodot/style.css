@@ -318,6 +318,9 @@ video{
         opacity: 0;
         pointer-events: none;
     }
+    .left-58{
+        margin-left: 0;
+    }
     .video-content{
         width: calc(100% - 28px);
     }
