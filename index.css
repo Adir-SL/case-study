@@ -1,7 +1,8 @@
 body{
     background-color: #181818;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 iframe{
     width: 100vw;
