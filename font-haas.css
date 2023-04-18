@@ -63,12 +63,14 @@
     src: url("fonts/haas-grotesk-display/NeueHaasDisplayRoman.ttf") format("truetype");
     font-weight: 500;
     font-style: normal;
+    font-display: block;
 }
 @font-face {
     font-family: "haas";
     src: url("fonts/haas-grotesk-display/NeueHaasDisplayRomanItalic.ttf") format("truetype");
     font-weight: 500;
     font-style: italic;
+    font-display: block;
 }
 
 @font-face {
