@@ -19,4 +19,5 @@
     src: url("fonts/haas-grotesk-text/NHaasGroteskTXPro-75Bd.ttf") format("truetype");
     font-weight: 700 800;
     font-style: normal;
+    font-display: block;
 }
