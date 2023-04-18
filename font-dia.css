@@ -3,12 +3,14 @@
     src: url("fonts/diatype-mono/ABCDiatypeMono-Thin-Trial.otf") format("opentype");
     font-weight: 100 200 300;
     font-style: normal;
+    font-display: block;
 }
 @font-face {
     font-family: "diatype";
     src: url("fonts/diatype-mono/ABCDiatypeMono-ThinItalic-Trial.otf") format("opentype");
     font-weight: 100 200 300;
     font-style: italic;
+    font-display: block;
 }
 
 @font-face {
@@ -16,12 +18,14 @@
     src: url("fonts/diatype-mono/ABCDiatypeMono-Light-Trial.otf") format("opentype");
     font-weight: 400;
     font-style: normal;
+    font-display: block;
 }
 @font-face {
     font-family: "diatype";
     src: url("fonts/diatype-mono/ABCDiatypeMono-LightItalic-Trial.otf") format("opentype");
     font-weight: 400;
     font-style: italic;
+    font-display: block;
 }
 
 @font-face {
@@ -29,12 +33,14 @@
     src: url("fonts/diatype-mono/ABCDiatypeMono-Regular-Trial.otf") format("opentype");
     font-weight: 500;
     font-style: normal;
+    font-display: block;
 }
 @font-face {
     font-family: "diatype";
     src: url("fonts/diatype-mono/ABCDiatypeMono-RegularItalic-Trial.otf") format("opentype");
     font-weight: 500;
     font-style: italic;
+    font-display: block;
 }
 
 @font-face {
@@ -42,12 +48,14 @@
     src: url("fonts/diatype-mono/ABCDiatypeMono-Medium-Trial.otf") format("opentype");
     font-weight: 600;
     font-style: normal;
+    font-display: block;
 }
 @font-face {
     font-family: "diatype";
     src: url("fonts/diatype-mono/ABCDiatypeMono-MediumItalic-Trial.otf") format("opentype");
     font-weight: 600;
     font-style: italic;
+    font-display: block;
 }
 
 @font-face {
@@ -55,10 +63,12 @@
     src: url("fonts/diatype-mono/ABCDiatypeMono-Bold-Trial.otf") format("opentype");
     font-weight: 700 800;
     font-style: normal;
+    font-display: block;
 }
 @font-face {
     font-family: "diatype";
     src: url("fonts/diatype-mono/ABCDiatypeMono-BoldItalic-Trial.otf") format("opentype");
     font-weight: 700 800;
     font-style: italic;
+    font-display: block;
 }
