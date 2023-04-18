@@ -11,6 +11,7 @@
     src: url("fonts/haas-grotesk-text/NHaasGroteskTXPro-65Md.ttf") format("truetype");
     font-weight: 600;
     font-style: normal;
+    font-display: block;
 }
 
 @font-face {
