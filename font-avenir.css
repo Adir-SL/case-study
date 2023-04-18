@@ -3,4 +3,5 @@
     src: url("fonts/AvenirNextW1G-Medium.otf") format("opentype");
     font-weight: 100 200 300 400 500 600 700 800;
     font-style: normal;
+    font-display: block;
 }
