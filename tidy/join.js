@@ -1,8 +1,3 @@
-function joinFunc(name, mail, position, company) {
-    // console.log(name, mail, position, company);
-    createNotionPage(name, mail, position, company);
-
-}
 function createNotionPage(name, mail, position, company) {
     console.log(name, mail, position, company);
     const url = "https://api.notion.com/v1/pages";
