@@ -125,7 +125,7 @@ input:active, input:focus{
     border-color: #3d3177;
 }
 .form-div .button{
-    width: 40vw;
+    width: calc(40vw - 70px);
     padding: 18px 40px;
     font-size: 24px;
 }
