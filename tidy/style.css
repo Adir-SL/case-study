@@ -106,12 +106,19 @@ video{
     font-family: 'Inter', sans-serif;
     width: calc(30vw - 24px);
 }
-.form-div input{
+input{
     padding: 24px 12px;
     border-radius: 10px;
     background-color: #F3F3F1;
     border: 2px solid #ADA3E2;
+    outline: none;
     margin-bottom: 16px;
+}
+input:hover{
+    border-color: #6D59D2;
+}
+input:active, input:focis{
+    border-color: #6D59D2;
 }
 .form-div .button{
     width: calc(30vw - 70px);
