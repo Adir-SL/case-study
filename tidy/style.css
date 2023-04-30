@@ -15,6 +15,9 @@ body{
     background-color: #212121;
     color: #F3F3F1;
 }
+section{
+    margin: 0 15%;
+}
 .flex-center{
     display: flex;
     flex-direction: column;
