@@ -45,6 +45,9 @@ section{
     justify-content: center;
     align-items: center;
 }
+.flex-video h1{
+    color: #212121;
+}
 .details-div{
     margin-right: 10%;
 }
@@ -148,7 +151,7 @@ video{
     gap: 12px;
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-left: 50%;
+    /* padding-left: 50%; */
     width: 40vw;
 }
 .form-div input, .form-div label{
@@ -159,6 +162,9 @@ video{
 }
 .form-div label span{
     color: #B08FD5;
+}
+.h1-width{
+    width: 24vw;
 }
 input{
     padding: 24px 12px;
