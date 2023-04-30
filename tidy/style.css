@@ -114,6 +114,9 @@ input{
     outline: none;
     margin-bottom: 16px;
 }
+.required-field{
+    border: 1px solid red !important;
+}
 input:hover{
     border-color: #6D59D2;
 }
