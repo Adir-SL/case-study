@@ -65,12 +65,15 @@ button{
     padding: 18px 40px;
     font-size: 18.3px;
     cursor: pointer;
-    transition: background-color 200ms linear;
+    transition: all 200ms linear;
 }
 button:hover{
     background-color: #9d80c0;
 }
+button:active{
+    background-color: #8369a1;
+}
 button:focus{
-    outline-color: lightblue;
+    outline-color: #F3F3F1;
     outline-offset: 4px;
 }
