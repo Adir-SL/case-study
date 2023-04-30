@@ -76,8 +76,8 @@ p{
 .button:active{
     background-color: #8369a1;
 }
-.button:focus{
-    outline-color: #F3F3F1;
+.button:focus-visible{
+    outline-color: #B08FD5;
     outline-offset: 4px;
 }
 video{
