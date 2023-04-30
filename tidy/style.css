@@ -16,7 +16,7 @@ body{
     color: #F3F3F1;
 }
 section{
-    margin: 0 15%;
+    margin: 0 15.2%;
 }
 .flex-center{
     display: flex;
@@ -41,4 +41,8 @@ section{
 }
 h1{
     font-size: 80px;
+    text-transform: capitalize;
+}
+p{
+    font-size: 18px;
 }
