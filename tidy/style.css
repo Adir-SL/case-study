@@ -57,7 +57,7 @@ p{
     height: auto;
     margin-top: 40px;
 }
-button{
+.button{
     background-color: #B08FD5;
     color: #212121;
     border: none;
@@ -66,19 +66,23 @@ button{
     border-radius: 10px;
     padding: 18px 40px;
     font-size: 18.3px;
+    text-decoration: none;
     cursor: pointer;
     transition: all 200ms linear;
 }
-button:hover{
+.button:hover{
     background-color: #9d80c0;
 }
-button:active{
+.button:active{
     background-color: #8369a1;
 }
-button:focus{
+.button:focus{
     outline-color: #F3F3F1;
     outline-offset: 4px;
 }
 video{
     width: 100%;
+}
+.white-bg{
+    background-color: #FFFFFF;
 }
