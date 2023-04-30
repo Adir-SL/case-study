@@ -26,7 +26,7 @@
         </section>
         <a id="join"></a>
         <section class="white-bg m-0 form-section">
-            <div class="form-div flex-center">
+            <form class="form-div flex-center">
 
                 <label for="form-name">Name</label>
                 <input type="text" id="form-name" />
@@ -40,8 +40,8 @@
                 <label for="form-company required-input">Company<span>*</span></label>
                 <input type="text" id="form-company" required />
 
-                <a href="#" class="button font-inter text-bold" onclick="joinFunc();">Join the waiting list</a>
-            </div>
+                <input type="submit" class="button font-inter text-bold" onclick="createNotionPage(document.getElementById('form-name').value, document.getElementById('form-mail').value, document.getElementById('form-position').value, document.getElementById('form-company').value);" />
+            </form>
         </section>
     </div> 
 </body>
