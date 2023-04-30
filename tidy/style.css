@@ -38,6 +38,13 @@ section{
     gap: 5%;
     scroll-snap-align: center;
 }
+.flex-container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 .details-div{
     margin-right: 10%;
 }
@@ -119,7 +126,7 @@ p{
     outline-offset: 4px;
 }
 .full-height{
-    height: 35vw;
+    height: 100vh;
     overflow-y: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
