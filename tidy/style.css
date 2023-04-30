@@ -13,6 +13,9 @@
 .m-15{
     margin: 0 15%;
 }
+.m-0{
+    margin: 0;
+}
 body{
     background-color: #212121;
     color: #F3F3F1;
@@ -25,6 +28,16 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.form-div{
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 60%;
+    width: fit-content;
+}
+input{
+    width: 100%;
 }
 .font-pt{
     font-family: 'PT Serif', serif;
