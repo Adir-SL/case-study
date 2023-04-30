@@ -77,3 +77,6 @@ button:focus{
     outline-color: #F3F3F1;
     outline-offset: 4px;
 }
+video{
+    width: 100%;
+}
