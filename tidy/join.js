@@ -2,7 +2,7 @@ function createNotionPage(name, mail, position, company) {
     console.log(name, mail, position, company);
     const url = "https://api.notion.com/v1/pages";
     const proxiedUrl = `https:\/\/cors-anywhere.herokuapp.com/${url}`;
-    const databaseId = "59b459b8152e4a808a80998126fc27ff";
+    const databaseId = "03aa25715d3b462baf5df3ba371c9f51";
     const apiKey = "secret_LLZvVuOqXWfvNFjURcdzr57pwx53Y6TlZjs2zIyTpLt";
     const data = {
         parent: {
@@ -62,5 +62,6 @@ function createNotionPage(name, mail, position, company) {
 }
 
 // secret_LLZvVuOqXWfvNFjURcdzr57pwx53Y6TlZjs2zIyTpLt
+// https://www.notion.so/03aa25715d3b462baf5df3ba371c9f51?v=80e16ddf812247baa3ecd3d438c2021b&pvs=4
 
 // https://www.notion.so/59b459b8152e4a808a80998126fc27ff?v=59dee72f69ed4af899f8920921bd6f26&pvs=4
