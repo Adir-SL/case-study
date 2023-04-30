@@ -16,6 +16,17 @@
 .m-0{
     margin: 0;
 }
+a:hover::after, .button:hover::after{
+    content: '';
+    position: absolute;
+    background-image: url(images/sparks.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    transform: translate(-100%, -50%);
+}
 body{
     background-color: #212121;
     color: #F3F3F1;
