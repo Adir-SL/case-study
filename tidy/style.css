@@ -117,8 +117,8 @@ input{
 input:hover{
     border-color: #6D59D2;
 }
-input:active, input:focis{
-    border-color: #6D59D2;
+input:active, input:focus{
+    border-color: #5c4ab4;
 }
 .form-div .button{
     width: calc(30vw - 70px);
