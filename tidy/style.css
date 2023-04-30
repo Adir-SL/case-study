@@ -105,6 +105,7 @@ video{
     background-color: #F3F3F1;
     border: 2px solid #ADA3E2;
     color: #212121;
+    font-family: 'Inter', sans-serif;
 }
 .form-div .button{
     width: calc(30vw - 70px)
