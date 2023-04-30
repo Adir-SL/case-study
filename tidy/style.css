@@ -66,6 +66,7 @@ h2{
     line-height: 1;
     margin-bottom: 0px;
     margin-left: 24px;
+    position: relative;
 }
 h2::before{
     content: '';
@@ -115,8 +116,12 @@ p{
     outline-color: #B08FD5;
     outline-offset: 4px;
 }
+.full-height{
+    height: 100vh;
+    overflow: auto;
+}
 .full-width{
-    width: 100%;
+    display: flex;
 }
 video{
     width: 65%;
