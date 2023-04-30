@@ -29,6 +29,16 @@ section{
     justify-content: center;
     align-items: center;
 }
+.flex-video{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+.details-div{
+    margin-right: 10%;
+}
 .font-pt{
     font-family: 'PT Serif', serif;
 }
@@ -105,8 +115,11 @@ p{
     outline-color: #B08FD5;
     outline-offset: 4px;
 }
-video{
+.full-width{
     width: 100%;
+}
+video{
+    width: 65%;
 }
 .white-bg{
     background-color: #FFFFFF;
