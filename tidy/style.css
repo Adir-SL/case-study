@@ -97,14 +97,14 @@ video{
     gap: 12px;
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-left: 60%;
-    width: 30vw;
+    padding-left: 50%;
+    width: 40vw;
 }
 .form-div input, .form-div label{
     color: #212121;
     font-size: 18.3px;
     font-family: 'Inter', sans-serif;
-    width: calc(30vw - 24px);
+    width: calc(40vw - 24px);
 }
 .form-div label span{
     color: #B08FD5;
@@ -124,6 +124,6 @@ input:active, input:focus{
     border-color: #3d3177;
 }
 .form-div .button{
-    width: calc(30vw - 70px);
+    width: calc(40vw - 70px);
     font-size: 24px;
 }
