@@ -2,3 +2,21 @@ body{
     background-color: #212121;
     color: #F3F3F1;
 }
+.flex-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.font-pt{
+    font-family: 'PT Serif', serif;
+}
+.font-inter{
+    font-family: 'Inter', sans-serif;
+}
+.text-medium{
+    font-weight: 500;
+}
+.text-bold{
+    font-weight: 700;
+}
