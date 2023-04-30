@@ -46,5 +46,16 @@ h1{
     margin-bottom: 0px;
 }
 p{
-    font-size: 18px;
+    font-size: 18.3px;
+    line-height: 1.5;
+    margin-bottom: 48px;
+}
+button{
+    background-color: #B08FD5;
+    color: #212121;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 18px 40px;
+    font-size: 18.3px;
 }
