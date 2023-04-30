@@ -48,7 +48,7 @@ function createNotionPage(name, mail, position, company) {
     fetch(url, {
       method: 'POST',
       headers: {
-        Authorization: 'Bearer ${apiKey}',
+        Authorization: `Bearer ${apiKey}`,
         'Content-Type': 'application/json',
         'Notion-Version': '2022-04-30',
       },
