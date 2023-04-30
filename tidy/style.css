@@ -50,6 +50,24 @@ h1{
     line-height: 1;
     margin-bottom: 0px;
 }
+h2{
+    font-size: 24px;
+    text-transform: capitalize;
+    line-height: 1;
+    margin-bottom: 0px;
+    margin-left: 24px;
+}
+h2::before{
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url(images/li.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: left center;
+    transform: translateX(-24px);
+}
 p{
     font-size: 18.3px;
     line-height: 1.5;
