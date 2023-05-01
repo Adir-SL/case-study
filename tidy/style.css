@@ -214,6 +214,9 @@ input:active, input:focus{
     pointer-events: none;
     transition: opacity 200ms linear 0s;
 }
-.play-button + video{
+.cover-video{
     cursor: pointer;
+}
+.cover-video:hover + .play-button{
+    background-color: #B08FD5ee;
 }
