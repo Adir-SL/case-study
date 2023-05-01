@@ -127,6 +127,7 @@ p{
     font-size: 18.3px;
     text-align: center;
     text-decoration: none;
+    user-select: none;
     cursor: pointer;
     transition: all 200ms linear;
 }
