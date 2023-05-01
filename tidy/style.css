@@ -211,4 +211,9 @@ input:active, input:focus{
     border-radius: 50%;
     font-size: 150px;
     line-height: 200px;
+    cursor: pointer;
+    z-index: 9;
+}
+.play-icon{
+    pointer-events: none;
 }
