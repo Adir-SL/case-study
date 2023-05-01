@@ -32,6 +32,7 @@ body{
     color: #F3F3F1;
 }
 section{
+    position: relative;
     margin: 12px 40px;
     /* scroll-snap-align: center; */
 }
