@@ -193,8 +193,13 @@ video{
 .h1-width{
     width: 24vw;
 }
+.h1-size{
+    font-size: 52px;
+    line-height: 1.2;
+}
 .form-section{
     justify-content: space-evenly;
+    align-items: flex-start;
 }
 input{
     padding: 24px 12px;
