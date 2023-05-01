@@ -254,4 +254,10 @@ input:active, input:focus{
     section{
         margin: 12px 24px;
     }
+    .flex-video{
+        flex-direction: column-reverse;
+    }
+    .white-bg.flex-video{
+        flex-direction: column;
+    }
 }
