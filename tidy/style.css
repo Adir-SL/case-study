@@ -178,6 +178,9 @@ video{
 .h1-width{
     width: 24vw;
 }
+.form-section{
+    justify-content: space-evenly;
+}
 input{
     padding: 24px 12px;
     border-radius: 10px;
