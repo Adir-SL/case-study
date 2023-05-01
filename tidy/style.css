@@ -260,4 +260,17 @@ input:active, input:focus{
     .white-bg.flex-video{
         flex-direction: column;
     }
+    .h1-width{
+        width: calc(100% - 48px);
+    }
+    .form-div{
+        width: calc(100% - 48px);
+    }
+    .form-div input, .form-div label{
+        width: calc(100% - 24px);
+        /* width: 100%; */
+    }
+    .form-div .button{
+        width: calc(100% + 8px);
+    }
 }
