@@ -224,8 +224,6 @@ input:active, input:focus{
     background-color: #B08FD5;
     color: #212121;
     border-radius: 50%;
-    font-size: 120px;
-    line-height: 150px;
     pointer-events: none;
     background-image: url(images/play.svg);
     background-repeat: no-repeat;
