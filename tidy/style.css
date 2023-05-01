@@ -276,4 +276,7 @@ input:active, input:focus{
     .white-bg h1{
         font-size: 32px;
     }
+    input{
+        padding: 16px 12px;
+    }
 }
