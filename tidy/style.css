@@ -29,6 +29,9 @@ section{
     margin: 12px 40px;
     /* scroll-snap-align: center; */
 }
+section:first-of-type{
+    padding-bottom: 40px;
+}
 .flex-center{
     display: flex;
     flex-direction: column;
