@@ -199,10 +199,16 @@ input:active, input:focus{
 }
 .play-button{
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: calc(50% - 100px);
     left: calc(50% - 100px);
     height: 200px;
     width: 200px;
-    background-color: blue;
+    background-color: #B08FD5;
+    color: #212121;
     border-radius: 50%;
+    font-size: 150px;
+    line-height: 200px;
 }
