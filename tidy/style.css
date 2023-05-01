@@ -16,17 +16,6 @@
 .m-0{
     margin: 0;
 }
-/* .button:hover::after{
-    content: '';
-    position: absolute;
-    background-image: url(images/sparks.gif);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100px;
-    height: 100px;
-    transform: translate(-100%, -50%);
-} */
 body{
     background-color: #212121;
     color: #F3F3F1;
@@ -117,6 +106,7 @@ p{
     margin-top: 40px;
 }
 .button{
+    position: relative;
     background-color: #B08FD5;
     color: #212121;
     border: none;
@@ -140,6 +130,19 @@ p{
 .button:focus-visible{
     outline-color: #B08FD5;
     outline-offset: 4px;
+}
+.button:hover::before{
+    content: '';
+    position: absolute;
+    background-image: url(images/sparks.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .full-height{
     height: 100vh;
