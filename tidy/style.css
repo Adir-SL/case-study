@@ -212,6 +212,7 @@ input:active, input:focus{
     font-size: 150px;
     line-height: 200px;
     pointer-events: none;
+    transition: opacity 200ms linear 0s;
 }
 /* .play-icon{
     pointer-events: none;
