@@ -9,3 +9,10 @@ function playFunc(e){
         window.playVar = 1;
     }
 }
+
+function sparkFunc(e){
+    e.target.classList.add("sparks");
+    setTimeout(function(){
+        e.target.classList.remove("sparks");
+    }, 500);
+}
