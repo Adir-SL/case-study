@@ -235,3 +235,23 @@ input:active, input:focus{
 .cover-video:hover + .play-button{
     background-color: #B08FD5ee;
 }
+
+
+@media screen and (max-width: 900px) {
+    h1{
+        font-size: 52px;
+    }
+    p{
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+    .m-15{
+        margin: 0 24px;
+    }
+    section:first-of-type{
+        padding-bottom: 24px;
+    }
+    section{
+        margin: 12px 24px;
+    }
+}
