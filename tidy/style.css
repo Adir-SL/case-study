@@ -227,6 +227,10 @@ input:active, input:focus{
     font-size: 120px;
     line-height: 150px;
     pointer-events: none;
+    background-image: url(images/play.svg);
+    background-repeat: no-repeat;
+    background-position: 58% center;
+    background-size: 40%;
     transition: opacity 200ms linear 0s;
 }
 .cover-video{
