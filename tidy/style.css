@@ -273,4 +273,7 @@ input:active, input:focus{
     .form-div .button{
         width: calc(100% + 8px);
     }
+    .white-bg h1{
+        font-size: 32px;
+    }
 }
