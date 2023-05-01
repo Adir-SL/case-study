@@ -281,4 +281,10 @@ input:active, input:focus{
     input{
         padding: 16px 12px;
     }
+    .play-button{
+        top: calc(50% - 15vw);
+        left: calc(50% - 15vw);
+        height: 30vw;
+        width: 30vw;
+    }
 }
