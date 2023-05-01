@@ -1,9 +1,9 @@
 function playFunc(e){
     if(window.playVar == 1){
-        e.target.parentNode.getElementsByTagName("video")[0].pause();
+        e.target.pause();
         window.playVar = 0;
     }else{
-        e.target.parentNode.getElementsByTagName("video")[0].play();
+        e.target.play();
         window.playVar = 1;
     }
 }
