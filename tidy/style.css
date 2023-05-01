@@ -202,21 +202,18 @@ input:active, input:focus{
     display: flex;
     justify-content: center;
     align-items: center;
-    top: calc(50% - 100px);
-    left: calc(50% - 100px);
-    height: 200px;
-    width: 200px;
+    top: calc(50% - 75px);
+    left: calc(50% - 75px);
+    height: 150px;
+    width: 150px;
     background-color: #B08FD5;
     color: #212121;
     border-radius: 50%;
-    font-size: 150px;
-    line-height: 200px;
+    font-size: 120px;
+    line-height: 150px;
     pointer-events: none;
     transition: opacity 200ms linear 0s;
 }
-/* .play-icon{
-    pointer-events: none;
-} */
 .play-button + video{
     cursor: pointer;
 }
