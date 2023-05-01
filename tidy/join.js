@@ -1,71 +1,63 @@
-function createNotionPage(name, mail, position, company) {
-    console.log(name, mail, position, company);
-    const url = "https://api.notion.com/v1/pages";
-    const proxiedUrl = `https:\/\/cors-anywhere.herokuapp.com/${url}`;
-    const databaseId = "59b459b8152e4a808a80998126fc27ff";
-    const apiKey = "secret_LLZvVuOqXWfvNFjURcdzr57pwx53Y6TlZjs2zIyTpLt";
-    const data = {
-        parent: {
-            database_id: databaseId,
+function createNotionPage(title, email, position, company) {
+    const data = JSON.stringify({
+      parent: {
+        database_id: "59b459b8152e4a808a80998126fc27ff",
+      },
+  
+      properties: {
+        Name: {
+          title: [
+            {
+              text: {
+                content: title,
+              },
+            },
+          ],
         },
-        properties: {
-            Name: {
-                title: [
-                    {
-                        text: {
-                            content: name,
-                        },
-                    },
-                ],
-            },
-            Email: {
-                email: mail,
-            },
-            Position: {
-                rich_text: [
-                    {
-                        text: {
-                            content: position,
-                        },
-                    },
-                ],
-            },
-            Company: {
-                rich_text: [
-                    {
-                        text: {
-                            content: company,
-                        },
-                    },
-                ],
-            },
+        Email: {
+          email: email,
         },
+        Position: {
+          rich_text: [
+            {
+              text: {
+                content: position,
+              },
+            },
+          ],
+        },
+        Company: {
+          rich_text: [
+            {
+              text: {
+                content: company,
+              },
+            },
+          ],
+        },
+      },
+    });
+    const requestOptions = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Notion-Version": "2021-08-16",
+      },
+      body: JSON.stringify(data),
+      cache: "no-cache",
     };
-    fetch(proxiedUrl, {
-        method: "POST",
-        headers: {
-            Authorization: `Bearer ${apiKey}`,
-            "Content-Type": "application/json",
-            "Notion-Version": "2022-02-22",
-        },
-        body: JSON.stringify(data),
+  
+    fetch("https://corsproxy.io/?https://api.notion.com/v1/pages", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Notion-Version": "2021-05-13",
+        Authorization:
+          "Bearer secret_LLZvVuOqXWfvNFjURcdzr57pwx53Y6TlZjs2zIyTpLt",
+      },
+      body: data,
     })
-        .then((response) => {
-            if (!response.ok) {
-                throw new Error("Failed to create Notion page");
-            }
-            console.log("Notion page created successfully");
-        })
-        .catch((error) => {
-            console.error(error);
-        });
-}
-
-// https://www.notion.so/59b459b8152e4a808a80998126fc27ff?v=59dee72f69ed4af899f8920921bd6f26&pvs=4
-
-// secret_LLZvVuOqXWfvNFjURcdzr57pwx53Y6TlZjs2zIyTpLt
-// https://www.notion.so/03aa25715d3b462baf5df3ba371c9f51?v=80e16ddf812247baa3ecd3d438c2021b&pvs=4
-
-// https://www.notion.so/59b459b8152e4a808a80998126fc27ff?v=59dee72f69ed4af899f8920921bd6f26&pvs=4
-
-// https://www.notion.so/59b459b8152e4a808a80998126fc27ff?v=59dee72f69ed4af899f8920921bd6f26&pvs=4
+      .then((res) => res.json())
+      .then((data) => console.log(data))
+      .catch((err) => console.log(err));
+  }
