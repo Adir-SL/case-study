@@ -9,6 +9,7 @@ function playFunc(e){
         // e.target.volume = 1;
         e.target.parentNode.getElementsByClassName("play-button")[0].style.opacity = 0;
         window.playVar = 1;
+        e.target.requestFullscreen();
     }
 }
 
