@@ -315,4 +315,7 @@ input:active, input:focus{
         height: 30vw;
         width: 30vw;
     }
+    .form-section{
+        justify-content: center;
+    }
 }
