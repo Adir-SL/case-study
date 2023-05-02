@@ -16,5 +16,5 @@ function reloadSparks(e){
     e.target.getElementsByTagName("img")[0].src = "";
     setTimeout(function(){
         e.target.getElementsByTagName("img")[0].src = "images/sparks.gif";
-    }, 1000);
+    }, 10);
 }
