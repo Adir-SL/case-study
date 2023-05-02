@@ -57,12 +57,15 @@ section:first-of-type{
 }
 .flex-container{
     /* min-height: 100vh; */
+    height: 0;
+    overflow: hidden;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding-top: 40px;
     padding-bottom: 40px;
+    transition: height 300ms ease-out 0s;
 }
 section:first-of-type h1, section:first-of-type p{
     max-width: 1200px;
