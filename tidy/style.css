@@ -69,7 +69,7 @@ section:first-of-type{
     align-items: center;
     /* padding-top: 40px;
     padding-bottom: 40px; */
-    transition: height 300ms ease-out 0s;
+    transition: opacity 300ms ease-out 0s;
 }
 .flex-container.sal-animate{
     /* height: 60vh; */
