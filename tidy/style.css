@@ -120,7 +120,7 @@ details{
     overflow: hidden;
 }
 details[open]{
-    height: 310px;
+    height: 200px;
 }
 summary:hover{
     opacity: 0.9;
