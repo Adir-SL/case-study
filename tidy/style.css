@@ -141,7 +141,7 @@ p{
     outline-color: #B08FD5;
     outline-offset: 4px;
 }
-.button::before{
+.sparks::before{
     content: '';
     position: absolute;
     background-image: none;
@@ -155,7 +155,7 @@ p{
     z-index: 10;
     transform: translate(-50%, -50%);
 }
-.button:hover::before{
+.sparks:hover::before{
     background-image: url(images/sparks.gif);
 }
 .full-height{

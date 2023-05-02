@@ -11,3 +11,7 @@ function playFunc(e){
         window.playVar = 1;
     }
 }
+
+function reloadSparks(e){
+    e.target.classList.remove("sparks");
+}
