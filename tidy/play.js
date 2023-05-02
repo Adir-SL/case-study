@@ -14,4 +14,7 @@ function playFunc(e){
 
 function reloadSparks(e){
     e.target.classList.remove("sparks");
+    setTimeout(function(){
+        e.target.classList.add("sparks");
+    }, 1000);
 }
