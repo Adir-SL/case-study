@@ -318,4 +318,8 @@ input:active, input:focus{
     .form-section{
         align-items: center;
     }
+    video{
+        width: calc(100% - 48px);
+        margin-right: 10%;
+    }
 }
