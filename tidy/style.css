@@ -282,6 +282,9 @@ input:active, input:focus{
 .cover-video{
     border-radius: 16px;
     cursor: pointer;
+    width: 80% !important;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .cover-video:hover + .play-button{
     background-color: #B08FD5ee;
@@ -301,6 +304,10 @@ input:active, input:focus{
     }
     .cover-video{
         border-radius: 4px;
+        width: calc(100vw - 48px) !important;
+        margin-left: 0;
+        margin-right: 0;
+        aspect-ratio: 16 / 9;
     }
     section:first-of-type{
         padding-bottom: 24px;
