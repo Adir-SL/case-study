@@ -1,15 +1,15 @@
 function hijack(){
     console.log(document.getElementById("wrapper").scrollTop);
     
-    if(document.getElementById("wrapper").scrollTop > document.getElementsByClassName("flex-container")[1].getBoundingClientRect().bottom){
-        resethijack();
-        document.getElementsByClassName("flex-container")[1].style.height = '100vh';
-    }else{
-        if(document.getElementById("wrapper").scrollTop > document.getElementsByClassName("flex-container")[0].getBoundingClientRect().bottom){
-            resethijack();
-            document.getElementsByClassName("flex-container")[0].style.height = '100vh';
-        }
-    }
+    // if(document.getElementById("wrapper").scrollTop > document.getElementsByClassName("flex-container")[1].getBoundingClientRect().bottom){
+    //     resethijack();
+    //     document.getElementsByClassName("flex-container")[1].style.height = '100vh';
+    // }else{
+    //     if(document.getElementById("wrapper").scrollTop > document.getElementsByClassName("flex-container")[0].getBoundingClientRect().bottom){
+    //         resethijack();
+    //         document.getElementsByClassName("flex-container")[0].style.height = '100vh';
+    //     }
+    // }
 
     
 }

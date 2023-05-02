@@ -58,6 +58,9 @@ section:first-of-type{
 .flex-container{
     /* min-height: 100vh; */
     /* height: 0; */
+    position: sticky;
+    top: 4vh;
+    background-color: #212121;
     overflow: hidden;
     display: flex;
     flex-direction: row;
