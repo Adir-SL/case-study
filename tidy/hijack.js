@@ -34,7 +34,6 @@ function resetDetails(e){
     var i;
     for (i = 0; i < x.length; i++) {
         x[i].removeAttribute("open");
-        // x[i].style.height = "50px";
     }
 
     // setTimeout(function(){
