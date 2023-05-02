@@ -114,6 +114,12 @@ h1{
 }
 details{
     cursor: pointer;
+    transition: all 300ms linear 0s;
+    height: 50px;
+    overflow: hidden;
+}
+details[open]{
+    height: 240px;
 }
 details:hover{
     opacity: 0.9;
