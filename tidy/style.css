@@ -112,6 +112,12 @@ h1{
     line-height: 1;
     margin-bottom: 0px;
 }
+details{
+    cursor: pointer;
+}
+details:hover{
+    opacity: 0.9;
+}
 details::marker {
     display: none;
 }
