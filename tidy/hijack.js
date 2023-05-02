@@ -18,6 +18,10 @@ function resethijack(){
     var x = document.getElementsByClassName("flex-container");
     var i;
     for (i = 0; i < x.length; i++) {
-        x[i].style.height = "0";
+        if(x[i].getBoundingClientRect().top == 0){
+            x[i].style.opacity = "1";
+        }else{
+            x[i].style.opacity = "0";
+        }
     }
 }
