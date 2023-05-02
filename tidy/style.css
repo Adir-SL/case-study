@@ -309,6 +309,7 @@ input:active, input:focus{
     }
     .form-div{
         width: calc(100% - 48px);
+        padding-bottom: 0;
     }
     .form-div input, .form-div label{
         width: calc(100% - 24px);
