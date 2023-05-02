@@ -245,7 +245,7 @@ input:active, input:focus{
 .form-div .button{
     width: calc(40vw);
     padding: 18px 40px;
-    font-size: 24px;
+    /* font-size: 24px; */
 }
 .play-button{
     position: absolute;
