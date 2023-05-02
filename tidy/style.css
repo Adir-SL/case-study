@@ -141,7 +141,7 @@ p{
     outline-color: #B08FD5;
     outline-offset: 4px;
 }
-.sparks::after{
+/* .sparks::after{
     content: '';
     position: absolute;
     background-image: url(images/sparks.gif);
@@ -154,7 +154,7 @@ p{
     left: 50%;
     z-index: 10;
     transform: translate(-50%, -50%);
-}
+} */
 /* .sparks:hover::before{
     background-image: url(images/sparks.gif);
 } */
