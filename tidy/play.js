@@ -13,9 +13,8 @@ function playFunc(e){
 }
 
 function reloadSparks(e){
-    e.target.innerHTML += "<img src='images/sparks.gif' />"
-    // e.target.classList.remove("sparks");
-    // setTimeout(function(){
-    //     e.target.classList.add("sparks");
-    // }, 1000);
+    e.target.innerHTML = "Join the waiting list";
+    setTimeout(function(){
+        e.target.innerHTML = "Join the waiting list<img src='images/sparks.gif' />";
+    }, 1000);
 }
