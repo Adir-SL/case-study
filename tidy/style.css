@@ -208,6 +208,7 @@ video{
 }
 .form-div label span{
     color: #B08FD5;
+    user-select: none;
 }
 .h1-width{
     width: 24vw;
