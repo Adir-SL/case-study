@@ -1,6 +1,9 @@
 ::selection{
     background-color: #9d80c0;
 }
+body{
+    overflow-x: hidden;
+}
 #wrapper{
     position: absolute;
     width: 100%;
