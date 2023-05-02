@@ -316,6 +316,6 @@ input:active, input:focus{
         width: 30vw;
     }
     .form-section{
-        justify-content: center;
+        align-items: center;
     }
 }
