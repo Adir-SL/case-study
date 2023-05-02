@@ -100,7 +100,7 @@ details{
     overflow: hidden;
 }
 details[open]{
-    height: 200px;
+    height: 260px;
 }
 summary:hover{
     opacity: 0.9;
@@ -315,7 +315,7 @@ input:active, input:focus{
         width: 100%;
     }
     .details-div{
-        width: 100%;
+        width: calc(100% - 32px);
     }
     .white-bg.flex-video{
         flex-direction: column;
