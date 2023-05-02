@@ -18,10 +18,11 @@ function resethijack(){
     var x = document.getElementsByClassName("flex-container");
     var i;
     for (i = 0; i < x.length; i++) {
-        if(x[i].getBoundingClientRect().top == 0){
-            x[i].style.opacity = "1";
-        }else{
-            x[i].style.opacity = "0";
-        }
+        x[i].style.transform = "scale("+ ((1000 - x[i].getBoundingClientRect().top)/1000) +")";
+        // if(x[i].getBoundingClientRect().top == 0){
+        //     x[i].style.opacity = "1";
+        // }else{
+        //     x[i].style.opacity = "0";
+        // }
     }
 }
