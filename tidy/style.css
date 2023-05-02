@@ -59,15 +59,16 @@ section:first-of-type{
     /* min-height: 100vh; */
     /* height: 0; */
     position: sticky;
-    top: 4vh;
+    top: 5vh;
+    height: 90vh;
     background-color: #212121;
     overflow: hidden;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    /* padding-top: 40px;
+    padding-bottom: 40px; */
     transition: height 300ms ease-out 0s;
 }
 .flex-container.sal-animate{

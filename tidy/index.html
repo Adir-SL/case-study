@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="play.js"></script>
     <script src="join.js"></script>
+    <script src="../code/sal.js"></script>
+    <link rel="stylesheet" href="../code/sal.css">
     <!-- <script src="hijack.js"></script> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -77,7 +79,7 @@
         </section>
 
         <a id="join"></a>
-        <section class="white-bg m-0 form-section flex-video">
+        <section class="white-bg m-0 form-section flex-video" data-sal="slide-up" style="--sal-duration: 300ms;">
             <h1 class="h1-width h1-size font-pt text-bold">Create your account now headline</h1>
             <form class="form-div flex-center" onsubmit="return false">
 
@@ -104,5 +106,13 @@
         </section>
 
     </div>
+
+    <script>
+        sal({
+            threshold: 0.2,
+            once: false,
+        });
+        sal();
+    </script>
 </body>
 </html>
