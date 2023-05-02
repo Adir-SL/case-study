@@ -137,10 +137,10 @@ summary{
     overflow: hidden;
 }
 #gif-videos{
-    transition: transform 450ms ease-in-out 250ms;
+    transition: transform 450ms ease-in-out 0s;
 }
 #gif-videos video{
-    transition: opacity 450ms ease-in-out 250ms;
+    transition: opacity 450ms ease-in-out 0s;
 }
 h2{
     font-size: 24px;
