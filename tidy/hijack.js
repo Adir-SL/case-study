@@ -34,5 +34,12 @@ function resetDetails(e){
     var i;
     for (i = 0; i < x.length; i++) {
         x[i].removeAttribute("open");
+        // x[i].style.height = "50px";
     }
+
+    // setTimeout(function(){
+    //     e.target.parentElement.parentElement.style.height = e.target.parentElement.parentElement.getElementsByTagName("p")[0].clientHeight + 90 + "px";
+    //     console.log(e.target.parentElement.parentElement.style.height);
+    // }, 500);
+    
 }
