@@ -141,6 +141,20 @@ p{
     outline-color: #B08FD5;
     outline-offset: 4px;
 }
+.button::before{
+    content: '';
+    position: absolute;
+    background-image: none;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+}
 .button:hover::before{
     content: '';
     position: absolute;
