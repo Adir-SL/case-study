@@ -57,7 +57,7 @@ section:first-of-type{
 }
 .flex-container{
     /* min-height: 100vh; */
-    height: 0;
+    /* height: 0; */
     overflow: hidden;
     display: flex;
     flex-direction: row;
