@@ -270,6 +270,7 @@ input:active, input:focus{
     transition: opacity 200ms linear 0s;
 }
 .cover-video{
+    border-radius: 16px;
     cursor: pointer;
 }
 .cover-video:hover + .play-button{
