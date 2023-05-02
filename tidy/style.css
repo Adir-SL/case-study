@@ -58,7 +58,7 @@ section:first-of-type{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 5%;
     scroll-snap-align: center;
 }
@@ -89,6 +89,7 @@ section:first-of-type h1, section:first-of-type p{
 }
 .details-div{
     margin-right: 10%;
+    width: 50%;
 }
 .font-pt{
     font-family: 'PT Serif', serif;
@@ -110,6 +111,12 @@ h1{
     text-transform: capitalize;
     line-height: 1;
     margin-bottom: 0px;
+}
+details::marker {
+    display: none;
+}
+summary{
+    list-style: none;
 }
 h2{
     font-size: 24px;
