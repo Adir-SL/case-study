@@ -289,6 +289,11 @@ input:active, input:focus{
 .cover-video:hover + .play-button{
     background-color: #B08FD5ee;
 }
+.white-section{
+    background-color: #FFFFFF;
+    color: #212121;
+    margin: 0;
+}
 
 
 @media screen and (max-width: 900px) {
