@@ -145,7 +145,6 @@ p{
     content: '';
     position: absolute;
     background-image: url(images/sparks.gif);
-    /* background-image: none; */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
