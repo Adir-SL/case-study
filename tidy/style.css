@@ -289,6 +289,9 @@ input:active, input:focus{
     .m-15{
         margin: 0 24px;
     }
+    .cover-video{
+        border-radius: 4px;
+    }
     section:first-of-type{
         padding-bottom: 24px;
     }
