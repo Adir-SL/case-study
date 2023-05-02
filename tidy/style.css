@@ -350,7 +350,13 @@ input:active, input:focus{
         margin: 12px 24px;
     }
     .flex-video{
-        flex-direction: column-reverse;
+        flex-direction: column;
+    }
+    .videos-flex{
+        width: 100%;
+    }
+    .details-div{
+        width: 100%;
     }
     .white-bg.flex-video{
         flex-direction: column;
