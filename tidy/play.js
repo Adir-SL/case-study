@@ -13,8 +13,8 @@ function playFunc(e){
 }
 
 function reloadSparks(e){
-    e.target.getElementsByTagName("img")[0].src = "";
+    e.target.getElementsByTagName("img")[0].src = "images/sparks.gif";
     setTimeout(function(){
-        e.target.getElementsByTagName("img")[0].src = "images/sparks.gif";
-    }, 10);
+        e.target.getElementsByTagName("img")[0].src = "";
+    }, 400);
 }
