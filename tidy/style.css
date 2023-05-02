@@ -136,6 +136,9 @@ summary{
     aspect-ratio: 16 / 9;
     overflow: hidden;
 }
+#gif-videos{
+    transition: transform 300ms ease-in-out 0s;
+}
 h2{
     font-size: 24px;
     text-transform: capitalize;

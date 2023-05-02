@@ -17,15 +17,19 @@ function hijack(){
 function resethijack(){
     if(document.getElementsByClassName("flex-container")[0].getBoundingClientRect().top == 0){
         document.getElementsByTagName("details")[0].getElementsByTagName("summary")[0].click();
+        document.getElementById("gif-videos").style.transform = "translateY(0)";
     }
     if(document.getElementsByClassName("flex-container")[1].getBoundingClientRect().top == 0){
         document.getElementsByTagName("details")[1].getElementsByTagName("summary")[0].click();
+        document.getElementById("gif-videos").style.transform = "translateY(-25%)";
     }
     if(document.getElementsByClassName("flex-container")[2].getBoundingClientRect().top == 0){
         document.getElementsByTagName("details")[2].getElementsByTagName("summary")[0].click();
+        document.getElementById("gif-videos").style.transform = "translateY(-50%)";
     }
     if(document.getElementsByClassName("flex-container")[3].getBoundingClientRect().top == 0){
         document.getElementsByTagName("details")[3].getElementsByTagName("summary")[0].click();
+        document.getElementById("gif-videos").style.transform = "translateY(-75%)";
     }
 
 
