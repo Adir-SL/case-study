@@ -131,6 +131,11 @@ details::marker {
 summary{
     list-style: none;
 }
+.videos-flex{
+    width: 65%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
 h2{
     font-size: 24px;
     text-transform: capitalize;
@@ -234,7 +239,7 @@ p{
     width: 100%;
 }
 video{
-    width: 65%;
+    width: 100%;
 }
 .white-bg{
     background-color: #FFFFFF;
