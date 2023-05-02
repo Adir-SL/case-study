@@ -38,8 +38,8 @@ section{
 }
 section:first-of-type{
     padding-bottom: 40px;
-    max-width: 1200px;
-    margin: 12px auto;
+    /* max-width: 1200px;
+    margin: 12px auto; */
 }
 .flex-center{
     display: flex;
@@ -61,6 +61,9 @@ section:first-of-type{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+section:first-of-type h1, section:first-of-type p{
+    max-width: 1200px;
 }
 .flex-video h1{
     color: #212121;
