@@ -74,9 +74,6 @@ section:first-of-type{
     padding-bottom: 40px; */
     transition: opacity 300ms ease-out 0s;
 }
-.flex-container.sal-animate{
-    /* height: 60vh; */
-}
 section:first-of-type h1, section:first-of-type p{
     max-width: 1200px;
 }
