@@ -12,6 +12,10 @@
     /* scroll-snap-type: y mandatory; */
     overflow: auto;
     overflow-x: hidden;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
 }
 .m-15{
     margin: 0 15%;
@@ -34,6 +38,8 @@ section{
 }
 section:first-of-type{
     padding-bottom: 40px;
+    max-width: 1200px;
+    margin: 12px auto;
 }
 .flex-center{
     display: flex;
