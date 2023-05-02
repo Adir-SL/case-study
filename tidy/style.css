@@ -123,6 +123,7 @@ p{
     width: 64px;
     height: auto;
     margin-top: 40px;
+    user-select: none;
 }
 .button{
     position: relative;
