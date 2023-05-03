@@ -1,6 +1,9 @@
 function notionSuccess(data){
   if(data.object !== 'error'){
     document.getElementById("submit-button").value = "Joined !";
+    setTimeout(function(){
+      document.getElementById("submit-button").value = "Join the waiting list";
+  }, 2000);
   }
 }
 
