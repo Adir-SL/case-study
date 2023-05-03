@@ -4,6 +4,7 @@ function playFunc(e){
         // e.target.volume = 0;
         e.target.parentNode.getElementsByClassName("play-button")[0].style.opacity = 1;
         window.playVar = 0;
+        document.getElementsByClassName("cover-video")[0].webkitExitFullscreen;
     }else{
         e.target.play();
         // e.target.volume = 1;
@@ -21,3 +22,5 @@ function reloadSparks(e){
         e.target.getElementsByTagName("img")[0].src = "";
     }, 500);
 }
+
+// document.getElementsByClassName("cover-video")[0].paused
