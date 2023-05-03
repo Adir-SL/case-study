@@ -1,6 +1,7 @@
-function notionSuccess(data){
+function notionAPI(title, email, position, company){
   if(data.object !== 'error'){
-    if(document.getElementById("form-name").value !== '' && document.getElementById("form-mail").value !== '' && document.getElementById("form-position").value !== '' && document.getElementById("form-mail").value.includes('@') !== false){
+    if(document.getElementById("form-name").value !== '' && document.getElementById("form-mail").value !== '' && document.getElementById("form-position").value !== '' && document.getElementById("form-mail").checkValidity() !== false){
+      createNotionPage(title, email, position, company);
       document.getElementById("submit-button").value = "Joined !";
       setTimeout(function(){
         document.getElementById("submit-button").value = "Join the waiting list";
@@ -14,12 +15,6 @@ function notionSuccess(data){
 }
 
 function createNotionPage(title, email, position, company) {
-  function isEmail(str) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(str);
-  }
-  
-  // if(!isEmail(email)) return
 
 
   const data = JSON.stringify({
@@ -83,7 +78,7 @@ function createNotionPage(title, email, position, company) {
     .then((res) => res.json())
     .then((data) => { 
       console.log("data", data)
-      notionSuccess(data);
+      // notionSuccess(data);
     })
     .catch((err) => console.log("error", err));
 }
