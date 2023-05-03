@@ -3,11 +3,10 @@ function notionSuccess(data){
     document.getElementById("submit-button").value = "Joined !";
     setTimeout(function(){
       document.getElementById("submit-button").value = "Join the waiting list";
-      var x = document.getElementsByTagName("input");
-      var i;
-      for (i = 0; i < x.length; i++) {
-          x[i].value = '';
-      }
+      document.getElementById("form-name").value = '';
+      document.getElementById("form-mail").value = '';
+      document.getElementById("form-position").value = '';
+      document.getElementById("form-company").value = '';
   }, 2000);
   }
 }
