@@ -1,13 +1,15 @@
 function notionSuccess(data){
   if(data.object !== 'error'){
-    document.getElementById("submit-button").value = "Joined !";
-    setTimeout(function(){
-      document.getElementById("submit-button").value = "Join the waiting list";
-      document.getElementById("form-name").value = '';
-      document.getElementById("form-mail").value = '';
-      document.getElementById("form-position").value = '';
-      document.getElementById("form-company").value = '';
-  }, 2000);
+    if(document.getElementById("form-name").value !== '' && document.getElementById("form-mail").value !== '' && document.getElementById("form-position").value !== '' && document.getElementById("form-mail").value.includes('@') !== false){
+      document.getElementById("submit-button").value = "Joined !";
+      setTimeout(function(){
+        document.getElementById("submit-button").value = "Join the waiting list";
+        document.getElementById("form-name").value = '';
+        document.getElementById("form-mail").value = '';
+        document.getElementById("form-position").value = '';
+        document.getElementById("form-company").value = '';
+      }, 2000);
+    }
   }
 }
 
