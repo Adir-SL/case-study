@@ -58,6 +58,6 @@ function createNotionPage(title, email, position, company) {
       body: data,
     })
       .then((res) => res.json())
-      .then((data) => console.log(data))
-      .catch((err) => console.log(err));
+      .then((data) => console.log("data", data))
+      .catch((err) => console.log("error", err));
   }
