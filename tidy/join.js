@@ -1,6 +1,6 @@
 function notionAPI(title, email, position, company){
-  if(data.object !== 'error'){
-    if(document.getElementById("form-name").value !== '' && document.getElementById("form-mail").value !== '' && document.getElementById("form-position").value !== '' && document.getElementById("form-mail").checkValidity() !== false){
+  
+    if(document.getElementById("form-name").value !== '' && document.getElementById("form-mail").value !== '' && document.getElementById("form-position").value !== '' && document.getElementById("form-mail").checkValidity() == true){
       createNotionPage(title, email, position, company);
       document.getElementById("submit-button").value = "Joined !";
       setTimeout(function(){
@@ -11,7 +11,7 @@ function notionAPI(title, email, position, company){
         document.getElementById("form-company").value = '';
       }, 2000);
     }
-  }
+  
 }
 
 function createNotionPage(title, email, position, company) {
@@ -78,7 +78,6 @@ function createNotionPage(title, email, position, company) {
     .then((res) => res.json())
     .then((data) => { 
       console.log("data", data)
-      // notionSuccess(data);
     })
     .catch((err) => console.log("error", err));
 }
