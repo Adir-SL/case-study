@@ -3,6 +3,11 @@ function notionSuccess(data){
     document.getElementById("submit-button").value = "Joined !";
     setTimeout(function(){
       document.getElementById("submit-button").value = "Join the waiting list";
+      var x = document.getElementsByTagName("input");
+      var i;
+      for (i = 0; i < x.length; i++) {
+          x[i].value = '';
+      }
   }, 2000);
   }
 }
