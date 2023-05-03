@@ -19,7 +19,7 @@ function createNotionPage(title, email, position, company) {
     return emailRegex.test(str);
   }
   
-  if(!isEmail(email)) return
+  // if(!isEmail(email)) return
 
 
   const data = JSON.stringify({
