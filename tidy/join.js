@@ -1,5 +1,7 @@
 function notionSuccess(data){
-  console.log(data.object);
+  if(data.object !== error){
+    document.getElementById("submit-button").value = "Joined !";
+  }
 }
 
 function createNotionPage(title, email, position, company) {
