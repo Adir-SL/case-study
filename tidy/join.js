@@ -1,5 +1,5 @@
 function notionSuccess(data){
-  if(data.object !== error){
+  if(data.object !== 'error'){
     document.getElementById("submit-button").value = "Joined !";
   }
 }
