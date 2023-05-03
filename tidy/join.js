@@ -14,6 +14,14 @@ function notionSuccess(data){
 }
 
 function createNotionPage(title, email, position, company) {
+  function isEmail(str) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(str);
+  }
+  
+  if(!isEmail(email)) return
+
+
   const data = JSON.stringify({
     parent: {
       database_id: "59b459b8152e4a808a80998126fc27ff",
