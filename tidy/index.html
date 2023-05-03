@@ -92,17 +92,17 @@
             <h1 class="h1-width h1-size font-pt text-bold">Get Early Access</h1>
             <form class="form-div flex-center" onsubmit="return false">
 
-                <label for="form-name">Name</label>
-                <input type="text" id="form-name" />
+                <label for="form-name">Name<span>*</span></label>
+                <input type="text" id="form-name" required />
 
-                <label for="form-mail">Email</label>
-                <input type="email" id="form-mail" />
+                <label for="form-mail">Email<span>*</span></label>
+                <input type="email" id="form-mail" required />
 
-                <label for="form-position">Position</label>
-                <input type="text" id="form-position" />
+                <label for="form-position">Position<span>*</span></label>
+                <input type="text" id="form-position" required />
 
-                <label for="form-company required-input">Company<span>*</span></label>
-                <input type="text" id="form-company" required />
+                <label for="form-company required-input">Company</label>
+                <input type="text" id="form-company" />
 
                 <input type="submit" class="button font-inter text-bold" onclick="createNotionPage(document.getElementById('form-name').value, document.getElementById('form-mail').value, document.getElementById('form-position').value, document.getElementById('form-company').value);" value="Join the waiting list" />
             </form>
