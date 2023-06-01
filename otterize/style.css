@@ -440,7 +440,7 @@ video{
         margin-top: 40px;
     }
     .mobile-column{
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     video.half-width{
         width: 100%;
