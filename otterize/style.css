@@ -232,6 +232,9 @@ video{
     justify-content: center;
     overflow: hidden;
 }
+.gap-14{
+    gap: 14px;
+}
 .mobile{
     position: relative;
     width: 20vw;
