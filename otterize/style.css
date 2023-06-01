@@ -30,6 +30,9 @@ body{
     /* scroll-snap-type: y mandatory; */
     overflow: auto;
 }
+.rounded{
+    border-radius: 24px;
+}
 header{
     display: flex;
     justify-content: space-between;
