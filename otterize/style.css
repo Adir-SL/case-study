@@ -338,6 +338,9 @@ video{
     .flex-content .details .content .detail-child:first-of-type::after{
         content: ":";
     }
+    .half-width-14{
+        width: 100%;
+    }
     .content span{
         float: left;
         clear: both;
