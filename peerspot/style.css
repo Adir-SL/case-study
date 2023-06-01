@@ -332,6 +332,7 @@ video{
     .content span{
         float: left;
         clear: both;
+        width: 100%;
     }
     .content span:last-of-type{
         margin-bottom: 32px;
