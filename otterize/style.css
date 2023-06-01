@@ -232,6 +232,9 @@ video{
     justify-content: center;
     overflow: hidden;
 }
+.half-width-14{
+    width: calc(50% - 7px);
+}
 .gap-14{
     gap: 14px;
 }
