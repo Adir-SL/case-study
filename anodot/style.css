@@ -42,8 +42,8 @@ body{
     top: 0;
     left: 0;
     margin: 0;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+    /* scroll-behavior: smooth; */
+    /* scroll-snap-type: y mandatory; */
     overflow: auto;
     overflow-x: hidden;
 }
