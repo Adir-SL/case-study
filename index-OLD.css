@@ -1,0 +1,23 @@
+body{
+    background-color: #181818;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+iframe{
+    width: 100vw;
+    height: 50vw;
+    border: none;
+    margin: 0;
+    margin-bottom: 20vh;
+    padding: 0;
+    overflow: hidden;
+}
+.flexDiv{
+    display: flex;
+    margin-bottom: 20vh;
+    gap: 1vh;
+}
+.case-image{
+    width: 100%;
+}
