@@ -94,6 +94,23 @@ img{
     margin-bottom: 48px;
 }
 hr{
-    border-color: red;
-    width: 80%;
+    border-color: #7B7B7B;
+    width: calc(100% - 80px);
+}
+.triLabel{
+    position: relative;
+    margin-left: 60px;
+    font-family: 'haas-text';
+    font-weight: 200;
+    font-size: 0.8em;
+}
+.triLabel::before{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    transform: translate(-20px, 3px);
+    background-image: url(images/tri.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
