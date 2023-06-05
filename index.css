@@ -179,6 +179,12 @@ h2.float-right{
     text-align: left;
     font-size: 2.4em;
     letter-spacing: normal;
+    display: flex;
+    justify-content: space-between;
+}
+h2.float-right::after{
+    content: '+';
+    font-size: 0.7em;
 }
 
 @media screen and (max-width: 900px) {
