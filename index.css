@@ -1,14 +1,26 @@
-.logoDiv{
-    width: 48px;
-    height: 48px;
-    background-image: url(images/new-k-invert.gif);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
 header{
     display: flex;
+    align-items: center;
     width: 100%;
     background-color: #D9D9D9;
     position: sticky;
     top: 0;
+}
+.logoDiv{
+    width: 80px;
+    height: 80px;
+    background-image: url(images/new-k-invert.gif);
+    transform: rotate(90deg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.logoText{
+    width: 48px;
+    height: 20px;
+    background-image: url(images/Kido.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.firstSection{
+    background-color: #D9D9D9;
 }
