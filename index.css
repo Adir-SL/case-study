@@ -155,6 +155,9 @@ hr{
     width: 30%;
     gap: 24px;
 }
+.case-card:hover{
+    opacity: .8;
+}
 .case-card h2{
     font-size: 1em;
     margin: 0;
