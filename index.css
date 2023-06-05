@@ -155,12 +155,16 @@ hr{
     width: 30%;
     gap: 24px;
 }
-.case-card:hover{
-    opacity: .8;
+.case-card img{
+    transition: transform 300ms ease-in-out 0s;
+}
+.case-card:hover img{
+    transform: scale(1.05);
 }
 .case-card h2{
     font-size: 1em;
     margin: 0;
+    letter-spacing: normal;
 }
 .case-card h3{
     font-size: 1.2em;
