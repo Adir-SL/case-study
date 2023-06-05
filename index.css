@@ -115,6 +115,11 @@ img{
     font-weight: 200;
     padding: 4px 12px;
     margin-bottom: 48px;
+    cursor: pointer;
+    transition: opacity 300ms linear 0s;
+}
+.roundButton:hover{
+    opacity: .5;
 }
 hr{
     border-color: #7B7B7B;
@@ -141,7 +146,6 @@ hr{
     display: flex;
     align-items: center;
     gap: 80px;
-    /* justify-content: space-between; */
 }
 .case-card{
     color: #FFFFFF;
