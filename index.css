@@ -125,6 +125,9 @@ img{
 .roundButton:hover{
     opacity: .5;
 }
+.spacer{
+    flex-grow: 1;
+}
 hr{
     border-color: #7B7B7B;
     width: calc(100% - 80px);
