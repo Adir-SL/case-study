@@ -72,6 +72,12 @@ h2{
     max-width: 75%;
     margin-bottom: 0;
 }
+h3{
+    font-size: 2em;
+    font-family: 'haas';
+    font-weight: 300;
+    text-align: left;
+}
 .columnDiv{
     display: flex;
     flex-direction: column;
