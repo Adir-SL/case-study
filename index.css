@@ -170,3 +170,16 @@ hr{
     font-size: 1.2em;
     margin: 0;
 }
+
+@media screen and (max-width: 900px) {
+    .rowDiv{
+        flex-direction: column;
+    }
+    .case-card{
+        width: 100%;
+    }
+    .case-card img{
+        min-width: 100%;
+    }
+
+}
