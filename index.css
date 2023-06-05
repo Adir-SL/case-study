@@ -23,7 +23,9 @@ body{
 header{
     display: flex;
     align-items: center;
-    width: 100%;
+    justify-content: center;
+    width: calc(100% - 80px);
+    padding: 20px 40px;
     /* background-color: #D9D9D9; */
     background-color: #FFFFFF;
     position: fixed;
