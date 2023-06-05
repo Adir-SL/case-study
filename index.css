@@ -196,5 +196,7 @@ hr{
     .indent{
         text-indent: 0em;
     }
-    #wrapper{}
+    #wrapper{
+        padding-bottom: 6em;
+    }
 }
