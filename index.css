@@ -45,5 +45,6 @@ section{
     align-items: center;
 }
 h1{
-    font-size: 180px
+    font-size: 180px;
+    color: #101010;
 }
