@@ -109,7 +109,7 @@ hr{
     position: absolute;
     width: 12px;
     height: 12px;
-    transform: translate(-20px, 3px);
+    transform: translate(-20px, 2px);
     background-image: url(images/tri.svg);
     background-repeat: no-repeat;
     background-size: contain;
