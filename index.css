@@ -100,6 +100,7 @@ h3{
     display: flex;
     gap: 48px;
     margin-top: 80px;
+    min-height: 60vh;
 }
 img{
     max-width: 30vw;
