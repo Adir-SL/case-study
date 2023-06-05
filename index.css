@@ -186,7 +186,7 @@ h2.float-right::after{
     content: '+';
     font-size: 0.7em;
     position: absolute;
-    right: 10%;
+    right: 11%;
 }
 
 @media screen and (max-width: 900px) {
