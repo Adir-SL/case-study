@@ -193,4 +193,7 @@ hr{
     h2{
         font-size: 3em;
     }
+    .indent{
+        text-indent: 0em;
+    }
 }
