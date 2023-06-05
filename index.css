@@ -66,8 +66,10 @@ h2{
     font-size: 5em;
     font-family: 'kepler';
     letter-spacing: -0.04em;
+    line-height: 1em;
+    text-transform: capitalize;
     font-weight: 500;
-    max-width: 70%;
+    max-width: 75%;
     margin-bottom: 0;
 }
 .columnDiv{
