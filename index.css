@@ -96,6 +96,11 @@ h3{
     align-items: center;
     gap: 48px;
 }
+.rowDiv{
+    display: flex;
+    gap: 48px;
+    margin-top: 80px;
+}
 img{
     max-width: 30vw;
 }
@@ -131,4 +136,26 @@ hr{
     background-image: url(images/tri.svg);
     background-repeat: no-repeat;
     background-size: contain;
+}
+.flex-card{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    /* justify-content: space-between; */
+}
+.case-card{
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 24px;
+}
+.case-card h2{
+    font-size: 1em;
+    margin: 0;
+}
+.case-card h3{
+    font-size: 1.2em;
+    margin: 0;
 }
