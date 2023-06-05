@@ -153,6 +153,7 @@ hr{
     display: flex;
     flex-direction: column;
     width: 30%;
+    height: fit-content;
     gap: 24px;
 }
 .case-card img{
