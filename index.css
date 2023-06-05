@@ -5,6 +5,10 @@ Thin: 100 200 300, Light: 400, Regular: 500, Bold: 700 800 */
 @import url(font-haas.css);
 @import url(font-haas-text.css);
 
+body{
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+}
 #wrapper{
     position: absolute;
     width: 100%;
@@ -21,7 +25,7 @@ header{
     align-items: center;
     width: 100%;
     background-color: #D9D9D9;
-    position: sticky;
+    position: fixed;
     top: 0;
 }
 .logoDiv{
@@ -35,7 +39,7 @@ header{
 .logoText{
     width: 48px;
     height: 20px;
-    background-image: url(images/Kido.svg);
+    background-image: url(images/kido.svg);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -43,7 +47,7 @@ section{
     width: 80%;
     padding: 0 10%;
     text-align: center;
-    min-height: 80vh;
+    min-height: 90vh;
 }
 .firstSection{
     background-color: #D9D9D9;
@@ -52,6 +56,38 @@ section{
     align-items: center;
 }
 h1{
-    font-size: 180px;
+    font-size: 14em;
     color: #101010;
+    font-family: 'kepler';
+    letter-spacing: -0.04em;
+    font-weight: 500;
+}
+h2{
+    font-size: 5em;
+    font-family: 'kepler';
+    letter-spacing: -0.04em;
+    font-weight: 500;
+    max-width: 70%;
+    margin-bottom: 0;
+}
+.columnDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+img{
+    max-width: 30vw;
+}
+.roundButton{
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    outline: none;
+    border-radius: 999px;
+    font-family: 'haas';
+    font-size: 1.5em;
+    font-weight: 200;
+    padding: 4px 12px;
+    margin-bottom: 48px;
 }
