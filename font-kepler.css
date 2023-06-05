@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "kepler";
+    src: url("fonts/KeplerStd-ItDisp.otf") format("opentype");
+    font-weight: 100 200 300 400 500 600 700 800;
+    font-style: normal;
+    font-display: block;
+}

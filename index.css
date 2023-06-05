@@ -1,3 +1,10 @@
+/* font legened:
+Thin: 100 200 300, Light: 400, Regular: 500, Bold: 700 800 */
+
+@import url(font-kepler.css);
+@import url(font-haas.css);
+@import url(font-haas-text.css);
+
 #wrapper{
     position: absolute;
     width: 100%;
