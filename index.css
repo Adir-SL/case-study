@@ -68,12 +68,14 @@ section{
     justify-content: center;
     align-items: center;
 }
-#titleKido{
+.kido{
     transform-origin: 50% 222%;
     color: #FFFFFF;
     mix-blend-mode: difference;
-    /* transition: transform 100ms ease-out 0s; */
-    /* animation: titleAnim 3000ms linear infinite; */
+    user-select: none;
+}
+::selection{
+    background-color: #a2a2a2;
 }
 @keyframes titleAnim{
     0%{transform: translateY(0) scale(1); color: #000000;}
@@ -317,7 +319,7 @@ h2.float-right::after{
     background-color: #FFFFFF;
     color: #000000;
 }
-.whiteSection #titleKido{
+.whiteSection .kido{
     padding: 0;
     margin-bottom: 0;
     margin-top: 120px;
@@ -335,6 +337,7 @@ h2.float-right::after{
     transform: scale(1.15) translateX(-2%);
     transform-origin: center;
 }
+
 
 @media screen and (max-width: 900px) {
     .rowDiv{
