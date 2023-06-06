@@ -287,4 +287,7 @@ h2.float-right::after{
         width: calc(100% - 20px);
         padding: 0 10px;
     }
+    ul{
+        padding-left: 0;
+    }
 }
