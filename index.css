@@ -66,13 +66,17 @@ h1{
     font-weight: 500;
     font-style: italic;
 }
-h2{
-    font-size: 5em;
-    font-family: 'kepler';
+h2::first-line{
     letter-spacing: -0.07em;
+}
+h2{
+    font-size: 4em;
+    font-family: 'kepler';
+    letter-spacing: -0.03em;
     line-height: 1em;
     text-transform: capitalize;
     font-weight: 500;
+    font-style: italic;
     max-width: 75%;
     margin-bottom: 0;
 }
