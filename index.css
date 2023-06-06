@@ -319,6 +319,7 @@ h2.float-right::after{
 }
 .whiteSection #titleKido{
     padding: 0;
+    margin-bottom: 0;
     margin-top: 120px;
 }
 .whiteSection h3{
