@@ -249,7 +249,7 @@ h2.float-right::after{
         float: left;
     }
     h1{
-        font-size: 6em;
+        font-size: 4.5em;
     }
     h2{
         font-size: 3em;
@@ -259,5 +259,12 @@ h2.float-right::after{
     }
     #wrapper{
         padding-bottom: 6em;
+    }
+    .roundButton{
+        font-size: 1em;
+    }
+    header{
+        width: calc(100% - 20px);
+        padding: 0 10px;
     }
 }
