@@ -309,4 +309,19 @@ h2.float-right::after{
     ul{
         padding-left: 0;
     }
+    .padding-100{
+        padding: 24px;
+        width: calc(100% - 48px);
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .padding-100 img{
+        width: 20vw;
+        height: auto;
+    }
+    .alternate{
+        font-size: 2em;
+        line-height: 1.3;
+    }
 }
