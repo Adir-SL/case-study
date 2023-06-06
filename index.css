@@ -26,9 +26,12 @@ header{
     align-items: center;
     width: calc(100% - 120px);
     padding: 0 60px;
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
     position: sticky;
     top: 0;
+}
+header div{
+    transition: opacity 300ms linear 0s;
 }
 .logoDiv{
     width: 80px;
@@ -37,6 +40,7 @@ header{
     transform: rotate(90deg);
     background-repeat: no-repeat;
     background-size: contain;
+    opacity: 0;
 }
 .logoText{
     width: 48px;
@@ -54,6 +58,7 @@ section{
 .firstSection{
     background-color: #FFFFFF;
     /* background-color: #D9D9D9; */
+    box-shadow: 0 -10em 0 0 white;
     display: flex;
     justify-content: center;
     align-items: center;
