@@ -125,6 +125,13 @@ details > summary {
 details > summary::-webkit-details-marker {
     display: none;
 }
+details[open] h2.float-right::after{
+    transform: rotate(45deg);
+}
+li{
+    font-family: 'haas';
+    margin: 0.5em 0;
+}
 .min-60{
     min-height: 60vh;
 }
@@ -241,6 +248,8 @@ h2.float-right::after{
     font-size: 0.7em;
     position: absolute;
     right: 11%;
+    transform-origin: center;
+    transition: transform 300ms ease-in-out 0s;
 }
 
 @media screen and (max-width: 900px) {
