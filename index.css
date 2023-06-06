@@ -59,11 +59,12 @@ section{
     align-items: center;
 }
 h1{
-    font-size: 14em;
+    font-size: 12em;
     color: #101010;
     font-family: 'kepler';
     letter-spacing: -0.04em;
     font-weight: 500;
+    font-style: italic;
 }
 h2{
     font-size: 5em;
