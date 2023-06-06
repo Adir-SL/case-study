@@ -114,6 +114,17 @@ h3{
 .float-right{
     float: right;
 }
+ul.float-right{
+    list-style-type: none;
+    text-align: left;
+
+}
+details > summary {
+    list-style: none;
+}
+details > summary::-webkit-details-marker {
+    display: none;
+}
 .min-60{
     min-height: 60vh;
 }
