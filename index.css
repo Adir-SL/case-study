@@ -46,6 +46,7 @@ header div{
 .logoText{
     width: 80px;
     height: 40px;
+    transform: translateX(-60px);
     background-image: url(images/kido.svg);
     background-repeat: no-repeat;
     background-size: contain;
