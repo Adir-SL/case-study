@@ -26,9 +26,11 @@ function scrollCheck(){
         document.getElementById('mainHeader').querySelectorAll('div')[2].style.opacity = '0';
         document.getElementById('mainHeader').querySelectorAll('button')[0].style.opacity = '0';
         if(document.getElementsByClassName('firstSection')[0].getBoundingClientRect().bottom < 0){
-            document.getElementById('mainHeader').querySelectorAll('.logoDiv')[0].style.backgroundImage = 'url(images/new-k.gif)';
+            // document.getElementById('mainHeader').querySelectorAll('.logoDiv')[0].style.backgroundImage = 'url(images/new-k.gif)';
+            document.getElementById('mainHeader').querySelectorAll('.logoDiv')[0].style.filter = "invert(0%)";
         }else{
-            document.getElementById('mainHeader').querySelectorAll('.logoDiv')[0].style.backgroundImage = 'url(images/new-k-invert.gif)';
+            // document.getElementById('mainHeader').querySelectorAll('.logoDiv')[0].style.backgroundImage = 'url(images/new-k-invert.gif)';
+            document.getElementById('mainHeader').querySelectorAll('.logoDiv')[0].style.filter = "invert(100%)";
         }
     }else{
         document.getElementById('mainHeader').querySelectorAll('div')[0].style.transitionDelay = '0s';

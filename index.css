@@ -36,10 +36,10 @@ header div{
 .logoDiv{
     width: 80px;
     height: 80px;
-    background-image: url(images/new-k-invert.gif);
-    transform: rotate(90deg);
-    background-repeat: no-repeat;
-    background-size: contain;
+    /* background-image: url(images/new-k-invert.gif); */
+    transform: rotate(90deg) scale(0.8);
+    /* background-repeat: no-repeat;
+    background-size: contain; */
     opacity: 0;
     transition: opacity 300ms linear 0s, background-image 300ms linear 0s;
 }
