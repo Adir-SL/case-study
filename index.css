@@ -99,10 +99,19 @@ h2{
     max-width: 75%;
     margin-bottom: 0;
 }
+.alternate{
+    max-width: 100%;
+    text-transform: none;
+    text-align: left;
+    font-size: 3.2em;
+    font-weight: 300;
+    letter-spacing: normal;
+    /* font-style: normal; */
+}
 h3{
     font-size: 1.5em;
     font-family: 'haas';
-    font-weight: 300;
+    font-weight: 100;
     text-align: left;
 }
 .indent{
@@ -144,12 +153,22 @@ li{
 .margin-48{
     margin-bottom: 48px;
 }
+.margin-80{
+    margin-bottom: 80px;
+}
+.padding-100{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 .rowDiv{
     display: flex;
     gap: 48px;
     margin-top: 80px;
     min-height: 0;
     padding-bottom: 100px;
+}
+.space{
+    justify-content: space-between;
 }
 img{
     max-width: 30vw;
