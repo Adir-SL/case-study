@@ -49,7 +49,7 @@ section{
     width: 80%;
     padding: 0 10%;
     text-align: center;
-    min-height: 90vh;
+    min-height: 80vh;
 }
 .firstSection{
     background-color: #FFFFFF;
@@ -120,13 +120,13 @@ img{
 .roundButton{
     background-color: #1C1C1C;
     color: #FFFFFF;
-    border: 1px solid;
+    border: 2px solid;
     outline: none;
     border-radius: 999px;
     font-family: 'haas';
     font-size: 1.5em;
-    font-weight: 200;
-    padding: 4px 12px;
+    font-weight: 500;
+    padding: 4px 16px;
     /* margin-bottom: 48px; */
     cursor: pointer;
     transition: opacity 300ms linear 0s;
