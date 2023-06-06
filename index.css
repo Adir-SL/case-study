@@ -216,8 +216,13 @@ h2.float-right{
     text-align: left;
     font-size: 2.4em;
     letter-spacing: normal;
+    cursor: pointer;
+    transition: opacity 300ms linear 0s;
     /* display: flex;
     justify-content: space-between; */
+}
+h2.float-right:hover{
+    opacity: 0.5;
 }
 h2.float-right::after{
     content: '+';
