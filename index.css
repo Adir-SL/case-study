@@ -300,7 +300,18 @@ h2.float-right::after{
     height: 80px;
     flex-grow: 0;
     flex-shrink: 0;
-    background-color: red;
+    background-image: url(images/icon-operational.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.one-stop{
+    background-image: url(images/icon-one-stop.svg);
+}
+.frontend{
+    background-image: url(images/icon-frontend.svg);
+}
+.pursuing{
+    background-image: url(images/icon-pursuing.svg);
 }
 
 @media screen and (max-width: 900px) {
