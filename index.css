@@ -62,14 +62,14 @@ h1{
     font-size: 12em;
     color: #101010;
     font-family: 'kepler';
-    letter-spacing: -0.04em;
+    letter-spacing: -0.07em;
     font-weight: 500;
     font-style: italic;
 }
 h2{
     font-size: 5em;
     font-family: 'kepler';
-    letter-spacing: -0.04em;
+    letter-spacing: -0.07em;
     line-height: 1em;
     text-transform: capitalize;
     font-weight: 500;
