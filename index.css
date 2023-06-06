@@ -64,6 +64,16 @@ section{
     justify-content: center;
     align-items: center;
 }
+#titleKido{
+    transform-origin: 50% 222%;
+    color: #FFFFFF;
+    mix-blend-mode: difference;
+    /* animation: titleAnim 3000ms linear infinite; */
+}
+@keyframes titleAnim{
+    0%{transform: translateY(0) scale(1); color: #000000;}
+    100%{transform: translateY(50vh) scale(0.35); color: #FFFFFF;}
+}
 h1{
     font-size: 12em;
     color: #101010;
@@ -74,6 +84,7 @@ h1{
 }
 h2::first-line{
     letter-spacing: -0.07em;
+    visibility: hidden;
 }
 h2{
     font-size: 4em;
