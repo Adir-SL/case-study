@@ -2,8 +2,7 @@ function scrollCheck(){
 
     scrollPercent = document.getElementsByClassName('firstSection')[0].offsetHeight / 100;
     scrollTravel = (document.getElementsByClassName('firstSection')[0].offsetHeight - document.getElementsByClassName('firstSection')[0].getBoundingClientRect().top) / scrollPercent - 100;
-    // scrollPercent = document.getElementsByClassName('firstSection')[0].offsetHeight / 1000;
-    // scrollPer = document.getElementsByClassName('firstSection')[0].getBoundingClientRect().top / -0.75 * scrollPercent;
+    
     if(scrollTravel > 50){
         scrollPos = 50;
     }else{
