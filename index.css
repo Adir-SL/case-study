@@ -15,6 +15,7 @@ body{
     min-height: 100%;
     margin: 0;
     padding: 0;
+    border-top: 1px solid #FFFFFF;
     top: 0;
     left: 0;
     display: flex;
@@ -25,9 +26,8 @@ header{
     align-items: center;
     width: calc(100% - 120px);
     padding: 0 60px;
-    /* background-color: #D9D9D9; */
     background-color: #FFFFFF;
-    position: fixed;
+    position: sticky;
     top: 0;
 }
 .logoDiv{
