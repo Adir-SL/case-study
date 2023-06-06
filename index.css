@@ -146,6 +146,7 @@ img{
     font-size: 1.5em;
     font-weight: 500;
     padding: 4px 16px;
+    white-space: nowrap;
     /* margin-bottom: 48px; */
     cursor: pointer;
     transition: opacity 300ms linear 0s;
@@ -248,7 +249,7 @@ h2.float-right::after{
         float: left;
     }
     h1{
-        font-size: 8em;
+        font-size: 6em;
     }
     h2{
         font-size: 3em;
