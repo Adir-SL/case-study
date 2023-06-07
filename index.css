@@ -30,7 +30,6 @@ header{
     align-items: center;
     width: calc(100% - 120px);
     padding: 0 60px;
-    /* background-color: #FFFFFF; */
     position: sticky;
     top: 0;
 }
@@ -43,10 +42,7 @@ header div{
     align-items: center;
     width: 80px;
     height: 80px;
-    /* background-image: url(images/new-k-invert.gif); */
     transform: rotate(90deg) scale(0.8);
-    /* background-repeat: no-repeat;
-    background-size: contain; */
     opacity: 0;
     transition: opacity 300ms linear 0s;
 }
@@ -66,7 +62,6 @@ section{
 }
 .firstSection{
     background-color: #FFFFFF;
-    /* background-color: #D9D9D9; */
     box-shadow: 0 -10em 0 0 white;
     display: flex;
     justify-content: center;
@@ -126,7 +121,6 @@ h2{
     font-size: 3.2em;
     font-weight: 300;
     letter-spacing: normal;
-    /* font-style: normal; */
 }
 h3{
     font-size: 1.5em;
@@ -240,7 +234,6 @@ img{
     font-weight: 500;
     padding: 4px 16px;
     white-space: nowrap;
-    /* margin-bottom: 48px; */
     cursor: pointer;
     transition: opacity 300ms linear 0s, transform 300ms ease-in-out 0s;
 }
@@ -263,7 +256,6 @@ img{
     font-weight: 500;
     padding: 4px 16px;
     white-space: nowrap;
-    /* margin-bottom: 48px; */
     cursor: pointer;
     transition: opacity 300ms linear 0s;
 }
@@ -371,12 +363,9 @@ summary h2{
     margin-top: 0.4em;
     margin-bottom: 0.1em;
     text-align: left;
-    /* font-size: 2.4em; */
     letter-spacing: normal;
     cursor: pointer;
     transition: opacity 300ms linear 0s;
-    /* display: flex;
-    justify-content: space-between; */
 }
 h2.float-right{
     font-size: 2.4em;
@@ -440,9 +429,6 @@ summary h2::after{
     transform: scale(1.15) translateX(-2%);
     transform-origin: center;
 }
-/* .invertHeader .linksDiv a{
-    color: #FFFFFF !important;
-} */
 .invertHeader{
     filter: invert(100%);
 }
@@ -470,7 +456,7 @@ h2.small-text{
     line-height: 1.5;
 }
 
-
+/* mobile */
 @media screen and (max-width: 900px) {
     .rowDiv{
         flex-direction: column;
@@ -496,9 +482,6 @@ h2.small-text{
     .indent{
         text-indent: 0em;
     }
-    /* #wrapper{
-        padding-bottom: 6em;
-    } */
     .roundButton{
         font-size: 1em;
     }
