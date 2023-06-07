@@ -4,6 +4,7 @@ Thin: 100 200 300, Light: 400, Regular: 500, Bold: 700 800 */
 @import url(../font-dia.css);
 @import url(../font-haas.css);
 @import url(../font-haas-text.css);
+@import url(../font-kepler.css);
 
 body{
     --color-primary: #181818;
@@ -12,7 +13,7 @@ body{
 
     background-color: var(--color-primary);
     color: var(--color-secondary);
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: background-color 500ms linear;
 }
 .lightBody{
@@ -38,23 +39,105 @@ body{
 #wrapper{
     position: absolute;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #181818;
     top: 0;
     left: 0;
-    margin: 0;
+    display: flex;
+    flex-direction: column;
     /* scroll-behavior: smooth; */
     /* scroll-snap-type: y mandatory; */
-    overflow: auto;
-    overflow-x: hidden;
+    /* overflow: auto; */
+}
+.rounded{
+    border-radius: 24px;
 }
 header{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    font-size: 24px;
-    margin: 30px 14px;
-    z-index: 9999;
-    scroll-snap-align: center;
+    width: calc(100% - 120px);
+    padding: 0 60px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+header div{
+    transition: opacity 300ms linear 0s;
+}
+.logoDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    transform: rotate(90deg) scale(0.8);
+    opacity: 0;
+    transition: opacity 300ms linear 0s;
+}
+.logoText{
+    width: 80px;
+    height: 40px;
+    transform: translateX(-60px);
+    background-image: url(../images/kido.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.invertHeader, .logoDiv{
+    filter: invert(100%);
+}
+.center-flex{
+    justify-content: center;
+    align-items: center;
+}
+.roundButton{
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+    border: 2px solid;
+    outline: none;
+    border-radius: 999px;
+    font-family: 'haas';
+    font-size: 1.5em;
+    font-weight: 500;
+    padding: 4px 16px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: opacity 300ms linear 0s, transform 300ms ease-in-out 0s;
+}
+.invertButton{
+    background-color: #FFFFFF;
+    color: #1C1C1C;
+}
+.roundButton:hover{
+    transform: scale(0.9);
+}
+.linksDiv{
+    display: flex;
+    gap: 40px;
+    flex-grow: 1;
+    height: 100%;
+}
+.linksDiv a{
+    position: relative;
+    font-family: 'haas';
+    font-weight: 500;
+    color: #1C1C1C;
+    text-decoration: none;
+    height: 100%;
+}
+.linksDiv a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: -4%;
+    border-bottom: 2px solid;
+    transition: width 300ms ease-in-out 0s;
+}
+.linksDiv a:hover::after{
+    width: 108%;
 }
 .sticky{
     position: sticky;
