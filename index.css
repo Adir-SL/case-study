@@ -437,4 +437,7 @@ h2.float-right::after{
     .iconSection .rowDiv:first-of-type{
         padding-bottom: 48px;
     }
+    #mainHeader .roundButton{
+        display: none;
+    }
 }
