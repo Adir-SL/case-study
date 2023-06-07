@@ -198,6 +198,9 @@ li{
     min-height: 0;
     padding-bottom: 100px;
 }
+.gap-12{
+    gap: 12px;
+}
 .rowDiv ~ .rowDiv{
     margin-top: 0;
 }
@@ -234,6 +237,21 @@ img{
 }
 .roundButton:hover{
     opacity: .5;
+}
+.tagDiv{
+    background-color: #FFFFFF;
+    color: #1C1C1C;
+    border: 2px solid;
+    outline: none;
+    border-radius: 999px;
+    font-family: 'haas';
+    font-size: 1.5em;
+    font-weight: 500;
+    padding: 4px 16px;
+    white-space: nowrap;
+    /* margin-bottom: 48px; */
+    /* cursor: pointer; */
+    transition: opacity 300ms linear 0s;
 }
 .linksDiv{
     display: flex;
@@ -312,7 +330,7 @@ hr{
     font-size: 1.2em;
     margin: 0;
 }
-h2{
+summary h2{
     margin-top: 0.4em;
     margin-bottom: 0.1em;
     text-align: left;
@@ -326,10 +344,10 @@ h2{
 h2.float-right{
     font-size: 2.4em;
 }
-h2:hover{
+summary h2:hover{
     opacity: 0.5;
 }
-h2::after{
+summary h2::after{
     content: '+';
     font-size: 0.7em;
     position: absolute;
@@ -396,6 +414,9 @@ h2::after{
 }
 .margin-24{
     margin-left: 24px;
+}
+.wrap{
+    flex-wrap: wrap;
 }
 
 
