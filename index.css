@@ -37,6 +37,9 @@ header div{
     transition: opacity 300ms linear 0s;
 }
 .logoDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80px;
     height: 80px;
     /* background-image: url(images/new-k-invert.gif); */
