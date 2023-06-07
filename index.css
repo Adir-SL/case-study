@@ -364,9 +364,9 @@ h2.float-right::after{
     .indent{
         text-indent: 0em;
     }
-    #wrapper{
+    /* #wrapper{
         padding-bottom: 6em;
-    }
+    } */
     .roundButton{
         font-size: 1em;
     }
