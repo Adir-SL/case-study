@@ -492,6 +492,9 @@ h2.small-text{
     ul{
         padding-left: 0;
     }
+    ul.float-right{
+        padding-left: 0;
+    }
     .padding-100{
         padding: 24px;
         width: calc(100% - 48px);
