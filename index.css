@@ -537,4 +537,12 @@ h2.small-text{
     #mainHeader .roundButton{
         display: none;
     }
+    .translate-12{
+        transform: none;
+        width: unset;
+        gap: 60px !important;
+    }
+    .tagDiv{
+        font-size: 1em;
+    }
 }
