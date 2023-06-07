@@ -8,21 +8,21 @@
     <!-- <script src="code/sal.js"></script> -->
     <!-- <link rel="stylesheet" href="code/sal.css"> -->
     <title>Peerspot Case Study</title>
+    <script src="../code/headerScroll-min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
 </head>
-<body style="background-color: #181818;">
+<body style="background-color: #181818;" onscroll="scrollCheck();">
     <div id="wrapper" onscroll="videosOnScroll();">
-        <a id="top"></a>
-        <header class="sticky">
-            <a href="#top"><div class="k-symbol" id="k-sticky"></div></a>
-        </header>
-        <header class="absolute">
-            <div class="logo haas"><a href="../">KIDO</a></div>
-            <div class="links haas">
-                <a href="#">About</a>
-                <a href="#">Work</a>
-                <a href="#">Scaling design</a>
-                <div class="k-symbol hideMe"></div>
+        <header id="mainHeader" class="invertHeader">
+            <div class="logoDiv">
+                <lottie-player src="https://lottie.host/cb8e6687-f930-46ef-8dd5-459e38953552/psZ0aMJEeD.json" background="transparent" speed="0.5" style="width: 60px; height: 60px;" loop autoplay></lottie-player>
             </div>
+            <a href="../index.html"><div class="logoText"></div></a>
+            <div class="linksDiv center-flex">
+                <a href="../about.html" class="selected">ABOUT</a>
+                <a href="../design.html">DESIGN AT SCALE</a>
+            </div>
+            <button class="roundButton invertButton" onclick="window.open('mailto:hello@wearekido.com');">LET'S TALK</button>
         </header>
         
         <section class="video-content">
