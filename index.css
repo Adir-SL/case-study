@@ -318,6 +318,7 @@ h2.float-right::after{
 .whiteSection{
     background-color: #FFFFFF;
     color: #000000;
+    padding-bottom: 20vh;
 }
 .whiteSection .kido{
     padding: 0;
