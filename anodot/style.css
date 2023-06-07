@@ -13,7 +13,7 @@ body{
 
     background-color: var(--color-primary);
     color: var(--color-secondary);
-    /* overflow: hidden; */
+    overflow: hidden;
     transition: background-color 500ms linear;
 }
 .lightBody{
@@ -39,7 +39,7 @@ body{
 #wrapper{
     position: absolute;
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     border-top: 1px solid #181818;
@@ -49,7 +49,7 @@ body{
     flex-direction: column;
     /* scroll-behavior: smooth; */
     /* scroll-snap-type: y mandatory; */
-    /* overflow: auto; */
+    overflow: auto;
 }
 .rounded{
     border-radius: 24px;
@@ -124,7 +124,7 @@ header div{
     font-weight: 500;
     color: #1C1C1C;
     text-decoration: none;
-    height: 100%;
+    /* height: 100%; */
 }
 .linksDiv a::after{
     content: '';
