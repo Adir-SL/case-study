@@ -448,6 +448,7 @@ summary h2::after{
 }
 .selected{
     opacity: 0.5;
+    pointer-events: none;
 }
 .margin-24{
     margin-left: 24px;
