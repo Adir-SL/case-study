@@ -164,13 +164,13 @@ header div{
     flex-grow: 1;
     letter-spacing: 1px;
 }
-a{
+/* a{
     color: var(--color-secondary);
     text-decoration: none;
 }
 a:hover{
     color: var(--color-accent);
-}
+} */
 .k-symbol{
     width: 60px;
     height: 60px;
