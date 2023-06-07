@@ -93,6 +93,9 @@ h1{
     letter-spacing: -0.07em;
     visibility: hidden;
 }
+.secondSection path{
+    stroke-width: 10px;
+}
 h2{
     font-size: 4em;
     font-family: 'kepler';
