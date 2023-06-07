@@ -222,8 +222,32 @@ img{
 .roundButton:hover{
     opacity: .5;
 }
-.spacer{
+.linksDiv{
+    display: flex;
+    gap: 40px;
     flex-grow: 1;
+    height: 100%;
+}
+.linksDiv a{
+    position: relative;
+    font-family: 'haas';
+    font-weight: 500;
+    color: #1C1C1C;
+    text-decoration: none;
+    height: 100%;
+}
+.linksDiv a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: -4%;
+    border-bottom: 2px solid;
+    transition: width 300ms ease-in-out 0s;
+}
+.linksDiv a:hover::after{
+    width: 108%;
 }
 hr{
     border-color: #7B7B7B;
@@ -334,6 +358,10 @@ h2.float-right::after{
 }
 .align-center{
     text-align: center;
+}
+.center-flex{
+    justify-content: center;
+    align-items: center;
 }
 .full-text{
     font-size: 20vw !important;
