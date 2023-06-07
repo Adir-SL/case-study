@@ -13,7 +13,12 @@ function scrollCheck(){
         }
     }
     
-    document.getElementById('titleKido').style.transform = "scale(" + (1 - (scrollPos / 75)) + ") translateY(" + (scrollPos) + "vh)";
+    
+    if(document.body.offsetWidth > 899){
+        document.getElementById('titleKido').style.transform = "scale(" + (1 - (scrollPos / 75)) + ") translateY(" + (scrollPos) + "vh)";
+    }else{
+        document.getElementById('titleKido').style.transform = "scale(" + (1 - (scrollPos / 200)) + ") translateY(" + (scrollPos * 1.15) + "vh)";
+    }
 
     if(document.getElementById('mainHeader').getBoundingClientRect().top == '0'){
         document.getElementById('mainHeader').querySelectorAll('div')[0].style.transitionDelay = '300ms';
