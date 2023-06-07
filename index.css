@@ -72,6 +72,7 @@ section{
     color: #FFFFFF;
     mix-blend-mode: difference;
     user-select: none;
+    white-space: nowrap;
 }
 ::selection{
     background-color: #a2a2a2;

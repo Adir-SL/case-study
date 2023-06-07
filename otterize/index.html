@@ -8,26 +8,25 @@
     <!-- <script src="code/sal.js"></script> -->
     <!-- <link rel="stylesheet" href="code/sal.css"> -->
     <title>Otterize Case Study</title>
-    <script src="../code/headerScroll.js"></script>
+    <script src="../code/headerScroll-min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
 </head>
 <body style="background-color: #181818;" onscroll="scrollCheck();">
     <div id="wrapper">
-        <a id="top"></a>
         <header id="mainHeader" class="invertHeader">
             <div class="logoDiv">
                 <lottie-player src="https://lottie.host/cb8e6687-f930-46ef-8dd5-459e38953552/psZ0aMJEeD.json" background="transparent" speed="0.5" style="width: 60px; height: 60px;" loop autoplay></lottie-player>
             </div>
-            <a href="index.html"><div class="logoText"></div></a>
+            <a href="../index.html"><div class="logoText"></div></a>
             <div class="linksDiv center-flex">
-                <a href="#" class="selected">ABOUT</a>
-                <a href="design.html">DESIGN AT SCALE</a>
+                <a href="../about.html" class="selected">ABOUT</a>
+                <a href="../design.html">DESIGN AT SCALE</a>
             </div>
             <button class="roundButton invertButton" onclick="window.open('mailto:hello@wearekido.com');">LET'S TALK</button>
         </header>
         
         <section class="video-content">
             <video src="videos/cover.mp4" class="rounded" muted playsinline autoplay loop preload="auto"></video>
-            <!-- <img src="images/cover.jpg" class="full-width rounded"/> -->
         </section>
 
         <section class="big-contnet haas">
@@ -91,6 +90,7 @@
         <section>
             <img src="images/octopus.jpg" class="full-width rounded" loading="eager" />
         </section>
+
 
     </div>
     <script src="../code/videos.js"></script>
