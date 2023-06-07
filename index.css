@@ -465,6 +465,9 @@ h2.small-text{
     justify-content: flex-start;
     gap: 8px;
 }
+.line-double{
+    line-height: 1.5;
+}
 
 
 @media screen and (max-width: 900px) {
