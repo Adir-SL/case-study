@@ -10,15 +10,15 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
 </head>
 <body onscroll="scrollCheck();">
-    <div id="wrapper">
+    <div id="wrapper" style="border-color: #1C1C1C;">
         <header id="mainHeader" class="invertHeader">
             <div class="logoDiv">
                 <lottie-player src="https://lottie.host/cb8e6687-f930-46ef-8dd5-459e38953552/psZ0aMJEeD.json" background="transparent" speed="0.5" style="width: 60px; height: 60px;" loop autoplay></lottie-player>
             </div>
-            <div class="logoText"></div>
+            <a href="index.html"><div class="logoText"></div></a>
             <div class="linksDiv center-flex">
                 <a href="#">ABOUT</a>
-                <a href="#">DESIGN AT SCALE</a>
+                <a href="#" class="selected">DESIGN AT SCALE</a>
             </div>
             <button class="roundButton invertButton" onclick="window.open('mailto:hello@wearekido.com');">LET'S TALK</button>
         </header>
@@ -26,109 +26,35 @@
         <section class="iconSection">
             <h2 class="alternate">Since we formed Kido, we've honed in on three specific types of work where we consistently bring exceptional value.<br/>These areas are also what sets us apart and play a crucial role in empowering your change at scale.</h2>
         </section>
-        
-        <section class="columnDiv margin-48 secondSection">
-            <h2>We Are Kido<br/>we help companies accelerate and optimize their design process</h2>
-            <!-- <img src="images/big-k.svg" /> -->
-            <lottie-player src="https://lottie.host/cb8e6687-f930-46ef-8dd5-459e38953552/psZ0aMJEeD.json" background="transparent" speed="0.4" style="width: 100%; height: 100%; max-width: 646px;" loop autoplay disableShadowDOM></lottie-player>
-            <!-- <lottie-player src="https://lottie.host/c107df7c-fe22-44d3-bd76-3664c5fe2231/xppsiFRV7p.json" background="transparent" speed="1" style="width: 100%; height: 100%; max-width: 646px;" loop autoplay></lottie-player> -->
-            <button class="roundButton" onclick="window.open('mailto:hello@wearekido.com');">LET'S TALK</button>
-        </section>
-
-        <hr />
-        <div class="triLabel">Profile</div>
-
-        <section class="min-60">
-            <h3 class="half-size float-right indent">We are a collaborative partner for tech companies, leading them through periods of transformation by leveraging technology and design to discover, establish, and cultivate fresh business frontiers.</h3>
-        </section>
-
-        <hr />
-        <div class="triLabel">Selected Projects</div>
-
-        <section class="rowDiv">
-            <a href="anodot/index.html" class="case-card">
-                <img src="images/case-anodot.jpg" />
-                <div class="flex-card">
-                    <h2>Anodot</h2>
-                    <h3>Monitoring that understand business</h3>
-                </div>
-            </a>
-            <a href="peerspot/index.html" class="case-card">
-                <img src="images/case-peerspot.jpg" />
-                <div class="flex-card">
-                    <h2>Peerspot</h2>
-                    <h3>The Buying Intelligence Platform</h3>
-                </div>
-            </a>
-            <a href="otterize/index.html" class="case-card">
-                <img src="images/case-otterize.jpg" />
-                <div class="flex-card">
-                    <h2>Otterize</h2>
-                    <h3>Transparent Autherization</h3>
-                </div>
-            </a>
-        </section>
-
-        <hr />
-        <div class="triLabel">Services</div>
 
         <section>
-            <h3 class="half-size float-right indent">We provide a diverse array of services that cater to numerous industries. We specialize in uncovering valuable insights, coming up with creative design concepts, and developing solutions for projects of all scopes and sizes.</h3>
-            <hr class="half-size float-right"/>
             <details>
-                <summary><h2 class="half-size float-right">Strategy</h2></summary>
-                <ul class="half-size float-right">
-                    <li>Discovery</li>
-                    <li>Brand Strategy</li>
-                    <li>Business Strategy</li>
-                    <li>Product Strategy</li>
-                    <li>Product Roadmapping</li>
-                    <li>Messaging</li>
-                </ul>
+                <summary><h2 class="full-width left-align padding-48">Strategic Design </h2></summary>
+                <h3 class="half-size left-align">
+                    Since we formed Kido, we've honed in on three specific types of work where we consistently bring exceptional value.<br/>These areas are also what sets us apart and play a crucial role in empowering your change at scale.
+                </h3>
             </details>
-            <hr class="half-size float-right"/>
+            <hr class="full-width" />
             <details>
-                <summary><h2 class="half-size float-right">Development</h2></summary>
-                <ul class="half-size float-right">
-                    <li>Interface Development</li>
-                    <li>Application Development</li>
-                    <li>Technical Architecture & Direction</li>
-                    <li>Quality Assurance</li>
-                </ul>
+                <summary><h2 class="full-width left-align padding-48">DesignOps</h2></summary>
+                <h3 class="half-size left-align">
+                    Efficient and effective design operations are a priceless resource for cross-functional teams, scaling teams, and established organizations. It serves as a catalyst for streamlined communication and collaboration and ultimately affects the quality of deliverables and outcomes.
+                </h3>
             </details>
-            <hr class="half-size float-right"/>
+            <hr class="full-width" />
             <details>
-                <summary><h2 class="half-size float-right">Design</h2></summary>
-                <ul class="half-size float-right">
-                    <li>Brand Identity Design</li>
-                    <li>Information Architecture</li>
-                    <li>UX/UI</li>
-                    <li>User Testing & Research</li>
-                    <li>Art Direction</li>
-                    <li>Rapid Prototyping</li>
-                    <li>Illustration</li>
-                    <li>Motion</li>
-                    <li>BTL design</li>
-                </ul>
+                <summary><h2 class="full-width left-align padding-48">Design</h2></summary>
+                <h3 class="half-size left-align">
+                    In the realm of product and client partnerships, exceptional visual languages and design excellence set your products apart. Combining stunning aesthetics with outstanding UX, our design expertise elevates your brand, creating standout experiences and visually striking products that leave a lasting impression.
+                </h3>
             </details>
-            <hr class="half-size float-right"/>
-            <details>
-                <summary><h2 class="half-size float-right">Long term partnership</h2></summary>
-                <ul class="half-size float-right">
-                    <li>Business & Digital Strategy</li>
-                    <li>Analytics Review / Report Creation</li>
-                    <li>Needs Funneling & Grooming</li>
-                    <li>New Feature Conception & Implementation</li>
-                    <li>Ongoing Maintenance / Support</li>
-                    <li>Social Media</li>
-                    <li>Figma Design system and documentation</li>
-                    <li>Design QA</li>
-                </ul>
-            </details>
+            <hr class="full-width" />
+            <div class="triLabel left-align margin-24">Use Cases</div>
+            
         </section>
 
-        <hr />
-        <div class="triLabel">Selected Clients</div>
+        <!-- <hr />
+        <div class="triLabel">Use Cases</div> -->
 
         <section class="rowDiv space padding-100 margin-80">
             <img src="images/clients/client-orca.svg" />

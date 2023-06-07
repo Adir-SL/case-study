@@ -134,10 +134,13 @@ h3{
 .float-right{
     float: right;
 }
-ul.float-right{
+ul{
     list-style-type: none;
     text-align: left;
-
+    padding-left: 0;
+}
+ul.float-right{
+    padding-left: revert;
 }
 details > summary {
     list-style: none;
@@ -145,7 +148,7 @@ details > summary {
 details > summary::-webkit-details-marker {
     display: none;
 }
-details[open] h2.float-right::after{
+details[open] h2::after{
     transform: rotate(45deg);
 }
 li{
@@ -180,6 +183,10 @@ li{
 .padding-100{
     padding-top: 100px;
     padding-bottom: 100px;
+}
+.padding-48{
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 .rowDiv{
     display: flex;
@@ -302,21 +309,24 @@ hr{
     font-size: 1.2em;
     margin: 0;
 }
-h2.float-right{
+h2{
     margin-top: 0.4em;
     margin-bottom: 0.1em;
     text-align: left;
-    font-size: 2.4em;
+    /* font-size: 2.4em; */
     letter-spacing: normal;
     cursor: pointer;
     transition: opacity 300ms linear 0s;
     /* display: flex;
     justify-content: space-between; */
 }
-h2.float-right:hover{
+h2.float-right{
+    font-size: 2.4em;
+}
+h2:hover{
     opacity: 0.5;
 }
-h2.float-right::after{
+h2::after{
     content: '+';
     font-size: 0.7em;
     position: absolute;
@@ -377,6 +387,12 @@ h2.float-right::after{
 } */
 .invertHeader{
     filter: invert(100%);
+}
+.selected{
+    opacity: 0.5;
+}
+.margin-24{
+    margin-left: 24px;
 }
 
 
