@@ -151,6 +151,9 @@ details > summary::-webkit-details-marker {
 details[open] h2::after{
     transform: rotate(45deg);
 }
+details[open] h3{
+    margin-bottom: 80px;
+}
 li{
     font-family: 'haas';
     margin: 0.5em 0;
