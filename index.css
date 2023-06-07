@@ -372,6 +372,12 @@ h2.float-right::after{
     transform: scale(1.15) translateX(-2%);
     transform-origin: center;
 }
+/* .invertHeader .linksDiv a{
+    color: #FFFFFF !important;
+} */
+.invertHeader{
+    filter: invert(100%);
+}
 
 
 @media screen and (max-width: 900px) {
