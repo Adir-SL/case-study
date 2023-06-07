@@ -125,6 +125,10 @@ h3{
     font-weight: 400;
     text-align: left;
 }
+h3.alternate{
+    font-size: 2.5em;
+    color: red;
+}
 .indent{
     text-indent: 3em;
 }
@@ -326,6 +330,9 @@ hr{
     display: flex;
     align-items: center;
     gap: 80px;
+}
+div.case-card img{
+    border-radius: 8px;
 }
 .case-card{
     color: #FFFFFF;
