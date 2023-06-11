@@ -349,6 +349,9 @@ header .roundButton{
     opacity: 1;
     transform: translate(-50%, -108%);
 }
+.noselect{
+    user-select: none;
+}
 .linksDiv{
     display: flex;
     gap: 40px;
@@ -365,7 +368,7 @@ header .roundButton{
     text-decoration: none;
     height: 100%;
 }
-.linksDiv a::after{
+/* .linksDiv a::after{
     content: '';
     position: absolute;
     width: 0;
@@ -377,6 +380,9 @@ header .roundButton{
 }
 .linksDiv a:hover::after{
     width: 108%;
+} */
+.linksDiv a:hover{
+    color: #888888;
 }
 hr{
     border: none;
