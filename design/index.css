@@ -169,6 +169,46 @@ p{
 .float-right{
     float: right;
 }
+.breadcrumbs{
+    display: flex;
+    text-transform: uppercase;
+    color: #1C1C1C;
+    position: relative;
+    font-family: 'haas';
+}
+.crumb{
+    margin: 0 8px;
+    position: relative;
+}
+.crumb a{
+    color: #1C1C1C;
+    text-decoration: none;
+}
+.crumb a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-bottom: 1px solid;
+    transition: width 300ms linear 0s;
+}
+.crumb a:hover::after{
+    width: 100%;
+}
+.crumb::after{
+    content: '/';
+    position: absolute;
+    margin-left: 4px;
+}
+.crumb.selected{
+    font-weight: 600;
+    opacity: 1;
+}
+.crumb.selected::after{
+    content: '';
+}
 ul{
     /* list-style-type: none;
     text-align: left; */
