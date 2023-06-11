@@ -135,6 +135,12 @@ h3.alternate{
     font-size: 2.5em;
     color: #D6B678;
 }
+h4{
+    font-size: 1.2em;
+    font-family: 'haas';
+    font-weight: 400;
+    text-align: left;
+}
 .indent{
     text-indent: 3em;
 }
@@ -219,6 +225,9 @@ li{
 }
 img{
     max-width: 80vw;
+    border: 1px solid #DBDBDB;
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 0.06);
 }
 .haas{
     font-family: 'haas';
