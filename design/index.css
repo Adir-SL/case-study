@@ -499,7 +499,7 @@ h2.small-text{
     .case-card img{
         min-width: 100%;
     }
-    .half-size{
+    .half-size, .third-size{
         width: 100%;
     }
     .float-right{
