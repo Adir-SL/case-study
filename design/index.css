@@ -130,6 +130,8 @@ h3{
     font-family: 'haas';
     font-weight: 400;
     text-align: left;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
 }
 h3.alternate{
     font-size: 2.5em;
@@ -140,12 +142,27 @@ h4{
     font-family: 'haas';
     font-weight: 400;
     text-align: left;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+h4.alternate{
+    font-size: 0.7em;
+    font-weight: 500;
+    margin-top: 2.5em;
+}
+p{
+    font-family: 'haas';
+    line-height: 1.5;
+    margin: 0;
 }
 .indent{
     text-indent: 3em;
 }
 .half-size{
     width: 50%;
+}
+.third-size{
+    width: 33%;
 }
 .float-right{
     float: right;
@@ -234,6 +251,7 @@ img{
 }
 .left-align{
     text-align: left;
+    align-items: flex-start;
 }
 .roundButton{
     background-color: #1C1C1C;
