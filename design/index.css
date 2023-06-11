@@ -148,7 +148,9 @@ h4{
 h4.alternate{
     font-size: 0.7em;
     font-weight: 500;
-    margin-top: 2.5em;
+}
+.alternate-margin{
+    margin-top: 3.2em;
 }
 p{
     font-family: 'haas';
