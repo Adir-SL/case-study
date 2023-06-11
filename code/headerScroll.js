@@ -3,8 +3,8 @@ function scrollCheck(){
     scrollPercent = document.querySelectorAll('section')[0].offsetHeight / 100;
     scrollTravel = (document.querySelectorAll('section')[0].offsetHeight - document.querySelectorAll('section')[0].getBoundingClientRect().top) / scrollPercent - 100;
     
-    if(scrollTravel > 50){
-        scrollPos = 50;
+    if(scrollTravel > 35){
+        scrollPos = 35;
     }else{
         if(scrollTravel < 0){
             scrollPos = 0;
@@ -56,8 +56,8 @@ function scrollCheck(){
 
 function kidoFunc(){
     if(document.body.offsetWidth > 899){
-        document.getElementById('titleKido').style.transform = "scale(" + (1 - (scrollPos / 75)) + ") translateY(" + (scrollPos) + "vh)";
+        document.getElementById('titleKido').style.transform = "scale(" + (1 - (scrollPos / 60)) + ") translateY(" + (scrollPos) + "vh)";
     }else{
-        document.getElementById('titleKido').style.transform = "scale(" + (1 - (scrollPos / 200)) + ") translateY(" + (scrollPos * 1.15) + "vh)";
+        document.getElementById('titleKido').style.transform = "scale(" + (1 - (scrollPos / 200)) + ") translateY(" + (scrollPos * 2.5) + "vh)";
     }
 }

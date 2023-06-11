@@ -108,10 +108,10 @@ h1{
     font-weight: 500;
     font-style: italic;
 }
-.secondSection h2::first-line{
+/* .secondSection h2::first-line{
     letter-spacing: -0.07em;
     visibility: hidden;
-}
+} */
 .secondSection path{
     stroke-width: 10px;
 }
