@@ -639,7 +639,7 @@ h2.small-text{
     h1{
         font-size: 4.5em;
     }
-    h2{
+    h2, .secondSection h2{
         font-size: 3em;
     }
     .indent{
@@ -665,9 +665,30 @@ h2.small-text{
         flex-wrap: wrap;
         justify-content: center;
     }
+    .no-padding, .align-padding{
+        transform: none;
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    hr{
+        width: 90%;
+    }
+    hr.float-right{
+        width: 100%;
+    }
+    h2.float-right{
+        margin-top: 0;
+    }
+    summary h2::after{
+        right: 6%;
+    }
     .padding-100 img{
         width: 20vw;
         height: auto;
+    }
+    .linksDiv a{
+        font-size: 0.8em;
     }
     .alternate{
         font-size: 2em;

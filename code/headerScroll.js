@@ -58,6 +58,6 @@ function kidoFunc(){
     if(document.body.offsetWidth > 899){
         document.getElementById('titleKido').style.transform = "scale(" + (1 - (scrollPos / 60)) + ") translateY(" + (scrollPos) + "vh)";
     }else{
-        document.getElementById('titleKido').style.transform = "scale(" + (1 - (scrollPos / 200)) + ") translateY(" + (scrollPos * 2.5) + "vh)";
+        document.getElementById('titleKido').style.transform = "scale(" + (1 - (scrollPos / 150)) + ") translateY(" + (scrollPos * 2.15) + "vh)";
     }
 }
