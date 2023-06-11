@@ -419,7 +419,7 @@ summary h2{
     transition: opacity 300ms linear 0s;
 }
 h2.float-right{
-    font-size: 3.2em;
+    font-size: 3.5em;
 }
 summary h2:hover{
     opacity: 0.5;
@@ -428,7 +428,7 @@ summary h2::after{
     content: '+';
     font-size: 0.7em;
     position: absolute;
-    right: 5%;
+    right: 4%;
     transform-origin: center;
     transition: transform 300ms ease-in-out 0s;
 }
