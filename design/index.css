@@ -1,13 +1,13 @@
 /* font legened:
 Thin: 100 200 300, Light: 400, Regular: 500, Bold: 700 800 */
 
-@import url(font-kepler.css);
-@import url(font-haas.css);
-@import url(font-haas-text.css);
+@import url(../font-kepler.css);
+@import url(../font-haas.css);
+@import url(../font-haas-text.css);
 
 body{
-    background-color: #1C1C1C;
-    color: #FFFFFF;
+    background-color: #FFFFFF;
+    color: #1C1C1C;
     overflow-x: hidden;
 }
 #wrapper{
@@ -50,7 +50,7 @@ header div{
     width: 80px;
     height: 40px;
     transform: translateX(-60px);
-    background-image: url(images/kido.svg);
+    background-image: url(../images/kido.svg);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -60,19 +60,21 @@ section{
     text-align: center;
     min-height: 80vh;
 }
-.firstSection{
+.heroSection{
     background-color: #FFFFFF;
     box-shadow: 0 -10em 0 0 white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.heroSection h2{
+    color: #1C1C1C;
+    font-size: 6em;
+}
 .kido{
     transform-origin: 50% 222%;
     color: #FFFFFF;
     mix-blend-mode: difference;
-    user-select: none;
-    white-space: nowrap;
 }
 ::selection{
     background-color: #a2a2a2;
@@ -216,7 +218,7 @@ li{
     justify-content: space-between;
 }
 img{
-    max-width: 30vw;
+    max-width: 80vw;
 }
 .haas{
     font-family: 'haas';
