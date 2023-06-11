@@ -28,8 +28,8 @@ body{
 header{
     display: flex;
     align-items: center;
-    width: calc(100% - 120px);
-    padding: 0 60px;
+    width: calc(100% - 96px);
+    padding: 0 48px;
     position: sticky;
     top: 0;
 }
@@ -45,7 +45,7 @@ header div{
     align-items: center;
     width: 80px;
     height: 80px;
-    transform: rotate(90deg) scale(0.8);
+    transform: rotate(90deg) scale(0.6) translateY(0.8em) translateX(-1em);
     opacity: 0;
     transition: opacity 300ms linear 0s;
 }
@@ -81,14 +81,20 @@ section{
 ::selection{
     background-color: #a2a2a2;
 }
-#titleKido{
-    width: 90%;
-    height: 20vw;
+.kido{
+    width: 100%;
+    height: 30vw;
     background-image: url(images/wearekido.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     filter: invert(100%);
+}
+.biggerKido{
+    width: 96%;
+    height: 18vw;
+    background-size: cover;
+    background-position: top;
 }
 @keyframes titleAnim{
     0%{transform: translateY(0) scale(1); color: #000000;}
@@ -117,6 +123,10 @@ h1{
 .translate-12 div{
     pointer-events: none !important;
 }
+.secondSection h2{
+    font-size: 6.2em;
+    max-width: 90%;
+}
 h2{
     font-size: 7.2em;
     font-family: 'kepler';
@@ -127,6 +137,9 @@ h2{
     /* font-style: italic; */
     max-width: 82%;
     margin-bottom: 0;
+}
+h2.alternate{
+    margin-bottom: 2em;
 }
 .alternate{
     max-width: 100%;
@@ -202,7 +215,8 @@ li{
     margin: 0;
 }
 .bigger-text{
-    font-size: 1.2em;
+    font-size: 1.1em;
+    line-height: 1.2;
     margin: 8px;
 }
 .margin-48{
@@ -274,6 +288,11 @@ img{
 header .roundButton{
     margin-top: 14px;
 }
+.roundButton:hover{
+    /* transform: scale(0.9); */
+    background-color: #FFFFFF;
+    color: #1C1C1C;
+}
 .invertButton{
     font-size: 1.2em;
     padding: 4px 16px;
@@ -282,10 +301,15 @@ header .roundButton{
     background-color: #FFFFFF;
     color: #1C1C1C;
 }
-.roundButton:hover{
-    /* transform: scale(0.9); */
-    background-color: #FFFFFF;
-    color: #1C1C1C;
+.invertButton:hover{
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+}
+.biggerButton{
+    font-size: 2.7em;
+    font-weight: 400;
+    padding: 4px 28px;
+    padding-bottom: 1px;
 }
 .no-deco{
     text-decoration: none;
@@ -443,13 +467,21 @@ summary h2::after{
     font-size: 2.5em;;
 }
 .icon-div{
-    width: 80px;
-    height: 80px;
+    width: 110px;
+    height: 110px;
     flex-grow: 0;
     flex-shrink: 0;
     background-image: url(images/icon-operational.svg);
     background-repeat: no-repeat;
     background-size: contain;
+    transform: translateY(-1em) translateX(2em);
+}
+.icons-down .icon-div{
+    transform: translateY(-0.5em) translateX(2em);
+}
+.columnDiv h2.alternate{
+    font-size: 2.4em;
+    line-height: 0.75;
 }
 .one-stop{
     background-image: url(images/icon-one-stop.svg);
@@ -463,7 +495,10 @@ summary h2::after{
 .whiteSection{
     background-color: #FFFFFF;
     color: #000000;
-    padding-bottom: 20vh;
+    /* padding-bottom: 20vh; */
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
 }
 .whiteSection .kido{
     padding: 0;
@@ -473,6 +508,7 @@ summary h2::after{
 .whiteSection h3{
     margin-top: 120px;
     margin-bottom: 8px;
+    font-size: 2.5em;
 }
 h3.sm{
     font-size: 1.48em;
@@ -532,7 +568,7 @@ h2.small-text{
 .align-padding{
     width: calc(100% - 120px);
     padding: 0 60px;
-    transform: translateX(-1.5em);
+    /* transform: translateX(-1.5em); */
 }
 .gap-120{
     /* gap: 200px; */
@@ -561,6 +597,26 @@ h2.small-text{
 }
 .transcale-5{
     transform: scale(1.5);
+}
+.semi-full{
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 70px;
+    padding-bottom: 60px;
+    align-items: flex-start;
+}
+.footerDiv{
+    font-family: 'haas-text';
+    font-weight: 600;
+    font-size: 0.8em;
+}
+.footerDiv a{
+    color: #1C1C1C;
+    text-decoration: none;
+}
+.footerDiv a:hover{
+    color: #888888;
 }
 
 /* mobile */
