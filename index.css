@@ -715,4 +715,18 @@ h2.small-text{
     .tagDiv{
         font-size: 1em;
     }
+    .margin-160{
+        margin-bottom: 100px;
+    }
+    .margin-top-160{
+        margin-top: 100px !important;
+    }
+    .clientsDiv{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .gap-120 img{
+        height: auto;
+        width: 3.5em;
+    }
 }
