@@ -340,7 +340,7 @@ img{
     width: 108%;
 }
 hr{
-    border-color: #7B7B7B;
+    border: 1px solid #C7C7C7;
     width: calc(100% - 80px);
 }
 .triLabel{
