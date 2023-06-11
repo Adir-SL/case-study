@@ -78,6 +78,15 @@ section{
 ::selection{
     background-color: #a2a2a2;
 }
+#titleKido{
+    width: 80%;
+    height: 30vw;
+    background-image: url(images/wearekido.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    filter: invert(100%);
+}
 @keyframes titleAnim{
     0%{transform: translateY(0) scale(1); color: #000000;}
     100%{transform: translateY(50vh) scale(0.35); color: #FFFFFF;}
