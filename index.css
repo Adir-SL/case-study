@@ -137,32 +137,34 @@ h2{
     letter-spacing: normal;
 }
 h3{
-    font-size: 1.5em;
+    font-size: 1.65em;
     font-family: 'haas';
     font-weight: 400;
     text-align: left;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
 }
 h3.alternate{
     font-size: 2.5em;
     color: #D6B678;
 }
-.indent{
+/* .indent{
     text-indent: 3em;
-}
+} */
 .half-size{
     width: 50%;
 }
-.float-right{
+/* .float-really{
     float: right;
-}
+} */
 ul{
     list-style-type: none;
     text-align: left;
     padding-left: 0;
 }
-ul.float-right{
+/* ul.float-right{
     padding-left: revert;
-}
+} */
 details > summary {
     list-style: none;
 }
@@ -188,6 +190,10 @@ li{
     align-items: center;
     gap: 48px;
 }
+.justify{
+    justify-content: space-between;
+    gap: unset !important;
+}
 .no-gap{
     gap: 0;
 }
@@ -204,6 +210,12 @@ li{
 .margin-80{
     margin-bottom: 80px;
 }
+.margin-120{
+    margin-bottom: 120px;
+}
+.margin-160{
+    margin-bottom: 200px;
+}
 .padding-100{
     padding-top: 100px;
     padding-bottom: 100px;
@@ -215,7 +227,7 @@ li{
 .rowDiv{
     display: flex;
     gap: 48px;
-    margin-top: 80px;
+    margin-top: 4px;
     min-height: 0;
     padding-bottom: 100px;
 }
@@ -244,23 +256,29 @@ img{
     outline: none;
     border-radius: 999px;
     font-family: 'haas';
-    font-size: 1.2em;
-    font-weight: 500;
-    padding: 4px 16px;
-    padding-bottom: 1px;
+    font-size: 2.7em;
+    font-weight: 400;
+    padding: 4px 28px;
+    padding-bottom: 0;
     white-space: nowrap;
     cursor: pointer;
-    transition: opacity 300ms linear 0s, transform 300ms ease-in-out 0s;
+    transition: opacity 300ms linear 0s, all 300ms linear 0s;
 }
 header .roundButton{
     margin-top: 14px;
 }
 .invertButton{
+    font-size: 1.2em;
+    padding: 4px 16px;
+    padding-bottom: 1px;
+    font-weight: 500;
     background-color: #FFFFFF;
     color: #1C1C1C;
 }
 .roundButton:hover{
-    transform: scale(0.9);
+    /* transform: scale(0.9); */
+    background-color: #FFFFFF;
+    color: #1C1C1C;
 }
 .no-deco{
     text-decoration: none;
@@ -334,6 +352,10 @@ hr{
     border-bottom: 1px solid #5b5b5b;
     width: calc(100% - 120px);
 }
+hr.float-right{
+    width: 103.3%;
+    margin: 32px 0;
+}
 .triLabel{
     position: relative;
     margin-left: 80px;
@@ -354,8 +376,8 @@ hr{
 }
 .flex-card{
     display: flex;
-    align-items: center;
-    gap: 80px;
+    align-items: flex-start;
+    gap: 56px;
 }
 div.case-card img{
     border-radius: 8px;
@@ -365,9 +387,10 @@ div.case-card img{
     text-decoration: none;
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 32%;
     height: fit-content;
     gap: 24px;
+    margin-top: 60px;
 }
 .case-card img{
     transition: transform 300ms ease-in-out 0s;
@@ -376,24 +399,27 @@ div.case-card img{
     transform: scale(1.05);
 }
 .case-card h2{
-    font-size: 1em;
+    font-size: 1.1em;
+    line-height: 2.3;
     margin: 0;
     letter-spacing: normal;
 }
 .case-card h3{
-    font-size: 1.2em;
+    font-size: 1.6em;
     margin: 0;
 }
 summary h2{
-    margin-top: 0.4em;
-    margin-bottom: 0.1em;
+    /* margin-top: 0.4em; */
+    /* margin-bottom: 0.1em; */
+    margin: 0;
+    margin-top: 0.8em;
     text-align: left;
     letter-spacing: normal;
     cursor: pointer;
     transition: opacity 300ms linear 0s;
 }
 h2.float-right{
-    font-size: 2.4em;
+    font-size: 3.2em;
 }
 summary h2:hover{
     opacity: 0.5;
@@ -402,7 +428,7 @@ summary h2::after{
     content: '+';
     font-size: 0.7em;
     position: absolute;
-    right: 11%;
+    right: 5%;
     transform-origin: center;
     transition: transform 300ms ease-in-out 0s;
 }
@@ -440,6 +466,9 @@ summary h2::after{
 .whiteSection h3{
     margin-top: 120px;
     margin-bottom: 8px;
+}
+h3.sm{
+    font-size: 1.48em;
 }
 .align-center{
     text-align: center;
@@ -479,6 +508,24 @@ h2.small-text{
 }
 .line-double{
     line-height: 1.5;
+}
+.padding-top{
+    margin-top: 0;
+    padding-top: 0;
+}
+.padding-sm{
+    padding: 0 4%;
+    width: 92%;
+}
+.no-padding{
+    padding: 0 3%;
+    width: 94%;
+    transform: translateX(-1.5em);
+}
+.align-padding{
+    width: calc(100% - 120px);
+    padding: 0 60px;
+    transform: translateX(-1.5em);
 }
 
 /* mobile */
