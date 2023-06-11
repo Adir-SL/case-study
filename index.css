@@ -66,6 +66,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 6em;
 }
 .kido{
     transform-origin: 50% 222%;
@@ -82,7 +83,7 @@ section{
     100%{transform: translateY(50vh) scale(0.35); color: #FFFFFF;}
 }
 h1{
-    font-size: 12em;
+    font-size: 16em;
     color: #101010;
     font-family: 'kepler';
     letter-spacing: -0.07em;
