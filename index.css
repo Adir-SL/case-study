@@ -245,7 +245,7 @@ li{
     margin-top: 0;
 }
 .space{
-    justify-content: space-between;
+    justify-content: space-around;
 }
 img{
     max-width: 30vw;
