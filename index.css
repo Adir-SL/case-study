@@ -547,6 +547,21 @@ h2.small-text{
     width: 11em;
     /* transform: scale(1.2) */
 }
+.transcale-8{
+    transform: scale(0.8);
+}
+.transcale-9{
+    transform: scale(0.9);
+}
+.transcale-1{
+    transform: scale(1.1);
+}
+.transcale-2{
+    transform: scale(1.2);
+}
+.transcale-5{
+    transform: scale(1.5);
+}
 
 /* mobile */
 @media screen and (max-width: 900px) {
