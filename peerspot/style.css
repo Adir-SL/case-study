@@ -84,6 +84,7 @@ header div{
     font-size: 1.5em;
     font-weight: 500;
     padding: 4px 16px;
+    padding-bottom: 1px;
     white-space: nowrap;
     cursor: pointer;
     transition: opacity 300ms linear 0s, transform 300ms ease-in-out 0s;
