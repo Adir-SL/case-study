@@ -118,14 +118,14 @@ h1{
     pointer-events: none !important;
 }
 h2{
-    font-size: 4em;
+    font-size: 7.2em;
     font-family: 'kepler';
-    letter-spacing: -0.03em;
+    letter-spacing: -0.04em;
     line-height: 1em;
     text-transform: capitalize;
     font-weight: 500;
-    font-style: italic;
-    max-width: 75%;
+    /* font-style: italic; */
+    max-width: 82%;
     margin-bottom: 0;
 }
 .alternate{
@@ -330,15 +330,17 @@ header .roundButton{
     width: 108%;
 }
 hr{
-    border-color: #7B7B7B;
-    width: calc(100% - 80px);
+    border: none;
+    border-bottom: 1px solid #5b5b5b;
+    width: calc(100% - 120px);
 }
 .triLabel{
     position: relative;
-    margin-left: 60px;
+    margin-left: 80px;
     font-family: 'haas-text';
     font-weight: 200;
-    font-size: 0.8em;
+    font-size: 0.7em;
+    margin-top: 4px;
 }
 .triLabel::before{
     content: '';

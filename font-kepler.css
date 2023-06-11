@@ -8,8 +8,15 @@
 
 @font-face {
     font-family: "kepler";
+    src: url("fonts/KeplerStd-MediumIt.otf") format("opentype");
+    font-weight: 500 600 700 800;
+    font-style: italic;
+    font-display: block;
+}
+@font-face {
+    font-family: "kepler";
     src: url("fonts/KeplerStd-Italic.otf") format("opentype");
-    font-weight: 400 500 600 700 800;
+    font-weight: 400;
     font-style: italic;
     font-display: block;
 }
