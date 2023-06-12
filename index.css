@@ -57,6 +57,13 @@ header div{
     background-repeat: no-repeat;
     background-size: contain;
 }
+.logoText a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: none;
+    background-color: transparent;
+}
 section{
     width: 80%;
     padding: 0 10%;
