@@ -76,6 +76,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 4em;
 }
 .heroSection h2{
     color: #1C1C1C;
@@ -656,6 +657,12 @@ h2.small-text{
 
 /* mobile */
 @media screen and (max-width: 900px) {
+    .heroSection h2{
+        font-size: 3em;
+    }
+    .linksDiv a {
+        font-size: 0.8em;
+    }
     .rowDiv{
         flex-direction: column;
     }
