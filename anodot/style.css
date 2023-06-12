@@ -57,11 +57,13 @@ body{
 header{
     display: flex;
     align-items: center;
-    width: calc(100% - 120px);
-    padding: 0 60px;
+    width: calc(100% - 96px);
+    padding: 0 48px;
     position: sticky;
     top: 0;
-    z-index: 999;
+}
+header *{
+    transform: translateY(-10px);
 }
 header div{
     transition: opacity 300ms linear 0s;
@@ -72,17 +74,24 @@ header div{
     align-items: center;
     width: 80px;
     height: 80px;
-    transform: rotate(90deg) scale(0.8);
+    transform: rotate(90deg) scale(0.6) translateY(0.8em) translateX(-1em);
     opacity: 0;
     transition: opacity 300ms linear 0s;
 }
 .logoText{
     width: 80px;
-    height: 40px;
-    transform: translateX(-60px);
+    height: 30px;
+    transform: translateY(-10px) translateX(-60px);
     background-image: url(../images/kido.svg);
     background-repeat: no-repeat;
     background-size: contain;
+}
+.logoText a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: none;
+    background-color: transparent;
 }
 .invertHeader, .logoDiv{
     filter: invert(100%);
@@ -98,36 +107,57 @@ header div{
     outline: none;
     border-radius: 999px;
     font-family: 'haas';
-    font-size: 1.5em;
-    font-weight: 500;
-    padding: 4px 16px;
-    padding-bottom: 1px;
+    font-size: 2.7em;
+    font-weight: 400;
+    padding: 4px 28px;
+    padding-bottom: 0;
     white-space: nowrap;
     cursor: pointer;
-    transition: opacity 300ms linear 0s, transform 300ms ease-in-out 0s;
+    transition: opacity 300ms linear 0s, all 300ms linear 0s;
 }
-.invertButton{
+header .roundButton{
+    margin-top: 14px;
+}
+.roundButton:hover{
+    /* transform: scale(0.9); */
     background-color: #FFFFFF;
     color: #1C1C1C;
 }
-.roundButton:hover{
-    transform: scale(0.9);
+.invertButton{
+    font-size: 1.2em;
+    padding: 4px 16px;
+    padding-bottom: 1px;
+    font-weight: 500;
+    background-color: #FFFFFF;
+    color: #1C1C1C;
+}
+.invertButton:hover{
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+}
+.biggerButton{
+    font-size: 2.7em;
+    font-weight: 400;
+    padding: 4px 28px;
+    padding-bottom: 1px;
 }
 .linksDiv{
     display: flex;
     gap: 40px;
     flex-grow: 1;
-    height: 100%;
+    /* height: 100%; */
+    padding-top: 36px;
 }
 .linksDiv a{
     position: relative;
     font-family: 'haas';
+    font-size: 1.2em;
     font-weight: 500;
     color: #1C1C1C;
     text-decoration: none;
-    /* height: 100%; */
+    height: 100%;
 }
-.linksDiv a::after{
+/* .linksDiv a::after{
     content: '';
     position: absolute;
     width: 0;
@@ -139,6 +169,9 @@ header div{
 }
 .linksDiv a:hover::after{
     width: 108%;
+} */
+.linksDiv a:hover{
+    color: #888888;
 }
 .sticky{
     position: sticky;
