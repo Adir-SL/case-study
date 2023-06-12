@@ -210,7 +210,10 @@ p{
     color: #1C1C1C;
     text-decoration: none;
 }
-.crumb a::after{
+.crumb a:hover{
+    color: #888888;
+}
+/* .crumb a::after{
     content: '';
     position: absolute;
     width: 0;
@@ -222,7 +225,7 @@ p{
 }
 .crumb a:hover::after{
     width: 100%;
-}
+} */
 .crumb::after{
     content: '/';
     position: absolute;
