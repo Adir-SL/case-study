@@ -748,4 +748,7 @@ h2.small-text{
     .triLabel::before{
         transform: translate(-20px, 2px);
     }
+    .footerDiv{
+        gap: 0;
+    }
 }
