@@ -744,7 +744,10 @@ h2.small-text{
     }
     .crumb{
         white-space: nowrap;
-        font-size: .75em;
+        font-size: 3.25vw;
         line-height: 1.5;
+    }
+    section{
+        min-height: 0;
     }
 }
