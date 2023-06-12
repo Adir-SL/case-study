@@ -432,6 +432,16 @@ video{
 }
 
 @media screen and (max-width: 900px) {
+    #mainHeader .roundButton{
+        display: none;
+    }
+    header{
+        width: calc(100% - 20px);
+        padding: 0 10px;
+    }
+    .linksDiv a{
+        font-size: 0.8em;
+    }
     .absolute .links{
         opacity: 0;
         pointer-events: none;
