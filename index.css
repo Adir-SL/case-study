@@ -543,7 +543,7 @@ h3.sm{
     filter: invert(100%);
 }
 .selected{
-    opacity: 0.5;
+    opacity: 0.3;
     pointer-events: none;
 }
 .margin-24{
