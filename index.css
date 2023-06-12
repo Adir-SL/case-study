@@ -453,6 +453,9 @@ div.case-card img{
     /* line-height: 2.3; */
     margin: 0;
 }
+.case-card .small-text{
+    line-height: 1;
+}
 summary h2{
     /* margin-top: 0.4em; */
     /* margin-bottom: 0.1em; */
