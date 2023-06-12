@@ -739,4 +739,12 @@ h2.small-text{
     .tagDiv{
         font-size: 1em;
     }
+    .breadcrumbs{
+        flex-wrap: wrap;
+    }
+    .crumb{
+        white-space: nowrap;
+        font-size: .75em;
+        line-height: 1.5;
+    }
 }
