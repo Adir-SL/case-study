@@ -44,6 +44,7 @@ header{
     padding: 0 48px;
     position: sticky;
     top: 0;
+    z-index: 999;
 }
 header *{
     transform: translateY(-10px);
