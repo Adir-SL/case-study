@@ -750,4 +750,7 @@ h2.small-text{
     section{
         min-height: 0;
     }
+    .footerDiv{
+        gap: 0;
+    }
 }
