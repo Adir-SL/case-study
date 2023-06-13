@@ -85,24 +85,21 @@ section{
     mix-blend-mode: difference;
     user-select: none;
     white-space: nowrap;
-}
-::selection{
-    background-color: #a2a2a2;
-}
-.kido{
     width: 100%;
     height: 30vw;
-    /* background-image: url(images/wearekido.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center; */
     filter: invert(100%);
+}
+.kido path{
+    transition: fill 300ms linear 0s;
 }
 .biggerKido{
     width: 96%;
     height: 18vw;
     background-size: cover;
     background-position: top;
+}
+::selection{
+    background-color: #a2a2a2;
 }
 @keyframes titleAnim{
     0%{transform: translateY(0) scale(1); color: #000000;}
