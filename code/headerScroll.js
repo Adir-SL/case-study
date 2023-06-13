@@ -55,16 +55,26 @@ function scrollCheck(){
 }
 
 function kidoFunc(){
-    if(document.body.offsetWidth > 899){
-        document.getElementById('titleKido').style.transform = "scale(" + (1 - (scrollPos / 60)) + ") translateY(" + (scrollPos * 3.75) + "vh)";
-    }else{
-        document.getElementById('titleKido').style.transform = "scale(" + (1 - (scrollPos / 150)) + ") translateY(" + (scrollPos * 2.3) + "vh)";
-    }
-    if(scrollPos == 35){
+    document.getElementById('titleKido').style.setProperty('--scrollVar', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+
+    if(document.getElementById("titleKido").getBoundingClientRect().top > document.getElementsByClassName("firstSection")[0].getBoundingClientRect().bottom){
         document.getElementById('titleKido').getElementsByTagName('path')[0].style.fill = "#000000";
         document.getElementById('titleKido').style.mixBlendMode = "normal";
     }else{
         document.getElementById('titleKido').getElementsByTagName('path')[0].style.fill = "#101010";
         document.getElementById('titleKido').style.mixBlendMode = "difference";
     }
+
+    // if(document.body.offsetWidth > 899){
+    //     document.getElementById('titleKido').style.transform = "scale(" + (1 - (scrollPos / 60)) + ") translateY(" + (scrollPos * 3.75) + "vh)";
+    // }else{
+    //     document.getElementById('titleKido').style.transform = "scale(" + (1 - (scrollPos / 150)) + ") translateY(" + (scrollPos * 2.3) + "vh)";
+    // }
+    // if(scrollPos == 35){
+    //     document.getElementById('titleKido').getElementsByTagName('path')[0].style.fill = "#000000";
+    //     document.getElementById('titleKido').style.mixBlendMode = "normal";
+    // }else{
+    //     document.getElementById('titleKido').getElementsByTagName('path')[0].style.fill = "#101010";
+    //     document.getElementById('titleKido').style.mixBlendMode = "difference";
+    // }
 }

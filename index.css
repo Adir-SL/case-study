@@ -637,6 +637,22 @@ h2.small-text{
 .footerDiv a:hover{
     color: #888888;
 }
+body{
+    --scroll: 0;
+}
+#titleKido{
+    --scrollVar: 0;
+    animation: kidoAnim 1s ease-in-out;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scrollVar) * 1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+@keyframes kidoAnim{
+    0%{width: 100%; height: 30vw; transform: translateY(0);}
+    100%{width: 24em; height: 8em; transform: translateY(65vh);}
+}
 
 /* mobile */
 @media screen and (max-width: 900px) {
