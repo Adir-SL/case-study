@@ -56,8 +56,8 @@ function scrollCheck(){
 
 function kidoFunc(){
     if(document.body.offsetWidth > 899){
-        document.getElementById('titleKido').style.transform = "scale(" + (1 - (scrollPos / 60)) + ") translateY(" + (scrollPos) + "vh)";
+        document.getElementById('titleKido').style.transform = "scale(" + (1 - (scrollPos / 60)) + ") translateY(" + (scrollPos * 3.75) + "vh)";
     }else{
-        document.getElementById('titleKido').style.transform = "scale(" + (1 - (scrollPos / 150)) + ") translateY(" + (scrollPos * 2.15) + "vh)";
+        document.getElementById('titleKido').style.transform = "scale(" + (1 - (scrollPos / 150)) + ") translateY(" + (scrollPos * 2.3) + "vh)";
     }
 }
