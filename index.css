@@ -95,8 +95,10 @@ section{
 .biggerKido{
     width: 96%;
     height: 18vw;
-    background-size: cover;
-    background-position: top;
+    background-image: url(images/wearekido.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 ::selection{
     background-color: #a2a2a2;
@@ -632,6 +634,7 @@ h2.small-text{
     font-family: 'haas-text';
     font-weight: 600;
     font-size: 0.8em;
+    /* transform: translateY(-8vw); */
 }
 .footerDiv a{
     color: #1C1C1C;
