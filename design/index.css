@@ -99,11 +99,18 @@ section{
     background-position: center;
     filter: invert(100%);
 }
-.biggerKido{
+/* .biggerKido{
     width: 96%;
     height: 18vw;
     background-size: cover;
     background-position: top;
+} */
+.biggerKido{
+    width: 96%;
+    height: 18vw;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 @keyframes titleAnim{
     0%{transform: translateY(0) scale(1); color: #000000;}
