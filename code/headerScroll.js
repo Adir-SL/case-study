@@ -60,4 +60,9 @@ function kidoFunc(){
     }else{
         document.getElementById('titleKido').style.transform = "scale(" + (1 - (scrollPos / 150)) + ") translateY(" + (scrollPos * 2.3) + "vh)";
     }
+    if(document.getElementById('titleKido').getBoundingClientRect().bottom < document.getElementsByClassName('firstSection')[0].getBoundingClientRect().bottom){
+        
+    }else{
+        // document.getElementById('titleKido').style.filter = "brightness(-10000000000000%) invert(100%)";
+    }
 }
