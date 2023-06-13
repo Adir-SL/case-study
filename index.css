@@ -79,7 +79,8 @@ section{
     padding-bottom: 6em;
 }
 .kido{
-    transform-origin: 50% 222%;
+    /* transform-origin: 50% 222%; */
+    transform-origin: bottom center;
     color: #FFFFFF;
     mix-blend-mode: difference;
     user-select: none;
