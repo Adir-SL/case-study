@@ -61,8 +61,8 @@ function kidoFunc(){
         document.getElementById('titleKido').style.transform = "scale(" + (1 - (scrollPos / 150)) + ") translateY(" + (scrollPos * 2.3) + "vh)";
     }
     if(document.getElementById('titleKido').getBoundingClientRect().bottom < document.getElementsByClassName('firstSection')[0].getBoundingClientRect().bottom){
-        
+        document.getElementById('titleKido').getElementsByTagName('path')[0].style.fill = "#101010";
     }else{
-        // document.getElementById('titleKido').style.filter = "brightness(-10000000000000%) invert(100%)";
+        document.getElementById('titleKido').getElementsByTagName('path')[0].style.fill = "#000000";
     }
 }
