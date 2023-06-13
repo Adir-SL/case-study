@@ -312,7 +312,7 @@ li{
 .space{
     justify-content: space-between;
 }
-img{
+img, video{
     max-width: 80vw;
     border: 1px solid #DBDBDB;
     border-radius: 8px;
