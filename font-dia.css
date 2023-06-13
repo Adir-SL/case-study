@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: "diatype";
     src: url("fonts/diatype-mono/ABCDiatypeMono-Thin-Trial.otf") format("opentype");
     font-weight: 100 200 300;
@@ -69,6 +69,37 @@
     font-family: "diatype";
     src: url("fonts/diatype-mono/ABCDiatypeMono-BoldItalic-Trial.otf") format("opentype");
     font-weight: 700 800;
+    font-style: italic;
+    font-display: block;
+} */
+
+@font-face {
+    font-family: "diatype";
+    src: url("fonts/KeplerStd-ItDisp.otf") format("opentype");
+    font-weight: 100 200 300 400 500 600 700 800;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: "diatype";
+    src: url("fonts/KeplerStd-MediumIt.otf") format("opentype");
+    font-weight: 500 600 700 800;
+    font-style: italic;
+    font-display: block;
+}
+@font-face {
+    font-family: "diatype";
+    src: url("fonts/KeplerStd-Italic.otf") format("opentype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: block;
+}
+
+@font-face {
+    font-family: "diatype";
+    src: url("fonts/KeplerStd-LightIt.otf") format("opentype");
+    font-weight: 100 200 300;
     font-style: italic;
     font-display: block;
 }
