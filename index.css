@@ -651,10 +651,10 @@ h2.small-text{
     align-items: center;
     animation: clientsAnim 20000ms linear infinite;
 }
-/* @keyframes clientsAnim{
+@keyframes clientsAnim{
     0%{transform: translateX(-10%);}
     100%{transform: translateX(-60.4%);}
-} */
+}
 #titleKido{
     --scrollVar: 0;
     animation: kidoAnim 1s ease-in-out;
