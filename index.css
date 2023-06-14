@@ -805,6 +805,6 @@ h2.small-text{
     }
     @keyframes kidoAnim{
         0%{width: 100%; height: 30vw; transform: translateY(0);}
-        100%{width: 14em; height: 4em; transform: translateY(64vh);}
+        100%{width: 14em; height: 4em; transform: translateY(calc(40vh + 10em));}
     }
 }
