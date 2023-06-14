@@ -647,14 +647,20 @@ h2.small-text{
     justify-content: flex-start;
     align-items: center;
 }
-.clientsDiv .rowDiv{
+.clientsStrip{
+    background-image: url(images/clients/clients-strip.svg);
+    background-size: cover;
+    height: 0.25vw;
+    width: 100%;
+}
+/* .clientsDiv .rowDiv{
     align-items: center;
     animation: clientsAnim 20000ms linear infinite;
 }
 @keyframes clientsAnim{
     0%{transform: translateX(-10%);}
     100%{transform: translateX(-60.4%);}
-}
+} */
 #titleKido{
     --scrollVar: 0;
     animation: kidoAnim 1s ease-in-out;
