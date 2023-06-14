@@ -652,6 +652,11 @@ h2.small-text{
     background-size: cover;
     height: 0.25vw;
     width: 100%;
+    animation: clientsStripAnim 5000ms linear infinite;
+}
+@keyframes clientsStripAnim{
+    0%{background-position: 0 0;}
+    100%{background-position: 127.2% 0;}
 }
 /* .clientsDiv .rowDiv{
     align-items: center;
