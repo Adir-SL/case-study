@@ -648,15 +648,17 @@ h2.small-text{
     align-items: center;
 }
 .clientsStrip{
+    --stripSize: 300vw;
     background-image: url(images/clients/clients-strip.svg);
-    background-size: 300vw;
+    background-size: var(--stripSize);
     height: 2vw;
     width: 100%;
+    background-repeat: repeat-x;
     animation: clientsStripAnim 20000ms linear infinite;
 }
 @keyframes clientsStripAnim{
     0%{background-position: 0 50%;}
-    100%{background-position: -300vw 50%;}
+    100%{background-position: calc(var(--stripSize) * -1) 50%;}
 }
 /* .clientsDiv .rowDiv{
     align-items: center;
@@ -686,16 +688,19 @@ h2.small-text{
     .rowDiv{
         flex-direction: column;
     }
-    .clientsDiv .rowDiv img{
+    /* .clientsDiv .rowDiv img{
         display: none;
     }
     .clientsDiv .rowDiv .firstImg{
         display: block;
-    }
+    } */
     .clientsDiv .rowDiv{
         flex-direction: row;
         flex-wrap: wrap;
-        animation: none;
+        /* animation: none; */
+    }
+    .clientsStrip{
+        --stripSize: 600vw;
     }
     .case-card{
         width: 100%;
