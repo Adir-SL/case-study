@@ -523,6 +523,7 @@ summary h2::after{
     padding-left: 0;
     padding-right: 0;
     width: 100%;
+    min-height: 0;
 }
 .whiteSection .kido{
     padding: 0;
