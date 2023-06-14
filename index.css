@@ -649,14 +649,14 @@ h2.small-text{
 }
 .clientsStrip{
     background-image: url(images/clients/clients-strip.svg);
-    background-size: cover;
-    height: 0.25vw;
+    background-size: 300vw;
+    height: 2vw;
     width: 100%;
-    animation: clientsStripAnim 5000ms linear infinite;
+    animation: clientsStripAnim 20000ms linear infinite;
 }
 @keyframes clientsStripAnim{
-    0%{background-position: 0 0;}
-    100%{background-position: 127.2% 0;}
+    0%{background-position: 0 50%;}
+    100%{background-position: -300vw 50%;}
 }
 /* .clientsDiv .rowDiv{
     align-items: center;
