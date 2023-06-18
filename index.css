@@ -444,8 +444,9 @@ hr{
     width: calc(100% - 120px);
 }
 hr.float-right{
-    width: 103.3%;
+    /* width: 103.3%; */
     margin: 32px 0;
+    width: 100%;
 }
 .triLabel{
     position: relative;
