@@ -731,8 +731,12 @@ h2.small-text{
 /* mobile */
 @media screen and (max-width: 900px) {
     details{
+        max-height: unset;
         overflow: visible;
     }
+    /* details[open]{
+        max-height: unset;
+    } */
     .rowDiv{
         flex-direction: column;
     }
@@ -765,8 +769,11 @@ h2.small-text{
     h1{
         font-size: 4.5em;
     }
-    h2, .secondSection h2{
+    h2, .secondSection h2, h2.smaller-h2{
         font-size: 3em;
+    }
+    .less-than-half{
+        width: unset;
     }
     .indent{
         text-indent: 0em;
