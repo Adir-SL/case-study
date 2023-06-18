@@ -516,6 +516,7 @@ summary h2{
 h2.float-right{
     font-size: 3.5em;
     width: 100%;
+    white-space: pre;
 }
 summary h2:hover{
     opacity: 0.5;
@@ -828,6 +829,7 @@ h2.small-text{
     }
     h2.float-right{
         margin-top: 0;
+        white-space: unset;
     }
     summary h2::after{
         right: 6%;
