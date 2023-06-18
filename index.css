@@ -783,6 +783,10 @@ h2.small-text{
     h2, .secondSection h2, h2.smaller-h2{
         font-size: 3em;
     }
+    h2.smaller-h2{
+        width: 100%;
+        max-width: 100%;
+    }
     .less-than-half{
         width: unset;
     }
