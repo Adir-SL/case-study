@@ -449,13 +449,14 @@ hr.float-right{
 }
 .triLabel{
     position: relative;
-    margin-left: 80px;
+    /* margin-left: 80px; */
+    margin-left: 60px;
     font-family: 'haas-text';
     font-weight: 200;
     font-size: 0.94em;
     margin-top: 4px;
 }
-.triLabel::before{
+/* .triLabel::before{
     content: '';
     position: absolute;
     width: 12px;
@@ -464,7 +465,7 @@ hr.float-right{
     background-image: url(images/tri.svg);
     background-repeat: no-repeat;
     background-size: contain;
-}
+} */
 .flex-card{
     display: flex;
     align-items: flex-start;
