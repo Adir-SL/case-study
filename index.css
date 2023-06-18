@@ -752,7 +752,18 @@ h2.small-text{
         /* animation: none; */
     }
     .clientsStrip{
-        --stripSize: 600vw;
+        background-image: url(images/clients/clients-mobile-01.svg);
+    }
+    @keyframes clientsScroll{
+        0%{background-image: url(images/clients/clients-mobile-01.svg);}
+        12.5%{background-image: url(images/clients/clients-mobile-02.svg);}
+        25%{background-image: url(images/clients/clients-mobile-03.svg);}
+        37.5%{background-image: url(images/clients/clients-mobile-04.svg);}
+        50%{background-image: url(images/clients/clients-mobile-05.svg);}
+        62.5%{background-image: url(images/clients/clients-mobile-06.svg);}
+        75%{background-image: url(images/clients/clients-mobile-07.svg);}
+        87.5%{background-image: url(images/clients/clients-mobile-08.svg);}
+        100%{background-image: url(images/clients/clients-mobile-01.svg);}
     }
     .case-card{
         width: 100%;
