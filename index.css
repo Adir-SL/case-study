@@ -214,7 +214,10 @@ details[open] h2::after{
     transform: rotate(45deg);
 }
 details[open] h3{
+    margin-top: 0;
     margin-bottom: 80px;
+    font-size: 1.2em;
+    line-height: 1.4;
 }
 li{
     font-family: 'haas';
