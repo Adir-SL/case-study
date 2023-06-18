@@ -657,7 +657,7 @@ h2.small-text{
     width: 100%;
     background-repeat: repeat-x;
     /* animation: clientsStripAnim 20000ms linear infinite; */
-    animation: clientsScroll 10000ms linear infinite;
+    animation: clientsScroll 10000ms steps(1) infinite;
 }
 @keyframes clientsStripAnim{
     0%{background-position: 0 50%;}
@@ -665,11 +665,13 @@ h2.small-text{
 }
 @keyframes clientsScroll{
     0%{background-image: url(images/clients/clients-strip-01.svg);}
-    32%{background-image: url(images/clients/clients-strip-01.svg);}
-    33%{background-image: url(images/clients/clients-strip-02.svg);}
-    65%{background-image: url(images/clients/clients-strip-02.svg);}
-    66%{background-image: url(images/clients/clients-strip-03.svg);}
-    99%{background-image: url(images/clients/clients-strip-03.svg);}
+    /* 24%{background-image: url(images/clients/clients-strip-01.svg);} */
+    25%{background-image: url(images/clients/clients-strip-02.svg);}
+    /* 49%{background-image: url(images/clients/clients-strip-02.svg);} */
+    50%{background-image: url(images/clients/clients-strip-03.svg);}
+    /* 74%{background-image: url(images/clients/clients-strip-03.svg);} */
+    75%{background-image: url(images/clients/clients-strip-04.svg);}
+    /* 99%{background-image: url(images/clients/clients-strip-04.svg);} */
     100%{background-image: url(images/clients/clients-strip-01.svg);}
 }
 /* .clientsDiv .rowDiv{
