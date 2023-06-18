@@ -29,6 +29,9 @@ body{
     width: calc(100% - 96px);
     padding: 0 48px;
 }
+.new-width details{
+    max-height: 19em;
+}
 header{
     display: flex;
     align-items: center;
@@ -210,14 +213,14 @@ details > summary {
 details > summary::-webkit-details-marker {
     display: none;
 }
-/* details{
-    max-height: 0;
+details{
+    max-height: 6.5em;
     overflow: hidden;
-    transition: all 300ms ease-in-out 0s;
+    transition: max-height 500ms ease-in-out 0s;
 }
 details[open]{
     max-height: 100vh;
-} */
+}
 details[open] h2::after{
     transform: rotate(45deg);
 }
