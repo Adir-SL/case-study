@@ -307,7 +307,7 @@ img{
 .roundButton{
     background-color: #1C1C1C;
     color: #FFFFFF;
-    border: 2px solid;
+    border: 2px solid #FFFFFF;
     outline: none;
     border-radius: 999px;
     font-family: 'haas';
@@ -334,6 +334,7 @@ header .roundButton{
     font-weight: 500;
     background-color: #E3E3E3;
     color: #1C1C1C;
+    border: 2px solid #1C1C1C;
 }
 .realWhite, .whiteSection .invertButton{
     background-color: #FFFFFF;
