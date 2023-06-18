@@ -650,16 +650,27 @@ h2.small-text{
 }
 .clientsStrip{
     --stripSize: 300vw;
-    background-image: url(images/clients/clients-strip.svg);
+    background-image: url(images/clients/clients-strip-01.svg);
     background-size: var(--stripSize);
+    background-size: contain;
     height: 2vw;
     width: 100%;
     background-repeat: repeat-x;
-    animation: clientsStripAnim 20000ms linear infinite;
+    /* animation: clientsStripAnim 20000ms linear infinite; */
+    animation: clientsScroll 10000ms linear infinite;
 }
 @keyframes clientsStripAnim{
     0%{background-position: 0 50%;}
     100%{background-position: calc(var(--stripSize) * -1) 50%;}
+}
+@keyframes clientsScroll{
+    0%{background-image: url(images/clients/clients-strip-01.svg);}
+    32%{background-image: url(images/clients/clients-strip-01.svg);}
+    33%{background-image: url(images/clients/clients-strip-02.svg);}
+    65%{background-image: url(images/clients/clients-strip-02.svg);}
+    66%{background-image: url(images/clients/clients-strip-03.svg);}
+    99%{background-image: url(images/clients/clients-strip-03.svg);}
+    100%{background-image: url(images/clients/clients-strip-01.svg);}
 }
 /* .clientsDiv .rowDiv{
     align-items: center;
