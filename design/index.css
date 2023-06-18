@@ -692,8 +692,11 @@ h2.small-text{
     .case-card img{
         min-width: 100%;
     }
-    .half-size, .third-size{
+    .half-size, .third-size, .columnDiv.third-size{
         width: 100%;
+    }
+    .half-size.third-size{
+        display: none;
     }
     .float-right{
         float: left;
