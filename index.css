@@ -508,6 +508,7 @@ summary h2{
 }
 h2.float-right{
     font-size: 3.5em;
+    width: 100%;
 }
 summary h2:hover{
     opacity: 0.5;
