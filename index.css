@@ -730,6 +730,9 @@ h2.small-text{
 
 /* mobile */
 @media screen and (max-width: 900px) {
+    details{
+        overflow: visible;
+    }
     .rowDiv{
         flex-direction: column;
     }
