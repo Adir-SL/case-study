@@ -102,9 +102,9 @@ header div{
     align-items: center;
 }
 .roundButton{
-    background-color: #1C1C1C;
-    color: #FFFFFF;
-    border: 2px solid;
+    background-color: #181818;
+    color: #E7E7E7;
+    border: 2px solid #181818;
     outline: none;
     border-radius: 999px;
     font-family: 'haas';
@@ -121,20 +121,20 @@ header .roundButton{
 }
 .roundButton:hover{
     /* transform: scale(0.9); */
-    background-color: #FFFFFF;
-    color: #1C1C1C;
+    background-color: #E7E7E7;
+    color: #181818;
 }
 .invertButton{
     font-size: 1.2em;
     padding: 4px 16px;
     padding-bottom: 1px;
     font-weight: 500;
-    background-color: #FFFFFF;
-    color: #1C1C1C;
+    background-color: #E7E7E7;
+    color: #181818;
 }
 .invertButton:hover{
-    background-color: #1C1C1C;
-    color: #FFFFFF;
+    background-color: #181818;
+    color: #E7E7E7;
 }
 .biggerButton{
     font-size: 2.7em;
@@ -258,7 +258,8 @@ h3{
 .details .content{
     font-size: 16px;
     letter-spacing: 0.02em;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 7vw;
 }
 .content .detail-child:first-of-type{
     font-size: 16px;
