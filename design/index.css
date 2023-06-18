@@ -7,7 +7,7 @@ Thin: 100 200 300, Light: 400, Regular: 500, Bold: 700 800 */
 
 body{
     background-color: #FFFFFF;
-    color: #1C1C1C;
+    color: #5F5F5F;
     overflow-x: hidden;
 }
 #wrapper{
@@ -88,7 +88,7 @@ section{
     mix-blend-mode: difference;
 }
 ::selection{
-    background-color: #a2a2a2;
+    background-color: #c0c0c0;
 }
 .kido{
     width: 100%;
@@ -175,7 +175,7 @@ h4{
     font-family: 'haas';
     font-weight: 400;
     text-align: left;
-    margin-top: 1em;
+    margin-top: 1.5em;
     margin-bottom: 0.5em;
 }
 h4.alternate{
@@ -186,7 +186,7 @@ h4.alternate{
     margin-top: 3.2em;
 }
 p{
-    font-family: 'haas';
+    font-family: 'haas-text';
     line-height: 1.5;
     margin: 0;
 }
@@ -197,7 +197,10 @@ p{
     width: 50%;
 }
 .third-size{
-    width: 33%;
+    width: 25%;
+}
+.columnDiv.third-size{
+    width: 40%;
 }
 .float-right{
     float: right;
