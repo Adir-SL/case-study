@@ -154,6 +154,7 @@ h2{
 }
 h2.smaller-h2{
     font-size: 6.2em;
+    max-width: 100%;
 }
 h3.smaller-h3{
     font-size: 1.2em;
