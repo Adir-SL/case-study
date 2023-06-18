@@ -260,17 +260,17 @@ h3{
 }
 .details .content{
     letter-spacing: 0.02em;
-font-size: 16px;
+    font-size: 16px;
     justify-content: space-between;
 }
 .content .detail-child:first-of-type{
     letter-spacing: 0.02em;
-font-size: 16px;
+    font-size: 16px;
     margin: 40px 0;
 }
 .content .detail-child{
     letter-spacing: 0.02em;
-font-size: 16px;
+    font-size: 16px;
     line-height: 1.5;
 }
 .no-border{
@@ -403,7 +403,7 @@ video{
 }
 .quote-by{
     letter-spacing: 0.02em;
-font-size: 16px;
+    font-size: 16px;
     margin: 24px 0;
 }
 
