@@ -626,6 +626,10 @@ h2.small-text{
     font-family: 'haas-text';
     font-weight: 600;
     font-size: 0.8em;
+    justify-content: space-between;
+    margin-left: 6vw;
+    margin-right: 50%;
+    width: calc(50% - 3vw);
 }
 .footerDiv a{
     color: #1C1C1C;
