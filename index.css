@@ -821,6 +821,9 @@ h2.small-text{
     }
     .footerDiv{
         gap: 0;
+        width: 90%;
+        margin: 0 !important;
+        flex-direction: row;
     }
     .transcale-9{
         transform: none;
