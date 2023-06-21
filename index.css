@@ -527,7 +527,7 @@ summary h2::after{
     content: '+';
     font-size: 0.7em;
     position: absolute;
-    right: 4%;
+    right: 5%;
     transform-origin: center;
     transition: transform 300ms ease-in-out 0s;
 }
