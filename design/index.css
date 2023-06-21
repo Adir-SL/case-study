@@ -736,8 +736,9 @@ h2.small-text{
     .footerDiv{
         gap: 0;
         width: 90%;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+        transform: translateY(-0.5em);
         flex-direction: row;
     }
 }
