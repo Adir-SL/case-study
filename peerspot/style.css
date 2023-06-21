@@ -116,12 +116,6 @@ header .roundButton{
     background-color: #181818;
     color: #E7E7E7;
 }
-.biggerButton{
-    font-size: 2.7em;
-    font-weight: 400;
-    padding: 4px 28px;
-    padding-bottom: 1px;
-}
 .linksDiv{
     display: flex;
     gap: 40px;
