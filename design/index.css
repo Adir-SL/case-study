@@ -625,6 +625,10 @@ h2.small-text{
     font-weight: 600;
     font-size: 0.8em;
     margin-top: 18px;
+    justify-content: space-between;
+    margin-left: 6vw;
+    margin-right: 50%;
+    width: calc(50% - 3vw);
 }
 .footerDiv p{
     font-family: 'haas-text';
@@ -731,5 +735,9 @@ h2.small-text{
     }
     .footerDiv{
         gap: 0;
+        width: 90%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        flex-direction: row;
     }
 }
