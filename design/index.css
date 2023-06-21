@@ -103,12 +103,6 @@ section{
     background-position: center;
     filter: invert(100%);
 }
-/* .biggerKido{
-    width: 96%;
-    height: 18vw;
-    background-size: cover;
-    background-position: top;
-} */
 .biggerKido{
     width: 96%;
     height: 18vw;
@@ -227,19 +221,6 @@ p{
 .crumb a:hover{
     color: #888888;
 }
-/* .crumb a::after{
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 100%;
-    left: 0;
-    top: 0;
-    border-bottom: 1px solid;
-    transition: width 300ms linear 0s;
-}
-.crumb a:hover::after{
-    width: 100%;
-} */
 .crumb::after{
     content: '/';
     position: absolute;
@@ -253,8 +234,6 @@ p{
     content: '';
 }
 ul{
-    /* list-style-type: none;
-    text-align: left; */
     padding-left: 1em;
     line-height: 1.5;
 }
@@ -361,7 +340,6 @@ header .roundButton{
     margin-top: 14px;
 }
 .roundButton:hover{
-    /* transform: scale(0.9); */
     background-color: #FFFFFF;
     color: #1C1C1C;
 }
@@ -440,19 +418,6 @@ header .roundButton{
 .linksDiv a:hover{
     color: #888888;
 }
-/* .linksDiv a::after{
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 100%;
-    top: 0;
-    left: -4%;
-    border-bottom: 2px solid;
-    transition: width 300ms ease-in-out 0s;
-}
-.linksDiv a:hover::after{
-    width: 108%;
-} */
 hr{
     border: none;
     border-bottom: 1px solid #5F5F5F;
@@ -553,7 +518,6 @@ summary h2::after{
 .whiteSection{
     background-color: #FFFFFF;
     color: #000000;
-    /* padding-bottom: 20vh; */
     padding-left: 0;
     padding-right: 0;
     width: 100%;
@@ -620,10 +584,8 @@ h2.small-text{
 .align-padding{
     width: calc(100% - 120px);
     padding: 0 60px;
-    /* transform: translateX(-1.5em); */
 }
 .gap-120{
-    /* gap: 200px; */
     justify-content: space-evenly;
 }
 .gap-120 img{
@@ -633,7 +595,6 @@ h2.small-text{
 .gap-120 .widDiv{
     height: auto;
     width: 11em;
-    /* transform: scale(1.2) */
 }
 .transcale-8{
     transform: scale(0.8);
@@ -717,9 +678,6 @@ h2.small-text{
         width: calc(100% - 20px);
         padding: 0 10px;
     }
-    /* ul{
-        padding-left: 0;
-    } */
     ul.float-right{
         padding-left: 0;
     }
