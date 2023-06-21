@@ -404,6 +404,22 @@ video{
 .left-58{
     margin-left: 42%;
 }
+.footerDiv{
+    font-family: 'haas-text';
+    font-weight: 600;
+    font-size: 0.8em;
+    justify-content: space-between;
+    margin-left: 6vw;
+    margin-right: 50%;
+    width: calc(50% - 3vw);
+}
+.footerDiv a{
+    color: #1C1C1C;
+    text-decoration: none;
+}
+.footerDiv a:hover{
+    color: #888888;
+}
 
 ::selection{
     background-color: var(--color-accent);
@@ -548,5 +564,11 @@ video{
     }
     .top-40{
         margin-top: 40px;
+    }
+    .footerDiv{
+        gap: 0;
+        width: 90%;
+        margin: 0 !important;
+        flex-direction: row;
     }
 }
