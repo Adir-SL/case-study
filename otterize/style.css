@@ -393,6 +393,90 @@ video{
     padding-top: 0;
     margin-top: 0;
 }
+.footerDiv{
+    font-family: 'haas-text';
+    font-weight: 600;
+    font-size: 0.8em;
+    justify-content: space-between;
+    margin-left: 3vw;
+    margin-right: 50%;
+    width: calc(50% - 4vw);
+}
+.footerDiv a{
+    color: #1C1C1C;
+    text-decoration: none;
+}
+.footerDiv a:hover{
+    color: #888888;
+}
+.whiteSection{
+    background-color: #FFFFFF;
+    color: #000000;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    margin: 0;
+}
+.whiteSection .invertButton{
+    background-color: #FFFFFF;;
+}
+.whiteSection .invertButton:hover{
+    background-color: #000000;
+    color: #FFFFFF;;
+}
+.whiteSection .kido{
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 120px;
+}
+.whiteSection h3{
+    margin-top: 120px;
+    margin-bottom: 8px;
+    font-size: 2.5em;
+}
+h3.sm{
+    font-size: 1.48em;
+}
+.columnDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+.justify{
+    justify-content: space-between;
+    gap: unset !important;
+}
+.no-gap{
+    gap: 0;
+}
+.kido{
+    transform-origin: bottom center;
+    color: #FFFFFF;
+    mix-blend-mode: difference;
+    user-select: none;
+    white-space: nowrap;
+    width: 100%;
+    height: 30vw;
+    filter: invert(100%);
+}
+.kido path{
+    transition: fill 300ms linear 0s;
+}
+.biggerKido{
+    width: 96%;
+    height: 18vw;
+    background-image: url(../images/wearekido.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.rowDiv{
+    display: flex;
+    gap: 48px;
+    margin-top: 4px;
+    min-height: 0;
+}
 
 ::selection{
     background-color: var(--color-accent);
@@ -556,6 +640,12 @@ video{
     }
     .mobile{
         margin: 0 4vw;
+    }
+    .footerDiv{
+        gap: 0;
+        width: 90%;
+        margin: 0 !important;
+        flex-direction: row;
     }
 
     @keyframes mobileIn {
