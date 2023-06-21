@@ -13,7 +13,6 @@ body{
 
     background-color: var(--color-primary);
     color: var(--color-secondary);
-    /* overflow: hidden; */
     transition: background-color 500ms linear;
 }
 .lightBody{
@@ -31,9 +30,6 @@ body{
     left: 0;
     display: flex;
     flex-direction: column;
-    /* scroll-behavior: smooth; */
-    /* scroll-snap-type: y mandatory; */
-    /* overflow: auto; */
 }
 .rounded{
     border-radius: 24px;
@@ -104,7 +100,6 @@ header .roundButton{
     margin-top: 14px;
 }
 .roundButton:hover{
-    /* transform: scale(0.9); */
     background-color: #E7E7E7;
     color: #181818;
 }
@@ -142,19 +137,6 @@ header .roundButton{
     text-decoration: none;
     height: 100%;
 }
-/* .linksDiv a::after{
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 100%;
-    top: 0;
-    left: -4%;
-    border-bottom: 2px solid;
-    transition: width 300ms ease-in-out 0s;
-}
-.linksDiv a:hover::after{
-    width: 108%;
-} */
 .linksDiv a:hover{
     color: #888888;
 }
@@ -180,13 +162,6 @@ header .roundButton{
     flex-grow: 1;
     letter-spacing: 1px;
 }
-/* a{
-    color: var(--color-secondary);
-    text-decoration: none;
-} */
-/* a:hover{
-    color: var(--color-accent);
-} */
 .k-symbol{
     width: 60px;
     height: 60px;
