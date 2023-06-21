@@ -121,6 +121,18 @@ header .roundButton{
     background-color: #E7E7E7;
     color: #181818;
 }
+.invertButton{
+    font-size: 1.2em;
+    padding: 4px 16px;
+    padding-bottom: 1px;
+    font-weight: 500;
+    background-color: #E7E7E7;
+    color: #181818;
+}
+.invertButton:hover{
+    background-color: #181818;
+    color: #E7E7E7;
+}
 .linksDiv{
     display: flex;
     gap: 40px;
