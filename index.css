@@ -381,7 +381,9 @@ header .roundButton{
     transition: opacity 300ms linear 0s;
 }
 .empty{
-    color: #c6c6c6;
+    color: #5b5b5b;
+    border-color: #5b5b5b;
+    background-color: transparent;
 }
 .empty::after{
     content: 'Coming Soon';
