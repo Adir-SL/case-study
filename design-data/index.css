@@ -688,6 +688,13 @@ h2.small-text{
     display: inline-block;
     margin: 0 0 0 4px;
 }
+.footerDiv{
+    position: relative;
+}
+.footerDiv::after{
+    content: attr(footer-data);
+    position: absolute;
+}
 
 /* mobile */
 @media screen and (max-width: 900px) {
