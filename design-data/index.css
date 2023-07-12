@@ -813,4 +813,7 @@ h2.small-text{
         transform: translateY(-0.5em);
         flex-direction: row;
     }
+    .rowDiv > *{
+        max-width: 100%;
+    }
 }
