@@ -297,6 +297,9 @@ li{
     min-height: 0;
     padding-bottom: 100px;
 }
+.rowDiv > *{
+    max-width: 50%;
+}
 .more-padd{
     padding-top: 100px;
 }
@@ -657,8 +660,18 @@ h2.small-text{
     max-width: 534px;
     margin: 0 0 0 auto;
 }
+.svgDiv{
+    border: 1px solid #DBDBDB;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 0.06);
+}
+.svgDiv > .svg-wrapper{
+    transform: translateX(-7.5%) scale(0.7);
+}
 .svg-wrapper .svg-wrapper{
     border-radius: 10px;
+    border: none;
     overflow: hidden;
     transition: transform 300ms ease-in-out 0s;
     box-shadow: 0px 5px 40px rgba(22,89,217,.02), 0px 40px 60px rgba(22,89,217,.03), 0px 6px 20px rgba(22,89,217,.08);
