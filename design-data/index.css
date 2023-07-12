@@ -688,10 +688,10 @@ h2.small-text{
     display: inline-block;
     margin: 0 0 0 4px;
 }
-.footerDiv{
+.footerData{
     position: relative;
 }
-.footerDiv::after{
+.footerData::after{
     content: attr(footer-data);
     position: absolute;
 }
