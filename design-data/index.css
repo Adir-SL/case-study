@@ -663,7 +663,6 @@ h2.small-text{
 .svgDiv{
     border: 1px solid #DBDBDB;
     border-radius: 8px;
-    overflow: hidden;
     box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 0.06);
 }
 .svgDiv > .svg-wrapper{
@@ -691,9 +690,27 @@ h2.small-text{
 .footerData{
     position: relative;
 }
+.footerData video{
+    width: 100%;
+    height: 100%;
+}
 .footerData::after{
     content: attr(footer-data);
     position: absolute;
+    bottom: -32px;
+    left: 0;
+    font-size: 0.9em;
+    font-family: 'haas';
+}
+@media screen and (max-width: 1200px) {
+    .svgDiv > .svg-wrapper{
+        transform: translateX(-12%) scale(0.55);
+    }
+}
+@media screen and (max-width: 1040px) {
+    .svgDiv > .svg-wrapper{
+        transform: translateX(-16%) scale(0.45);
+    }
 }
 
 /* mobile */
