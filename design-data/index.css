@@ -300,6 +300,9 @@ li{
 .rowDiv > *{
     max-width: 50%;
 }
+.rowImages > *{
+    max-width: 30%;
+}
 .more-padd{
     padding-top: 100px;
 }
