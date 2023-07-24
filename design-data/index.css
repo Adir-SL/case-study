@@ -303,6 +303,9 @@ li{
 .rowImages > *{
     max-width: 30%;
 }
+.columnImages > *{
+    width: 100%;
+}
 .more-padd{
     padding-top: 100px;
 }
