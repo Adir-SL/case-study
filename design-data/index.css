@@ -303,10 +303,10 @@ li{
 .columnImages{
     justify-content: space-between;
 }
-.rowImages > *{
+.rowImages *{
     max-width: 30vw;
 }
-.columnImages > *{
+.columnImages *{
     width: 100%;
 }
 .more-padd{
