@@ -305,6 +305,12 @@ li{
 }
 .rowImages *{
     max-width: 30vw;
+    height: fit-content;
+}
+.rowImages > .columnDiv{
+    max-width: 11.8vw;
+    flex-grow: 1;
+    position: relative;
 }
 .columnImages *{
     width: 100%;
