@@ -300,6 +300,9 @@ li{
 .rowDiv > *{
     max-width: 50%;
 }
+.columnImages{
+    justify-content: space-between;
+}
 .rowImages > *{
     max-width: 30vw;
 }
