@@ -303,6 +303,9 @@ li{
 .columnImages{
     justify-content: space-between;
 }
+.rowImages{
+    justify-content: space-between;
+}
 .rowImages *{
     max-width: 30vw;
     height: fit-content;
@@ -311,6 +314,9 @@ li{
     max-width: 11.8vw;
     flex-grow: 1;
     position: relative;
+}
+.footerData img{
+    width: 100%;
 }
 .columnImages *{
     width: 100%;
