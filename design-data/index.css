@@ -710,6 +710,7 @@ h2.small-text{
 }
 .noBottomMargin{
     margin-bottom: 0;
+    padding-bottom: 64px;
 }
 .footerData{
     position: relative;
