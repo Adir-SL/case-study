@@ -301,7 +301,7 @@ li{
     max-width: 50%;
 }
 .rowImages > *{
-    max-width: 30%;
+    max-width: 30vw;
 }
 .columnImages > *{
     width: 100%;
