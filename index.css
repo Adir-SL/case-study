@@ -57,6 +57,8 @@ header div{
     height: 80px;
     transform: rotate(90deg) scale(0.6) translateY(0.8em) translateX(-1em);
     opacity: 0;
+    filter: invert(100%);
+    mix-blend-mode: difference;
     transition: opacity 300ms linear 0s;
 }
 .logoText{
