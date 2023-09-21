@@ -84,6 +84,9 @@ section{
     justify-content: center;
     align-items: center;
     padding-bottom: 6em;
+    width: 100%;
+    padding: 0;
+    min-height: unset;
 }
 .kido{
     transform-origin: bottom center;
