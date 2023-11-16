@@ -237,6 +237,9 @@ li{
     align-items: center;
     gap: 48px;
 }
+.iconSection .columnDiv{
+    max-width: calc(35% - 110px);
+}
 .justify{
     justify-content: space-between;
     gap: unset !important;
@@ -510,6 +513,7 @@ summary h2::after{
 .columnDiv h2.alternate{
     font-size: 2.4em;
     line-height: 0.75;
+    white-space: pre;
 }
 .one-stop{
     background-image: url(images/icon-one-stop.svg);
