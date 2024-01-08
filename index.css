@@ -748,6 +748,9 @@ h2.small-text{
         width: calc(100% - 20px);
         padding: 0 10px;
     }
+    .iconSection .columnDiv{
+        max-width: unset;
+    }
     ul{
         padding-left: 0;
     }
