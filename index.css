@@ -855,6 +855,10 @@ h2.small-text {
     }
 }
 
+#heroVideo{
+    cursor: none;
+}
+
 .cursor {
     position: absolute;
     width: 60px;
