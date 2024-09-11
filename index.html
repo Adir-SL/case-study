@@ -33,6 +33,11 @@
             }
         }
 
+        document.addEventListener('mousemove', (event) => {
+            document.getElementById('videoCursor').style.left = event.clientX + 'px';
+            document.getElementById('videoCursor').style.top = event.clientY + 'px';
+        });
+
 
         window['_fs_host'] = 'fullstory.com';
         window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
@@ -70,7 +75,7 @@
         </header>
 
         <section class="firstSection">
-            <div class="cursor"></div>
+            <div class="cursor" id="videoCursor"></div>
             <video src="images/sizzle-reel_v6.mp4" class="full-width" id="heroVideo" playsinline="" preload="auto" loop="" muted poster="images/hero-poster.png" onclick="videoPlay();"></video>
         </section>
         
