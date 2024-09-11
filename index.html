@@ -24,7 +24,13 @@
 
     <script>
         function videoPlay(){
-            document.getElementById("heroVideo").play();
+            if(window.playing == 1){
+                document.getElementById("heroVideo").pause();
+                window.playing = 0;
+            }else{
+                document.getElementById("heroVideo").play();
+                window.playing = 1;
+            }
         }
 
 
