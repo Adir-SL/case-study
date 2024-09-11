@@ -34,8 +34,8 @@
         }
 
         document.addEventListener('mousemove', (event) => {
-            document.getElementById('videoCursor').style.left = event.clientX + 'px';
-            document.getElementById('videoCursor').style.top = event.clientY + 'px';
+            document.getElementById('videoCursor').style.left = event.clientX + window.scrollX + 'px';
+            document.getElementById('videoCursor').style.top = event.clientY + window.scrollY + 'px';
         });
 
 
