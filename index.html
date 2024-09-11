@@ -23,6 +23,11 @@
     <meta property="og:image" content="https://adir-sl.github.io/case-study/images/kido-social.jpg">
 
     <script>
+        function videoPlay(){
+            document.getElementById("heroVideo").play();
+        }
+
+
         window['_fs_host'] = 'fullstory.com';
         window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
         window['_fs_org'] = 'o-1S3T1H-na1';
@@ -59,7 +64,7 @@
         </header>
 
         <section class="firstSection">
-            <video src="images/sizzle-reel_v6.mp4" class="full-width" playsinline="" preload="auto" loop="" muted poster="images/hero-poster.png" onclick="videoPlay();"></video>
+            <video src="images/sizzle-reel_v6.mp4" class="full-width" id="heroVideo" playsinline="" preload="auto" loop="" muted poster="images/hero-poster.png" onclick="videoPlay();"></video>
         </section>
         
         <section class="columnDiv margin-48 secondSection">
