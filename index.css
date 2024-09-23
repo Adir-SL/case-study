@@ -246,6 +246,10 @@ ul {
     font-size: 1.2em;
 }
 
+ul.list-bullets{
+    color:red;
+}
+
 details>summary {
     list-style: none;
 }
