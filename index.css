@@ -185,6 +185,10 @@ h2 {
     margin-bottom: 0;
 }
 
+h2.noselect{
+    font-size: 5em;
+}
+
 h2.smaller-h2 {
     font-size: 6.2em;
     max-width: 100%;
