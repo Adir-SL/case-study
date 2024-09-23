@@ -185,7 +185,7 @@ h2 {
     margin-bottom: 0;
 }
 
-h2.noselect{
+h2.noselect {
     font-size: 5em;
 }
 
@@ -246,8 +246,9 @@ ul {
     font-size: 1.2em;
 }
 
-ul.list-bullets{
-    color:red;
+ul.list-bullets {
+    list-style-type: revert;
+    padding-left: revert;
 }
 
 details>summary {
@@ -863,7 +864,7 @@ h2.small-text {
     }
 }
 
-#heroVideo{
+#heroVideo {
     cursor: none;
 }
 
