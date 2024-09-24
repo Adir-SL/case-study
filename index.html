@@ -40,12 +40,17 @@
         }
 
         document.addEventListener('mousemove', (event) => {
+            // console.log("EVENT: " + event.clientY + window.scrollY)
             if (event.clientY + window.scrollY > document.getElementById("videoSection").offsetHeight) {
                 document.getElementById('videoCursor').style.display = "none";
             } else {
-                document.getElementById('videoCursor').style.display = "block";
-                document.getElementById('videoCursor').style.left = event.clientX + window.scrollX + 'px';
-                document.getElementById('videoCursor').style.top = event.clientY + window.scrollY + 'px';
+                if (event.clientY + window.scrollY < document.getElementById("mainHeader").offsetHeight) {
+                    document.getElementById('videoCursor').style.display = "none";
+                } else {
+                    document.getElementById('videoCursor').style.display = "block";
+                    document.getElementById('videoCursor').style.left = event.clientX + window.scrollX + 'px';
+                    document.getElementById('videoCursor').style.top = event.clientY + window.scrollY + 'px';
+                }
             }
         });
 
