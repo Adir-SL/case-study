@@ -40,7 +40,6 @@
         }
 
         document.addEventListener('mousemove', (event) => {
-            // console.log("EVENT: " + event.clientY + window.scrollY)
             if (event.clientY + window.scrollY > document.getElementById("videoSection").offsetHeight) {
                 document.getElementById('videoCursor').style.display = "none";
             } else {
