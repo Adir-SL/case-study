@@ -235,6 +235,10 @@ h3.alternate::selection {
 .half-size {
     width: 50%;
 }
+.half-max {
+    max-width: 50%;
+    width: 50%;
+}
 
 .less-than-half {
     width: 42%;
