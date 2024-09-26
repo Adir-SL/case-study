@@ -825,9 +825,19 @@ h2.small-text {
 }
 
 .footerLinks a {
-    font-family: 'haas-text';
+    font-family: 'haas';
     font-weight: 400;
     font-size: 1.5em;
+}
+
+.footerLinks .left-align {
+    font-family: 'haas';
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.footerLinks .left-align a{
+    font-size: 1.7em;
 }
 
 .clientsDiv {
