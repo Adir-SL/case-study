@@ -807,6 +807,10 @@ h2.small-text {
     color: #1C1C1C;
     text-decoration: none;
 }
+.footerLinks{
+    display: flex;
+    gap: 2em;
+}
 
 .footerDiv a:hover {
     color: #888888;
