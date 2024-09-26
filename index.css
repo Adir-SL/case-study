@@ -1148,6 +1148,13 @@ h2.small-text {
         margin: 0 !important;
         flex-direction: column;
     }
+    .footerLinks .left-align{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .footerLinks .left-align a{
+        font-size: 1.5em;
+    }
 
     .transcale-9 {
         transform: none;
