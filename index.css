@@ -810,7 +810,10 @@ h2.small-text {
 }
 .footerLinks{
     display: flex;
-    gap: 2em;
+    gap: 1em;
+    font-family: 'haas-text';
+    font-weight: 400;
+    font-size: 1.5em;
 }
 
 .footerDiv a:hover {
