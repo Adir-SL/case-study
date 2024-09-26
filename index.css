@@ -186,7 +186,8 @@ h2 {
 }
 
 h2.noselect {
-    font-size: 5em;
+    font-size: 4.5em;
+    text-align: left;
 }
 
 h2.smaller-h2 {
