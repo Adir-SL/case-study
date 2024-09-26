@@ -799,6 +799,7 @@ h2.small-text {
     font-size: 0.8em;
     justify-content: space-between;
     margin-left: 6vw;
+    margin-right: 6vw;
     /* margin-right: 50%;
     width: calc(50% - 3vw); */
 }
