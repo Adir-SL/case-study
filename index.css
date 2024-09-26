@@ -1040,6 +1040,7 @@ h2.small-text {
     h2.float-right {
         margin-top: 0;
         white-space: unset;
+        font-size: 2.5em;
     }
 
     summary h2::after {
