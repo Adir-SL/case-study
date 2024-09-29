@@ -11,6 +11,11 @@ body {
     overflow-x: hidden;
 }
 
+.whitePage {
+    background-color: #FFFFFF !important;
+    color: #1C1C1C !important;
+}
+
 #wrapper {
     position: absolute;
     width: 100%;
@@ -836,7 +841,7 @@ h2.small-text {
     font-size: 1.5em;
 }
 
-.footerLinks .left-align a{
+.footerLinks .left-align a {
     font-size: 1.7em;
 }
 
@@ -1148,11 +1153,13 @@ h2.small-text {
         margin: 0 !important;
         flex-direction: column;
     }
-    .footerLinks .left-align{
+
+    .footerLinks .left-align {
         width: 100%;
         margin-top: 40px;
     }
-    .footerLinks .left-align a{
+
+    .footerLinks .left-align a {
         font-size: 1.5em;
     }
 
