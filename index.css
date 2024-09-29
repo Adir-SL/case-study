@@ -20,7 +20,7 @@ body {
     background-color: #FFFFFF;
 }
 
-.whitePage img {
+.whitePage img, .whitePage video {
     width: 100%;
     max-width: 100%;
     margin-bottom: 5em;
