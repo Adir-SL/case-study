@@ -45,6 +45,7 @@ section.third-off{
     margin-left: calc(30% + 30px);
     width: calc(70% - 90px) !important;
     max-width: calc(70% - 90px) !important;
+    min-height: 0;
 }
 #wrapper {
     position: absolute;
