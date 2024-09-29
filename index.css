@@ -30,7 +30,7 @@ body {
     margin: 0 -48px !important;
 }
 
-.whitePage section {
+.whitePage section, .paddingSection {
     width: calc(100% - 120px);
     max-width: calc(100% - 120px);
     padding: 0 60px;
