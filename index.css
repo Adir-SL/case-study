@@ -18,7 +18,7 @@ body {
 .whitePage img{
     width: 100%;
     max-width: 100%;
-    margin-bottom: 1.5em;
+    margin-bottom: 5em;
 }
 .whitePage .lessPadding{
     margin: 0 -48px !important;
