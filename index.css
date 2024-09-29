@@ -974,7 +974,7 @@ h2.small-text {
 }
 
 @media screen and (min-width: 1800px) {
-    .footerLinks {
+    div.footerLinks {
         justify-content: center;
         gap: 8em;
     }
