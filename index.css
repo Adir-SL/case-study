@@ -30,23 +30,34 @@ body {
     margin: 0 -48px !important;
 }
 
-.whitePage section, .paddingSection {
+.whitePage section,
+.paddingSection {
     width: calc(100% - 120px);
     max-width: calc(100% - 120px);
     padding: 0 60px;
 }
-.third-off{
+
+.third-off {
     margin-left: 30%;
     width: 70% !important;
     max-width: 70% !important;
     padding: 0 !important;
 }
-section.third-off{
+
+section.third-off {
     margin-left: calc(30% + 30px);
     width: calc(70% - 90px) !important;
     max-width: calc(70% - 90px) !important;
     min-height: 0;
 }
+
+.studies {
+    flex-wrap: wrap;
+    justify-content: flex-start !important;
+    align-items: flex-start;
+    gap: 1.5vw !important;
+}
+
 #wrapper {
     position: absolute;
     width: 100%;
