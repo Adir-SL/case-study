@@ -35,7 +35,11 @@ body {
     max-width: calc(100% - 120px);
     padding: 0 60px;
 }
-
+.third-off{
+    margin-left: 30%;
+    width: 70% !important;
+    max-width: 70% !important;
+}
 #wrapper {
     position: absolute;
     width: 100%;
