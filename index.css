@@ -915,6 +915,12 @@ h2.small-text {
     height: 1.25vw;
     width: 100%;
     background-repeat: repeat-x;
+    animation: newClientsScroll 50000ms linear infinite;
+}
+
+@keyframes newClientsScroll{
+    0%{background-position: 0% 0%;}
+    100%{background-position: 100% 0%;}
 }
 
 @keyframes clientsScroll {
