@@ -1013,6 +1013,11 @@ h2.small-text {
         flex-direction: column;
     }
 
+    .newClients{
+        height: 8vw;
+        padding-bottom: 0;
+    }
+
     .clientsDiv .rowDiv {
         flex-direction: row;
         flex-wrap: wrap;
