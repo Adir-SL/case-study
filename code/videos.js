@@ -19,8 +19,8 @@ function videosOnScroll(){
                 // x[i].style.boxShadow = "0 0 0 2px pink";
                 x[i].play();
                 // console.log("in view: " + i + ", source: " + x[i].src);
-                console.log("in view: " + i);
-                console.log(x[i])
+                // console.log("in view: " + i);
+                // console.log(x[i])
             }
         }else{
             // x[i].style.boxShadow = "none";
