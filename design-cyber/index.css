@@ -665,6 +665,12 @@ summary h2::after {
     filter: invert(100%);
 }
 
+.invertHeader,
+.logoDiv {
+    filter: invert(100%);
+    mix-blend-mode: difference;
+}
+
 .selected {
     opacity: 0.5;
     pointer-events: none;
