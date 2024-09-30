@@ -929,14 +929,13 @@ h2.small-text {
 }
 
 .newClients {
-    height: 2vw;
+    height: 1.25vw;
     width: 100%;
     background-image: url(images/clients-strip.png);
     background-size: cover;
     background-position: center;
-    height: 1.25vw;
-    width: 100%;
     background-repeat: repeat-x;
+    filter: contrast(0.78);
     animation: newClientsScroll 50000ms linear infinite;
 }
 
@@ -946,7 +945,7 @@ h2.small-text {
     }
 
     100% {
-        background-position: 100% 0%;
+        background-position: calc(100% - 80vw) 0%;
     }
 }
 
