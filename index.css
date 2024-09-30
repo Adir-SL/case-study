@@ -906,6 +906,17 @@ h2.small-text {
     animation: clientsScroll 10000ms steps(1) infinite;
 }
 
+.newClients {
+    height: 2vw;
+    width: 100%;
+    background-image: url(images/clients-strip.png);
+    background-size: cover;
+    background-position: center;
+    height: 1.25vw;
+    width: 100%;
+    background-repeat: repeat-x;
+}
+
 @keyframes clientsScroll {
     0% {
         background-image: url(images/clients/clients-strip-01.svg);
