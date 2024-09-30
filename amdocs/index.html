@@ -23,6 +23,20 @@
     <meta name="description" content="We Are Kido. We help companies accelerate and optimize their design process.">
     <meta property="og:image" content="https://adir-sl.github.io/case-study/images/kido-social.jpg">
 
+    <script>
+        function videoPlay() {
+            if (window.playing == 1) {
+                document.getElementById("amdocsVideo").pause();
+                document.getElementById("videoCursor").classList.remove("pause");
+                window.playing = 0;
+            } else {
+                document.getElementById("amdocsVideo").play();
+                document.getElementById("videoCursor").classList.add("pause");
+                window.playing = 1;
+            }
+        }
+    </script>
+
 </head>
 
 <body style="background-color: #181818;">
@@ -43,7 +57,9 @@
         </header>
 
         <section class="video-content">
-            <video src="videos/The_Amdocs_Case_Study_SUB.mp4" playsinline preload="auto" onclick="this.play();"></video>
+            <div class="cursor" id="videoCursor"></div>
+            <video src="videos/The_Amdocs_Case_Study_SUB.mp4" playsinline preload="auto" id="amdocsVideo"
+                onclick="videoPlay();"></video>
         </section>
 
         <section class="whiteSection columnDiv no-gap">
