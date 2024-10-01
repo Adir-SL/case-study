@@ -1013,7 +1013,7 @@ h2.small-text {
         flex-direction: column;
     }
 
-    .newClients{
+    .newClients {
         height: 8vw;
         padding-bottom: 0;
     }
@@ -1216,6 +1216,10 @@ h2.small-text {
     .gap-120 img {
         height: auto;
         width: 3.5em;
+    }
+
+    .full-mobile {
+        width: 100%;
     }
 
     .triLabel {
