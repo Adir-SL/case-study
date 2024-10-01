@@ -1223,6 +1223,16 @@ h2.small-text {
         width: 100%;
     }
 
+    .almost-full-mobile {
+        width: calc(100% - 64px) !important;
+        max-width: calc(100% - 64px) !important;
+        padding-left: 32px !important;
+        padding-right: 32px !important;
+    }
+    .less-bottom.almost-full-mobile{
+        margin-top: 4em;
+    }
+
     .triLabel {
         margin-left: 40px;
     }
@@ -1272,6 +1282,10 @@ h2.small-text {
         left: 50% !important;
         width: 40px;
         height: 40px;
+    }
+
+    .team-title {
+        font-size: 2em;
     }
 
     @keyframes kidoAnim {
