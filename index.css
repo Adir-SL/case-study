@@ -1267,6 +1267,11 @@ h2.small-text {
         visibility: hidden;
     }
 
+    .cursor {
+        top: 2.25% !important;
+        left: 50% !important;
+    }
+
     @keyframes kidoAnim {
         0% {
             width: 100%;
