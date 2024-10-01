@@ -8,7 +8,7 @@ Thin: 100 200 300, Light: 400, Regular: 500, Bold: 700 800 */
 body {
     --color-primary: #181818;
     --color-secondary: #ffffff;
-    --color-accent: #FFCD00;
+    --color-accent: #c9327f;
 
     background-color: var(--color-primary);
     color: var(--color-secondary);
@@ -649,7 +649,7 @@ video {
 
 ::selection {
     background-color: var(--color-accent);
-    color: var(--color-primary);
+    color: var(--color-secondary);
 }
 
 /* external big screen */
