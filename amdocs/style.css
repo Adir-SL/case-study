@@ -327,6 +327,7 @@ video {
 
 .align-center {
     align-items: center;
+    text-align: center;
 }
 
 .dia {
