@@ -707,9 +707,10 @@ summary h2::after {
 .whiteSection {
     background-color: #FFFFFF;
     color: #000000;
-    padding-left: 0;
-    padding-right: 0;
-    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
     min-height: 0;
 }
 
