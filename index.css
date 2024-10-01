@@ -1268,8 +1268,10 @@ h2.small-text {
     }
 
     .cursor {
-        top: 2.25% !important;
+        top: 3.35% !important;
         left: 50% !important;
+        width: 40px;
+        height: 40px;
     }
 
     @keyframes kidoAnim {
