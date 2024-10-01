@@ -1232,11 +1232,20 @@ h2.small-text {
         width: 100%;
     }
 
-    .almost-full-mobile {
+    h3.full-mobile {
+        padding: 0;
+    }
+
+    .almost-full-mobile{
         width: calc(100% - 64px) !important;
         max-width: calc(100% - 64px) !important;
         padding-left: 32px !important;
         padding-right: 32px !important;
+    }
+    img.almost-full-mobile{
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
     }
 
     .less-bottom.almost-full-mobile {
