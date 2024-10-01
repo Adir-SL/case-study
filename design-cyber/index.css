@@ -957,4 +957,13 @@ h2.small-text {
     .footerLinks .left-align a {
         font-size: 1.5em;
     }
+
+    .footerHR{
+        width: calc(100% - 6vw);
+        margin-top: 4em;
+        margin-left: 3.2vw;
+    }
+    .no-padding{
+        gap: 1.5em;
+    }
 }
