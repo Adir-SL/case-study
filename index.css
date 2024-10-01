@@ -1263,6 +1263,10 @@ h2.small-text {
         padding-top: 24px;
     }
 
+    .cursor.pause {
+        visibility: hidden;
+    }
+
     @keyframes kidoAnim {
         0% {
             width: 100%;
