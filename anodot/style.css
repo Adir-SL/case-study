@@ -863,9 +863,14 @@ h3.sm {
         margin: 0 !important;
         flex-direction: column;
     }
-    .no-padding{
+
+    .no-padding {
         transform: none;
         padding-left: 5%;
         padding-right: 5%;
+    }
+
+    .whiteSection .new-width.align-center {
+        text-align: center;
     }
 }
