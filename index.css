@@ -610,6 +610,25 @@ div.case-card img {
     height: fit-content;
     gap: 24px;
     margin-top: 60px;
+    position: relative;
+}
+
+.case-card.coming-soon::after {
+    content: 'Coming soon';
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    padding: 4px 16px;
+    background-color: white;
+    box-shadow: 0 2px 16px #00000033;
+    font-family: 'haas-text';
+    color: black;
+    border-radius: 99999px;
+    transform-origin: -50% 600%;
+}
+
+.case-card.coming-soon {
+    pointer-events: none;
 }
 
 .case-card img {
@@ -1236,13 +1255,14 @@ h2.small-text {
         padding: 0;
     }
 
-    .almost-full-mobile{
+    .almost-full-mobile {
         width: calc(100% - 64px) !important;
         max-width: calc(100% - 64px) !important;
         padding-left: 32px !important;
         padding-right: 32px !important;
     }
-    img.almost-full-mobile{
+
+    img.almost-full-mobile {
         width: 100% !important;
         max-width: 100% !important;
         padding: 0 !important;
