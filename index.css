@@ -982,6 +982,11 @@ h2.small-text {
     font-size: 5.8em;
 }
 
+.unique-big-font {
+    font-size: 5em;
+    max-width: 100%;
+}
+
 .cursor {
     position: absolute;
     width: 60px;
@@ -1292,8 +1297,25 @@ h2.small-text {
     .team-title {
         font-size: 2em;
     }
+
     .big-font-size {
         font-size: 2.4em;
+    }
+
+    .unique-big-font {
+        font-size: 2.4em;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .third-off,
+    section.third-off {
+        margin: 0;
+        width: calc(100% - 64px) !important;
+        max-width: calc(100% - 64px) !important;
+        padding-left: 32px !important;
+        padding-right: 32px !important;
     }
 
     @keyframes kidoAnim {
