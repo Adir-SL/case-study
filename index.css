@@ -204,6 +204,18 @@ h1 {
     font-style: italic;
 }
 
+h1.noselect {
+    font-size: 4.5em;
+    text-align: left;
+    max-width: 90%;
+    font-family: 'kepler';
+    letter-spacing: -0.065em;
+    line-height: 1em;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 1;
+}
+
 .secondSection path {
     stroke-width: 10px;
 }
