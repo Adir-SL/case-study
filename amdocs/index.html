@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Amdocs Case Study</title>
-    <link rel="canonical" href="https://wearekido.com/amdocs" />
-    <script src="../code/headerScroll-min.js"></script>
+    <title>Revolutionizing the Cyber Security Landscape</title>
+    <link rel="canonical" href="https://wearekido.com/design-cyber" />
+    <link rel="icon" type="image/x-icon" href="../images/kido-icon.png">
+    <link rel="stylesheet" href="index.css">
+    <script src="../code/headerScroll.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
     <meta property="twitter:card" content="summary_large_image">
@@ -24,25 +25,11 @@
     <meta name="description" content="We Are Kido. We help companies accelerate and optimize their design process.">
     <meta property="og:image" content="https://wearekido.com/images/kido-social.jpg">
 
-    <script>
-        function videoPlay() {
-            if (window.playing == 1) {
-                document.getElementById("amdocsVideo").pause();
-                document.getElementById("videoCursor").classList.remove("pause");
-                window.playing = 0;
-            } else {
-                document.getElementById("amdocsVideo").play();
-                document.getElementById("videoCursor").classList.add("pause");
-                window.playing = 1;
-            }
-        }
-    </script>
-
 </head>
 
-<body style="background-color: #181818;">
-    <div id="wrapper" onscroll="scrollCheck();">
-        <header id="mainHeader" class="invertHeader">
+<body onscroll="scrollCheck();">
+    <div id="wrapper">
+        <header id="mainHeader">
             <div class="logoDiv">
                 <lottie-player src="https://lottie.host/cb8e6687-f930-46ef-8dd5-459e38953552/psZ0aMJEeD.json"
                     background="transparent" speed="0.5" style="width: 60px; height: 60px;" loop
@@ -57,15 +44,134 @@
                 TALK</button>
         </header>
 
-        <section class="video-content">
-            <div class="cursor" id="videoCursor"></div>
-            <video src="videos/The_Amdocs_Case_Study_SUB.mp4" playsinline preload="auto" poster="images/amdocs_poster.png" id="amdocsVideo"
-                onclick="videoPlay();"></video>
+        <section class="heroSection columnDiv">
+            <h2>Elevating Cybersecurity:<br />Unleashing<br />a Scalable Approach</h2>
+            <!-- <div class="breadcrumbs">
+                <div class="crumb"><a href="../index.html">HOME</a></div>
+                <div class="crumb"><a href="../case-studies">CASES STUDIES</a></div>
+                <div class="crumb selected">Revolutionizing the Cyber Security Landscape</div>
+            </div> -->
         </section>
+
+        <section>
+            <img src="images/hero-cyber.jpg" />
+
+        </section>
+
+        <section class="min-60 rowDiv">
+            <h4 class="half-size third-size alternate alternate-margin"></h4>
+            <div class="columnDiv third-size left-align no-gap">
+                <h3>Innovative product approach</h3>
+                <p>By conducting workshops with decision-makers and management, significant breakthroughs in the work
+                    process were facilitated. The aim was to create innovative concepts that approach security
+                    holistically and transform the product into a flexible platform. This was achieved through the use
+                    of structured methods to gather observations, challenge cognitive fixedness, and generate creative
+                    solutions.</p>
+                <h4>Query Builder</h4>
+                <p>To improve the user experience and address confusion from the previous query system, a new and
+                    user-friendly query builder was introduced. This involved implementing a data categorization model
+                    to enhance user navigation through extensive data. The focus was on simplicity and ease of use in
+                    the query builder, empowering users to efficiently explore the system's vast amount of data without
+                    feeling overwhelmed.</p>
+            </div>
+            <div class="third-size"></div>
+        </section>
+
+        <section>
+            <video src="videos/query.mp4" muted loop playsinline autoplay preload="auto"></video>
+        </section>
+
+        <section class="min-60 rowDiv more-padd">
+            <h4 class="half-size third-size alternate alternate-margin"></h4>
+            <div class="columnDiv third-size left-align no-gap">
+                <h3>Maps</h3>
+                <p>Extensive enhancements were made to the existing map schema, which was originally derived from a web
+                    library.<br />The map underwent a complete redesign, including the revamping of the menu and action
+                    bars, aimed at improving usability. A hierarchical structure was implemented, accompanied by various
+                    refinements to ensure a seamless user experience. These enhancements not only contribute to an
+                    aesthetically pleasing interface but also enable effortless navigation and interaction with the map
+                    system.<br />As a result, users can effortlessly access and leverage the map functionalities to
+                    effectively analyze and respond to cybersecurity threats.</p>
+            </div>
+            <div class="third-size"></div>
+        </section>
+
+        <section>
+            <video src="videos/maps.mp4" muted loop playsinline autoplay preload="auto"></video>
+        </section>
+
+        <section class="min-60 rowDiv more-padd">
+            <h4 class="half-size third-size alternate alternate-margin"></h4>
+            <div class="columnDiv third-size left-align no-gap">
+                <h3>Security views</h3>
+                <p>To provide users with a clear and actionable view within the system, dynamic widget systems were
+                    implemented to create security views. These views integrated query results, ensuring users could
+                    quickly access relevant and up-to-date data. This comprehensive approach facilitated efficient
+                    monitoring and management across various business verticals.</p>
+            </div>
+            <div class="third-size"></div>
+        </section>
+
+        <section>
+            <video src="videos/security.mp4" muted loop playsinline autoplay preload="auto"></video>
+        </section>
+
+        <section class="min-60 rowDiv more-padd">
+            <h4 class="half-size third-size alternate alternate-margin"></h4>
+            <div class="columnDiv third-size left-align no-gap">
+                <h3>Product maintenance while developing new features</h3>
+                <p>Continuous enhancement of the product experience was the goal, achieved through regular updates and
+                    refinements to the user interface. The focus was on creating a consistent experience throughout the
+                    product.</p>
+                <ul>
+                    <li>
+                        Small fixes and releases are worked on simultaneously and consistently while the main product
+                        and feature continue to be developed.
+                    </li>
+                    <li>
+                        Improving the product experience.
+                    </li>
+                    <li>
+                        Creating consistency throughout the product.
+                    </li>
+                </ul>
+
+                <h3>Building the DesignOps Foundation</h3>
+                <p>Robust Design operation foundation was established by driving changes in work processes across teams,
+                    management, and handoff procedures. The focus on Design Ops involved supporting design processes
+                    while continuously enhancing the product. Systematic infrastructures were implemented to create
+                    clarity and a shared understanding of the broad design process. This resulted in fewer unanswered
+                    questions and improved collaboration among teams. Conduct collaborative workshops to identify and
+                    address inefficiencies in the design process, improving workflows and team communication. Establish
+                    a centralized design system and a knowledge repository to promote consistency and provide easy
+                    access to design guidelines and assets. Implement regular user feedback loops and testing sessions
+                    to validate design decisions and enhance the product based on user needs and expectations.</p>
+
+                <h3>Scaling the design team</h3>
+                <p>To scale the design team, we support hiring and onboarding new designers. As part of our legacy we
+                    provide inspiration and training in adopting correct work models, ensuring the team is equipped with
+                    the necessary knowledge and skills.</p>
+                <ul>
+                    <li>
+                        Small fixes and releases are worked on simultaneously and consistently while the main product
+                        and feature continue to be developed.
+                    </li>
+                    <li>
+                        Develop automated tools and resources to simplify the work process.
+                    </li>
+                    <li>
+                        Support management in recruitment efforts
+                    </li>
+                </ul>
+            </div>
+            <div class="third-size"></div>
+        </section>
+
+        <hr />
 
         <section class="whiteSection columnDiv no-gap">
             <h3 class="new-width align-center">We can do it all. Together</h3>
-            <button class="roundButton invertButton biggerButton"
+            <button class="roundButton invertButton"
                 onclick="window.open('mailto:hello@wearekido.com');">LET'S TALK</button>
             <div class="kido biggerKido"></div>
             <div class="rowDiv no-padding full-width center-flex footerDiv footerLinks">
@@ -94,7 +200,6 @@
         </section>
 
     </div>
-    <script src="../code/videos.js"></script>
 </body>
 
 </html>
