@@ -127,8 +127,16 @@ section {
     background-size: contain;
 }
 
-.video-content {
+.video-content,
+.heroSection {
     min-height: unset;
+}
+
+.heroSection {
+    margin-top: 60px;
+}
+
+.video-content {
     position: relative;
 }
 
@@ -200,7 +208,6 @@ h2 {
     font-family: 'kepler';
     letter-spacing: -0.03em;
     line-height: 1em;
-    /* text-transform: capitalize; */
     font-weight: 500;
     font-style: italic;
     max-width: 75%;
