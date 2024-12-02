@@ -171,6 +171,25 @@ h2.noselect {
     color: #1C1C1C;
 }
 
+.case-card {
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    height: fit-content;
+    gap: 24px;
+    margin-top: 60px;
+    position: relative;
+}
+
+.case-card img {
+    transition: transform 300ms ease-in-out 0s;
+    max-width: 30vw;
+    box-sizing: none;
+    border: none;
+}
+
 @keyframes titleAnim {
     0% {
         transform: translateY(0) scale(1);
