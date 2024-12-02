@@ -121,7 +121,13 @@
             <h4 class="half-size third-size alternate alternate-margin"></h4>
             <div class="columnDiv third-size left-align no-gap">
                 <h2 class="alternate black">1. The Foundation</h2>
-                <p>Before the release of Figma variables, options for theming and mode support were limited. Plugins like Themer allowed for color switching between modes, but they had to be linked to specific Figma files and installed by every user. Tokens Studio offered (and still does!) a more flexible solution for theming and scaling design systems, and we were close to adopting it despite some drawbacks in prototype mode. However, just as we were about to commit, Figma announced the beta release of variables. We decided to wait and focus on other foundational tasks like building the component structure and transferring documentation into Figma.</p>
+                <p>Before the release of Figma variables, options for theming and mode support were limited. Plugins
+                    like Themer allowed for color switching between modes, but they had to be linked to specific Figma
+                    files and installed by every user. Tokens Studio offered (and still does!) a more flexible solution
+                    for theming and scaling design systems, and we were close to adopting it despite some drawbacks in
+                    prototype mode. However, just as we were about to commit, Figma announced the beta release of
+                    variables. We decided to wait and focus on other foundational tasks like building the component
+                    structure and transferring documentation into Figma.</p>
             </div>
             <div class="third-size"></div>
         </section>
@@ -134,8 +140,12 @@
         <section class="min-60 rowDiv more-padd">
             <h4 class="half-size third-size alternate alternate-margin"></h4>
             <div class="columnDiv third-size left-align no-gap">
-                
-                <p>When Figma variables were released, albeit in beta mode, we decided to integrate them, opting for a native solution. Through extensive research, trial and error, we developed a sustainable and feasible solution for our unified base library, making it a robust foundation for our design system. In the process we also communicated with the Figma Product team and validated our suggested architecture with them. </p>
+
+                <p>When Figma variables were released, albeit in beta mode, we decided to integrate them, opting for a
+                    native solution. Through extensive research, trial and error, we developed a sustainable and
+                    feasible solution for our unified base library, making it a robust foundation for our design system.
+                    In the process we also communicated with the Figma Product team and validated our suggested
+                    architecture with them. </p>
             </div>
             <div class="third-size"></div>
         </section>
@@ -147,50 +157,26 @@
         <section class="min-60 rowDiv more-padd">
             <h4 class="half-size third-size alternate alternate-margin"></h4>
             <div class="columnDiv third-size left-align no-gap">
-                <h3>Product maintenance while developing new features</h3>
-                <p>Continuous enhancement of the product experience was the goal, achieved through regular updates and
-                    refinements to the user interface. The focus was on creating a consistent experience throughout the
-                    product.</p>
-                <ul>
-                    <li>
-                        Small fixes and releases are worked on simultaneously and consistently while the main product
-                        and feature continue to be developed.
-                    </li>
-                    <li>
-                        Improving the product experience.
-                    </li>
-                    <li>
-                        Creating consistency throughout the product.
-                    </li>
-                </ul>
 
-                <h3>Building the DesignOps Foundation</h3>
-                <p>Robust Design operation foundation was established by driving changes in work processes across teams,
-                    management, and handoff procedures. The focus on Design Ops involved supporting design processes
-                    while continuously enhancing the product. Systematic infrastructures were implemented to create
-                    clarity and a shared understanding of the broad design process. This resulted in fewer unanswered
-                    questions and improved collaboration among teams. Conduct collaborative workshops to identify and
-                    address inefficiencies in the design process, improving workflows and team communication. Establish
-                    a centralized design system and a knowledge repository to promote consistency and provide easy
-                    access to design guidelines and assets. Implement regular user feedback loops and testing sessions
-                    to validate design decisions and enhance the product based on user needs and expectations.</p>
-
-                <h3>Scaling the design team</h3>
-                <p>To scale the design team, we support hiring and onboarding new designers. As part of our legacy we
-                    provide inspiration and training in adopting correct work models, ensuring the team is equipped with
-                    the necessary knowledge and skills.</p>
+                <p>The final solution included creating a variable collection that was split into 2 subgroups of
+                    variables:</p>
                 <ul>
-                    <li>
-                        Small fixes and releases are worked on simultaneously and consistently while the main product
-                        and feature continue to be developed.
-                    </li>
-                    <li>
-                        Develop automated tools and resources to simplify the work process.
-                    </li>
-                    <li>
-                        Support management in recruitment efforts
-                    </li>
+                    <li>Customizable (i.e. changing per each customer)</li>
+                    <li>Non-customizable (aliasing the variables from the Customizable group) that covers all the system
+                        and component tokens.</li>
                 </ul>
+                <p>In order to enable both client themes and light and dark modes switching, the variable modes were used.
+                </p>
+                <br /><br />
+                <p>The final foundation architecture looked as follows:</p>
+                <ul>
+                    <li>Colors collection (customizable values changing per customer)</li>
+                    <li>Aliased variables (system and component tokens): </li>
+                    <li>Modes and client themes management</li>
+                </ul>
+                <p>As a result, with every new client, the Design Ops team had to only create a new mode, name it with the
+                client’s name and mode indication (light/dark) and enter the new raw hex values in the customizable part
+                of the collection (colors such as brand, primary, secondary and so on). </p>
             </div>
             <div class="third-size"></div>
         </section>
