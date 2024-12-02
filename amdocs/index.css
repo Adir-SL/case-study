@@ -172,7 +172,7 @@ h2.noselect {
 }
 
 .case-card {
-    color: #FFFFFF;
+    color: #1C1C1C;
     text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -619,7 +619,7 @@ div.case-card img {
 }
 
 .case-card {
-    color: #FFFFFF;
+    color: #1C1C1C;
     text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -637,13 +637,13 @@ div.case-card img {
 }
 
 .case-card h2 {
-    font-size: 1em;
+    font-size: 1.2em;
     margin: 0;
     letter-spacing: normal;
 }
 
 .case-card h3 {
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin: 0;
 }
 
