@@ -286,6 +286,10 @@ p {
     width: 50%;
 }
 
+.half-almost {
+    width: calc(40% - 24px);
+}
+
 .third-size {
     width: 25%;
 }
