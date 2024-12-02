@@ -200,7 +200,7 @@ h2 {
     font-family: 'kepler';
     letter-spacing: -0.03em;
     line-height: 1em;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     font-weight: 500;
     font-style: italic;
     max-width: 75%;
