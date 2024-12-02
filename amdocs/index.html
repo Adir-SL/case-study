@@ -165,7 +165,8 @@
                     <li>Non-customizable (aliasing the variables from the Customizable group) that covers all the system
                         and component tokens.</li>
                 </ul>
-                <p>In order to enable both client themes and light and dark modes switching, the variable modes were used.
+                <p>In order to enable both client themes and light and dark modes switching, the variable modes were
+                    used.
                 </p>
                 <br /><br />
                 <p>The final foundation architecture looked as follows:</p>
@@ -174,15 +175,36 @@
                     <li>Aliased variables (system and component tokens): </li>
                     <li>Modes and client themes management</li>
                 </ul>
-                <p>As a result, with every new client, the Design Ops team had to only create a new mode, name it with the
-                client’s name and mode indication (light/dark) and enter the new raw hex values in the customizable part
-                of the collection (colors such as brand, primary, secondary and so on). </p>
+                <p>As a result, with every new client, the Design Ops team had to only create a new mode, name it with
+                    the
+                    client’s name and mode indication (light/dark) and enter the new raw hex values in the customizable
+                    part
+                    of the collection (colors such as brand, primary, secondary and so on). </p>
             </div>
             <div class="third-size"></div>
         </section>
 
         <section>
             <video src="videos/2.mp4" muted loop playsinline autoplay preload="auto"></video>
+        </section>
+
+        <section class="min-60 rowDiv">
+            <h4 class="half-size third-size alternate alternate-margin"></h4>
+            <div class="columnDiv third-size left-align no-gap">
+                <h2 class="alternate black">2. Components</h2>
+                <p>While exploring variables and consulting with the Figma Product team, we also focused on creating
+                    flexible components. These components needed to be versatile enough to meet any design requirement,
+                    despite not knowing the exact content. We implemented a slot approach and straightforward
+                    documentation to communicate design decisions that must remain fixed and those that could be
+                    modified. There were a handful of components (mostly organisms) designed, for example, with a
+                    defined header and footer and a flexible middle slot, allowing for updates without restricting
+                    designers.</p>
+                <p><br/>
+                    As a result, the designers could create custom content, make it a local component and then replace
+                    the slot in the base component to create any required layouts and designs without detaching the
+                    components from the system.</p>
+            </div>
+            <div class="third-size"></div>
         </section>
 
         <hr />
