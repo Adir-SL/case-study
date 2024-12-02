@@ -163,6 +163,17 @@ video {
     cursor: pointer;
 }
 
+h1.noselect {
+    font-size: 4.5em;
+    text-align: left;
+    max-width: 90%;
+    font-family: 'kepler';
+    letter-spacing: -0.065em;
+    line-height: 1em;
+    font-weight: 500;
+    line-height: 1;
+}
+
 @keyframes titleAnim {
     0% {
         transform: translateY(0) scale(1);
