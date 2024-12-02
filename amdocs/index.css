@@ -7,7 +7,7 @@ Thin: 100 200 300, Light: 400, Regular: 500, Bold: 700 800 */
 
 body {
     background-color: #FFFFFF;
-    color: #5F5F5F;
+    color: #1C1C1C;
     overflow-x: hidden;
 }
 
@@ -233,6 +233,11 @@ h2 {
     font-size: 3.2em;
     font-weight: 300;
     letter-spacing: normal;
+}
+
+h2.black {
+    margin-top: 1em !important;
+    color: #1C1C1C;
 }
 
 h3 {
