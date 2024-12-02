@@ -269,6 +269,11 @@ h3.alternate {
     color: #D6B678;
 }
 
+h3.black{
+    color: #1C1C1C;
+    font-weight: 600;
+}
+
 h4 {
     font-size: 1.2em;
     font-family: 'haas';
@@ -782,6 +787,11 @@ h2.small-text {
     padding: 0 3%;
     width: 94%;
     transform: translateX(-1.5em);
+}
+
+.no-padding-h{
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .align-padding {
