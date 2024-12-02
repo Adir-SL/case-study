@@ -163,7 +163,7 @@ video {
     cursor: pointer;
 }
 
-h1.noselect {
+h2.noselect {
     font-size: 4.5em;
     text-align: left;
     max-width: 90%;
@@ -172,6 +172,7 @@ h1.noselect {
     line-height: 1em;
     font-weight: 500;
     line-height: 1;
+    color: #1C1C1C;
 }
 
 @keyframes titleAnim {
