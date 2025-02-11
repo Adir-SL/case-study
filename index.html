@@ -54,11 +54,11 @@
         function videoPlay() {
             if (window.playing == 1) {
                 document.getElementById("heroVideo").pause();
-                document.getElementById("videoCursor").classList.remove("pause");
+                document.getElementById("heroVideo").classList.remove("pause");
                 window.playing = 0;
             } else {
                 document.getElementById("heroVideo").play();
-                document.getElementById("videoCursor").classList.add("pause");
+                document.getElementById("heroVideo").classList.add("pause");
                 window.playing = 1;
             }
         }
