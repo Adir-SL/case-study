@@ -1006,9 +1006,7 @@ h2.small-text {
 }
 
 #heroVideo {
-    /* cursor: none; */
-    cursor: url(cursor.png), auto;
-    /* cursor: pointer; */
+    cursor: url(cursor.svg) 16 16, auto;
 }
 
 .big-font-size {
