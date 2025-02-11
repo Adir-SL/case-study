@@ -46,20 +46,6 @@
             a.appendChild(r);
         })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
-
-    <script>
-        function videoPlay() {
-            if (window.playing == 1) {
-                document.getElementById("amdocsVideo").pause();
-                document.getElementById("videoCursor").classList.remove("pause");
-                window.playing = 0;
-            } else {
-                document.getElementById("amdocsVideo").play();
-                document.getElementById("videoCursor").classList.add("pause");
-                window.playing = 1;
-            }
-        }
-    </script>
 </head>
 
 <body onscroll="scrollCheck();">
