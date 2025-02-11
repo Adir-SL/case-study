@@ -1008,6 +1008,9 @@ h2.small-text {
 #heroVideo {
     cursor: url(cursor.svg) 16 16, auto;
 }
+#heroVideo.pause {
+    cursor: url(cursorPause.svg) 16 16, auto;
+}
 
 .big-font-size {
     font-size: 5.8em;
