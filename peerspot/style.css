@@ -84,6 +84,9 @@ header div {
     transform: none;
     background-color: transparent;
 }
+a.roundButton {
+    text-decoration: none !important;
+}
 
 .invertHeader,
 .logoDiv {
