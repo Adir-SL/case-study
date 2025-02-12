@@ -679,7 +679,6 @@ summary h2 {
 }
 
 h2.float-right {
-    /* font-size: 3.5em; */
     font-size: min(4vw, 3.5em);
     width: 100%;
     white-space: pre;
