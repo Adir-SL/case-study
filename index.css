@@ -568,6 +568,7 @@ header .roundButton {
     flex-grow: 1;
     height: 100%;
     padding-top: 36px;
+    transition: opacity 300ms linear;
 }
 
 .linksDiv a {
