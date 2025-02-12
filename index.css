@@ -136,6 +136,10 @@ header div {
     background-color: transparent;
 }
 
+a.roundButton {
+    text-decoration: none !important;
+}
+
 section {
     width: 80%;
     padding: 0 10%;
