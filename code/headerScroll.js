@@ -14,7 +14,7 @@ function scrollCheck() {
     }
 
 
-    if (document.getElementById('wrapper').getBoundingClientRect().top !== 0) {
+    if (document.querySelectorAll('section')[0].getBoundingClientRect().top < 0) {
         document.getElementById('mainHeader').querySelectorAll('div')[0].style.transitionDelay = '300ms';
         document.getElementById('mainHeader').querySelectorAll('div')[1].style.transitionDelay = '0s';
         document.getElementById('mainHeader').querySelectorAll('nav')[0].style.transitionDelay = '0s';
