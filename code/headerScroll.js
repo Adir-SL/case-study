@@ -19,6 +19,8 @@ function scrollCheck() {
         document.getElementById('mainHeader').querySelectorAll('div')[1].style.transitionDelay = '0s';
         document.getElementById('mainHeader').querySelectorAll('nav')[0].style.transitionDelay = '0s';
         document.getElementById('mainHeader').querySelectorAll('a')[0].style.transitionDelay = '0s';
+        document.getElementById('mainHeader').querySelectorAll('a')[0].style.pointerEvents = 'none';
+        document.getElementsByClassName("linksDiv")[0].style.pointerEvents = 'none';
         document.getElementById('mainHeader').querySelectorAll('div')[0].style.opacity = '1';
         document.getElementById('mainHeader').querySelectorAll('div')[1].style.opacity = '0';
         document.getElementById('mainHeader').querySelectorAll('nav')[0].style.opacity = '0';
