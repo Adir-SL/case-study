@@ -18,16 +18,6 @@ function scrollCheck() {
         document.getElementById('mainHeader').classList.add('scrolled');
     } else {
         document.getElementById('mainHeader').classList.remove('scrolled');
-        // document.getElementById('mainHeader').querySelectorAll('div')[0].style.transitionDelay = '0s';
-        // document.getElementById('mainHeader').querySelectorAll('div')[1].style.transitionDelay = '300ms';
-        // document.getElementById('mainHeader').querySelectorAll('nav')[0].style.transitionDelay = '300ms';
-        // document.getElementById('mainHeader').querySelectorAll('a')[0].style.transitionDelay = '0s';
-        // document.getElementById('mainHeader').querySelectorAll('a')[0].style.pointerEvents = 'all';
-        // document.getElementsByClassName("linksDiv")[0].style.pointerEvents = 'all';
-        // document.getElementById('mainHeader').querySelectorAll('div')[0].style.opacity = '0';
-        // document.getElementById('mainHeader').querySelectorAll('div')[1].style.opacity = '1';
-        // document.getElementById('mainHeader').querySelectorAll('nav')[0].style.opacity = '1';
-        // document.getElementById('mainHeader').querySelectorAll('a')[0].style.opacity = '1';
     }
 }
 
