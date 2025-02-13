@@ -1,0 +1,16 @@
+.scrolled div,
+.scrolled nav {
+    transition: opacity 300ms linear;
+    transition-delay: 0;
+    opacity: 0;
+}
+
+.scrolled div:nth-of-type(1) {
+    transition-delay: 300ms !important;
+    opacity: 1 !important;
+}
+
+.scrolled .linksDiv,
+.scrolled .logoText {
+    pointer-events: none;
+}
