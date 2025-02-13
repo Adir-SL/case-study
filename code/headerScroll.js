@@ -15,6 +15,7 @@ function scrollCheck() {
 
 
     if (document.querySelectorAll('section')[0].getBoundingClientRect().top < 0) {
+        document.getElementById('mainHeader').classList.add('scrolled');
         document.getElementById('mainHeader').querySelectorAll('div')[0].style.transitionDelay = '300ms';
         document.getElementById('mainHeader').querySelectorAll('div')[1].style.transitionDelay = '0s';
         document.getElementById('mainHeader').querySelectorAll('nav')[0].style.transitionDelay = '0s';
@@ -26,6 +27,7 @@ function scrollCheck() {
         document.getElementById('mainHeader').querySelectorAll('nav')[0].style.opacity = '0';
         document.getElementById('mainHeader').querySelectorAll('a')[0].style.opacity = '0';
     } else {
+        document.getElementById('mainHeader').classList.remove('scrolled');
         document.getElementById('mainHeader').querySelectorAll('div')[0].style.transitionDelay = '0s';
         document.getElementById('mainHeader').querySelectorAll('div')[1].style.transitionDelay = '300ms';
         document.getElementById('mainHeader').querySelectorAll('nav')[0].style.transitionDelay = '300ms';
