@@ -1427,4 +1427,8 @@ h2.small-text {
   .client-card h2 {
     font-size: 7.2em;
   }
+  
+  .client-card h3 {
+    font-size: 1.5em;
+  }
 }
