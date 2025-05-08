@@ -1414,4 +1414,17 @@ h2.small-text {
       transform: translateY(calc(40vh + 10em));
     }
   }
+  
+  .client-wrapper {
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .client-card {
+    width: 100%;
+  }
+  
+  .client-card h2 {
+    font-size: 7.2em;
+  }
 }
