@@ -1111,7 +1111,7 @@ h2.small-text {
     background-image: url(images/clients/clients-mobile-01.svg);
   }
   
-  @  keyframes clientsScroll {
+  @keyframes clientsScroll {
     0% {
       background-image: url(images/clients/clients-mobile-01.svg);
     }
