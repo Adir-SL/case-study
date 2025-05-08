@@ -189,9 +189,8 @@ section {
 }
 
 .client-card img {
-  width: 108px;
-  height: 108px;
-  border-radius: 9999px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
 }
 
