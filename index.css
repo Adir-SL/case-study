@@ -182,11 +182,23 @@ section {
   background-size: contain;
 }
 
+.client-wrapper {
+  display: flex;
+  gap: 200px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: auto;
+  width: 100vw;
+}
+
 .client-card {
   font-family: 'haas';
   display: flex;
   flex-direction: column;
   text-align: left;
+  width: 30vw;
+  min-width: 30vw;
 }
 
 .client-card h2 {
