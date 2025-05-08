@@ -191,7 +191,6 @@ section {
   padding-bottom: 48px;
   overflow-x: scroll;
   overflow-y: hidden;
-  scroll-snap-type: x mandatory;
 }
 
 .client-card {
