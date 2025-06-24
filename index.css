@@ -198,18 +198,13 @@ section {
   display: flex;
   flex-direction: column;
   text-align: left;
-  width: 30vw;
-  min-width: 30vw;
-}
-
-.client-card h2 {
-  font-family: 'haas';
-  font-style: italic;
-  line-height: 0em;
+  width: 100%;
+  min-width: 100%;
 }
 
 .client-card > p {
-  font-style: italic;
+  /* font-style: italic; */
+  font-size: 48px;
   line-height: 1.25;
   height: 100%;
 }
