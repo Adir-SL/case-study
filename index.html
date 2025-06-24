@@ -66,8 +66,13 @@
     </script>
     <script>
         function clientCardClick(e) {
-            // console.log(e.target);
             e.target.classList.toggle('open');
+        }
+        function clientNext() {
+            console.log('next')
+        }
+        function clientPrev() {
+            console.log('prev')
         }
     </script>
 
@@ -327,8 +332,8 @@
                         </div>
                     </div>
                 </div>
-                <button onclick="clientNext()">PR</button>
-                <button onclick="clientPrev()">NE</button>
+                <button onclick="clientPrev()">PR</button>
+                <button onclick="clientNext()">NE</button>
             </section>
 
 
