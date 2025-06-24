@@ -1322,6 +1322,13 @@ h2.small-text {
 
   .button-flex {
     padding: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    bottom: 20ch;
+  }
+
+  .client-number {
+    font-size: 32px;
   }
 
   hr {
@@ -1520,6 +1527,7 @@ h2.small-text {
   .client-card p {
     padding: 0;
     font-size: 32px;
+    text-indent: 4ch;
   }
 
   .client-card h2 {
