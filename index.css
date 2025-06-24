@@ -182,6 +182,36 @@ section {
   background-size: contain;
 }
 
+.button-flex {
+  display: flex;
+  gap: 12px;
+  padding: 0 300px;
+}
+
+.arrow-button {
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: none;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml, <svg width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="33.5316" cy="33.1562" r="32.5" stroke="white"/><path d="M21.4966 34.2104C21.106 34.6009 21.106 35.2341 21.4966 35.6246L27.8605 41.9885C28.2511 42.3791 28.8842 42.3791 29.2747 41.9885C29.6653 41.598 29.6653 40.9649 29.2747 40.5743L23.6179 34.9175L29.2747 29.2606C29.6653 28.8701 29.6653 28.2369 29.2747 27.8464C28.8842 27.4559 28.2511 27.4559 27.8605 27.8464L21.4966 34.2104ZM44.8595 34.9175L44.8595 33.9175L22.2037 33.9175L22.2037 34.9175L22.2037 35.9175L44.8595 35.9175L44.8595 34.9175Z" fill="white"/></svg>');
+}
+
+.arrow-button:nth-of-type(2n) {
+  background-image: url('data:image/svg+xml, <svg width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="33.6528" cy="33.1562" r="32.5" stroke="white"/><path d="M45.6879 34.2104C46.0784 34.6009 46.0784 35.2341 45.6879 35.6246L39.3239 41.9885C38.9334 42.3791 38.3002 42.3791 37.9097 41.9885C37.5192 41.598 37.5192 40.9649 37.9097 40.5743L43.5666 34.9175L37.9097 29.2606C37.5192 28.8701 37.5192 28.2369 37.9097 27.8464C38.3002 27.4559 38.9334 27.4559 39.3239 27.8464L45.6879 34.2104ZM22.325 34.9175L22.325 33.9175L44.9808 33.9175L44.9808 34.9175L44.9808 35.9175L22.325 35.9175L22.325 34.9175Z" fill="white"/></svg>');
+}
+
+.arrow-button:hover {
+  opacity: .8;
+}
+
+.arrow-button:active {
+  opacity: .6;
+}
+
 .client-wrapper {
   display: flex;
   flex-wrap: nowrap;
@@ -191,6 +221,7 @@ section {
   padding-bottom: 48px;
   overflow-x: scroll;
   overflow-y: hidden;
+  scroll-behavior: smooth;
 }
 
 .client-card {
@@ -268,6 +299,9 @@ section {
 .client-card .flex h3,
 .client-card .flex p {
   margin: 0;
+  padding: 0;
+  font-size: 18px;
+  text-indent: 0;
 }
 
 ::selection {
