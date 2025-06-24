@@ -221,7 +221,8 @@ section {
 .client-card .summary-span {
   display: inline;
 }
-.client-card .summary-span::after{
+
+.client-card .summary-span::after {
   content: '[...]';
 }
 
@@ -232,7 +233,8 @@ section {
 .client-card.open span {
   display: inline;
 }
-.client-card.open .summary-span::after{
+
+.client-card.open .summary-span::after {
   content: '';
 }
 
