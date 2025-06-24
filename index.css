@@ -201,16 +201,44 @@ section {
   width: 100%;
   min-width: 100%;
   font-size: 48px;
-  max-height: 10.6ch;
   cursor: pointer;
 }
 
-.client-card>p {
+.client-card p {
   font-weight: 500;
   line-height: 1.25;
   height: 100%;
   text-indent: 8ch;
   padding: 0 300px;
+  height: 0;
+  overflow: hidden;
+}
+
+.client-card span {
+  display: none;
+}
+
+.client-card .summary-span {
+  display: inline;
+}
+.client-card .summary-span::after{
+  content: '[...]';
+}
+
+.client-card p:first-of-type {
+  height: fit-content;
+}
+
+.client-card.open span {
+  display: inline;
+}
+.client-card.open .summary-span::after{
+  content: '';
+}
+
+.client-card.open p,
+.client-card.open span {
+  height: fit-content;
 }
 
 .client-card * {
