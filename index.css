@@ -203,10 +203,12 @@ section {
 }
 
 .client-card > p {
-  /* font-style: italic; */
   font-size: 48px;
+  font-weight: 500;
   line-height: 1.25;
   height: 100%;
+  text-indent: 8ch;
+  padding: 0 300px;
 }
 
 .client-card img {
