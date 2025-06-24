@@ -1314,6 +1314,16 @@ h2.small-text {
     padding-right: 5%;
   }
 
+  .scroll-section {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .button-flex {
+    padding: 0;
+  }
+
   hr {
     width: 90%;
   }
@@ -1504,12 +1514,12 @@ h2.small-text {
   }
 
   .client-wrapper {
-    flex-direction: column;
     gap: 24px;
   }
 
-  .client-card {
-    width: 100%;
+  .client-card p {
+    padding: 0;
+    font-size: 32px;
   }
 
   .client-card h2 {
