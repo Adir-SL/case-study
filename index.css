@@ -182,10 +182,17 @@ section {
   background-size: contain;
 }
 
+.scroll-section {
+  position: relative;
+}
+
 .button-flex {
+  position: absolute;
+  bottom: 20ch;
+  left: 0;
   display: flex;
   gap: 12px;
-  padding: 0 300px;
+  padding: 0 360px;
 }
 
 .arrow-button {
