@@ -64,6 +64,11 @@
             }
         }
     </script>
+    <script>
+        function clientCardClick(e) {
+            console.log(e.target);
+        }
+    </script>
 
 </head>
 
@@ -188,12 +193,15 @@
 
             <section class="align-padding scroll-section">
                 <div class="client-wrapper">
-                    <div class="client-card">
+                    <div class="client-card" onclick="clientCardClick(event);">
 
                         <p>
-                            “When I first spoke with Karen and Ido, I told them straight up—I’m super skeptical about an
-                            external studio running the Design Ops. I figured, at best, they could help us skip some of
-                            the learning curves our in-house designers were facing because, in the end, this kind of
+                            <span>“When I first spoke with Karen and Ido, I told them straight up—I’m super skeptical
+                                about an
+                                external studio running the Design Ops. I figured, at best, they could help us skip some
+                                of
+                                the learning curves</span> our in-house designers were facing because, in the end, this
+                            kind of
                             role has to live inside the company, A studio can offer best practices and a holistic view,
                             but there’s no way they can really deal with the messy reality of working across designers,
                             devs, PMs, and biz teams. Yep, I have this habit of saying a lot of stupid things...
