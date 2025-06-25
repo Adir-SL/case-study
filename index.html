@@ -92,6 +92,17 @@
             document.getElementsByClassName("client-wrapper")[0].scrollBy(-10000, 0);
             checkClientScroll();
         }
+
+        function checkClientScroll() {
+            setTimeout(function () {
+                if (document.getElementsByClassName("client-wrapper")[0].scrollLeft < 100) {
+                    document.getElementById("arrow-prev").classList.add("unselect");
+                } else {
+                    document.getElementById("arrow-prev").classList.remove("unselect");
+                }
+            }, 600);
+
+        }
     </script>
 
 </head>
@@ -356,8 +367,8 @@
                     </div>
                 </div>
                 <div class="button-flex">
-                    <button onclick="clientPrev()" class="arrow-button"></button>
-                    <button onclick="clientNext()" class="arrow-button"></button>
+                    <button onclick="clientPrev()" class="arrow-button" id="arrow-prev"></button>
+                    <button onclick="clientNext()" class="arrow-button" id="arrow-next"></button>
                 </div>
             </section>
 

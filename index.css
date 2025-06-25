@@ -220,6 +220,10 @@ section {
   opacity: .6;
 }
 
+.unselect {
+  pointer-events: none;
+}
+
 .client-wrapper {
   display: flex;
   flex-wrap: nowrap;
