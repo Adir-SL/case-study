@@ -757,6 +757,7 @@ hr.float-right {
   display: flex;
   align-items: flex-start;
   gap: 56px;
+  white-space: nowrap;
 }
 
 div.case-card img {
