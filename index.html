@@ -100,6 +100,12 @@
                 } else {
                     document.getElementById("arrow-prev").classList.remove("unselect");
                 }
+
+                if (document.getElementsByClassName("client-wrapper")[0].scrollLeft > (document.getElementsByClassName("client-wrapper")[0].offsetWidth * 3)) {
+                    document.getElementById("arrow-next").classList.add("unselect");
+                } else {
+                    document.getElementById("arrow-next").classList.remove("unselect");
+                }
             }, 600);
 
         }
