@@ -326,6 +326,11 @@ section {
   padding: 0;
   font-size: 18px;
   text-indent: 0;
+  font-weight: 500;
+}
+
+.client-card .flex p {
+  color: #9A9A9A;
 }
 
 ::selection {
