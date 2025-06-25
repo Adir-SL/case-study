@@ -1334,6 +1334,7 @@ h2.small-text {
   }
 
   .client-number {
+    width: fit-content;
     font-size: 32px;
   }
 
@@ -1528,6 +1529,7 @@ h2.small-text {
 
   .flex-card {
     align-items: center;
+    white-space: unset;
   }
 
   .client-wrapper {
