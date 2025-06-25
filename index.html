@@ -75,7 +75,9 @@
                 siteWidth = document.getElementsByClassName("client-wrapper")[0].offsetWidth + 200;
             }
             document.getElementsByClassName("client-wrapper")[0].scrollBy(siteWidth, 0);
+            checkClientScroll();
         }
+
         function clientPrev() {
             if (document.body.offsetWidth < 900) {
                 siteWidth = document.getElementsByClassName("client-wrapper")[0].offsetWidth + 24;
@@ -83,9 +85,12 @@
                 siteWidth = document.getElementsByClassName("client-wrapper")[0].offsetWidth + 200;
             }
             document.getElementsByClassName("client-wrapper")[0].scrollBy((siteWidth * -1), 0);
+            checkClientScroll();
         }
+
         function resetClientScroll() {
             document.getElementsByClassName("client-wrapper")[0].scrollBy(-10000, 0);
+            checkClientScroll();
         }
     </script>
 
