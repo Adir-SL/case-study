@@ -1526,6 +1526,10 @@ h2.small-text {
     }
   }
 
+  .flex-card {
+    align-items: center;
+  }
+
   .client-wrapper {
     gap: 24px;
   }
@@ -1542,5 +1546,10 @@ h2.small-text {
 
   .client-card h3 {
     font-size: 1.5em;
+  }
+
+  .client-card img {
+    width: 60px;
+    height: 60px;
   }
 }
