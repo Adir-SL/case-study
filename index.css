@@ -200,7 +200,8 @@ section {
   cursor: pointer;
   width: 60px;
   height: 60px;
-  background-color: transparent;
+  background-color: #1c1c1c;
+  border-radius: 9999px;
   border: none;
   background-position: center;
   background-size: contain;
