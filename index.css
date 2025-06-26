@@ -195,7 +195,7 @@ section {
   left: 0;
   display: flex;
   gap: 12px;
-  padding: 0 calc(300px + 10%);
+  padding: 0 360px;
 }
 
 .arrow-button {
