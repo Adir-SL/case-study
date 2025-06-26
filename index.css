@@ -1339,8 +1339,8 @@ h2.small-text {
 
   .button-flex {
     padding: 0;
-    padding-left: 5%;
-    padding-right: 5%;
+    left: 5%;
+    transform: none;
     bottom: 20ch;
   }
 
