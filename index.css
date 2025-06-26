@@ -71,6 +71,7 @@ section.third-off {
   left: 0;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .full-width {
