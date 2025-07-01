@@ -100,7 +100,7 @@
                 x[i].classList.remove('open');
             }
             if (document.getElementById("scroll-section-label").getBoundingClientRect().top < 0) {
-                document.getElementById("scroll-section-label").scrollIntoView();
+                document.getElementById("scroll-section-label").scrollIntoView({ behavior: "smooth" });
             }
         }
 
