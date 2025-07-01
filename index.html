@@ -93,7 +93,19 @@
             checkClientScroll();
         }
 
+        function resetClientExpantion() {
+            var x = document.getElementsByClassName("client-card");
+            var i;
+            for (i = 0; i < x.length; i++) {
+                x[i].classList.remove('open');
+            }
+            if (document.getElementById("scroll-section-label").getBoundingClientRect().top < 0) {
+                document.getElementById("scroll-section-label").scrollIntoView();
+            }
+        }
+
         function checkClientScroll() {
+            resetClientExpantion();
             setTimeout(function () {
                 if (document.getElementsByClassName("client-wrapper")[0].scrollLeft < 100) {
                     document.getElementById("arrow-prev").classList.add("unselect");
@@ -229,7 +241,7 @@
                 </a>
             </section>
 
-            <hr />
+            <hr id="scroll-section-label" />
             <div class="triLabel">Client testimonials</div>
 
             <section class="scroll-section">
