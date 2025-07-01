@@ -1346,7 +1346,7 @@ h2.small-text {
 
   .client-number {
     width: fit-content;
-    font-size: 32px;
+    font-size: 31px;
   }
 
   hr {
@@ -1549,7 +1549,7 @@ h2.small-text {
 
   .client-card p {
     padding: 0;
-    font-size: 32px;
+    font-size: 31px;
     text-indent: 4ch;
   }
 
