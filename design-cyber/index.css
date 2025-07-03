@@ -109,6 +109,10 @@ section {
     mix-blend-mode: difference;
 }
 
+.visually-hidden {
+  visibility: hidden;
+}
+
 ::selection {
     background-color: #c0c0c0;
 }
