@@ -246,6 +246,18 @@ section {
   scroll-behavior: smooth;
 }
 
+.client-wrapper::-webkit-scrollbar {
+  width: 0;
+}
+
+/* .client-wrapper::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+.client-wrapper::-webkit-scrollbar-thumb {
+  background: #000000;
+} */
+
 .client-card {
   font-family: 'haas';
   display: flex;
