@@ -183,6 +183,10 @@ section {
   background-size: contain;
 }
 
+.visually-hidden {
+  visibility: hidden;
+}
+
 .scroll-section {
   position: relative;
   min-height: unset;
