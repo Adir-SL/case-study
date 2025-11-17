@@ -487,6 +487,15 @@ video,
   box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 0.06);
 }
 
+.noborder {
+  border: unset;
+  box-shadow: unset;
+}
+
+.max-40 {
+  max-width: 40vw;
+}
+
 .haas {
   font-family: 'haas';
 }
