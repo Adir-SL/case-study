@@ -342,6 +342,7 @@ p {
 .crumb {
   margin: 0 8px;
   position: relative;
+  white-space: pre;
 }
 
 .crumb a {
@@ -362,6 +363,9 @@ p {
 .crumb.selected {
   font-weight: 600;
   opacity: 1;
+  max-width: calc(100vw - 80px);
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .crumb.selected::after {
@@ -938,8 +942,17 @@ h2.small-text {
 
 /* mobile */
 @media screen and (max-width:900px) {
+  .bigger-haas {
+    transform: scale(1.5);
+  }
+  
+  .max-40 {
+    max-width: calc(100vw - 80px);
+  }
+  
   .heroSection h2 {
     font-size: 3em;
+    max-width: 100%;
   }
   
   .linksDiv a {
