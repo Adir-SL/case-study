@@ -503,6 +503,10 @@ video,
   padding: 80px 40px;
 }
 
+.alternate + .bigger-haas {
+  padding-top: 60px;
+}
+
 .max-40 {
   max-width: 40vw;
 }
