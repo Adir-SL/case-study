@@ -255,9 +255,8 @@ h2 {
   max-width: 100%;
   text-transform: none;
   text-align: left;
-  font-size: 3.2em;
+  font-size: 4.2em;
   font-weight: 300;
-  letter-spacing: normal;
 }
 
 h2.black {
@@ -484,7 +483,7 @@ video,
   max-width: 80vw;
   border: 1px solid #DBDBDB;
   border-radius: 8px;
-  box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 0.06);
+  /* box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 0.06); */
 }
 
 .noborder {
