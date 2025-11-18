@@ -1125,4 +1125,13 @@ h2.small-text {
   .rowDiv {
     padding-bottom: 0 !important;
   }
+  
+  .max-120 {
+    max-width: unset;
+    width: unset;
+  }
+  
+  #wrapper {
+    overflow-x: hidden;
+  }
 }
