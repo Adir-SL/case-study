@@ -491,6 +491,14 @@ video,
   /* box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 0.06); */
 }
 
+.desktop-image {
+  display: block;
+}
+
+.mobile-image {
+  display: none;
+}
+
 .noborder {
   border: unset;
   box-shadow: unset;
@@ -1124,6 +1132,14 @@ h2.small-text {
   
   .rowDiv {
     padding-bottom: 0 !important;
+  }
+  
+  .desktop-image {
+    display: none !important;
+  }
+  
+  .mobile-image {
+    display: block !important;
   }
   
   .max-120 {
