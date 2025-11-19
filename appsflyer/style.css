@@ -265,6 +265,19 @@ h2.black {
   color: #1C1C1C;
 }
 
+h2.bold {
+  color: #10111D;
+  font-family: 'haas';
+  font-size: 8em;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+hr.full-width {
+  margin-top: 16px;
+  border-color: #A9A9A9;
+}
+
 h3 {
   font-size: 1.5em;
   font-family: 'haas';
