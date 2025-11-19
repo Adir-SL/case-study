@@ -844,6 +844,7 @@ div.case-card img {
 .case-card h3 {
   font-size: 1.6em;
   margin: 0;
+  white-space: break-spaces;
 }
 
 .case-card .small-text {
