@@ -1002,10 +1002,6 @@ h2.small-text {
 
 /* mobile */
 @media screen and (max-width:900px) {
-  .bigger-haas {
-    transform: scale(1.5);
-  }
-  
   .max-40 {
     max-width: calc(100vw - 80px);
   }
