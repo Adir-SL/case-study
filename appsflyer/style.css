@@ -322,6 +322,29 @@ p {
   margin: 0;
 }
 
+blockquote {
+  color: #131313;
+  font-family: 'haas';
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 121%;
+  letter-spacing: 0.02643rem;
+  border-left: 2px solid #131313;
+  padding-left: 24px;
+  margin-left: 0;
+}
+
+cite {
+  color: #535353;
+  font-family: 'haas';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 121%;
+  letter-spacing: 0.02286rem;
+}
+
 .indent {
   text-indent: 3em;
 }
