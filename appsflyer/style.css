@@ -268,7 +268,7 @@ h2.black {
 h2.bold {
   color: #10111D;
   font-family: 'haas';
-  font-size: 8em;
+  font-size: 5.5em;
   font-style: normal;
   line-height: 1.2;
 }
@@ -529,7 +529,7 @@ video,
   margin: auto;
   font-size: 36px;
   line-height: 1.3;
-  padding: 24px 0;
+  padding: 42px 0;
 }
 
 /* .alternate + .bigger-haas {
