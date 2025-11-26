@@ -336,6 +336,21 @@ ol ul > li {
   list-style-type: disc;
 }
 
+.gallery img {
+  background-color: #DEDFDF;
+  position: absolute;
+  left: 0;
+}
+
+.gallery img:first-of-type {
+  position: relative;
+}
+
+.gallery-inner {
+  position: relative;
+  max-width: 80vw;
+}
+
 blockquote {
   color: #131313;
   font-family: 'haas';
