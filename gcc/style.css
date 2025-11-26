@@ -328,7 +328,7 @@ ul, ol, li {
   color: #555555;
 }
 
-ol > li {
+ol > li, b {
   font-weight: 600 !important;
 }
 
