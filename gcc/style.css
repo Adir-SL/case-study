@@ -324,6 +324,14 @@ p {
   color: #555555;
 }
 
+ul, ol, li {
+  color: #555555;
+}
+
+ol > li {
+  font-weight: 600 !important;
+}
+
 blockquote {
   color: #131313;
   font-family: 'haas';
