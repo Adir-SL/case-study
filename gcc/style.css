@@ -332,6 +332,10 @@ ol > li {
   font-weight: 600 !important;
 }
 
+ol ul > li {
+  list-style-type: disc;
+}
+
 blockquote {
   color: #131313;
   font-family: 'haas';
