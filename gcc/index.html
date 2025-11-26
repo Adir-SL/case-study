@@ -310,13 +310,13 @@
         <section class="min-60 rowDiv full-width gallery">
             <div class="gallery-inner">
                 <nav>
-                    <button></button>
-                    <button></button>
-                    <button></button>
+                    <button onclick="galleryFunc(event);" index="0" class="active"></button>
+                    <button onclick="galleryFunc(event);" index="1"></button>
+                    <button onclick="galleryFunc(event);" index="2"></button>
                     <div>1/3</div>
                 </nav>
                 <img src="images/gallery_01.png" class="full-width noborder" />
-                <img src="images/gallery_01.png" class="full-width noborder" />
+                <img src="images/gallery_01.png" class="full-width noborder active" />
                 <img src="images/gallery_02.png" class="full-width noborder" />
                 <img src="images/gallery_03.png" class="full-width noborder" />
             </div>
@@ -457,6 +457,22 @@
         </section>
 
     </div>
+
+    <script>
+        function galleryFunc(e) {
+            index = e.target.getAttribute("index");
+            indexx = Number(e.target.getAttribute("index")) + 1;
+            inner = e.target.parentNode.parentNode;
+
+            var x = inner.querySelectorAll("*");
+            var i;
+            for (i = 0; i < x.length; i++) {
+                x[i].classList.remove('active');
+            }
+            inner.querySelectorAll('button')[index].classList.add('active');
+            inner.querySelectorAll('img')[indexx].classList.add('active');
+        }
+    </script>
 
 </body>
 

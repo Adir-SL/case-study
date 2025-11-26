@@ -339,6 +339,11 @@ ol ul > li {
 .gallery img {
   position: absolute;
   left: 0;
+  opacity: 0;
+}
+
+.gallery img.active {
+  opacity: 1;
 }
 
 .gallery img:first-of-type {
@@ -375,6 +380,10 @@ ol ul > li {
   width: 8px;
   height: 8px;
   background-color: #BCBCBC;
+}
+
+.gallery-inner button.active {
+  background-color: #10111D;
 }
 
 blockquote {
