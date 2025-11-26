@@ -337,18 +337,44 @@ ol ul > li {
 }
 
 .gallery img {
-  background-color: #DEDFDF;
   position: absolute;
   left: 0;
 }
 
 .gallery img:first-of-type {
   position: relative;
+  opacity: 0;
 }
 
 .gallery-inner {
   position: relative;
   max-width: 80vw;
+  background-color: #DEDFDF;
+  padding-top: 20px;
+}
+
+.gallery-inner nav {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: flex-end;
+}
+
+.gallery-inner nav div {
+  margin-left: 16px;
+  margin-right: 40px;
+  font-family: "Geist Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gallery-inner button {
+  border: none;
+  padding: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #BCBCBC;
 }
 
 blockquote {
