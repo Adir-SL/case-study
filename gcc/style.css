@@ -1289,4 +1289,15 @@ h2.small-text {
   #wrapper {
     overflow-x: hidden;
   }
+  
+  section {
+    width: calc(100% - 48px);
+    padding: 0 24px;
+  }
+  
+  img,
+  video,
+  .video {
+    max-width: calc(100vw - 48px);
+  }
 }
