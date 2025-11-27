@@ -408,6 +408,7 @@ ol ul > li {
   display: flex;
   gap: 2vw;
   width: 80vw;
+  padding-right: 10vw;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
   overflow-x: scroll;
@@ -416,7 +417,7 @@ ol ul > li {
 }
 
 .mobile-gallery img {
-  scroll-snap-align: center;
+  scroll-snap-align: start;
   background-color: #DEDFDF;
   border-radius: 0;
 }
