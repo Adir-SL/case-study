@@ -407,8 +407,8 @@ ol ul > li {
 .mobile-gallery {
   display: flex;
   gap: 2vw;
-  width: 80vw;
-  padding-right: 10vw;
+  width: calc(100vw - 48px);
+  padding-right: 24px;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
   overflow-x: scroll;
