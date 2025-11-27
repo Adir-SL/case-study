@@ -417,6 +417,12 @@ ol ul > li {
 
 .mobile-gallery img {
   scroll-snap-align: center;
+  background-color: #DEDFDF;
+  border-radius: 0;
+}
+
+.mobile-gallery img:last-of-type {
+  background-color: #F9F7F5;
 }
 
 blockquote {
