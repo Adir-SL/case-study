@@ -404,6 +404,16 @@ ol ul > li {
   background-color: #10111D;
 }
 
+.mobile-gallery {
+  display: flex;
+  gap: 2vw;
+  width: 80vw;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: auto;
+}
+
 blockquote {
   color: #131313;
   font-family: 'haas';
