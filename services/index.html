@@ -152,6 +152,12 @@
         color: #181818;
         letter-spacing: -0.03em;
         gap: 16px;
+        opacity: 0.2;
+        transition: opacity 0.5s ease;
+      }
+
+      .capabilities__item.in-view {
+        opacity: 1;
       }
 
       .capabilities__item:last-child {
@@ -272,6 +278,42 @@
         position: absolute;
         top: clamp(28px, 3.5vw, 68px);
         left: clamp(24px, 2.8vw, 54px);
+      }
+
+      .ds-scale__card-title {
+        font-family: 'haas-text', sans-serif;
+        font-size: 40px;
+        font-weight: 400;
+        letter-spacing: -0.02em;
+        line-height: 1.2;
+        color: #ffffff;
+      }
+
+      .ds-scale__card-desc {
+        font-family: 'haas-text', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.72);
+        line-height: 1.55;
+        margin-top: clamp(12px, 1.25vw, 24px);
+        opacity: 0;
+        transform: translateY(32px);
+        transition: opacity 0.7s ease, transform 0.7s ease;
+      }
+
+      .ds-scale__card.revealed .ds-scale__card-desc {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @media (max-width: 1199px) {
+        .ds-scale__card-title { font-size: 28px; }
+        .ds-scale__card-desc  { font-size: 16px; }
+      }
+
+      @media (max-width: 767px) {
+        .ds-scale__card-title { font-size: 20px; }
+        .ds-scale__card-desc  { font-size: 15px; }
       }
 
       .ds-scale__card--foundational {
@@ -554,25 +596,29 @@
       <!-- Row 1: foundational (left edge) + scalable (right edge) -->
       <div class="ds-scale__row ds-scale__row--spread">
         <div class="ds-scale__card ds-scale__card--foundational">
-          <span class="ds-scale__card-label">Design Systems by Scale</span>
-          Foundational<br>Design System
+          <span class="ds-scale__card-label">Design System by Scale</span>
+          <h3 class="ds-scale__card-title">Foundational<br>Design System</h3>
+          <p class="ds-scale__card-desc">For early-stage products or focused platforms that need clarity, speed, and consistency without over-engineering.</p>
         </div>
         <div class="ds-scale__card ds-scale__card--scalable">
-          Scalable<br>Design System
+          <h3 class="ds-scale__card-title">Scalable<br>Design System</h3>
+          <p class="ds-scale__card-desc">For growing products, multiple teams, or evolving UX complexity — built to scale across features, platforms, and contributors.</p>
         </div>
       </div>
 
       <!-- Row 2: offset ~670px from left -->
       <div class="ds-scale__row ds-scale__row--offset">
         <div class="ds-scale__card ds-scale__card--product-web">
-          Product or Website<br>&times; Design System
+          <h3 class="ds-scale__card-title">Product or Website<br>&times; Design System</h3>
+          <p class="ds-scale__card-desc">For teams building or redesigning a product or site with a system-first approach — ensuring consistency, speed, and long-term flexibility from day one.</p>
         </div>
       </div>
 
       <!-- Row 3: starts at left edge -->
       <div class="ds-scale__row">
         <div class="ds-scale__card ds-scale__card--full-stack">
-          Product or Website<br>&times; Design System<br>&times; Frontend Development
+          <h3 class="ds-scale__card-title">Product or Website &times;<br>Design System &times;<br>Frontend Development</h3>
+          <p class="ds-scale__card-desc">An end-to-end infrastructure engagement — from product or web design, through system architecture, to production-ready development and handoff.</p>
         </div>
       </div>
 
@@ -610,5 +656,43 @@
       </div>
     </footer>
 
+  <script>
+    const capItems = document.querySelectorAll('.capabilities__item');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+        } else {
+          entry.target.classList.remove('in-view');
+        }
+      });
+    }, {
+      // Active zone: middle 50% of the viewport — items reveal as they
+      // enter and dim again as they scroll out in either direction.
+      rootMargin: '-25% 0px -25% 0px',
+      threshold: 0
+    });
+
+    capItems.forEach(item => observer.observe(item));
+
+    // DS by Scale — one-way reveal (title then description fade up)
+    const dsCards = document.querySelectorAll('.ds-scale__card');
+
+    const dsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+        } else {
+          entry.target.classList.remove('revealed');
+        }
+      });
+    }, {
+      rootMargin: '0px 0px -10% 0px',
+      threshold: 0.15
+    });
+
+    dsCards.forEach(card => dsObserver.observe(card));
+  </script>
   </body>
 </html>
