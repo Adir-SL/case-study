@@ -217,18 +217,22 @@
         display: flex;
         flex-direction: column;
         overflow: hidden;
-        /*
-          Background: export "LEGO Flower Animation 1 3" from Figma
-          (fileKey: x0mGcnCQfswDuygtTX2Mva, nodeId: 54:313) → save as
-          images/lego-bg.jpg then uncomment these two lines:
-          background-image: url('images/lego-bg.jpg');
-          background-size: cover;
-          background-position: center top;
-        */
         background-color: #181818;
       }
 
+      .ds-scale__bg-video {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+        z-index: 0;
+      }
+
       .ds-scale__row {
+        position: relative;
+        z-index: 1;
         display: flex;
         align-items: stretch;
       }
@@ -254,7 +258,7 @@
         line-height: 1.2;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: flex-start;
         position: relative;
         flex-shrink: 0;
       }
@@ -281,7 +285,7 @@
       }
 
       .ds-scale__card--product-web {
-        width: 35.9%;
+        width: 54.5%;
         min-height: clamp(180px, 27.9vw, 536px);
       }
 
@@ -394,6 +398,15 @@
 
     <!-- ── DS by Scale ── -->
     <section class="ds-scale">
+
+      <video
+        class="ds-scale__bg-video"
+        src="images/flower-anim-1.mp4"
+        autoplay
+        loop
+        muted
+        playsinline
+      ></video>
 
       <!-- Row 1: foundational (left edge) + scalable (right edge) -->
       <div class="ds-scale__row ds-scale__row--spread">
