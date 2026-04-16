@@ -41,15 +41,10 @@
       .hero__illustration-slot {
         width: min(720px, 100%);
         aspect-ratio: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .hero__illustration {
-        width: 100%;
-        height: auto;
-        transform: scaleX(-1);
+        background-image: url('images/il-services.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
       }
 
       .hero__right {
@@ -339,13 +334,7 @@
     <!-- ── Hero ── -->
     <section class="hero">
       <div class="hero__left">
-        <div class="hero__illustration-slot">
-          <img
-            src="images/il-services.svg"
-            class="hero__illustration"
-            alt="Design Infrastructure illustration"
-          />
-        </div>
+        <div class="hero__illustration-slot" role="img" aria-label="Design Infrastructure illustration"></div>
       </div>
       <div class="hero__right">
         <div class="hero__text">

@@ -1,7 +1,9 @@
-<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 720.19 427.891" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="Group 64">
-<rect id="Rectangle 198" x="292.299" width="427.891" height="427.891" fill="var(--fill-0, #181818)"/>
-<path id="Union" d="M142.033 138.174H292.292V288.658H142.033V356.35L0 214.317L142.033 70.4556V138.174Z" fill="var(--fill-0, #181818)"/>
-<path id="Union_2" d="M442.861 288.656H292.593V138.172H442.861V70.4535L584.894 212.487L442.861 356.348V288.656Z" fill="var(--fill-0, white)"/>
-</g>
+<svg width="720" height="720" viewBox="0 0 720 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="427.891" height="427.891" transform="matrix(-1 0 0 1 427.805 146.055)"
+        fill="#181818" />
+    <path d="M578.07 284.229H427.812V434.712H578.07V502.404L720.104 360.371L578.07 216.51V284.229Z"
+        fill="#181818" />
+    <path
+        d="M277.242 434.71H427.511V284.227H277.242V216.508L135.209 358.541L277.242 502.402V434.71Z"
+        fill="white" />
 </svg>
