@@ -390,14 +390,15 @@
           height: 100%;
           scroll-snap-align: start;
           display: flex;
-          align-items: flex-end;
+          align-items: center;
+          justify-content: center;
         }
 
         .ds-scale__mobile-strip .ds-scale__card {
-          width: 100%;
+          width: calc(100% - 48px);
+          height: calc(100% - 144px);
           min-height: unset;
           position: relative;
-          padding: 24px 24px 52px;
         }
 
         .ds-scale__mobile-strip .ds-scale__card-desc {
@@ -748,30 +749,60 @@
 
     // Mobile DS by Scale — sticky section, horizontal snap carousel
     (function initMobileDsScale() {
-      if (window.innerWidth > 767) return;
-
       const section = document.querySelector('.ds-scale');
       const rows    = Array.from(section.querySelectorAll('.ds-scale__row'));
       const cards   = Array.from(section.querySelectorAll('.ds-scale__card'));
       const total   = cards.length;
 
-      cards.forEach((card, i) => {
-        card.setAttribute('data-mobile-num', (i + 1) + '/' + total);
-        card.classList.add('revealed');
-      });
+      // Snapshot original DOM positions before any mutations
+      const origins = cards.map(card => ({
+        parent:      card.parentNode,
+        nextSibling: card.nextSibling
+      }));
 
-      const strip = document.createElement('div');
-      strip.className = 'ds-scale__mobile-strip';
+      cards.forEach((card, i) =>
+        card.setAttribute('data-mobile-num', (i + 1) + '/' + total)
+      );
 
-      cards.forEach(card => {
-        const slide = document.createElement('div');
-        slide.className = 'ds-scale__mobile-slide';
-        slide.appendChild(card);
-        strip.appendChild(slide);
-      });
+      let strip  = null;
+      let active = false;
 
-      rows.forEach(row => row.style.display = 'none');
-      section.appendChild(strip);
+      function setup() {
+        if (active) return;
+        active = true;
+        cards.forEach(card => card.classList.add('revealed'));
+        strip = document.createElement('div');
+        strip.className = 'ds-scale__mobile-strip';
+        cards.forEach(card => {
+          const slide = document.createElement('div');
+          slide.className = 'ds-scale__mobile-slide';
+          slide.appendChild(card);
+          strip.appendChild(slide);
+        });
+        rows.forEach(row => row.style.display = 'none');
+        section.appendChild(strip);
+      }
+
+      function teardown() {
+        if (!active) return;
+        active = false;
+        cards.forEach((card, i) => {
+          const { parent, nextSibling } = origins[i];
+          parent.insertBefore(card, nextSibling);
+          card.classList.remove('revealed');
+        });
+        strip.remove();
+        strip = null;
+        rows.forEach(row => row.style.display = '');
+      }
+
+      function check() {
+        window.innerWidth <= 767 ? setup() : teardown();
+      }
+
+      if (window.innerWidth <= 767) setup();
+
+      window.addEventListener('resize', check);
     }());
   </script>
   </body>
