@@ -83,6 +83,7 @@
         }
 
         .hero__left {
+          background: #181818;
           padding: 48px 24px;
           min-height: 50vw;
         }
@@ -349,28 +350,79 @@
 
       @media (max-width: 767px) {
         .hero__text              { font-size: 36px; }
-        .capabilities__body      { font-size: 20px; }
-        .capabilities__item      { font-size: 20px; }
+        .capabilities__body      { font-size: 16px; }
+        .capabilities__item      { font-size: 16px; flex-direction: column; align-items: flex-start; gap: 6px; }
+        .capabilities__item-name { text-align: left; }
         .testimonial__quote      { font-size: 28px; }
         .testimonial__attribution { font-size: 14px; letter-spacing: 2px; }
         .ds-scale__card          { font-size: 20px; }
       }
 
-      /* Mobile: collapse mosaic to full-width stacked cards */
+      /* Mobile: sticky section, horizontal snap carousel */
       @media (max-width: 767px) {
-        .ds-scale__row,
-        .ds-scale__row--spread,
-        .ds-scale__row--offset {
-          flex-direction: column;
-          padding-left: 0;
+        .ds-scale {
+          position: sticky;
+          top: 0;
+          height: 455px;
+          overflow: hidden;
         }
 
-        .ds-scale__card--foundational,
-        .ds-scale__card--scalable,
-        .ds-scale__card--product-web,
-        .ds-scale__card--full-stack {
+        .ds-scale__mobile-strip {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          overflow-x: scroll;
+          overflow-y: hidden;
+          scroll-snap-type: x mandatory;
+          scroll-behavior: smooth;
+          -webkit-overflow-scrolling: touch;
+          touch-action: pan-x;
+          scrollbar-width: none;
+          z-index: 1;
+        }
+
+        .ds-scale__mobile-strip::-webkit-scrollbar {
+          display: none;
+        }
+
+        .ds-scale__mobile-slide {
+          flex: 0 0 100%;
+          height: 100%;
+          scroll-snap-align: start;
+          display: flex;
+          align-items: flex-end;
+        }
+
+        .ds-scale__mobile-strip .ds-scale__card {
           width: 100%;
-          min-height: 240px;
+          min-height: unset;
+          position: relative;
+          padding: 24px 24px 52px;
+        }
+
+        .ds-scale__mobile-strip .ds-scale__card-desc {
+          opacity: 1 !important;
+          transform: none !important;
+          transition: none !important;
+        }
+
+        .ds-scale__mobile-strip .ds-scale__card-label {
+          position: absolute;
+          top: auto;
+          bottom: 16px;
+          left: 24px;
+        }
+
+        .ds-scale__mobile-strip .ds-scale__card::after {
+          content: attr(data-mobile-num);
+          position: absolute;
+          bottom: 16px;
+          right: 24px;
+          font-family: 'haas-text', sans-serif;
+          font-size: 14px;
+          font-weight: 600;
+          color: #ffffff;
+          letter-spacing: 0;
         }
       }
       /* ─────────────────────────────────────────
@@ -693,6 +745,34 @@
     });
 
     dsCards.forEach(card => dsObserver.observe(card));
+
+    // Mobile DS by Scale — sticky section, horizontal snap carousel
+    (function initMobileDsScale() {
+      if (window.innerWidth > 767) return;
+
+      const section = document.querySelector('.ds-scale');
+      const rows    = Array.from(section.querySelectorAll('.ds-scale__row'));
+      const cards   = Array.from(section.querySelectorAll('.ds-scale__card'));
+      const total   = cards.length;
+
+      cards.forEach((card, i) => {
+        card.setAttribute('data-mobile-num', (i + 1) + '/' + total);
+        card.classList.add('revealed');
+      });
+
+      const strip = document.createElement('div');
+      strip.className = 'ds-scale__mobile-strip';
+
+      cards.forEach(card => {
+        const slide = document.createElement('div');
+        slide.className = 'ds-scale__mobile-slide';
+        slide.appendChild(card);
+        strip.appendChild(slide);
+      });
+
+      rows.forEach(row => row.style.display = 'none');
+      section.appendChild(strip);
+    }());
   </script>
   </body>
 </html>
