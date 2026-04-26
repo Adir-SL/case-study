@@ -137,7 +137,7 @@
 
       .capabilities__body {
         font-family: "haas-text", sans-serif;
-        font-size: 42px;
+        font-size: 35px;
         font-weight: 400;
         color: #181818;
         letter-spacing: -0.03em;
@@ -159,7 +159,7 @@
         padding: clamp(16px, 2vw, 40px) clamp(24px, 6.25vw, 120px);
         border-top: 1px solid #b8b8b8;
         font-family: "haas-text", sans-serif;
-        font-size: 42px;
+        font-size: 35px;
         font-weight: 400;
         color: #181818;
         letter-spacing: -0.03em;
@@ -196,6 +196,7 @@
 
       .testimonial__inner {
         max-width: 1280px;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         gap: clamp(32px, 2.9vw, 56px);
@@ -203,7 +204,7 @@
 
       .testimonial__quote {
         font-family: "kepler", Georgia, serif;
-        font-size: 73px;
+        font-size: 64px;
         font-weight: 300;
         font-style: italic;
         color: #efefef;
@@ -216,10 +217,13 @@
         flex-direction: column;
         gap: 4px;
         font-family: "haas", sans-serif;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
         color: #ebebeb;
         text-transform: uppercase;
+      }
+
+      .testimonial__attribution .spacer {
         letter-spacing: 3.2px;
       }
 
@@ -741,8 +745,11 @@
           part of the process."
         </blockquote>
         <p class="testimonial__attribution">
-          <span>Noa Karni</span>
-          <span>Director of User Experience</span>
+          <span>Noa<span class="spacer"> </span>Karni</span>
+          <span
+            >Director<span class="spacer"> </span>of<span class="spacer"> </span
+            >User<span class="spacer"> </span>Experience</span
+          >
           <span class="testimonial__attribution-company">Akamai</span>
         </p>
       </div>
