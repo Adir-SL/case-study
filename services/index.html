@@ -540,6 +540,99 @@
         }
       }
       /* ─────────────────────────────────────────
+         Selected Projects Section
+      ───────────────────────────────────────── */
+      .selected-projects {
+        background-color: #1c1c1c;
+        color: #ffffff;
+        padding-top: clamp(40px, 4vw, 80px);
+      }
+
+      .sp-hr {
+        border: none;
+        border-bottom: 1px solid #5b5b5b;
+        width: calc(100% - 120px);
+        margin: 0 60px;
+      }
+
+      .sp-label {
+        margin-left: 60px;
+        font-family: "haas-text", sans-serif;
+        font-weight: 200;
+        font-size: 15px;
+        margin-top: 4px;
+        color: #ffffff;
+      }
+
+      .sp-cards {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 4%;
+        padding-bottom: 100px;
+        margin-bottom: 100px;
+      }
+
+      .sp-card {
+        color: #ffffff;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        width: 32%;
+        gap: 24px;
+        margin-top: 60px;
+      }
+
+      .sp-card img {
+        width: 100%;
+        border-radius: 8px;
+        transition: transform 300ms ease-in-out;
+      }
+
+      .sp-card:hover img {
+        transform: scale(1.05);
+      }
+
+      .sp-card h2 {
+        font-family: "haas-text", sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+        margin: 0;
+      }
+
+      .sp-card h3 {
+        font-family: "haas-text", sans-serif;
+        font-size: 26px;
+        font-weight: 400;
+        margin: 0;
+        white-space: break-spaces;
+      }
+
+      .sp-card-info {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      @media (max-width: 767px) {
+        .sp-hr {
+          width: calc(100% - 48px);
+          margin: 0 24px;
+        }
+        .sp-label {
+          margin-left: 24px;
+        }
+        .sp-cards {
+          flex-direction: column;
+          padding: 0 24px;
+          padding-bottom: 60px;
+          margin-bottom: 0;
+        }
+        .sp-card {
+          width: 100%;
+        }
+      }
+
+      /* ─────────────────────────────────────────
          Footer
       ───────────────────────────────────────── */
       .visually-hidden {
@@ -868,6 +961,34 @@
             and handoff.
           </p>
         </div>
+      </div>
+    </section>
+
+    <!-- ── Selected Projects ── -->
+    <section class="selected-projects">
+      <div class="sp-label geist-label">[ CASE STUDIES ]</div>
+      <div class="sp-cards">
+        <a href="../gcc" class="sp-card">
+          <img src="../images/gcc-social.jpg" alt="GCC Case Study" />
+          <div class="sp-card-info">
+            <h2>GCC</h2>
+            <h3>Systemized Branding at Speed: 3 Sites in 10 Weeks</h3>
+          </div>
+        </a>
+        <a href="../appsflyer" class="sp-card">
+          <img src="../images/case-appsflyer.jpg" alt="AppsFlyer Case Study" />
+          <div class="sp-card-info">
+            <h2>AppsFlyer</h2>
+            <h3>Brand Reposition Implementation - Building While Shipping</h3>
+          </div>
+        </a>
+        <a href="../amdocs" class="sp-card">
+          <img src="../images/case-amdocs.jpg" alt="Amdocs Case Study" />
+          <div class="sp-card-info">
+            <h2>Amdocs</h2>
+            <h3>One Library to Rule Them All</h3>
+          </div>
+        </a>
       </div>
     </section>
 
