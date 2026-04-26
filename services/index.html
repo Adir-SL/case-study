@@ -3,12 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Design Infrastructure</title>
+
+    <!-- SEO -->
+    <title>Design Infrastructure — Kido</title>
+    <meta
+      name="description"
+      content="Design systems as scalable product infrastructure. Kido builds and evolves design system infrastructure that supports your product today and scales as complexity grows."
+    />
+    <link rel="canonical" href="https://wearekido.com/services" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Design Infrastructure — Kido" />
+    <meta
+      property="og:description"
+      content="Design systems as scalable product infrastructure. Kido builds and evolves design system infrastructure that supports your product today and scales as complexity grows."
+    />
+    <meta
+      property="og:image"
+      content="https://wearekido.com/images/kido-social.jpg"
+    />
+    <meta property="og:url" content="https://wearekido.com/services" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="wearekido.com" />
+    <meta name="twitter:title" content="Design Infrastructure — Kido" />
+    <meta
+      name="twitter:description"
+      content="Design systems as scalable product infrastructure. Kido builds and evolves design system infrastructure that supports your product today and scales as complexity grows."
+    />
+    <meta
+      name="twitter:image"
+      content="https://wearekido.com/images/kido-social.jpg"
+    />
+
+    <!-- Icons -->
     <link rel="icon" type="image/x-icon" href="../images/kido-icon.png" />
+    <link rel="apple-touch-icon" href="../images/kido-icon.png" />
+
+    <!-- Fonts -->
     <link rel="stylesheet" href="../font-kepler.css" />
     <link rel="stylesheet" href="../font-haas.css" />
     <link rel="stylesheet" href="../font-haas-text.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,6 +68,104 @@
       }
 
       /* ─────────────────────────────────────────
+         Navigation Header
+      ───────────────────────────────────────── */
+      header {
+        display: flex;
+        align-items: center;
+        width: calc(100% - 96px);
+        padding: 0 48px;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        filter: invert(100%);
+        mix-blend-mode: difference;
+      }
+
+      header * {
+        transform: translateY(-10px);
+      }
+
+      header div {
+        transition: opacity 300ms linear;
+      }
+
+      .logoDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        transform: rotate(90deg) scale(0.6) translateY(0.8em) translateX(-1em);
+        opacity: 0;
+        filter: invert(100%);
+        mix-blend-mode: difference;
+        transition: opacity 300ms linear;
+      }
+
+      .logoText {
+        width: 80px;
+        height: 30px;
+        transform: translateY(-10px) translateX(-60px);
+        background-image: url("../images/kido.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      .logoText a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform: none;
+        background-color: transparent;
+      }
+
+      .linksDiv {
+        display: flex;
+        gap: 40px;
+        flex-grow: 1;
+        height: 100%;
+        padding-top: 36px;
+        transition: opacity 300ms linear;
+      }
+
+      .linksDiv a {
+        position: relative;
+        font-family: "haas", sans-serif;
+        font-size: 1.2em;
+        font-weight: 500;
+        color: #1c1c1c;
+        text-decoration: none;
+        height: 100%;
+      }
+
+      .linksDiv a:hover {
+        color: #888888;
+      }
+
+      .nav__cta {
+        text-decoration: none;
+        background-color: #1c1c1c;
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        border-radius: 999px;
+        font-family: "haas", sans-serif;
+        font-size: 1.2em;
+        font-weight: 500;
+        padding: 4px 16px 1px;
+        margin-top: 14px;
+        white-space: nowrap;
+        transition:
+          background-color 300ms,
+          color 300ms;
+      }
+
+      .nav__cta:hover {
+        background-color: #ffffff;
+        color: #1c1c1c;
+      }
+
+      /* ─────────────────────────────────────────
          Hero Section
          Fluid: 88px @ 1920px → 32px @ ~700px
       ───────────────────────────────────────── */
@@ -50,13 +184,18 @@
         justify-content: center;
       }
 
-      .hero__illustration-slot {
+      .hero__left picture {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: 100%;
-        aspect-ratio: 1;
-        background-image: url("images/di_desktop.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
+      }
+
+      .hero__illustration-slot {
+        display: block;
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
       }
 
       .hero__right {
@@ -78,6 +217,9 @@
 
       .hero__service-name {
         display: block;
+        font-size: inherit;
+        font-weight: inherit;
+        font-style: inherit;
         color: #efefef;
         margin-bottom: 0.1em;
       }
@@ -85,30 +227,6 @@
       .hero__tagline {
         display: block;
         color: #8a9a5b;
-      }
-
-      /* Mobile: stack hero vertically */
-      @media (max-width: 767px) {
-        .hero {
-          flex-direction: column;
-          min-height: unset;
-        }
-
-        .hero__left {
-          background: #181818;
-          padding: 48px 24px;
-          padding-bottom: 0;
-          min-height: 50vw;
-        }
-
-        .hero__illustration-slot {
-          width: min(360px, 80%);
-          background-image: url("images/di_mobile.svg");
-        }
-
-        .hero__right {
-          padding: 48px 24px 64px;
-        }
       }
 
       /* ─────────────────────────────────────────
@@ -127,12 +245,6 @@
         padding-left: clamp(24px, 6.25vw, 120px);
         padding-right: clamp(24px, 6.25vw, 120px);
         max-width: 1684px;
-      }
-
-      .geist-label {
-        font-family: "Geist Mono", monospace !important;
-        font-weight: 500 !important;
-        font-size: 14px !important;
       }
 
       .capabilities__label {
@@ -261,12 +373,10 @@
         align-items: stretch;
       }
 
-      /* Row 1: cards at edges, background shows in middle */
       .ds-scale__row--spread {
         justify-content: space-between;
       }
 
-      /* Row 2: card starts where row 1's first card ends */
       .ds-scale__row--offset {
         padding-left: 34.9%;
       }
@@ -276,8 +386,6 @@
         padding: clamp(48px, 6.9vw, 132px) clamp(24px, 4.2vw, 80px);
         color: #ffffff;
         font-family: "haas-text", sans-serif;
-        font-size: 40px;
-        font-weight: 400;
         letter-spacing: -0.02em;
         line-height: 1.2;
         display: flex;
@@ -288,11 +396,9 @@
       }
 
       .ds-scale__card-label {
-        font-family: "haas-text", sans-serif;
         font-size: 14px;
         font-weight: 600;
         letter-spacing: 0;
-        color: #ffffff;
         position: absolute;
         top: clamp(28px, 3.5vw, 68px);
         left: clamp(24px, 2.8vw, 54px);
@@ -303,16 +409,11 @@
       }
 
       .ds-scale__card-title {
-        font-family: "haas-text", sans-serif;
         font-size: 35px;
         font-weight: 400;
-        letter-spacing: -0.02em;
-        line-height: 1.2;
-        color: #ffffff;
       }
 
       .ds-scale__card-desc {
-        font-family: "haas-text", sans-serif;
         font-size: 18px;
         font-weight: 400;
         color: rgba(255, 255, 255, 0.72);
@@ -328,24 +429,6 @@
       .ds-scale__card.revealed .ds-scale__card-desc {
         opacity: 1;
         transform: translateY(0);
-      }
-
-      @media (max-width: 1199px) {
-        .ds-scale__card-title {
-          font-size: 28px;
-        }
-        .ds-scale__card-desc {
-          font-size: 16px;
-        }
-      }
-
-      @media (max-width: 767px) {
-        .ds-scale__card-title {
-          font-size: 20px;
-        }
-        .ds-scale__card-desc {
-          font-size: 15px;
-        }
       }
 
       .ds-scale__card--foundational {
@@ -369,177 +452,6 @@
       }
 
       /* ─────────────────────────────────────────
-         Font-size breakpoints (tablet → mobile)
-      ───────────────────────────────────────── */
-      @media (max-width: 1199px) {
-        .hero__text {
-          font-size: 56px;
-        }
-        .capabilities__body {
-          font-size: 28px;
-        }
-        .capabilities__item {
-          font-size: 28px;
-        }
-        .testimonial__quote {
-          font-size: 48px;
-        }
-        .ds-scale__card {
-          font-size: 28px;
-        }
-      }
-
-      @media (max-width: 767px) {
-        .hero__text {
-          font-size: 36px;
-          width: 100%;
-          text-align: center;
-          margin: 0 auto;
-        }
-        .capabilities__body {
-          font-size: 20px;
-        }
-        .capabilities__item {
-          font-size: 20px;
-          flex-direction: row;
-          align-items: flex-start;
-          justify-content: flex-start;
-          gap: 4rem;
-          padding-left: 0;
-          padding-right: 0;
-        }
-        .capabilities__item-name {
-          text-align: right;
-          width: 100%;
-        }
-        .testimonial__quote {
-          font-size: 28px;
-        }
-        .testimonial__attribution {
-          font-size: 12px;
-        }
-        .ds-scale__card {
-          font-size: 20px;
-        }
-      }
-
-      /* Mobile: sticky section, horizontal snap carousel */
-      @media (max-width: 767px) {
-        .ds-scale {
-          position: sticky;
-          top: 0;
-          height: 455px;
-          overflow: hidden;
-        }
-
-        .ds-scale__mobile-strip {
-          position: absolute;
-          inset: 0;
-          display: flex;
-          overflow-x: scroll;
-          overflow-y: hidden;
-          scroll-snap-type: x mandatory;
-          scroll-behavior: smooth;
-          -webkit-overflow-scrolling: touch;
-          touch-action: pan-x;
-          scrollbar-width: none;
-          z-index: 1;
-        }
-
-        .ds-scale__mobile-strip::-webkit-scrollbar {
-          display: none;
-        }
-
-        .ds-scale__mobile-slide {
-          flex: 0 0 100%;
-          height: 100%;
-          scroll-snap-align: start;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-
-        .ds-scale__mobile-strip .ds-scale__card {
-          width: calc(100% - 48px);
-          height: calc(100% - 144px);
-          min-height: unset;
-          position: relative;
-        }
-
-        .ds-scale__mobile-strip .ds-scale__card-desc {
-          opacity: 1 !important;
-          transform: none !important;
-          transition: none !important;
-        }
-
-        .ds-scale__mobile-strip .ds-scale__card-label {
-          position: absolute;
-          top: auto;
-          bottom: 16px;
-          left: 24px;
-        }
-
-        .ds-scale__mobile-strip .ds-scale__card-label--mobile-only {
-          display: block;
-        }
-
-        .ds-scale__mobile-strip .ds-scale__card::after {
-          content: attr(data-mobile-num);
-          position: absolute;
-          bottom: 16px;
-          right: 24px;
-          font-family: "haas-text", sans-serif;
-          font-size: 14px;
-          font-weight: 600;
-          color: #ffffff;
-          letter-spacing: 0;
-        }
-
-        .capabilities__list {
-          padding: 0 24px;
-        }
-
-        .testimonial__quote {
-          font-size: 28px;
-        }
-
-        .whiteSection {
-          padding: 40px 24px;
-        }
-
-        .footer__kido {
-          margin-top: 0 !important;
-          margin-bottom: 0 !important;
-        }
-
-        .footer__bottom {
-          padding-bottom: 0 !important;
-        }
-
-        .footer__links-col span {
-          font-size: 16px !important;
-          font-weight: 100 !important;
-        }
-
-        .footer__links-col a {
-          font-size: 26px !important;
-          letter-spacing: 0 !important;
-        }
-
-        .footer__hr {
-          margin: 0 !important;
-          margin-top: 32px !important;
-        }
-
-        .footer__bottom {
-          gap: 20px !important;
-        }
-
-        .footer__copy {
-          font-size: 12px !important;
-        }
-      }
-      /* ─────────────────────────────────────────
          Selected Projects Section
       ───────────────────────────────────────── */
       .selected-projects {
@@ -548,16 +460,8 @@
         padding-top: clamp(40px, 4vw, 80px);
       }
 
-      .sp-hr {
-        border: none;
-        border-bottom: 1px solid #5b5b5b;
-        width: calc(100% - 120px);
-        margin: 0 60px;
-      }
-
       .sp-label {
         margin-left: 60px;
-        font-family: "haas-text", sans-serif;
         font-weight: 200;
         font-size: 15px;
         margin-top: 4px;
@@ -569,7 +473,6 @@
         justify-content: space-between;
         padding: 0 4%;
         padding-bottom: 100px;
-        margin-bottom: 100px;
       }
 
       .sp-card {
@@ -613,27 +516,8 @@
         gap: 6px;
       }
 
-      @media (max-width: 767px) {
-        .sp-hr {
-          width: calc(100% - 48px);
-          margin: 0 24px;
-        }
-        .sp-label {
-          margin-left: 24px;
-        }
-        .sp-cards {
-          flex-direction: column;
-          padding: 0 24px;
-          padding-bottom: 60px;
-          margin-bottom: 0;
-        }
-        .sp-card {
-          width: 100%;
-        }
-      }
-
       /* ─────────────────────────────────────────
-         Footer
+         Utility
       ───────────────────────────────────────── */
       .visually-hidden {
         position: absolute;
@@ -644,6 +528,17 @@
         white-space: nowrap;
       }
 
+      /* Placed after all component styles so it wins the
+         cascade without !important when combined with others */
+      .geist-label {
+        font-family: "Geist Mono", monospace;
+        font-weight: 500;
+        font-size: 14px;
+      }
+
+      /* ─────────────────────────────────────────
+         Footer
+      ───────────────────────────────────────── */
       footer.whiteSection {
         background-color: #f5f5f0;
         color: #000000;
@@ -652,28 +547,6 @@
         flex-direction: column;
         align-items: center;
         gap: 0;
-      }
-
-      .footer__lets-talk {
-        display: inline-block;
-        margin-top: 120px;
-        text-decoration: none;
-        background-color: #ffffff;
-        color: #1c1c1c;
-        border: 2px solid #1c1c1c;
-        border-radius: 999px;
-        font-family: "haas-text", sans-serif;
-        font-size: 2.7em;
-        font-weight: 400;
-        padding: 4px 28px 1px;
-        transition:
-          background-color 300ms,
-          color 300ms;
-      }
-
-      .footer__lets-talk:hover {
-        background-color: #1c1c1c;
-        color: #ffffff;
       }
 
       .footer__kido {
@@ -761,14 +634,179 @@
         font-size: 1.4em;
       }
 
+      /* ─────────────────────────────────────────
+         Tablet (≤1199px)
+      ───────────────────────────────────────── */
+      @media (max-width: 1199px) {
+        .hero__text {
+          font-size: 56px;
+        }
+        .capabilities__body {
+          font-size: 28px;
+        }
+        .capabilities__item {
+          font-size: 28px;
+        }
+        .testimonial__quote {
+          font-size: 48px;
+        }
+        .ds-scale__card-title {
+          font-size: 28px;
+        }
+        .ds-scale__card-desc {
+          font-size: 16px;
+        }
+      }
+
+      /* ─────────────────────────────────────────
+         Mobile (≤767px) — all overrides in one place
+      ───────────────────────────────────────── */
       @media (max-width: 767px) {
-        .footer__lets-talk {
-          font-size: 1.8em;
-          margin-top: 64px;
+        /* Hero */
+        .hero {
+          flex-direction: column;
+          min-height: unset;
+        }
+        .hero__left {
+          background: #181818;
+          padding: 48px 24px 0;
+          min-height: 50vw;
+        }
+        .hero__left picture {
+          height: 100%;
+        }
+        .hero__illustration-slot {
+          height: 100%;
+        }
+        .hero__right {
+          padding: 48px 24px 64px;
+        }
+        .hero__text {
+          font-size: 36px;
+          width: 100%;
+          text-align: center;
+          margin: 0 auto;
+        }
+
+        /* Capabilities */
+        .capabilities__body {
+          font-size: 20px;
+        }
+        .capabilities__list {
+          padding: 0 24px;
+        }
+        .capabilities__item {
+          font-size: 20px;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 4rem;
+          padding-left: 0;
+          padding-right: 0;
+        }
+        .capabilities__item-name {
+          text-align: right;
+          width: 100%;
+        }
+
+        /* Testimonial */
+        .testimonial__quote {
+          font-size: 28px;
+        }
+        .testimonial__attribution {
+          font-size: 12px;
+        }
+
+        /* DS by Scale: sticky horizontal snap carousel */
+        .ds-scale {
+          position: sticky;
+          top: 0;
+          height: 455px;
+          overflow: hidden;
+        }
+        .ds-scale__card-title {
+          font-size: 20px;
+        }
+        .ds-scale__card-desc {
+          font-size: 15px;
+        }
+        .ds-scale__mobile-strip {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          overflow-x: scroll;
+          overflow-y: hidden;
+          scroll-snap-type: x mandatory;
+          scroll-behavior: smooth;
+          -webkit-overflow-scrolling: touch;
+          touch-action: pan-x;
+          scrollbar-width: none;
+          z-index: 1;
+        }
+        .ds-scale__mobile-strip::-webkit-scrollbar {
+          display: none;
+        }
+        .ds-scale__mobile-slide {
+          flex: 0 0 100%;
+          height: 100%;
+          scroll-snap-align: start;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .ds-scale__mobile-strip .ds-scale__card {
+          width: calc(100% - 48px);
+          height: calc(100% - 144px);
+          min-height: unset;
+          position: relative;
+        }
+        .ds-scale__mobile-strip .ds-scale__card-desc {
+          opacity: 1;
+          transform: none;
+          transition: none;
+        }
+        .ds-scale__mobile-strip .ds-scale__card-label {
+          position: absolute;
+          top: auto;
+          bottom: 16px;
+          left: 24px;
+        }
+        .ds-scale__mobile-strip .ds-scale__card-label--mobile-only {
+          display: block;
+        }
+        .ds-scale__mobile-strip .ds-scale__card::after {
+          content: attr(data-mobile-num);
+          position: absolute;
+          bottom: 16px;
+          right: 24px;
+          font-family: "haas-text", sans-serif;
+          font-size: 14px;
+          font-weight: 600;
+          color: #ffffff;
+          letter-spacing: 0;
+        }
+
+        /* Selected Projects */
+        .sp-label {
+          margin-left: 24px;
+        }
+        .sp-cards {
+          flex-direction: column;
+          padding: 0 24px;
+          padding-bottom: 60px;
+        }
+        .sp-card {
+          width: 100%;
+        }
+
+        /* Footer */
+        .whiteSection {
+          padding: 40px 24px;
         }
         .footer__kido {
           height: 24vw;
-          margin-top: 64px;
+          margin-top: 0;
+          margin-bottom: 0;
         }
         .footer__links {
           flex-direction: column;
@@ -779,20 +817,36 @@
         .footer__links-col {
           margin-top: 32px;
         }
+        .footer__links-col span {
+          font-size: 16px;
+          font-weight: 100;
+        }
+        .footer__links-col a {
+          font-size: 26px;
+          letter-spacing: 0;
+        }
         .footer__hr {
           width: 90%;
           margin-left: 5%;
+          margin-top: 32px;
         }
         .footer__bottom {
           flex-direction: column;
           align-items: flex-start;
-          gap: 12px;
+          gap: 20px;
           width: 90%;
           margin: 0 5%;
           padding-top: 1.5em;
+          padding-bottom: 0;
+        }
+        .footer__copy {
+          font-size: 12px;
         }
       }
 
+      /* ─────────────────────────────────────────
+         Wide screens (≥1800px)
+      ───────────────────────────────────────── */
       @media screen and (min-width: 1800px) {
         .footer__links {
           gap: 8em;
@@ -801,27 +855,32 @@
     </style>
   </head>
   <body>
+
     <!-- ── Hero ── -->
     <section class="hero">
       <div class="hero__left">
-        <div
-          class="hero__illustration-slot"
-          role="img"
-          aria-label="Design Infrastructure illustration"
-        ></div>
+        <picture>
+          <source media="(max-width: 767px)" srcset="images/di_mobile.svg" />
+          <img
+            class="hero__illustration-slot"
+            src="images/di_desktop.svg"
+            alt="Design Infrastructure illustration"
+            loading="eager"
+          />
+        </picture>
       </div>
       <div class="hero__right">
         <div class="hero__text">
-          <span class="hero__service-name">Design Infrastructure</span>
-          <span class="hero__tagline"
-            >Build the system<br />once. Scale forever.</span
+          <h1 class="hero__service-name">Design Infrastructure</h1>
+          <p class="hero__tagline"
+            >Build the system<br />once. Scale forever.</p
           >
         </div>
       </div>
     </section>
 
     <!-- ── Capabilities ── -->
-    <section class="capabilities">
+    <section class="capabilities" aria-label="Capabilities">
       <div class="capabilities__intro">
         <p class="capabilities__label geist-label">[ Capabilities ]</p>
         <p class="capabilities__body">
@@ -872,7 +931,7 @@
     </section>
 
     <!-- ── Testimonial ── -->
-    <section class="testimonial">
+    <section class="testimonial" aria-label="Client testimonial">
       <div class="testimonial__inner">
         <blockquote class="testimonial__quote">
           "Working with Kido has been a true game changer for us.<br />They
@@ -894,7 +953,7 @@
     </section>
 
     <!-- ── DS by Scale ── -->
-    <section class="ds-scale">
+    <section class="ds-scale" aria-label="Design System by Scale">
       <video
         class="ds-scale__bg-video"
         src="images/flower-anim-1.mp4"
@@ -917,7 +976,8 @@
           </p>
         </div>
         <div class="ds-scale__card ds-scale__card--scalable">
-          <span class="ds-scale__card-label geist-label ds-scale__card-label--mobile-only"
+          <span
+            class="ds-scale__card-label geist-label ds-scale__card-label--mobile-only"
             >[ Design System by Scale ]</span
           >
           <h3 class="ds-scale__card-title">Scalable<br />Design System</h3>
@@ -931,7 +991,8 @@
       <!-- Row 2: offset ~670px from left -->
       <div class="ds-scale__row ds-scale__row--offset">
         <div class="ds-scale__card ds-scale__card--product-web">
-          <span class="ds-scale__card-label geist-label ds-scale__card-label--mobile-only"
+          <span
+            class="ds-scale__card-label geist-label ds-scale__card-label--mobile-only"
             >[ Design System by Scale ]</span
           >
           <h3 class="ds-scale__card-title">
@@ -948,7 +1009,8 @@
       <!-- Row 3: starts at left edge -->
       <div class="ds-scale__row">
         <div class="ds-scale__card ds-scale__card--full-stack">
-          <span class="ds-scale__card-label geist-label ds-scale__card-label--mobile-only"
+          <span
+            class="ds-scale__card-label geist-label ds-scale__card-label--mobile-only"
             >[ Design System by Scale ]</span
           >
           <h3 class="ds-scale__card-title">
@@ -965,7 +1027,7 @@
     </section>
 
     <!-- ── Selected Projects ── -->
-    <section class="selected-projects">
+    <section class="selected-projects" aria-label="Selected Projects">
       <div class="sp-label geist-label">[ CASE STUDIES ]</div>
       <div class="sp-cards">
         <a href="../gcc" class="sp-card">
@@ -994,8 +1056,6 @@
 
     <!-- ── Footer ── -->
     <footer class="whiteSection">
-      <h3 class="visually-hidden">We can do it all. Together</h3>
-
       <div class="footer__kido" role="img" aria-label="We Are Kido"></div>
 
       <div class="footer__links">
@@ -1026,13 +1086,13 @@
           <a href="../case-studies">Case Studies</a>
           <a href="../about">About</a>
         </nav>
-        <p class="footer__copy">© All rights reserved. Kido 2024</p>
+        <p class="footer__copy">© All rights reserved. Kido 2026</p>
       </div>
     </footer>
 
     <script>
+      // Capabilities: scroll-reveal
       const capItems = document.querySelectorAll(".capabilities__item");
-
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
@@ -1043,19 +1103,12 @@
             }
           });
         },
-        {
-          // Active zone: middle 50% of the viewport — items reveal as they
-          // enter and dim again as they scroll out in either direction.
-          rootMargin: "-25% 0px -25% 0px",
-          threshold: 0,
-        },
+        { rootMargin: "-25% 0px -25% 0px", threshold: 0 },
       );
-
       capItems.forEach((item) => observer.observe(item));
 
-      // DS by Scale — one-way reveal (title then description fade up)
+      // DS by Scale: scroll-reveal
       const dsCards = document.querySelectorAll(".ds-scale__card");
-
       const dsObserver = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
@@ -1066,22 +1119,17 @@
             }
           });
         },
-        {
-          rootMargin: "0px 0px -10% 0px",
-          threshold: 0.15,
-        },
+        { rootMargin: "0px 0px -10% 0px", threshold: 0.15 },
       );
-
       dsCards.forEach((card) => dsObserver.observe(card));
 
-      // Mobile DS by Scale — sticky section, horizontal snap carousel
+      // DS by Scale: mobile horizontal snap carousel
       (function initMobileDsScale() {
         const section = document.querySelector(".ds-scale");
         const rows = Array.from(section.querySelectorAll(".ds-scale__row"));
         const cards = Array.from(section.querySelectorAll(".ds-scale__card"));
         const total = cards.length;
 
-        // Snapshot original DOM positions before any mutations
         const origins = cards.map((card) => ({
           parent: card.parentNode,
           nextSibling: card.nextSibling,
@@ -1128,7 +1176,6 @@
         }
 
         if (window.innerWidth <= 767) setup();
-
         window.addEventListener("resize", check);
       })();
     </script>
