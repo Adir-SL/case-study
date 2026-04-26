@@ -298,6 +298,10 @@
         left: clamp(24px, 2.8vw, 54px);
       }
 
+      .ds-scale__card-label--mobile-only {
+        display: none;
+      }
+
       .ds-scale__card-title {
         font-family: "haas-text", sans-serif;
         font-size: 35px;
@@ -473,6 +477,10 @@
           top: auto;
           bottom: 16px;
           left: 24px;
+        }
+
+        .ds-scale__mobile-strip .ds-scale__card-label--mobile-only {
+          display: block;
         }
 
         .ds-scale__mobile-strip .ds-scale__card::after {
@@ -816,6 +824,9 @@
           </p>
         </div>
         <div class="ds-scale__card ds-scale__card--scalable">
+          <span class="ds-scale__card-label geist-label ds-scale__card-label--mobile-only"
+            >[ Design System by Scale ]</span
+          >
           <h3 class="ds-scale__card-title">Scalable<br />Design System</h3>
           <p class="ds-scale__card-desc">
             For growing products, multiple teams, or evolving UX complexity —
@@ -827,6 +838,9 @@
       <!-- Row 2: offset ~670px from left -->
       <div class="ds-scale__row ds-scale__row--offset">
         <div class="ds-scale__card ds-scale__card--product-web">
+          <span class="ds-scale__card-label geist-label ds-scale__card-label--mobile-only"
+            >[ Design System by Scale ]</span
+          >
           <h3 class="ds-scale__card-title">
             Product or Website<br />&times; Design System
           </h3>
@@ -841,6 +855,9 @@
       <!-- Row 3: starts at left edge -->
       <div class="ds-scale__row">
         <div class="ds-scale__card ds-scale__card--full-stack">
+          <span class="ds-scale__card-label geist-label ds-scale__card-label--mobile-only"
+            >[ Design System by Scale ]</span
+          >
           <h3 class="ds-scale__card-title">
             Product or Website &times;<br />Design System &times;<br />Frontend
             Development
