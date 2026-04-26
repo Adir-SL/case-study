@@ -119,7 +119,6 @@
         flex-direction: column;
         gap: clamp(48px, 6.5vw, 124px);
         padding-top: clamp(48px, 5.2vw, 100px);
-        padding-bottom: clamp(48px, 5.2vw, 100px);
       }
 
       .capabilities__intro {
@@ -174,10 +173,6 @@
 
       .capabilities__item.in-view {
         opacity: 1;
-      }
-
-      .capabilities__item:last-child {
-        border-bottom: 1px solid #b8b8b8;
       }
 
       .capabilities__item-num {
@@ -396,23 +391,26 @@
           margin: 0 auto;
         }
         .capabilities__body {
-          font-size: 16px;
+          font-size: 20px;
         }
         .capabilities__item {
-          font-size: 16px;
-          flex-direction: column;
+          font-size: 20px;
+          flex-direction: row;
           align-items: flex-start;
-          gap: 6px;
+          justify-content: flex-start;
+          gap: 4rem;
+          padding-left: 0;
+          padding-right: 0;
         }
         .capabilities__item-name {
-          text-align: left;
+          text-align: right;
+          width: 100%;
         }
         .testimonial__quote {
           font-size: 28px;
         }
         .testimonial__attribution {
-          font-size: 14px;
-          letter-spacing: 2px;
+          font-size: 12px;
         }
         .ds-scale__card {
           font-size: 20px;
@@ -492,7 +490,7 @@
         }
 
         .testimonial__quote {
-          font-size: 35px;
+          font-size: 28px;
         }
       }
       /* ─────────────────────────────────────────
@@ -770,7 +768,9 @@
       <!-- Row 1: foundational (left edge) + scalable (right edge) -->
       <div class="ds-scale__row ds-scale__row--spread">
         <div class="ds-scale__card ds-scale__card--foundational">
-          <span class="ds-scale__card-label geist-label">[ Design System by Scale ]</span>
+          <span class="ds-scale__card-label geist-label"
+            >[ Design System by Scale ]</span
+          >
           <h3 class="ds-scale__card-title">Foundational<br />Design System</h3>
           <p class="ds-scale__card-desc">
             For early-stage products or focused platforms that need clarity,
