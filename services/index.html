@@ -127,10 +127,13 @@
         max-width: 1684px;
       }
 
+      .geist-label {
+        font-family: "Geist Mono", monospace !important;
+        font-weight: 500 !important;
+        font-size: 14px !important;
+      }
+
       .capabilities__label {
-        font-family: "Geist Mono", monospace;
-        font-weight: 500;
-        font-size: 14px;
         color: #181818;
         margin-bottom: 28px;
       }
@@ -299,7 +302,7 @@
 
       .ds-scale__card-title {
         font-family: "haas-text", sans-serif;
-        font-size: 40px;
+        font-size: 35px;
         font-weight: 400;
         letter-spacing: -0.02em;
         line-height: 1.2;
@@ -547,9 +550,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: calc(100% - 15vw);
-        margin-left: 9vw;
-        margin-right: 6vw;
+        width: calc(100% - 7vw);
         font-family: "haas", sans-serif;
         font-weight: 400;
         font-size: 0.8em;
@@ -581,9 +582,8 @@
       }
 
       .footer__hr {
-        width: calc(100% - 6vw);
+        width: calc(100% - 7vw);
         margin-top: 4em;
-        margin-left: 3.2vw;
         border: none;
         border-top: 1px solid #1c1c1c;
       }
@@ -592,9 +592,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: calc(100% - 15vw);
-        margin-left: 9vw;
-        margin-right: 6vw;
+        width: calc(100% - 7vw);
         padding: 1.5em 0 3em;
         font-family: "haas-text", sans-serif;
         font-size: 0.8em;
@@ -656,7 +654,6 @@
 
       @media screen and (min-width: 1800px) {
         .footer__links {
-          justify-content: center;
           gap: 8em;
         }
       }
@@ -685,7 +682,7 @@
     <!-- ── Capabilities ── -->
     <section class="capabilities">
       <div class="capabilities__intro">
-        <p class="capabilities__label">[ Capabilities ]</p>
+        <p class="capabilities__label geist-label">[ Capabilities ]</p>
         <p class="capabilities__body">
           Design systems as scalable product infrastructure — built to match
           your complexity. We design, build, and evolve design system
@@ -769,7 +766,7 @@
       <!-- Row 1: foundational (left edge) + scalable (right edge) -->
       <div class="ds-scale__row ds-scale__row--spread">
         <div class="ds-scale__card ds-scale__card--foundational">
-          <span class="ds-scale__card-label">Design System by Scale</span>
+          <span class="ds-scale__card-label geist-label">[ Design System by Scale ]</span>
           <h3 class="ds-scale__card-title">Foundational<br />Design System</h3>
           <p class="ds-scale__card-desc">
             For early-stage products or focused platforms that need clarity,
