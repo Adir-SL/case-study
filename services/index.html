@@ -8,14 +8,25 @@
     <link rel="stylesheet" href="../font-kepler.css" />
     <link rel="stylesheet" href="../font-haas.css" />
     <link rel="stylesheet" href="../font-haas-text.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
     <style>
-      *, *::before, *::after {
+      *,
+      *::before,
+      *::after {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
       }
 
-      html, body {
+      html,
+      body {
         overflow-x: hidden;
       }
 
@@ -41,7 +52,7 @@
       .hero__illustration-slot {
         width: min(720px, 100%);
         aspect-ratio: 1;
-        background-image: url('images/il-services.svg');
+        background-image: url("images/il-services.svg");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -56,7 +67,7 @@
       }
 
       .hero__text {
-        font-family: 'kepler', Georgia, serif;
+        font-family: "kepler", Georgia, serif;
         font-size: 88px;
         font-weight: 400;
         font-style: italic;
@@ -117,15 +128,15 @@
       }
 
       .capabilities__label {
-        font-family: 'haas-text', sans-serif;
+        font-family: "Geist Mono", monospace;
+        font-weight: 500;
         font-size: 14px;
-        font-weight: 600;
         color: #181818;
         margin-bottom: 28px;
       }
 
       .capabilities__body {
-        font-family: 'haas-text', sans-serif;
+        font-family: "haas-text", sans-serif;
         font-size: 42px;
         font-weight: 400;
         color: #181818;
@@ -147,7 +158,7 @@
         min-height: clamp(64px, 8.85vw, 170px);
         padding: clamp(16px, 2vw, 40px) clamp(24px, 6.25vw, 120px);
         border-top: 1px solid #b8b8b8;
-        font-family: 'haas-text', sans-serif;
+        font-family: "haas-text", sans-serif;
         font-size: 42px;
         font-weight: 400;
         color: #181818;
@@ -191,7 +202,7 @@
       }
 
       .testimonial__quote {
-        font-family: 'kepler', Georgia, serif;
+        font-family: "kepler", Georgia, serif;
         font-size: 73px;
         font-weight: 300;
         font-style: italic;
@@ -204,7 +215,7 @@
         display: flex;
         flex-direction: column;
         gap: 4px;
-        font-family: 'haas', sans-serif;
+        font-family: "haas", sans-serif;
         font-size: 18px;
         font-weight: 500;
         color: #ebebeb;
@@ -259,7 +270,7 @@
         background: #8a9a5b;
         padding: clamp(48px, 6.9vw, 132px) clamp(24px, 4.2vw, 80px);
         color: #ffffff;
-        font-family: 'haas-text', sans-serif;
+        font-family: "haas-text", sans-serif;
         font-size: 40px;
         font-weight: 400;
         letter-spacing: -0.02em;
@@ -272,7 +283,7 @@
       }
 
       .ds-scale__card-label {
-        font-family: 'haas-text', sans-serif;
+        font-family: "haas-text", sans-serif;
         font-size: 14px;
         font-weight: 600;
         letter-spacing: 0;
@@ -283,7 +294,7 @@
       }
 
       .ds-scale__card-title {
-        font-family: 'haas-text', sans-serif;
+        font-family: "haas-text", sans-serif;
         font-size: 40px;
         font-weight: 400;
         letter-spacing: -0.02em;
@@ -292,7 +303,7 @@
       }
 
       .ds-scale__card-desc {
-        font-family: 'haas-text', sans-serif;
+        font-family: "haas-text", sans-serif;
         font-size: 18px;
         font-weight: 400;
         color: rgba(255, 255, 255, 0.72);
@@ -300,7 +311,9 @@
         margin-top: clamp(12px, 1.25vw, 24px);
         opacity: 0;
         transform: translateY(32px);
-        transition: opacity 0.7s ease, transform 0.7s ease;
+        transition:
+          opacity 0.7s ease,
+          transform 0.7s ease;
       }
 
       .ds-scale__card.revealed .ds-scale__card-desc {
@@ -309,13 +322,21 @@
       }
 
       @media (max-width: 1199px) {
-        .ds-scale__card-title { font-size: 28px; }
-        .ds-scale__card-desc  { font-size: 16px; }
+        .ds-scale__card-title {
+          font-size: 28px;
+        }
+        .ds-scale__card-desc {
+          font-size: 16px;
+        }
       }
 
       @media (max-width: 767px) {
-        .ds-scale__card-title { font-size: 20px; }
-        .ds-scale__card-desc  { font-size: 15px; }
+        .ds-scale__card-title {
+          font-size: 20px;
+        }
+        .ds-scale__card-desc {
+          font-size: 15px;
+        }
       }
 
       .ds-scale__card--foundational {
@@ -342,21 +363,49 @@
          Font-size breakpoints (tablet → mobile)
       ───────────────────────────────────────── */
       @media (max-width: 1199px) {
-        .hero__text              { font-size: 56px; }
-        .capabilities__body      { font-size: 28px; }
-        .capabilities__item      { font-size: 28px; }
-        .testimonial__quote      { font-size: 48px; }
-        .ds-scale__card          { font-size: 28px; }
+        .hero__text {
+          font-size: 56px;
+        }
+        .capabilities__body {
+          font-size: 28px;
+        }
+        .capabilities__item {
+          font-size: 28px;
+        }
+        .testimonial__quote {
+          font-size: 48px;
+        }
+        .ds-scale__card {
+          font-size: 28px;
+        }
       }
 
       @media (max-width: 767px) {
-        .hero__text              { font-size: 36px; }
-        .capabilities__body      { font-size: 16px; }
-        .capabilities__item      { font-size: 16px; flex-direction: column; align-items: flex-start; gap: 6px; }
-        .capabilities__item-name { text-align: left; }
-        .testimonial__quote      { font-size: 28px; }
-        .testimonial__attribution { font-size: 14px; letter-spacing: 2px; }
-        .ds-scale__card          { font-size: 20px; }
+        .hero__text {
+          font-size: 36px;
+        }
+        .capabilities__body {
+          font-size: 16px;
+        }
+        .capabilities__item {
+          font-size: 16px;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 6px;
+        }
+        .capabilities__item-name {
+          text-align: left;
+        }
+        .testimonial__quote {
+          font-size: 28px;
+        }
+        .testimonial__attribution {
+          font-size: 14px;
+          letter-spacing: 2px;
+        }
+        .ds-scale__card {
+          font-size: 20px;
+        }
       }
 
       /* Mobile: sticky section, horizontal snap carousel */
@@ -420,17 +469,17 @@
           position: absolute;
           bottom: 16px;
           right: 24px;
-          font-family: 'haas-text', sans-serif;
+          font-family: "haas-text", sans-serif;
           font-size: 14px;
           font-weight: 600;
           color: #ffffff;
           letter-spacing: 0;
         }
 
-        .capabilities__list{
+        .capabilities__list {
           padding: 0 24px;
         }
-        
+
         .testimonial__quote {
           font-size: 35px;
         }
@@ -440,9 +489,10 @@
       ───────────────────────────────────────── */
       .visually-hidden {
         position: absolute;
-        width: 1px; height: 1px;
+        width: 1px;
+        height: 1px;
         overflow: hidden;
-        clip: rect(0,0,0,0);
+        clip: rect(0, 0, 0, 0);
         white-space: nowrap;
       }
 
@@ -464,11 +514,13 @@
         color: #1c1c1c;
         border: 2px solid #1c1c1c;
         border-radius: 999px;
-        font-family: 'haas-text', sans-serif;
+        font-family: "haas-text", sans-serif;
         font-size: 2.7em;
         font-weight: 400;
         padding: 4px 28px 1px;
-        transition: background-color 300ms, color 300ms;
+        transition:
+          background-color 300ms,
+          color 300ms;
       }
 
       .footer__lets-talk:hover {
@@ -479,7 +531,7 @@
       .footer__kido {
         width: 96%;
         height: 18vw;
-        background-image: url('../images/wearekido.svg');
+        background-image: url("../images/wearekido.svg");
         background-position: bottom;
         background-repeat: no-repeat;
         background-size: contain;
@@ -494,7 +546,7 @@
         width: calc(100% - 15vw);
         margin-left: 9vw;
         margin-right: 6vw;
-        font-family: 'haas', sans-serif;
+        font-family: "haas", sans-serif;
         font-weight: 400;
         font-size: 0.8em;
         gap: 1em;
@@ -519,7 +571,7 @@
       }
 
       .footer__links-col span {
-        font-family: 'haas-text', sans-serif;
+        font-family: "haas-text", sans-serif;
         font-weight: 600;
         font-size: 1em;
       }
@@ -540,7 +592,7 @@
         margin-left: 9vw;
         margin-right: 6vw;
         padding: 1.5em 0 3em;
-        font-family: 'haas-text', sans-serif;
+        font-family: "haas-text", sans-serif;
         font-size: 0.8em;
         color: #1c1c1c;
       }
@@ -551,7 +603,7 @@
       }
 
       .footer__bottom-nav a {
-        font-family: 'haas', sans-serif;
+        font-family: "haas", sans-serif;
         font-weight: 400;
         font-size: 1.5em;
         color: #1c1c1c;
@@ -567,30 +619,61 @@
       }
 
       @media (max-width: 767px) {
-        .footer__lets-talk  { font-size: 1.8em; margin-top: 64px; }
-        .footer__kido       { height: 24vw; margin-top: 64px; }
-        .footer__links      { flex-direction: column; align-items: flex-start; width: 90%; margin: 0 5%; }
-        .footer__links-col  { margin-top: 32px; }
-        .footer__hr         { width: 90%; margin-left: 5%; }
-        .footer__bottom     { flex-direction: column; align-items: flex-start; gap: 12px; width: 90%; margin: 0 5%; padding-top: 1.5em; }
+        .footer__lets-talk {
+          font-size: 1.8em;
+          margin-top: 64px;
+        }
+        .footer__kido {
+          height: 24vw;
+          margin-top: 64px;
+        }
+        .footer__links {
+          flex-direction: column;
+          align-items: flex-start;
+          width: 90%;
+          margin: 0 5%;
+        }
+        .footer__links-col {
+          margin-top: 32px;
+        }
+        .footer__hr {
+          width: 90%;
+          margin-left: 5%;
+        }
+        .footer__bottom {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 12px;
+          width: 90%;
+          margin: 0 5%;
+          padding-top: 1.5em;
+        }
       }
 
       @media screen and (min-width: 1800px) {
-        .footer__links { justify-content: center; gap: 8em; }
+        .footer__links {
+          justify-content: center;
+          gap: 8em;
+        }
       }
     </style>
   </head>
   <body>
-
     <!-- ── Hero ── -->
     <section class="hero">
       <div class="hero__left">
-        <div class="hero__illustration-slot" role="img" aria-label="Design Infrastructure illustration"></div>
+        <div
+          class="hero__illustration-slot"
+          role="img"
+          aria-label="Design Infrastructure illustration"
+        ></div>
       </div>
       <div class="hero__right">
         <div class="hero__text">
-          <span class="hero__service-name">Design<br>Infrastructure</span>
-          <span class="hero__tagline">Build the system<br>once. Scale forever.</span>
+          <span class="hero__service-name">Design<br />Infrastructure</span>
+          <span class="hero__tagline"
+            >Build the system<br />once. Scale forever.</span
+          >
         </div>
       </div>
     </section>
@@ -599,32 +682,49 @@
     <section class="capabilities">
       <div class="capabilities__intro">
         <p class="capabilities__label">[ Capabilities ]</p>
-        <p class="capabilities__body">Design systems as scalable product infrastructure — built to match your complexity. We design, build, and evolve design system infrastructure that supports your product exactly where it is today — and scales with you as complexity grows.</p>
+        <p class="capabilities__body">
+          Design systems as scalable product infrastructure — built to match
+          your complexity. We design, build, and evolve design system
+          infrastructure that supports your product exactly where it is today —
+          and scales with you as complexity grows.
+        </p>
       </div>
       <ul class="capabilities__list">
         <li class="capabilities__item">
           <span class="capabilities__item-num">1</span>
-          <span class="capabilities__item-name">Component Design and Development</span>
+          <span class="capabilities__item-name"
+            >Component Design and Development</span
+          >
         </li>
         <li class="capabilities__item">
           <span class="capabilities__item-num">2</span>
-          <span class="capabilities__item-name">Design System Architecture</span>
+          <span class="capabilities__item-name"
+            >Design System Architecture</span
+          >
         </li>
         <li class="capabilities__item">
           <span class="capabilities__item-num">3</span>
-          <span class="capabilities__item-name">Token Strategy &amp; Implementation</span>
+          <span class="capabilities__item-name"
+            >Token Strategy &amp; Implementation</span
+          >
         </li>
         <li class="capabilities__item">
           <span class="capabilities__item-num">4</span>
-          <span class="capabilities__item-name">Multi-Brand / Multi-Platform Systems</span>
+          <span class="capabilities__item-name"
+            >Multi-Brand / Multi-Platform Systems</span
+          >
         </li>
         <li class="capabilities__item">
           <span class="capabilities__item-num">5</span>
-          <span class="capabilities__item-name">Contribution &amp; Governance Models</span>
+          <span class="capabilities__item-name"
+            >Contribution &amp; Governance Models</span
+          >
         </li>
         <li class="capabilities__item">
           <span class="capabilities__item-num">6</span>
-          <span class="capabilities__item-name">Continuous support and maintenance</span>
+          <span class="capabilities__item-name"
+            >Continuous support and maintenance</span
+          >
         </li>
       </ul>
     </section>
@@ -633,7 +733,12 @@
     <section class="testimonial">
       <div class="testimonial__inner">
         <blockquote class="testimonial__quote">
-          "Working with Kido has been a true game changer for us.<br/>They helped us take an early version of our design system — one that didn't quite match how we work — and turn it into something that actually fits our day-to-day needs. They brought in best practices and a fresh perspective, kept things practical, and made sure the whole team was part of the process."
+          "Working with Kido has been a true game changer for us.<br />They
+          helped us take an early version of our design system — one that didn't
+          quite match how we work — and turn it into something that actually
+          fits our day-to-day needs. They brought in best practices and a fresh
+          perspective, kept things practical, and made sure the whole team was
+          part of the process."
         </blockquote>
         <p class="testimonial__attribution">
           <span>Noa Karni</span>
@@ -645,7 +750,6 @@
 
     <!-- ── DS by Scale ── -->
     <section class="ds-scale">
-
       <video
         class="ds-scale__bg-video"
         src="images/flower-anim-1.mp4"
@@ -659,31 +763,49 @@
       <div class="ds-scale__row ds-scale__row--spread">
         <div class="ds-scale__card ds-scale__card--foundational">
           <span class="ds-scale__card-label">Design System by Scale</span>
-          <h3 class="ds-scale__card-title">Foundational<br>Design System</h3>
-          <p class="ds-scale__card-desc">For early-stage products or focused platforms that need clarity, speed, and consistency without over-engineering.</p>
+          <h3 class="ds-scale__card-title">Foundational<br />Design System</h3>
+          <p class="ds-scale__card-desc">
+            For early-stage products or focused platforms that need clarity,
+            speed, and consistency without over-engineering.
+          </p>
         </div>
         <div class="ds-scale__card ds-scale__card--scalable">
-          <h3 class="ds-scale__card-title">Scalable<br>Design System</h3>
-          <p class="ds-scale__card-desc">For growing products, multiple teams, or evolving UX complexity — built to scale across features, platforms, and contributors.</p>
+          <h3 class="ds-scale__card-title">Scalable<br />Design System</h3>
+          <p class="ds-scale__card-desc">
+            For growing products, multiple teams, or evolving UX complexity —
+            built to scale across features, platforms, and contributors.
+          </p>
         </div>
       </div>
 
       <!-- Row 2: offset ~670px from left -->
       <div class="ds-scale__row ds-scale__row--offset">
         <div class="ds-scale__card ds-scale__card--product-web">
-          <h3 class="ds-scale__card-title">Product or Website<br>&times; Design System</h3>
-          <p class="ds-scale__card-desc">For teams building or redesigning a product or site with a system-first approach — ensuring consistency, speed, and long-term flexibility from day one.</p>
+          <h3 class="ds-scale__card-title">
+            Product or Website<br />&times; Design System
+          </h3>
+          <p class="ds-scale__card-desc">
+            For teams building or redesigning a product or site with a
+            system-first approach — ensuring consistency, speed, and long-term
+            flexibility from day one.
+          </p>
         </div>
       </div>
 
       <!-- Row 3: starts at left edge -->
       <div class="ds-scale__row">
         <div class="ds-scale__card ds-scale__card--full-stack">
-          <h3 class="ds-scale__card-title">Product or Website &times;<br>Design System &times;<br>Frontend Development</h3>
-          <p class="ds-scale__card-desc">An end-to-end infrastructure engagement — from product or web design, through system architecture, to production-ready development and handoff.</p>
+          <h3 class="ds-scale__card-title">
+            Product or Website &times;<br />Design System &times;<br />Frontend
+            Development
+          </h3>
+          <p class="ds-scale__card-desc">
+            An end-to-end infrastructure engagement — from product or web
+            design, through system architecture, to production-ready development
+            and handoff.
+          </p>
         </div>
       </div>
-
     </section>
 
     <!-- ── Footer ── -->
@@ -695,15 +817,21 @@
       <div class="footer__links">
         <div class="footer__links-col">
           <span>Visit DesOps Israel</span>
-          <a href="https://www.desops.co.il" target="_blank">Learn about DesOps</a>
+          <a href="https://www.desops.co.il" target="_blank"
+            >Learn about DesOps</a
+          >
         </div>
         <div class="footer__links-col">
           <span>Follow on LinkedIn</span>
-          <a href="https://www.linkedin.com/company/wearekido" target="_blank">Read weekly updates</a>
+          <a href="https://www.linkedin.com/company/wearekido" target="_blank"
+            >Read weekly updates</a
+          >
         </div>
         <div class="footer__links-col">
           <span>Check out Tidy</span>
-          <a href="https://tidy.guide" target="_blank">Integrate Figma automations</a>
+          <a href="https://tidy.guide" target="_blank"
+            >Integrate Figma automations</a
+          >
         </div>
       </div>
 
@@ -718,101 +846,107 @@
       </div>
     </footer>
 
-  <script>
-    const capItems = document.querySelectorAll('.capabilities__item');
+    <script>
+      const capItems = document.querySelectorAll(".capabilities__item");
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('in-view');
-        } else {
-          entry.target.classList.remove('in-view');
-        }
-      });
-    }, {
-      // Active zone: middle 50% of the viewport — items reveal as they
-      // enter and dim again as they scroll out in either direction.
-      rootMargin: '-25% 0px -25% 0px',
-      threshold: 0
-    });
-
-    capItems.forEach(item => observer.observe(item));
-
-    // DS by Scale — one-way reveal (title then description fade up)
-    const dsCards = document.querySelectorAll('.ds-scale__card');
-
-    const dsObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('revealed');
-        } else {
-          entry.target.classList.remove('revealed');
-        }
-      });
-    }, {
-      rootMargin: '0px 0px -10% 0px',
-      threshold: 0.15
-    });
-
-    dsCards.forEach(card => dsObserver.observe(card));
-
-    // Mobile DS by Scale — sticky section, horizontal snap carousel
-    (function initMobileDsScale() {
-      const section = document.querySelector('.ds-scale');
-      const rows    = Array.from(section.querySelectorAll('.ds-scale__row'));
-      const cards   = Array.from(section.querySelectorAll('.ds-scale__card'));
-      const total   = cards.length;
-
-      // Snapshot original DOM positions before any mutations
-      const origins = cards.map(card => ({
-        parent:      card.parentNode,
-        nextSibling: card.nextSibling
-      }));
-
-      cards.forEach((card, i) =>
-        card.setAttribute('data-mobile-num', (i + 1) + '/' + total)
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("in-view");
+            } else {
+              entry.target.classList.remove("in-view");
+            }
+          });
+        },
+        {
+          // Active zone: middle 50% of the viewport — items reveal as they
+          // enter and dim again as they scroll out in either direction.
+          rootMargin: "-25% 0px -25% 0px",
+          threshold: 0,
+        },
       );
 
-      let strip  = null;
-      let active = false;
+      capItems.forEach((item) => observer.observe(item));
 
-      function setup() {
-        if (active) return;
-        active = true;
-        cards.forEach(card => card.classList.add('revealed'));
-        strip = document.createElement('div');
-        strip.className = 'ds-scale__mobile-strip';
-        cards.forEach(card => {
-          const slide = document.createElement('div');
-          slide.className = 'ds-scale__mobile-slide';
-          slide.appendChild(card);
-          strip.appendChild(slide);
-        });
-        rows.forEach(row => row.style.display = 'none');
-        section.appendChild(strip);
-      }
+      // DS by Scale — one-way reveal (title then description fade up)
+      const dsCards = document.querySelectorAll(".ds-scale__card");
 
-      function teardown() {
-        if (!active) return;
-        active = false;
-        cards.forEach((card, i) => {
-          const { parent, nextSibling } = origins[i];
-          parent.insertBefore(card, nextSibling);
-          card.classList.remove('revealed');
-        });
-        strip.remove();
-        strip = null;
-        rows.forEach(row => row.style.display = '');
-      }
+      const dsObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("revealed");
+            } else {
+              entry.target.classList.remove("revealed");
+            }
+          });
+        },
+        {
+          rootMargin: "0px 0px -10% 0px",
+          threshold: 0.15,
+        },
+      );
 
-      function check() {
-        window.innerWidth <= 767 ? setup() : teardown();
-      }
+      dsCards.forEach((card) => dsObserver.observe(card));
 
-      if (window.innerWidth <= 767) setup();
+      // Mobile DS by Scale — sticky section, horizontal snap carousel
+      (function initMobileDsScale() {
+        const section = document.querySelector(".ds-scale");
+        const rows = Array.from(section.querySelectorAll(".ds-scale__row"));
+        const cards = Array.from(section.querySelectorAll(".ds-scale__card"));
+        const total = cards.length;
 
-      window.addEventListener('resize', check);
-    }());
-  </script>
+        // Snapshot original DOM positions before any mutations
+        const origins = cards.map((card) => ({
+          parent: card.parentNode,
+          nextSibling: card.nextSibling,
+        }));
+
+        cards.forEach((card, i) =>
+          card.setAttribute("data-mobile-num", i + 1 + "/" + total),
+        );
+
+        let strip = null;
+        let active = false;
+
+        function setup() {
+          if (active) return;
+          active = true;
+          cards.forEach((card) => card.classList.add("revealed"));
+          strip = document.createElement("div");
+          strip.className = "ds-scale__mobile-strip";
+          cards.forEach((card) => {
+            const slide = document.createElement("div");
+            slide.className = "ds-scale__mobile-slide";
+            slide.appendChild(card);
+            strip.appendChild(slide);
+          });
+          rows.forEach((row) => (row.style.display = "none"));
+          section.appendChild(strip);
+        }
+
+        function teardown() {
+          if (!active) return;
+          active = false;
+          cards.forEach((card, i) => {
+            const { parent, nextSibling } = origins[i];
+            parent.insertBefore(card, nextSibling);
+            card.classList.remove("revealed");
+          });
+          strip.remove();
+          strip = null;
+          rows.forEach((row) => (row.style.display = ""));
+        }
+
+        function check() {
+          window.innerWidth <= 767 ? setup() : teardown();
+        }
+
+        if (window.innerWidth <= 767) setup();
+
+        window.addEventListener("resize", check);
+      })();
+    </script>
   </body>
 </html>
