@@ -1,0 +1,1158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>Lean Branding — Kido</title>
+    <meta
+      name="description"
+      content="A clear brand identity — without the weight of a full brand program. Kido helps teams define how their brand looks, feels, and communicates."
+    />
+    <link rel="canonical" href="https://wearekido.com/services/lean-branding" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Lean Branding — Kido" />
+    <meta
+      property="og:description"
+      content="A clear brand identity — without the weight of a full brand program. Kido helps teams define how their brand looks, feels, and communicates."
+    />
+    <meta
+      property="og:image"
+      content="https://wearekido.com/images/kido-social.jpg"
+    />
+    <meta property="og:url" content="https://wearekido.com/services/lean-branding" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="wearekido.com" />
+    <meta name="twitter:title" content="Lean Branding — Kido" />
+    <meta
+      name="twitter:description"
+      content="A clear brand identity — without the weight of a full brand program. Kido helps teams define how their brand looks, feels, and communicates."
+    />
+    <meta
+      name="twitter:image"
+      content="https://wearekido.com/images/kido-social.jpg"
+    />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/x-icon" href="../images/kido-icon.png" />
+    <link rel="apple-touch-icon" href="../images/kido-icon.png" />
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../font-kepler.css" />
+    <link rel="stylesheet" href="../font-haas.css" />
+    <link rel="stylesheet" href="../font-haas-text.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body {
+        overflow-x: hidden;
+        background-color: #f5f5f0;
+      }
+
+      /* ─────────────────────────────────────────
+         Navigation Header
+      ───────────────────────────────────────── */
+      header {
+        display: flex;
+        align-items: center;
+        width: calc(100% - 96px);
+        padding: 0 48px;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        filter: invert(100%);
+        mix-blend-mode: difference;
+      }
+
+      header * {
+        transform: translateY(-10px);
+      }
+
+      header div {
+        transition: opacity 300ms linear;
+      }
+
+      .logoDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        transform: rotate(90deg) scale(0.6) translateY(0.8em) translateX(-1em);
+        opacity: 0;
+        filter: invert(100%);
+        mix-blend-mode: difference;
+        transition: opacity 300ms linear;
+      }
+
+      .logoText {
+        width: 80px;
+        height: 30px;
+        transform: translateY(-10px) translateX(-60px);
+        background-image: url("../images/kido.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      .logoText a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform: none;
+        background-color: transparent;
+      }
+
+      .linksDiv {
+        display: flex;
+        gap: 40px;
+        flex-grow: 1;
+        height: 100%;
+        padding-top: 36px;
+        transition: opacity 300ms linear;
+      }
+
+      .linksDiv a {
+        position: relative;
+        font-family: "haas", sans-serif;
+        font-size: 1.2em;
+        font-weight: 500;
+        color: #1c1c1c;
+        text-decoration: none;
+        height: 100%;
+      }
+
+      .linksDiv a:hover {
+        color: #888888;
+      }
+
+      .nav__cta {
+        text-decoration: none;
+        background-color: #1c1c1c;
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        border-radius: 999px;
+        font-family: "haas", sans-serif;
+        font-size: 1.2em;
+        font-weight: 500;
+        padding: 4px 16px 1px;
+        margin-top: 14px;
+        white-space: nowrap;
+        transition:
+          background-color 300ms,
+          color 300ms;
+      }
+
+      .nav__cta:hover {
+        background-color: #ffffff;
+        color: #1c1c1c;
+      }
+
+      /* ─────────────────────────────────────────
+         Hero Section
+      ───────────────────────────────────────── */
+      .hero {
+        display: flex;
+        width: 100%;
+        min-height: clamp(400px, 47.4vw, 910px);
+      }
+
+      .hero__left {
+        flex: 1 0 0;
+        background: #f6f5ee;
+        padding: clamp(40px, 5.2vw, 100px) clamp(24px, 6.25vw, 120px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .hero__left picture {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+
+      .hero__illustration-slot {
+        display: block;
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+      }
+
+      .hero__right {
+        flex: 1 0 0;
+        background: #181818;
+        padding: clamp(40px, 5.2vw, 100px) clamp(24px, 6.25vw, 120px);
+        display: flex;
+        align-items: center;
+      }
+
+      .hero__text {
+        font-family: "kepler", Georgia, serif;
+        font-size: 88px;
+        font-weight: 400;
+        font-style: italic;
+        line-height: 0.93;
+        letter-spacing: -0.04em;
+      }
+
+      .hero__service-name {
+        display: block;
+        font-size: inherit;
+        font-weight: inherit;
+        font-style: inherit;
+        color: #efefef;
+        margin-bottom: 0.1em;
+      }
+
+      .hero__tagline {
+        display: block;
+        color: #9060c8;
+      }
+
+      /* ─────────────────────────────────────────
+         Capabilities Section
+      ───────────────────────────────────────── */
+      .capabilities {
+        background: #ffffff;
+        display: flex;
+        flex-direction: column;
+        gap: clamp(48px, 6.5vw, 124px);
+        padding-top: clamp(48px, 5.2vw, 100px);
+      }
+
+      .capabilities__intro {
+        padding-left: clamp(24px, 6.25vw, 120px);
+        padding-right: clamp(24px, 6.25vw, 120px);
+        max-width: 1684px;
+      }
+
+      .capabilities__label {
+        color: #181818;
+        margin-bottom: 28px;
+      }
+
+      .capabilities__body {
+        font-family: "haas-text", sans-serif;
+        font-size: 35px;
+        font-weight: 400;
+        color: #181818;
+        letter-spacing: -0.03em;
+        line-height: 1.2;
+      }
+
+      .capabilities__list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      .capabilities__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: clamp(64px, 8.85vw, 170px);
+        padding: clamp(16px, 2vw, 40px) clamp(24px, 6.25vw, 120px);
+        border-top: 1px solid #b8b8b8;
+        font-family: "haas-text", sans-serif;
+        font-size: 35px;
+        font-weight: 400;
+        color: #181818;
+        letter-spacing: -0.03em;
+        gap: 16px;
+        opacity: 0.2;
+        transition: opacity 0.5s ease;
+      }
+
+      .capabilities__item.in-view {
+        opacity: 1;
+      }
+
+      .capabilities__item-num {
+        flex-shrink: 0;
+      }
+
+      .capabilities__item-name {
+        text-align: right;
+      }
+
+      /* ─────────────────────────────────────────
+         Testimonial Section
+      ───────────────────────────────────────── */
+      .testimonial {
+        background: #457b9d;
+        text-align: center;
+        padding: clamp(64px, 7.3vw, 140px) clamp(24px, 6.25vw, 120px);
+      }
+
+      .testimonial__inner {
+        max-width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: clamp(32px, 2.9vw, 56px);
+      }
+
+      .testimonial__quote {
+        font-family: "kepler", Georgia, serif;
+        font-size: 64px;
+        font-weight: 300;
+        font-style: italic;
+        color: #efefef;
+        letter-spacing: -0.04em;
+        line-height: 1.1;
+      }
+
+      .testimonial__attribution {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        font-family: "haas", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: #ebebeb;
+        text-transform: uppercase;
+      }
+
+      .testimonial__attribution .spacer {
+        letter-spacing: 3.2px;
+      }
+
+      .testimonial__attribution-company {
+        font-weight: 700;
+      }
+
+      /* ─────────────────────────────────────────
+         DS Scale Section
+      ───────────────────────────────────────── */
+      .ds-scale {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        background-color: #181818;
+      }
+
+      .ds-scale__bg-video {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+        z-index: 0;
+      }
+
+      .ds-scale__row {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: stretch;
+      }
+
+      .ds-scale__row--spread {
+        justify-content: space-between;
+      }
+
+      .ds-scale__row--offset {
+        padding-left: 34.9%;
+      }
+
+      .ds-scale__row--end {
+        justify-content: flex-end;
+      }
+
+      .ds-scale__card {
+        background: #b078c0;
+        padding: clamp(48px, 6.9vw, 132px) clamp(24px, 4.2vw, 80px);
+        color: #ffffff;
+        font-family: "haas-text", sans-serif;
+        letter-spacing: -0.02em;
+        line-height: 1.2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: relative;
+        flex-shrink: 0;
+      }
+
+      .ds-scale__card-label {
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0;
+        position: absolute;
+        top: clamp(28px, 3.5vw, 68px);
+        left: clamp(24px, 2.8vw, 54px);
+      }
+
+      .ds-scale__card-label--mobile-only {
+        display: none;
+      }
+
+      .ds-scale__card-title {
+        font-size: 35px;
+        font-weight: 400;
+      }
+
+      .ds-scale__card-desc {
+        font-size: 18px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.72);
+        line-height: 1.55;
+        margin-top: clamp(12px, 1.25vw, 24px);
+        opacity: 0;
+        transform: translateY(32px);
+        transition:
+          opacity 0.7s ease,
+          transform 0.7s ease;
+      }
+
+      .ds-scale__card.revealed .ds-scale__card-desc {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .ds-scale__card--foundational {
+        width: 34.9%;
+        min-height: clamp(280px, 44.8vw, 860px);
+      }
+
+      .ds-scale__card--scalable {
+        width: 29.6%;
+        min-height: clamp(280px, 44.8vw, 860px);
+      }
+
+      .ds-scale__card--product-web {
+        width: 54.5%;
+        min-height: clamp(180px, 27.9vw, 536px);
+      }
+
+      .ds-scale__card--full-stack {
+        width: 34.85%;
+        min-height: clamp(320px, 59.9vw, 1150px);
+      }
+
+      /* ─────────────────────────────────────────
+         Selected Projects Section
+      ───────────────────────────────────────── */
+      .selected-projects {
+        background-color: #1c1c1c;
+        color: #ffffff;
+        padding-top: clamp(40px, 4vw, 80px);
+      }
+
+      .sp-label {
+        margin-left: 60px;
+        font-weight: 200;
+        font-size: 15px;
+        margin-top: 4px;
+        color: #ffffff;
+      }
+
+      .sp-cards {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 4%;
+        padding-bottom: 100px;
+      }
+
+      .sp-card {
+        color: #ffffff;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        width: 32%;
+        gap: 24px;
+        margin-top: 60px;
+      }
+
+      .sp-card img {
+        width: 100%;
+        border-radius: 8px;
+        transition: transform 300ms ease-in-out;
+      }
+
+      .sp-card:hover img {
+        transform: scale(1.05);
+      }
+
+      .sp-card h2 {
+        font-family: "haas-text", sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+        margin: 0;
+      }
+
+      .sp-card h3 {
+        font-family: "haas-text", sans-serif;
+        font-size: 26px;
+        font-weight: 400;
+        margin: 0;
+        white-space: break-spaces;
+      }
+
+      .sp-card-info {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      /* ─────────────────────────────────────────
+         Utility
+      ───────────────────────────────────────── */
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+      }
+
+      .geist-label {
+        font-family: "Geist Mono", monospace;
+        font-weight: 500;
+        font-size: 14px;
+      }
+
+      /* ─────────────────────────────────────────
+         Footer
+      ───────────────────────────────────────── */
+      footer.whiteSection {
+        background-color: #f5f5f0;
+        color: #000000;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+      }
+
+      .footer__kido {
+        width: 96%;
+        height: 18vw;
+        background-image: url("../images/wearekido.svg");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: 120px;
+        margin-bottom: 60px;
+      }
+
+      .footer__links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: calc(100% - 7vw);
+        font-family: "haas", sans-serif;
+        font-weight: 400;
+        font-size: 0.8em;
+        gap: 1em;
+      }
+
+      .footer__links-col {
+        text-align: left;
+        font-size: 1.5em;
+        line-height: 1.4;
+      }
+
+      .footer__links-col a {
+        display: block;
+        font-size: 1.7em;
+        color: #1c1c1c;
+        text-decoration: none;
+        letter-spacing: -0.03em;
+      }
+
+      .footer__links-col a:hover {
+        color: #888888;
+      }
+
+      .footer__links-col span {
+        font-family: "haas-text", sans-serif;
+        font-weight: 600;
+        font-size: 1em;
+      }
+
+      .footer__hr {
+        width: calc(100% - 7vw);
+        margin-top: 4em;
+        border: none;
+        border-top: 1px solid #1c1c1c;
+      }
+
+      .footer__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: calc(100% - 7vw);
+        padding: 1.5em 0 3em;
+        font-family: "haas-text", sans-serif;
+        font-size: 0.8em;
+        color: #1c1c1c;
+      }
+
+      .footer__bottom-nav {
+        display: flex;
+        gap: 1em;
+      }
+
+      .footer__bottom-nav a {
+        font-family: "haas", sans-serif;
+        font-weight: 400;
+        font-size: 1.5em;
+        color: #1c1c1c;
+        text-decoration: none;
+      }
+
+      .footer__bottom-nav a:hover {
+        color: #888888;
+      }
+
+      .footer__copy {
+        font-size: 1.4em;
+      }
+
+      /* ─────────────────────────────────────────
+         Tablet (≤1199px)
+      ───────────────────────────────────────── */
+      @media (max-width: 1199px) {
+        .hero__text {
+          font-size: 56px;
+        }
+        .capabilities__body {
+          font-size: 28px;
+        }
+        .capabilities__item {
+          font-size: 28px;
+        }
+        .testimonial__quote {
+          font-size: 48px;
+        }
+        .ds-scale__card-title {
+          font-size: 28px;
+        }
+        .ds-scale__card-desc {
+          font-size: 16px;
+        }
+      }
+
+      /* ─────────────────────────────────────────
+         Mobile (≤767px)
+      ───────────────────────────────────────── */
+      @media (max-width: 767px) {
+        .hero {
+          flex-direction: column;
+          min-height: unset;
+        }
+        .hero__left {
+          background: #181818;
+          padding: 48px 24px 0;
+          min-height: 50vw;
+        }
+        .hero__left picture {
+          height: 100%;
+        }
+        .hero__illustration-slot {
+          height: 100%;
+        }
+        .hero__right {
+          padding: 48px 24px 64px;
+        }
+        .hero__text {
+          font-size: 36px;
+          width: 100%;
+          text-align: center;
+          margin: 0 auto;
+        }
+
+        .capabilities__body {
+          font-size: 20px;
+        }
+        .capabilities__list {
+          padding: 0 24px;
+        }
+        .capabilities__item {
+          font-size: 20px;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 4rem;
+          padding-left: 0;
+          padding-right: 0;
+        }
+        .capabilities__item-name {
+          text-align: right;
+          width: 100%;
+        }
+
+        .testimonial__quote {
+          font-size: 28px;
+        }
+        .testimonial__attribution {
+          font-size: 12px;
+        }
+
+        .ds-scale {
+          position: sticky;
+          top: 0;
+          height: 455px;
+          overflow: hidden;
+        }
+        .ds-scale__card-title {
+          font-size: 20px;
+        }
+        .ds-scale__card-desc {
+          font-size: 15px;
+        }
+        .ds-scale__mobile-strip {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          overflow-x: scroll;
+          overflow-y: hidden;
+          scroll-snap-type: x mandatory;
+          scroll-behavior: smooth;
+          -webkit-overflow-scrolling: touch;
+          touch-action: pan-x;
+          scrollbar-width: none;
+          z-index: 1;
+        }
+        .ds-scale__mobile-strip::-webkit-scrollbar {
+          display: none;
+        }
+        .ds-scale__mobile-slide {
+          flex: 0 0 100%;
+          height: 100%;
+          scroll-snap-align: start;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .ds-scale__mobile-strip .ds-scale__card {
+          width: calc(100% - 48px);
+          height: calc(100% - 144px);
+          min-height: unset;
+          position: relative;
+        }
+        .ds-scale__mobile-strip .ds-scale__card-desc {
+          opacity: 1;
+          transform: none;
+          transition: none;
+        }
+        .ds-scale__mobile-strip .ds-scale__card-label {
+          position: absolute;
+          top: auto;
+          bottom: 16px;
+          left: 24px;
+        }
+        .ds-scale__mobile-strip .ds-scale__card-label--mobile-only {
+          display: block;
+        }
+        .ds-scale__mobile-strip .ds-scale__card::after {
+          content: attr(data-mobile-num);
+          position: absolute;
+          bottom: 16px;
+          right: 24px;
+          font-family: "haas-text", sans-serif;
+          font-size: 14px;
+          font-weight: 600;
+          color: #ffffff;
+          letter-spacing: 0;
+        }
+
+        .sp-label {
+          margin-left: 24px;
+        }
+        .sp-cards {
+          flex-direction: column;
+          padding: 0 24px;
+          padding-bottom: 60px;
+        }
+        .sp-card {
+          width: 100%;
+        }
+
+        .whiteSection {
+          padding: 40px 24px;
+        }
+        .footer__kido {
+          height: 24vw;
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+        .footer__links {
+          flex-direction: column;
+          align-items: flex-start;
+          width: 90%;
+          margin: 0 5%;
+        }
+        .footer__links-col {
+          margin-top: 32px;
+        }
+        .footer__links-col span {
+          font-size: 16px;
+          font-weight: 100;
+        }
+        .footer__links-col a {
+          font-size: 26px;
+          letter-spacing: 0;
+        }
+        .footer__hr {
+          width: 90%;
+          margin-left: 5%;
+          margin-top: 32px;
+        }
+        .footer__bottom {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 20px;
+          width: 90%;
+          margin: 0 5%;
+          padding-top: 1.5em;
+          padding-bottom: 0;
+        }
+        .footer__copy {
+          font-size: 12px;
+        }
+      }
+
+      @media screen and (min-width: 1800px) {
+        .footer__links {
+          gap: 8em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- ── Hero ── -->
+    <section class="hero">
+      <div class="hero__left">
+        <picture>
+          <source media="(max-width: 767px)" srcset="images/lb_mobile.svg" />
+          <img
+            class="hero__illustration-slot"
+            src="images/lb_desktop.svg"
+            alt="Lean Branding illustration"
+            loading="eager"
+          />
+        </picture>
+      </div>
+      <div class="hero__right">
+        <div class="hero__text">
+          <h1 class="hero__service-name">Lean Branding</h1>
+          <p class="hero__tagline"
+            >A clear brand identity - without the weight of a full brand program.</p
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Capabilities ── -->
+    <section class="capabilities" aria-label="Capabilities">
+      <div class="capabilities__intro">
+        <p class="capabilities__label geist-label">[ Capabilities ]</p>
+        <p class="capabilities__body">
+          Lean Branding is designed for teams that need a focused, functional brand identity
+          and a strong initial website presence that supports real decisions - in communication,
+          structure, and future growth.<br />
+          We help teams define how their brand should look, feel, and communicate, and
+          translate it into a clear, usable website, without over-engineering or unnecessary
+          assets.
+        </p>
+      </div>
+      <ul class="capabilities__list">
+        <li class="capabilities__item">
+          <span class="capabilities__item-num">1</span>
+          <span class="capabilities__item-name"
+            >Product Positioning &amp; Brand Principles</span
+          >
+        </li>
+        <li class="capabilities__item">
+          <span class="capabilities__item-num">2</span>
+          <span class="capabilities__item-name"
+            >Visual Direction &amp; Design Rationale</span
+          >
+        </li>
+        <li class="capabilities__item">
+          <span class="capabilities__item-num">3</span>
+          <span class="capabilities__item-name"
+            >Creative Planning &amp; Concept Visualization</span
+          >
+        </li>
+        <li class="capabilities__item">
+          <span class="capabilities__item-num">4</span>
+          <span class="capabilities__item-name"
+            >Refinement of Core Brand Elements</span
+          >
+        </li>
+        <li class="capabilities__item">
+          <span class="capabilities__item-num">5</span>
+          <span class="capabilities__item-name"
+            >System-Ready Visual Language Foundations</span
+          >
+        </li>
+      </ul>
+    </section>
+
+    <!-- ── Testimonial ── -->
+    <section class="testimonial" aria-label="Client testimonial">
+      <div class="testimonial__inner">
+        <blockquote class="testimonial__quote">
+          "Working with Kido was a game-changer for our brand and digital launch. They didn't just help us
+          execute design, they partnered in building a scalable design system and website infrastructure
+          while brand work was still in motion."
+        </blockquote>
+        <p class="testimonial__attribution">
+          <span>Hagar<span class="spacer"> </span>Nahum<span class="spacer"> </span>Brockmann</span>
+          <span
+            >Senior<span class="spacer"> </span>Director<span class="spacer"> </span>of<span class="spacer"> </span>Design<span class="spacer"> </span>and<span class="spacer"> </span>Creative</span
+          >
+          <span class="testimonial__attribution-company">AppsFlyer</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ── Lean Branding by Focus ── -->
+    <section class="ds-scale" aria-label="Lean Branding by Focus">
+      <video
+        class="ds-scale__bg-video"
+        src="videos/spiral-anim-1.mp4"
+        autoplay
+        loop
+        muted
+        playsinline
+      ></video>
+
+      <!-- Row 1: Visual Direction (left) + Design Guidelines (right) -->
+      <div class="ds-scale__row ds-scale__row--spread">
+        <div class="ds-scale__card ds-scale__card--foundational">
+          <span class="ds-scale__card-label geist-label"
+            >[ Lean Branding by Focus ]</span
+          >
+          <h3 class="ds-scale__card-title">Visual Direction &amp;<br />Brand Elements</h3>
+          <p class="ds-scale__card-desc">
+            Focused refinement of the essential visual building blocks: Logo,
+            Typography, Iconography, Color Palette, Imagery &amp; Photography
+            Usage, Technical Diagrams &amp; Visual Metaphors.
+          </p>
+        </div>
+        <div class="ds-scale__card ds-scale__card--scalable">
+          <span
+            class="ds-scale__card-label geist-label ds-scale__card-label--mobile-only"
+            >[ Lean Branding by Focus ]</span
+          >
+          <h3 class="ds-scale__card-title">Design Guidelines &amp;<br />Foundations</h3>
+          <p class="ds-scale__card-desc">
+            Clear, usable guidelines that translate brand intent into everyday
+            design decisions: Logo and brand element usage, Visual do's &amp;
+            don'ts, Examples of branding implementation, Foundations for future
+            system and visual language creation using tools like Weave, Flora,
+            or similar generative frameworks.
+          </p>
+        </div>
+      </div>
+
+      <!-- Row 2: Positioning & Principles (offset) -->
+      <div class="ds-scale__row ds-scale__row--offset">
+        <div class="ds-scale__card ds-scale__card--product-web">
+          <span
+            class="ds-scale__card-label geist-label ds-scale__card-label--mobile-only"
+            >[ Lean Branding by Focus ]</span
+          >
+          <h3 class="ds-scale__card-title">Positioning &amp;<br />Principles</h3>
+          <p class="ds-scale__card-desc">
+            A clear articulation of what the product stands for — and just as
+            importantly, what it doesn't.
+          </p>
+        </div>
+      </div>
+
+      <!-- Row 3: Main website pages (right edge) -->
+      <div class="ds-scale__row ds-scale__row--end">
+        <div class="ds-scale__card ds-scale__card--scalable">
+          <span
+            class="ds-scale__card-label geist-label ds-scale__card-label--mobile-only"
+            >[ Lean Branding by Focus ]</span
+          >
+          <h3 class="ds-scale__card-title">Main website pages design &amp; development</h3>
+          <p class="ds-scale__card-desc">
+            Design and development of key website pages that translate brand
+            positioning into a clear, structured digital narrative.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Selected Projects ── -->
+    <section class="selected-projects" aria-label="Selected Projects">
+      <div class="sp-label geist-label">[ CASE STUDIES ]</div>
+      <div class="sp-cards">
+        <a href="../gcc" class="sp-card">
+          <img src="../images/gcc-social.jpg" alt="GCC Case Study" />
+          <div class="sp-card-info">
+            <h2>GCC</h2>
+            <h3>Systemized Branding at Speed: 3 Sites in 10 Weeks</h3>
+          </div>
+        </a>
+        <a href="../appsflyer" class="sp-card">
+          <img src="../images/case-appsflyer.jpg" alt="AppsFlyer Case Study" />
+          <div class="sp-card-info">
+            <h2>AppsFlyer</h2>
+            <h3>Brand Reposition Implementation - Building While Shipping</h3>
+          </div>
+        </a>
+        <a href="../amdocs" class="sp-card">
+          <img src="../images/case-amdocs.jpg" alt="Amdocs Case Study" />
+          <div class="sp-card-info">
+            <h2>Amdocs</h2>
+            <h3>One Library to Rule Them All</h3>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ── Footer ── -->
+    <footer class="whiteSection">
+      <div class="footer__kido" role="img" aria-label="We Are Kido"></div>
+
+      <div class="footer__links">
+        <div class="footer__links-col">
+          <span>Visit DesOps Israel</span>
+          <a href="https://www.desops.co.il" target="_blank"
+            >Learn about DesOps</a
+          >
+        </div>
+        <div class="footer__links-col">
+          <span>Follow on LinkedIn</span>
+          <a href="https://www.linkedin.com/company/wearekido" target="_blank"
+            >Read weekly updates</a
+          >
+        </div>
+        <div class="footer__links-col">
+          <span>Check out Tidy</span>
+          <a href="https://tidy.guide" target="_blank"
+            >Integrate Figma automations</a
+          >
+        </div>
+      </div>
+
+      <hr class="footer__hr" />
+
+      <div class="footer__bottom">
+        <nav class="footer__bottom-nav">
+          <a href="../case-studies">Case Studies</a>
+          <a href="../about">About</a>
+        </nav>
+        <p class="footer__copy">© All rights reserved. Kido 2026</p>
+      </div>
+    </footer>
+
+    <script>
+      const capItems = document.querySelectorAll(".capabilities__item");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("in-view");
+            } else {
+              entry.target.classList.remove("in-view");
+            }
+          });
+        },
+        { rootMargin: "-25% 0px -25% 0px", threshold: 0 },
+      );
+      capItems.forEach((item) => observer.observe(item));
+
+      const dsCards = document.querySelectorAll(".ds-scale__card");
+      const dsObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("revealed");
+            } else {
+              entry.target.classList.remove("revealed");
+            }
+          });
+        },
+        { rootMargin: "0px 0px -10% 0px", threshold: 0.15 },
+      );
+      dsCards.forEach((card) => dsObserver.observe(card));
+
+      (function initMobileDsScale() {
+        const section = document.querySelector(".ds-scale");
+        const rows = Array.from(section.querySelectorAll(".ds-scale__row"));
+        const cards = Array.from(section.querySelectorAll(".ds-scale__card"));
+        const total = cards.length;
+
+        const origins = cards.map((card) => ({
+          parent: card.parentNode,
+          nextSibling: card.nextSibling,
+        }));
+
+        cards.forEach((card, i) =>
+          card.setAttribute("data-mobile-num", i + 1 + "/" + total),
+        );
+
+        let strip = null;
+        let active = false;
+
+        function setup() {
+          if (active) return;
+          active = true;
+          cards.forEach((card) => card.classList.add("revealed"));
+          strip = document.createElement("div");
+          strip.className = "ds-scale__mobile-strip";
+          cards.forEach((card) => {
+            const slide = document.createElement("div");
+            slide.className = "ds-scale__mobile-slide";
+            slide.appendChild(card);
+            strip.appendChild(slide);
+          });
+          rows.forEach((row) => (row.style.display = "none"));
+          section.appendChild(strip);
+        }
+
+        function teardown() {
+          if (!active) return;
+          active = false;
+          cards.forEach((card, i) => {
+            const { parent, nextSibling } = origins[i];
+            parent.insertBefore(card, nextSibling);
+            card.classList.remove("revealed");
+          });
+          strip.remove();
+          strip = null;
+          rows.forEach((row) => (row.style.display = ""));
+        }
+
+        function check() {
+          window.innerWidth <= 767 ? setup() : teardown();
+        }
+
+        if (window.innerWidth <= 767) setup();
+        window.addEventListener("resize", check);
+      })();
+    </script>
+  </body>
+</html>
