@@ -79,8 +79,19 @@
         position: fixed;
         top: 0;
         z-index: 100;
+        /* filter + blend-mode only added when scrolled (via JS) */
+      }
+
+      /* Scrolled state: invert + blend the whole header, hide nav */
+      header.is-scrolled {
         filter: invert(100%);
         mix-blend-mode: difference;
+      }
+
+      header.is-scrolled .header__nav,
+      header.is-scrolled .header__cta {
+        opacity: 0;
+        pointer-events: none;
       }
 
       .header__logo {
@@ -89,7 +100,14 @@
         transform: translateX(-50%);
         width: 72px;
         height: 26px;
+        /* invert only the logo so it shows white on the dark hero at top */
+        filter: invert(1);
         background: url("../images/kido.svg") no-repeat center / contain;
+      }
+
+      /* When header is scrolled the header filter already inverts the logo */
+      header.is-scrolled .header__logo {
+        filter: none;
       }
 
       .header__logo a {
@@ -101,29 +119,38 @@
       .header__nav {
         display: flex;
         gap: 8px;
+        transition: opacity 0.25s ease;
       }
 
-      .header__nav a, .header__cta {
+      /* Shared pill style — white outlined at top (on dark hero, no header filter) */
+      .header__nav a,
+      .nav__services-btn,
+      .header__cta {
         font-family: "haas", sans-serif;
         font-size: 18px;
         font-weight: 500;
         letter-spacing: 0.04em;
         color: #ffffff;
-        background: #1c1c1c;
+        background: transparent;
         text-decoration: none;
-        border: 1.5px solid #1c1c1c;
+        border: 1.5px solid rgba(255, 255, 255, 0.65);
         border-radius: 999px;
         padding: 12px 16px 10px;
         white-space: nowrap;
+        cursor: pointer;
+        transition: opacity 0.5s ease;
       }
 
-      .header__nav a:hover, .header__cta:hover {
-        background: transparent;
-        color: #1c1c1c;
+      .header__nav a:hover,
+      .nav__services-btn:hover,
+      .header__cta:hover {
+        border-color: #ffffff;
+        background: rgba(255, 255, 255, 0.1);
       }
 
       .header__cta {
         margin-left: auto;
+        transition: opacity 0.25s ease;
       }
 
       /* Services dropdown */
@@ -131,23 +158,9 @@
         position: relative;
       }
 
-      .nav__services-btn {
-        font-family: "haas", sans-serif;
-        font-size: 18px;
-        font-weight: 500;
-        letter-spacing: 0.04em;
-        color: #ffffff;
-        background: #1c1c1c;
-        border: 1.5px solid #1c1c1c;
-        border-radius: 999px;
-        padding: 12px 16px 10px;
-        white-space: nowrap;
-        cursor: pointer;
-      }
-
       .nav__services-btn.open {
-        background: transparent;
-        color: #1c1c1c;
+        background: rgba(255, 255, 255, 0.1);
+        border-color: #ffffff;
       }
 
       .nav__dropdown {
@@ -172,9 +185,9 @@
         font-weight: 500;
         letter-spacing: 0.04em;
         color: #ffffff;
-        background: #1c1c1c;
+        background: #181818;
         text-decoration: none;
-        border: 1.5px solid #1c1c1c;
+        border: 1.5px solid rgba(255, 255, 255, 0.65);
         border-radius: 999px;
         padding: 12px 20px 10px;
         white-space: nowrap;
@@ -182,8 +195,8 @@
       }
 
       .nav__dropdown a:hover {
-        background: transparent;
-        color: #1c1c1c;
+        border-color: #ffffff;
+        background: rgba(255, 255, 255, 0.1);
       }
 
       /* ─────────────────────────────────────────
@@ -1038,6 +1051,25 @@
     </footer>
 
     <script>
+      // Header: show/hide nav on scroll, toggle invert filter
+      const mainHeader = document.querySelector("header");
+
+      function updateHeader() {
+        if (window.scrollY > 100) {
+          mainHeader.classList.add("is-scrolled");
+        } else {
+          mainHeader.classList.remove("is-scrolled");
+        }
+      }
+
+      window.addEventListener("scroll", () => {
+        updateHeader();
+        // close dropdown on scroll
+        servicesDropdown?.classList.remove("open");
+        servicesBtn?.classList.remove("open");
+      }, { passive: true });
+      updateHeader();
+
       // Services dropdown
       const servicesBtn = document.getElementById("servicesBtn");
       const servicesDropdown = document.getElementById("servicesDropdown");
