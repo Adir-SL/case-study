@@ -18,7 +18,10 @@
       property="og:description"
       content="We help best in class companies to accelerate and optimize the design &amp; creative process by focusing on outstanding design and not mundane tasks."
     />
-    <meta property="og:image" content="https://wearekido.com/images/kido-social.jpg" />
+    <meta
+      property="og:image"
+      content="https://wearekido.com/images/kido-social.jpg"
+    />
     <meta property="og:url" content="https://wearekido.com/services" />
 
     <!-- Twitter -->
@@ -29,7 +32,10 @@
       name="twitter:description"
       content="We help best in class companies to accelerate and optimize the design &amp; creative process by focusing on outstanding design and not mundane tasks."
     />
-    <meta name="twitter:image" content="https://wearekido.com/images/kido-social.jpg" />
+    <meta
+      name="twitter:image"
+      content="https://wearekido.com/images/kido-social.jpg"
+    />
 
     <!-- Icons -->
     <link rel="icon" type="image/x-icon" href="../images/kido-icon.png" />
@@ -69,7 +75,7 @@
         align-items: center;
         width: 100%;
         padding: 0 clamp(24px, 3.75vw, 72px);
-        height: 64px;
+        height: 100px;
         position: fixed;
         top: 0;
         z-index: 100;
@@ -97,9 +103,9 @@
         gap: 8px;
       }
 
-      .header__nav a {
+      .header__nav a, .header__cta {
         font-family: "haas", sans-serif;
-        font-size: 13px;
+        font-size: 18px;
         font-weight: 500;
         letter-spacing: 0.04em;
         color: #ffffff;
@@ -107,84 +113,98 @@
         text-decoration: none;
         border: 1.5px solid #1c1c1c;
         border-radius: 999px;
-        padding: 5px 16px 3px;
+        padding: 12px 16px 10px;
         white-space: nowrap;
       }
 
-      .header__nav a:hover {
+      .header__nav a:hover, .header__cta:hover {
         background: transparent;
         color: #1c1c1c;
       }
 
       .header__cta {
-        font-family: "haas", sans-serif;
-        font-size: 13px;
-        font-weight: 500;
-        letter-spacing: 0.04em;
-        color: #ffffff;
-        background: #1c1c1c;
-        text-decoration: none;
-        padding: 5px 16px 3px;
-        border-radius: 999px;
-        border: 1.5px solid #1c1c1c;
-        white-space: nowrap;
         margin-left: auto;
-      }
-
-      .header__cta:hover {
-        background: transparent;
-        color: #1c1c1c;
       }
 
       /* ─────────────────────────────────────────
          Hero
       ───────────────────────────────────────── */
       .hero {
-        display: flex;
+        position: relative;
         width: 100%;
-        min-height: clamp(400px, 48vw, 920px);
-      }
-
-      .hero__left {
-        flex: 55 0 0%;
         background: #181818;
-        padding: clamp(96px, 10vw, 192px) clamp(24px, 6.25vw, 120px) clamp(48px, 5vw, 96px);
-        display: flex;
-        align-items: flex-end;
-      }
-
-      .hero__heading {
-        font-family: "kepler", Georgia, serif;
-        font-size: clamp(72px, 9.5vw, 182px);
-        font-weight: 400;
-        font-style: italic;
-        line-height: 0.88;
-        letter-spacing: -0.04em;
-        color: #efefef;
-      }
-
-      .hero__right {
-        flex: 45 0 0%;
-        background: #181818;
+        min-height: clamp(400px, 50vw, 920px);
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: clamp(24px, 4vw, 72px);
-      }
-
-      .hero__media {
-        width: 100%;
-        max-width: 520px;
-        border-radius: 6px;
         overflow: hidden;
-        display: block;
+        padding-top: 200px;
       }
 
-      .hero__media img {
+      .hero__heading {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: flex-start;
+        margin-top: 110px;
+        justify-content: center;
+        font-family: "kepler", Georgia, serif;
+        font-size: 18vw;
+        font-weight: 400;
+        font-style: italic;
+        line-height: 1;
+        letter-spacing: -0.04em;
+        color: #efefef;
+        white-space: nowrap;
+        z-index: 1;
+        pointer-events: none;
+      }
+
+      .hero__video-wrap {
+        position: relative;
+        z-index: 2;
+        width: clamp(280px, 54%, 800px);
+        flex-shrink: 0;
+      }
+
+      .hero__video {
         width: 100%;
         height: auto;
         display: block;
-        object-fit: contain;
+        cursor: pointer;
+      }
+
+      .hero__video-icon {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+        opacity: 0;
+      }
+
+      .hero__video-icon svg {
+        width: clamp(40px, 5vw, 72px);
+        height: clamp(40px, 5vw, 72px);
+        fill: rgba(255, 255, 255, 0.9);
+        filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
+      }
+
+      .hero__video-icon.flash {
+        animation: iconFlash 0.6s ease forwards;
+      }
+
+      @keyframes iconFlash {
+        0% {
+          opacity: 1;
+        }
+        60% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
       }
 
       /* ─────────────────────────────────────────
@@ -230,18 +250,22 @@
       }
 
       .services-list__item {
-        background: #FCFCF7;
+        background: #fcfcf7;
         margin-top: 8px;
         margin-bottom: 8px;
       }
 
       .services-list__item:hover {
-        background: #A08C5F;
+        background: #a08c5f;
       }
 
       .services-list__link {
         display: grid;
-        grid-template-columns: clamp(40px, 4.5vw, 72px) clamp(80px, 8vw, 120px) 1fr 1fr clamp(24px, 2.5vw, 40px);
+        grid-template-columns: clamp(40px, 4.5vw, 72px) clamp(
+            80px,
+            8vw,
+            120px
+          ) 1fr 1fr clamp(24px, 2.5vw, 40px);
         align-items: center;
         gap: clamp(16px, 2.5vw, 40px);
         padding: clamp(24px, 3.5vw, 56px) clamp(24px, 6.25vw, 120px);
@@ -398,8 +422,12 @@
       }
 
       @keyframes clientsStripScroll {
-        0%   { background-position: 0% 0%; }
-        100% { background-position: calc(100% - 80vw) 0%; }
+        0% {
+          background-position: 0% 0%;
+        }
+        100% {
+          background-position: calc(100% - 80vw) 0%;
+        }
       }
 
       /* ─────────────────────────────────────────
@@ -573,7 +601,11 @@
       ───────────────────────────────────────── */
       @media (max-width: 1199px) {
         .services-list__link {
-          grid-template-columns: clamp(36px, 4vw, 56px) clamp(64px, 7vw, 96px) 1fr 1fr 24px;
+          grid-template-columns: clamp(36px, 4vw, 56px) clamp(
+              64px,
+              7vw,
+              96px
+            ) 1fr 1fr 24px;
         }
       }
 
@@ -588,16 +620,15 @@
 
         /* Hero */
         .hero {
-          flex-direction: column;
-          min-height: unset;
+          min-height: clamp(260px, 60vw, 480px);
         }
 
-        .hero__left {
-          padding: 80px 24px 40px;
+        .hero__heading {
+          font-size: clamp(48px, 13vw, 100px);
         }
 
-        .hero__right {
-          padding: 32px 24px 40px;
+        .hero__video-wrap {
+          width: 85%;
         }
 
         /* Services list */
@@ -701,7 +732,6 @@
     </style>
   </head>
   <body>
-
     <!-- ── Header ── -->
     <header>
       <nav class="header__nav">
@@ -715,17 +745,21 @@
 
     <!-- ── Hero ── -->
     <section class="hero">
-      <div class="hero__left">
-        <h1 class="hero__heading">We Are<br />Kido</h1>
-      </div>
-      <div class="hero__right">
-        <picture class="hero__media">
-          <img
-            src="images/il-services.svg"
-            alt="Kido services illustration"
-            loading="eager"
-          />
-        </picture>
+      <h1 class="hero__heading">We Are Kido</h1>
+      <div class="hero__video-wrap">
+        <video
+          class="hero__video"
+          src="../images/sizzle-reel_v6.mp4"
+          autoplay
+          loop
+          muted
+          playsinline
+        ></video>
+        <div class="hero__video-icon" id="heroVideoIcon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path id="heroVideoIconPath" d="M8 5v14l11-7z" />
+          </svg>
+        </div>
       </div>
     </section>
 
@@ -743,7 +777,6 @@
       <hr class="services-list__hr" />
       <p class="services-list__label geist-label">[ SERVICES ]</p>
       <ul class="services-list__items">
-
         <li class="services-list__item">
           <a href="design_infrastructure.html" class="services-list__link">
             <span class="svc-num">01</span>
@@ -752,7 +785,9 @@
             </span>
             <span class="svc-name">Design Infrastructure</span>
             <span class="svc-desc">Build the system once. Scale forever.</span>
-            <span class="svc-arrow" aria-hidden="true"><img src="images/arrow.svg" alt="" /></span>
+            <span class="svc-arrow" aria-hidden="true"
+              ><img src="images/arrow.svg" alt=""
+            /></span>
           </a>
         </li>
 
@@ -763,8 +798,12 @@
               <img src="images/pd_desktop.svg" alt="" />
             </span>
             <span class="svc-name">Product design</span>
-            <span class="svc-desc">From vision to scalable product systems</span>
-            <span class="svc-arrow" aria-hidden="true"><img src="images/arrow.svg" alt="" /></span>
+            <span class="svc-desc"
+              >From vision to scalable product systems</span
+            >
+            <span class="svc-arrow" aria-hidden="true"
+              ><img src="images/arrow.svg" alt=""
+            /></span>
           </a>
         </li>
 
@@ -776,7 +815,9 @@
             </span>
             <span class="svc-name">DesignOps</span>
             <span class="svc-desc">Turning Design Into an Operating Model</span>
-            <span class="svc-arrow" aria-hidden="true"><img src="images/arrow.svg" alt="" /></span>
+            <span class="svc-arrow" aria-hidden="true"
+              ><img src="images/arrow.svg" alt=""
+            /></span>
           </a>
         </li>
 
@@ -788,7 +829,9 @@
             </span>
             <span class="svc-name">Lean branding</span>
             <span class="svc-desc">Clear brand, no bloat</span>
-            <span class="svc-arrow" aria-hidden="true"><img src="images/arrow.svg" alt="" /></span>
+            <span class="svc-arrow" aria-hidden="true"
+              ><img src="images/arrow.svg" alt=""
+            /></span>
           </a>
         </li>
 
@@ -799,11 +842,14 @@
               <img src="images/fd_desktop.svg" alt="" />
             </span>
             <span class="svc-name">Frontend development and automations</span>
-            <span class="svc-desc">Scalable frontend starts with strong foundations</span>
-            <span class="svc-arrow" aria-hidden="true"><img src="images/arrow.svg" alt="" /></span>
+            <span class="svc-desc"
+              >Scalable frontend starts with strong foundations</span
+            >
+            <span class="svc-arrow" aria-hidden="true"
+              ><img src="images/arrow.svg" alt=""
+            /></span>
           </a>
         </li>
-
       </ul>
     </section>
 
@@ -811,14 +857,25 @@
     <section class="testimonial" aria-label="Client testimonial">
       <div class="testimonial__inner">
         <blockquote class="testimonial__quote">
-          "Working with Kido was a game-changer for our brand and digital launch.
-          They didn't just help us execute design, they partnered in building a
-          scalable design system and website infrastructure while brand work was
-          still&nbsp;…"
+          "Working with Kido was a game-changer for our brand and digital
+          launch. They didn't just help us execute design, they partnered in
+          building a scalable design system and website infrastructure while
+          brand work was still&nbsp;…"
         </blockquote>
         <p class="testimonial__attribution">
-          <span>Hagar<span class="spacer">&nbsp;</span>Nahum<span class="spacer">&nbsp;</span>Brockmann</span>
-          <span>Senior<span class="spacer">&nbsp;</span>Director<span class="spacer">&nbsp;</span>of<span class="spacer">&nbsp;</span>Design<span class="spacer">&nbsp;</span>&amp;<span class="spacer">&nbsp;</span>Creative</span>
+          <span
+            >Hagar<span class="spacer">&nbsp;</span>Nahum<span class="spacer"
+              >&nbsp;</span
+            >Brockmann</span
+          >
+          <span
+            >Senior<span class="spacer">&nbsp;</span>Director<span
+              class="spacer"
+              >&nbsp;</span
+            >of<span class="spacer">&nbsp;</span>Design<span class="spacer"
+              >&nbsp;</span
+            >&amp;<span class="spacer">&nbsp;</span>Creative</span
+          >
           <span class="testimonial__attribution-company">AppsFlyer</span>
         </p>
         <div class="testimonial__dots" aria-hidden="true">
@@ -834,7 +891,11 @@
     <!-- ── Clients ── -->
     <section class="clients" aria-label="Selected clients">
       <p class="clients__label geist-label">[ COMPANIES ]</p>
-      <div class="clients__strip" role="img" aria-label="Selected clients logos"></div>
+      <div
+        class="clients__strip"
+        role="img"
+        aria-label="Selected clients logos"
+      ></div>
     </section>
 
     <!-- ── Case Studies ── -->
@@ -878,15 +939,21 @@
       <div class="footer__links">
         <div class="footer__links-col">
           <span>Visit DesOps Israel</span>
-          <a href="https://www.desops.co.il" target="_blank">Learn about DesOps</a>
+          <a href="https://www.desops.co.il" target="_blank"
+            >Learn about DesOps</a
+          >
         </div>
         <div class="footer__links-col">
           <span>Follow on LinkedIn</span>
-          <a href="https://www.linkedin.com/company/wearekido" target="_blank">Read weekly updates</a>
+          <a href="https://www.linkedin.com/company/wearekido" target="_blank"
+            >Read weekly updates</a
+          >
         </div>
         <div class="footer__links-col">
           <span>Check out Tidy</span>
-          <a href="https://tidy.guide" target="_blank">Integrate Figma automations</a>
+          <a href="https://tidy.guide" target="_blank"
+            >Integrate Figma automations</a
+          >
         </div>
       </div>
 
@@ -902,6 +969,27 @@
     </footer>
 
     <script>
+      // Hero video: click to pause / play
+      const heroVideo = document.querySelector(".hero__video");
+      const heroIcon = document.getElementById("heroVideoIcon");
+      const heroIconPath = document.getElementById("heroVideoIconPath");
+
+      const PLAY_PATH = "M8 5v14l11-7z";
+      const PAUSE_PATH = "M6 19h4V5H6v14zm8-14v14h4V5h-4z";
+
+      heroVideo.addEventListener("click", () => {
+        if (heroVideo.paused) {
+          heroVideo.play();
+          heroIconPath.setAttribute("d", PLAY_PATH);
+        } else {
+          heroVideo.pause();
+          heroIconPath.setAttribute("d", PAUSE_PATH);
+        }
+        heroIcon.classList.remove("flash");
+        void heroIcon.offsetWidth; // reflow to restart animation
+        heroIcon.classList.add("flash");
+      });
+
       // Services list: scroll-reveal fade-in
       const svcItems = document.querySelectorAll(".services-list__item");
       const svcObserver = new IntersectionObserver(
@@ -910,7 +998,7 @@
             entry.target.style.opacity = entry.isIntersecting ? "1" : "0.25";
           });
         },
-        { rootMargin: "-20% 0px -20% 0px", threshold: 0 }
+        { rootMargin: "-20% 0px -20% 0px", threshold: 0 },
       );
       svcItems.forEach((item) => {
         item.style.opacity = "0.25";
