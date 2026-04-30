@@ -126,6 +126,66 @@
         margin-left: auto;
       }
 
+      /* Services dropdown */
+      .nav__dropdown-wrap {
+        position: relative;
+      }
+
+      .nav__services-btn {
+        font-family: "haas", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        color: #ffffff;
+        background: #1c1c1c;
+        border: 1.5px solid #1c1c1c;
+        border-radius: 999px;
+        padding: 12px 16px 10px;
+        white-space: nowrap;
+        cursor: pointer;
+      }
+
+      .nav__services-btn.open {
+        background: transparent;
+        color: #1c1c1c;
+      }
+
+      .nav__dropdown {
+        position: absolute;
+        top: calc(100% + 8px);
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      .nav__dropdown.open {
+        opacity: 1;
+        pointer-events: all;
+      }
+
+      .nav__dropdown a {
+        font-family: "haas", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        color: #ffffff;
+        background: #1c1c1c;
+        text-decoration: none;
+        border: 1.5px solid #1c1c1c;
+        border-radius: 999px;
+        padding: 12px 20px 10px;
+        white-space: nowrap;
+        display: block;
+      }
+
+      .nav__dropdown a:hover {
+        background: transparent;
+        color: #1c1c1c;
+      }
+
       /* ─────────────────────────────────────────
          Hero
       ───────────────────────────────────────── */
@@ -736,7 +796,16 @@
     <header>
       <nav class="header__nav">
         <a href="../about">ABOUT</a>
-        <a href="./">SERVICES</a>
+        <div class="nav__dropdown-wrap">
+          <button class="nav__services-btn" id="servicesBtn" type="button">SERVICES</button>
+          <div class="nav__dropdown" id="servicesDropdown">
+            <a href="design_infrastructure.html">DESIGN INFRASTRUCTURE</a>
+            <a href="product_design.html">PRODUCT DESIGN</a>
+            <a href="design_ops.html">DESIGN OPS</a>
+            <a href="lean_branding.html">LEAN BRANDING</a>
+            <a href="frontend_dev.html">FRONT END DEVELOPMENT &amp; AUTOMATIONS</a>
+          </div>
+        </div>
         <a href="../case-studies">CASE STUDIES</a>
       </nav>
       <div class="header__logo"><a href="../" aria-label="Kido home"></a></div>
@@ -969,6 +1038,21 @@
     </footer>
 
     <script>
+      // Services dropdown
+      const servicesBtn = document.getElementById("servicesBtn");
+      const servicesDropdown = document.getElementById("servicesDropdown");
+
+      servicesBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const isOpen = servicesDropdown.classList.toggle("open");
+        servicesBtn.classList.toggle("open", isOpen);
+      });
+
+      document.addEventListener("click", () => {
+        servicesDropdown.classList.remove("open");
+        servicesBtn.classList.remove("open");
+      });
+
       // Hero video: click to pause / play
       const heroVideo = document.querySelector(".hero__video");
       const heroIcon = document.getElementById("heroVideoIcon");
