@@ -64,7 +64,7 @@
 
       html,
       body {
-        overflow-x: hidden;
+        overflow-x: clip;
         background-color: #181818;
         transition: background-color 0.4s ease;
       }
@@ -83,22 +83,10 @@
         width: 100%;
         padding: 0 clamp(24px, 3.75vw, 72px);
         height: 100px;
-        position: fixed;
+        position: sticky;
         top: 0;
         z-index: 100;
-        /* filter + blend-mode only added when scrolled (via JS) */
-      }
-
-      /* Scrolled state: invert + blend the whole header, hide nav */
-      header.is-scrolled {
-        filter: invert(100%);
-        mix-blend-mode: difference;
-      }
-
-      header.is-scrolled .header__nav,
-      header.is-scrolled .header__cta {
-        opacity: 0;
-        pointer-events: none;
+        background: #f5f5f0;
       }
 
       .header__logo {
@@ -107,14 +95,7 @@
         transform: translateX(-50%);
         width: 72px;
         height: 26px;
-        /* invert only the logo so it shows white on the dark hero at top */
-        filter: invert(1);
         background: url("../images/kido.svg") no-repeat center / contain;
-      }
-
-      /* When header is scrolled the header filter already inverts the logo */
-      header.is-scrolled .header__logo {
-        filter: none;
       }
 
       .header__logo a {
@@ -129,7 +110,7 @@
         transition: opacity 0.25s ease;
       }
 
-      /* Shared pill style — white outlined at top (on dark hero, no header filter) */
+      /* Shared pill style */
       .header__nav a,
       .nav__services-btn,
       .header__cta {
@@ -137,22 +118,21 @@
         font-size: 18px;
         font-weight: 500;
         letter-spacing: 0.04em;
-        color: #ffffff;
-        background: transparent;
+        color: #181818;
+        background: #e4e4e4;
         text-decoration: none;
-        border: 1.5px solid rgba(255, 255, 255, 0.65);
+        border: none;
         border-radius: 999px;
         padding: 12px 16px 10px;
         white-space: nowrap;
         cursor: pointer;
-        transition: opacity 0.5s ease;
       }
 
       .header__nav a:hover,
       .nav__services-btn:hover,
       .header__cta:hover {
-        border-color: #ffffff;
-        background: rgba(255, 255, 255, 0.1);
+        background: #181818;
+        color: #f5f5f5;
       }
 
       .header__cta {
@@ -166,8 +146,8 @@
       }
 
       .nav__services-btn.open {
-        background: rgba(255, 255, 255, 0.1);
-        border-color: #ffffff;
+        background: #181818;
+        color: #f5f5f5;
       }
 
       .nav__dropdown {
@@ -179,31 +159,14 @@
         gap: 8px;
         opacity: 0;
         pointer-events: none;
+        background-color: #f5f5f0ba;
+        box-shadow: 0 0 40px 70px #f5f5f0ba;
+        z-index: -1;
       }
 
       .nav__dropdown.open {
         opacity: 1;
         pointer-events: all;
-      }
-
-      .nav__dropdown a {
-        font-family: "haas", sans-serif;
-        font-size: 18px;
-        font-weight: 500;
-        letter-spacing: 0.04em;
-        color: #ffffff;
-        background: #181818;
-        text-decoration: none;
-        border: 1.5px solid rgba(255, 255, 255, 0.65);
-        border-radius: 999px;
-        padding: 12px 20px 10px;
-        white-space: nowrap;
-        display: block;
-      }
-
-      .nav__dropdown a:hover {
-        border-color: #ffffff;
-        background: rgba(255, 255, 255, 0.1);
       }
 
       /* ─────────────────────────────────────────
@@ -215,18 +178,18 @@
         background: #181818;
         min-height: clamp(400px, 50vw, 920px);
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         overflow: hidden;
-        padding-top: 200px;
       }
 
       .hero__heading {
         position: absolute;
-        inset: 0;
+        top: 0;
+        left: 0;
+        right: 0;
         display: flex;
         align-items: flex-start;
-        margin-top: 110px;
         justify-content: center;
         font-family: "kepler", Georgia, serif;
         font-size: 18vw;
@@ -236,6 +199,7 @@
         letter-spacing: -0.04em;
         color: #efefef;
         white-space: nowrap;
+        overflow: hidden;
         z-index: 1;
         pointer-events: none;
       }
@@ -243,8 +207,9 @@
       .hero__video-wrap {
         position: relative;
         z-index: 2;
-        width: clamp(280px, 54%, 800px);
+        width: max(280px, 54%);
         flex-shrink: 0;
+        margin-top: 11%;
       }
 
       .hero__video {
@@ -848,6 +813,26 @@
     </style>
   </head>
   <body>
+    <!-- ── Hero ── -->
+    <section class="hero">
+      <h1 class="hero__heading">We Are Kido</h1>
+      <div class="hero__video-wrap">
+        <video
+          class="hero__video"
+          src="../images/sizzle-reel_v6.mp4"
+          autoplay
+          loop
+          muted
+          playsinline
+        ></video>
+        <div class="hero__video-icon" id="heroVideoIcon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path id="heroVideoIconPath" d="M8 5v14l11-7z" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
     <!-- ── Header ── -->
     <header>
       <nav class="header__nav">
@@ -868,29 +853,9 @@
         </div>
         <a href="../case-studies">CASE STUDIES</a>
       </nav>
-      <div class="header__logo"><a href="" aria-label="Kido home"></a></div>
+      <div class="header__logo"><a href="../" aria-label="Kido home"></a></div>
       <a class="header__cta" href="mailto:hello@wearekido.com">LET'S TALK</a>
     </header>
-
-    <!-- ── Hero ── -->
-    <section class="hero">
-      <h1 class="hero__heading">We Are Kido</h1>
-      <div class="hero__video-wrap">
-        <video
-          class="hero__video"
-          src="../images/sizzle-reel_v6.mp4"
-          autoplay
-          loop
-          muted
-          playsinline
-        ></video>
-        <div class="hero__video-icon" id="heroVideoIcon">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path id="heroVideoIconPath" d="M8 5v14l11-7z" />
-          </svg>
-        </div>
-      </div>
-    </section>
 
     <!-- ── Intro ── -->
     <section class="intro">
@@ -994,8 +959,20 @@
               brand work was still&nbsp;…"
             </blockquote>
             <p class="testimonial__attribution">
-              <span>Hagar<span class="spacer">&nbsp;</span>Nahum<span class="spacer">&nbsp;</span>Brockmann</span>
-              <span>Senior<span class="spacer">&nbsp;</span>Director<span class="spacer">&nbsp;</span>of<span class="spacer">&nbsp;</span>Design<span class="spacer">&nbsp;</span>&amp;<span class="spacer">&nbsp;</span>Creative</span>
+              <span
+                >Hagar<span class="spacer">&nbsp;</span>Nahum<span
+                  class="spacer"
+                  >&nbsp;</span
+                >Brockmann</span
+              >
+              <span
+                >Senior<span class="spacer">&nbsp;</span>Director<span
+                  class="spacer"
+                  >&nbsp;</span
+                >of<span class="spacer">&nbsp;</span>Design<span class="spacer"
+                  >&nbsp;</span
+                >&amp;<span class="spacer">&nbsp;</span>Creative</span
+              >
               <span class="testimonial__attribution-company">AppsFlyer</span>
             </p>
           </div>
@@ -1007,8 +984,20 @@
               brand work was still&nbsp;…"
             </blockquote>
             <p class="testimonial__attribution">
-              <span>Hagar<span class="spacer">&nbsp;</span>Nahum<span class="spacer">&nbsp;</span>Brockmann</span>
-              <span>Senior<span class="spacer">&nbsp;</span>Director<span class="spacer">&nbsp;</span>of<span class="spacer">&nbsp;</span>Design<span class="spacer">&nbsp;</span>&amp;<span class="spacer">&nbsp;</span>Creative</span>
+              <span
+                >Hagar<span class="spacer">&nbsp;</span>Nahum<span
+                  class="spacer"
+                  >&nbsp;</span
+                >Brockmann</span
+              >
+              <span
+                >Senior<span class="spacer">&nbsp;</span>Director<span
+                  class="spacer"
+                  >&nbsp;</span
+                >of<span class="spacer">&nbsp;</span>Design<span class="spacer"
+                  >&nbsp;</span
+                >&amp;<span class="spacer">&nbsp;</span>Creative</span
+              >
               <span class="testimonial__attribution-company">AppsFlyer</span>
             </p>
           </div>
@@ -1020,8 +1009,20 @@
               brand work was still&nbsp;…"
             </blockquote>
             <p class="testimonial__attribution">
-              <span>Hagar<span class="spacer">&nbsp;</span>Nahum<span class="spacer">&nbsp;</span>Brockmann</span>
-              <span>Senior<span class="spacer">&nbsp;</span>Director<span class="spacer">&nbsp;</span>of<span class="spacer">&nbsp;</span>Design<span class="spacer">&nbsp;</span>&amp;<span class="spacer">&nbsp;</span>Creative</span>
+              <span
+                >Hagar<span class="spacer">&nbsp;</span>Nahum<span
+                  class="spacer"
+                  >&nbsp;</span
+                >Brockmann</span
+              >
+              <span
+                >Senior<span class="spacer">&nbsp;</span>Director<span
+                  class="spacer"
+                  >&nbsp;</span
+                >of<span class="spacer">&nbsp;</span>Design<span class="spacer"
+                  >&nbsp;</span
+                >&amp;<span class="spacer">&nbsp;</span>Creative</span
+              >
               <span class="testimonial__attribution-company">AppsFlyer</span>
             </p>
           </div>
@@ -1033,8 +1034,20 @@
               brand work was still&nbsp;…"
             </blockquote>
             <p class="testimonial__attribution">
-              <span>Hagar<span class="spacer">&nbsp;</span>Nahum<span class="spacer">&nbsp;</span>Brockmann</span>
-              <span>Senior<span class="spacer">&nbsp;</span>Director<span class="spacer">&nbsp;</span>of<span class="spacer">&nbsp;</span>Design<span class="spacer">&nbsp;</span>&amp;<span class="spacer">&nbsp;</span>Creative</span>
+              <span
+                >Hagar<span class="spacer">&nbsp;</span>Nahum<span
+                  class="spacer"
+                  >&nbsp;</span
+                >Brockmann</span
+              >
+              <span
+                >Senior<span class="spacer">&nbsp;</span>Director<span
+                  class="spacer"
+                  >&nbsp;</span
+                >of<span class="spacer">&nbsp;</span>Design<span class="spacer"
+                  >&nbsp;</span
+                >&amp;<span class="spacer">&nbsp;</span>Creative</span
+              >
               <span class="testimonial__attribution-company">AppsFlyer</span>
             </p>
           </div>
@@ -1046,8 +1059,20 @@
               brand work was still&nbsp;…"
             </blockquote>
             <p class="testimonial__attribution">
-              <span>Hagar<span class="spacer">&nbsp;</span>Nahum<span class="spacer">&nbsp;</span>Brockmann</span>
-              <span>Senior<span class="spacer">&nbsp;</span>Director<span class="spacer">&nbsp;</span>of<span class="spacer">&nbsp;</span>Design<span class="spacer">&nbsp;</span>&amp;<span class="spacer">&nbsp;</span>Creative</span>
+              <span
+                >Hagar<span class="spacer">&nbsp;</span>Nahum<span
+                  class="spacer"
+                  >&nbsp;</span
+                >Brockmann</span
+              >
+              <span
+                >Senior<span class="spacer">&nbsp;</span>Director<span
+                  class="spacer"
+                  >&nbsp;</span
+                >of<span class="spacer">&nbsp;</span>Design<span class="spacer"
+                  >&nbsp;</span
+                >&amp;<span class="spacer">&nbsp;</span>Creative</span
+              >
               <span class="testimonial__attribution-company">AppsFlyer</span>
             </p>
           </div>
@@ -1059,14 +1084,29 @@
               brand work was still&nbsp;…"
             </blockquote>
             <p class="testimonial__attribution">
-              <span>Hagar<span class="spacer">&nbsp;</span>Nahum<span class="spacer">&nbsp;</span>Brockmann</span>
-              <span>Senior<span class="spacer">&nbsp;</span>Director<span class="spacer">&nbsp;</span>of<span class="spacer">&nbsp;</span>Design<span class="spacer">&nbsp;</span>&amp;<span class="spacer">&nbsp;</span>Creative</span>
+              <span
+                >Hagar<span class="spacer">&nbsp;</span>Nahum<span
+                  class="spacer"
+                  >&nbsp;</span
+                >Brockmann</span
+              >
+              <span
+                >Senior<span class="spacer">&nbsp;</span>Director<span
+                  class="spacer"
+                  >&nbsp;</span
+                >of<span class="spacer">&nbsp;</span>Design<span class="spacer"
+                  >&nbsp;</span
+                >&amp;<span class="spacer">&nbsp;</span>Creative</span
+              >
               <span class="testimonial__attribution-company">AppsFlyer</span>
             </p>
           </div>
         </div>
         <div class="testimonial__dots">
-          <button class="testimonial__dot testimonial__dot--active" aria-label="Testimonial 1"></button>
+          <button
+            class="testimonial__dot testimonial__dot--active"
+            aria-label="Testimonial 1"
+          ></button>
           <button class="testimonial__dot" aria-label="Testimonial 2"></button>
           <button class="testimonial__dot" aria-label="Testimonial 3"></button>
           <button class="testimonial__dot" aria-label="Testimonial 4"></button>
@@ -1157,28 +1197,15 @@
     </footer>
 
     <script>
-      // Header: show/hide nav on scroll, toggle invert filter
-      const mainHeader = document.querySelector("header");
-
-      function updateHeader() {
-        if (window.scrollY > 100) {
-          mainHeader.classList.add("is-scrolled");
-        } else {
-          mainHeader.classList.remove("is-scrolled");
-        }
-      }
-
+      // Close dropdown on scroll
       window.addEventListener(
         "scroll",
         () => {
-          updateHeader();
-          // close dropdown on scroll
           servicesDropdown?.classList.remove("open");
           servicesBtn?.classList.remove("open");
         },
         { passive: true },
       );
-      updateHeader();
 
       // Services dropdown
       const servicesBtn = document.getElementById("servicesBtn");
@@ -1198,8 +1225,12 @@
       // Switch background once hero scrolls out of view
       const heroSection = document.querySelector(".hero");
       new IntersectionObserver(
-        ([entry]) => document.body.classList.toggle("page-scrolled", !entry.isIntersecting),
-        { threshold: 0 }
+        ([entry]) =>
+          document.body.classList.toggle(
+            "page-scrolled",
+            !entry.isIntersecting,
+          ),
+        { threshold: 0 },
       ).observe(heroSection);
 
       // Hero video: click to pause / play
@@ -1231,7 +1262,8 @@
       const T_DUR = 380;
 
       function tGoTo(rawIndex) {
-        const next = ((rawIndex % tSlides.length) + tSlides.length) % tSlides.length;
+        const next =
+          ((rawIndex % tSlides.length) + tSlides.length) % tSlides.length;
         if (next === tCurrent) return;
 
         const dir = rawIndex >= tCurrent ? 1 : -1;
@@ -1249,9 +1281,11 @@
         // Set incoming off-screen with no transition, then slide in
         inSlide.classList.add("testimonial__slide--active");
         inSlide.style.cssText = `transition: none; opacity: 0; transform: translateX(${48 * dir}px); pointer-events: none;`;
-        requestAnimationFrame(() => requestAnimationFrame(() => {
-          inSlide.style.cssText = `transition: opacity ${T_DUR}ms ease, transform ${T_DUR}ms ease; opacity: 1; transform: translateX(0); pointer-events: auto;`;
-        }));
+        requestAnimationFrame(() =>
+          requestAnimationFrame(() => {
+            inSlide.style.cssText = `transition: opacity ${T_DUR}ms ease, transform ${T_DUR}ms ease; opacity: 1; transform: translateX(0); pointer-events: auto;`;
+          }),
+        );
 
         tCleanup = setTimeout(() => {
           outSlide.classList.remove("testimonial__slide--active");
@@ -1264,11 +1298,22 @@
 
       let tTouchStartX = 0;
       const tSlider = document.getElementById("testimonialSlider");
-      tSlider.addEventListener("touchstart", (e) => { tTouchStartX = e.touches[0].clientX; }, { passive: true });
-      tSlider.addEventListener("touchend", (e) => {
-        const diff = tTouchStartX - e.changedTouches[0].clientX;
-        if (Math.abs(diff) > 40) tGoTo(diff > 0 ? tCurrent + 1 : tCurrent - 1);
-      }, { passive: true });
+      tSlider.addEventListener(
+        "touchstart",
+        (e) => {
+          tTouchStartX = e.touches[0].clientX;
+        },
+        { passive: true },
+      );
+      tSlider.addEventListener(
+        "touchend",
+        (e) => {
+          const diff = tTouchStartX - e.changedTouches[0].clientX;
+          if (Math.abs(diff) > 40)
+            tGoTo(diff > 0 ? tCurrent + 1 : tCurrent - 1);
+        },
+        { passive: true },
+      );
 
       // Services list: scroll-reveal fade-in
       const svcItems = document.querySelectorAll(".services-list__item");
