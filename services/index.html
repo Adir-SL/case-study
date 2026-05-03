@@ -181,6 +181,7 @@
         align-items: flex-start;
         justify-content: center;
         overflow: hidden;
+        z-index: 101;
       }
 
       .hero__heading {
@@ -202,6 +203,7 @@
         overflow: hidden;
         z-index: 1;
         pointer-events: none;
+        animation: heroHeadingIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
       }
 
       .hero__video-wrap {
@@ -210,6 +212,31 @@
         width: max(280px, 54%);
         flex-shrink: 0;
         margin-top: 11%;
+        animation: heroVideoIn 0.4s cubic-bezier(0.22, 1, 0.36, 1) both 0.2s;
+      }
+
+      @keyframes heroHeadingIn {
+        from {
+          opacity: 0;
+          transform: translateY(150%);
+          scale: 0;
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+          scale: 1;
+        }
+      }
+
+      @keyframes heroVideoIn {
+        from {
+          opacity: 0;
+          scale: 1.2;
+        }
+        to {
+          opacity: 1;
+          scale: 1;
+        }
       }
 
       .hero__video {
