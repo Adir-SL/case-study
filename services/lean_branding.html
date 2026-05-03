@@ -485,13 +485,19 @@
         margin-top: 60px;
       }
 
+      .sp-card__img {
+        width: 100%;
+        overflow: hidden;
+      }
+
       .sp-card img {
         width: 100%;
-        transition: transform 300ms ease-in-out;
+        display: block;
+        transition: transform 300ms ease;
       }
 
       .sp-card:hover img {
-        transform: scale(1.05);
+        transform: scale(1.04);
       }
 
       .sp-card h2 {
@@ -1008,21 +1014,21 @@
       <div class="sp-label geist-label">[ CASE STUDIES ]</div>
       <div class="sp-cards">
         <a href="../gcc" class="sp-card">
-          <img src="../images/gcc-social.jpg" alt="GCC Case Study" />
+          <div class="sp-card__img"><img src="../images/gcc-social.jpg" alt="GCC Case Study" /></div>
           <div class="sp-card-info">
             <h2>GCC</h2>
             <h3>Systemized Branding at Speed: 3 Sites in 10 Weeks</h3>
           </div>
         </a>
         <a href="../appsflyer" class="sp-card">
-          <img src="../images/case-appsflyer.jpg" alt="AppsFlyer Case Study" />
+          <div class="sp-card__img"><img src="../images/case-appsflyer.jpg" alt="AppsFlyer Case Study" /></div>
           <div class="sp-card-info">
             <h2>AppsFlyer</h2>
             <h3>Brand Reposition Implementation - Building While Shipping</h3>
           </div>
         </a>
         <a href="../amdocs" class="sp-card">
-          <img src="../images/case-amdocs.jpg" alt="Amdocs Case Study" />
+          <div class="sp-card__img"><img src="../images/case-amdocs.jpg" alt="Amdocs Case Study" /></div>
           <div class="sp-card-info">
             <h2>Amdocs</h2>
             <h3>One Library to Rule Them All</h3>
