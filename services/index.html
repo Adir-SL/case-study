@@ -468,10 +468,32 @@
         height: 7px;
         border-radius: 50%;
         background: #36617c;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        flex-shrink: 0;
       }
 
       .testimonial__dot--active {
         background: #d9d9d9;
+      }
+
+      .testimonial__slider {
+        display: grid;
+      }
+
+      .testimonial__slide {
+        grid-area: 1 / 1;
+        display: flex;
+        flex-direction: column;
+        gap: clamp(32px, 2.9vw, 56px);
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      .testimonial__slide--active {
+        opacity: 1;
+        pointer-events: auto;
       }
 
       /* ─────────────────────────────────────────
@@ -950,36 +972,95 @@
     </section>
 
     <!-- ── Testimonial ── -->
-    <section class="testimonial" aria-label="Client testimonial">
+    <section class="testimonial" aria-label="Client testimonials">
       <div class="testimonial__inner">
-        <blockquote class="testimonial__quote">
-          "Working with Kido was a game-changer for our brand and digital
-          launch. They didn't just help us execute design, they partnered in
-          building a scalable design system and website infrastructure while
-          brand work was still&nbsp;…"
-        </blockquote>
-        <p class="testimonial__attribution">
-          <span
-            >Hagar<span class="spacer">&nbsp;</span>Nahum<span class="spacer"
-              >&nbsp;</span
-            >Brockmann</span
-          >
-          <span
-            >Senior<span class="spacer">&nbsp;</span>Director<span
-              class="spacer"
-              >&nbsp;</span
-            >of<span class="spacer">&nbsp;</span>Design<span class="spacer"
-              >&nbsp;</span
-            >&amp;<span class="spacer">&nbsp;</span>Creative</span
-          >
-          <span class="testimonial__attribution-company">AppsFlyer</span>
-        </p>
-        <div class="testimonial__dots" aria-hidden="true">
-          <span class="testimonial__dot testimonial__dot--active"></span>
-          <span class="testimonial__dot"></span>
-          <span class="testimonial__dot"></span>
-          <span class="testimonial__dot"></span>
-          <span class="testimonial__dot"></span>
+        <div class="testimonial__slider" id="testimonialSlider">
+          <div class="testimonial__slide testimonial__slide--active">
+            <blockquote class="testimonial__quote">
+              "Working with Kido was a game-changer for our brand and digital
+              launch. They didn't just help us execute design, they partnered in
+              building a scalable design system and website infrastructure while
+              brand work was still&nbsp;…"
+            </blockquote>
+            <p class="testimonial__attribution">
+              <span>Hagar<span class="spacer">&nbsp;</span>Nahum<span class="spacer">&nbsp;</span>Brockmann</span>
+              <span>Senior<span class="spacer">&nbsp;</span>Director<span class="spacer">&nbsp;</span>of<span class="spacer">&nbsp;</span>Design<span class="spacer">&nbsp;</span>&amp;<span class="spacer">&nbsp;</span>Creative</span>
+              <span class="testimonial__attribution-company">AppsFlyer</span>
+            </p>
+          </div>
+          <div class="testimonial__slide">
+            <blockquote class="testimonial__quote">
+              "Working with Kido was a game-changer for our brand and digital
+              launch. They didn't just help us execute design, they partnered in
+              building a scalable design system and website infrastructure while
+              brand work was still&nbsp;…"
+            </blockquote>
+            <p class="testimonial__attribution">
+              <span>Hagar<span class="spacer">&nbsp;</span>Nahum<span class="spacer">&nbsp;</span>Brockmann</span>
+              <span>Senior<span class="spacer">&nbsp;</span>Director<span class="spacer">&nbsp;</span>of<span class="spacer">&nbsp;</span>Design<span class="spacer">&nbsp;</span>&amp;<span class="spacer">&nbsp;</span>Creative</span>
+              <span class="testimonial__attribution-company">AppsFlyer</span>
+            </p>
+          </div>
+          <div class="testimonial__slide">
+            <blockquote class="testimonial__quote">
+              "Working with Kido was a game-changer for our brand and digital
+              launch. They didn't just help us execute design, they partnered in
+              building a scalable design system and website infrastructure while
+              brand work was still&nbsp;…"
+            </blockquote>
+            <p class="testimonial__attribution">
+              <span>Hagar<span class="spacer">&nbsp;</span>Nahum<span class="spacer">&nbsp;</span>Brockmann</span>
+              <span>Senior<span class="spacer">&nbsp;</span>Director<span class="spacer">&nbsp;</span>of<span class="spacer">&nbsp;</span>Design<span class="spacer">&nbsp;</span>&amp;<span class="spacer">&nbsp;</span>Creative</span>
+              <span class="testimonial__attribution-company">AppsFlyer</span>
+            </p>
+          </div>
+          <div class="testimonial__slide">
+            <blockquote class="testimonial__quote">
+              "Working with Kido was a game-changer for our brand and digital
+              launch. They didn't just help us execute design, they partnered in
+              building a scalable design system and website infrastructure while
+              brand work was still&nbsp;…"
+            </blockquote>
+            <p class="testimonial__attribution">
+              <span>Hagar<span class="spacer">&nbsp;</span>Nahum<span class="spacer">&nbsp;</span>Brockmann</span>
+              <span>Senior<span class="spacer">&nbsp;</span>Director<span class="spacer">&nbsp;</span>of<span class="spacer">&nbsp;</span>Design<span class="spacer">&nbsp;</span>&amp;<span class="spacer">&nbsp;</span>Creative</span>
+              <span class="testimonial__attribution-company">AppsFlyer</span>
+            </p>
+          </div>
+          <div class="testimonial__slide">
+            <blockquote class="testimonial__quote">
+              "Working with Kido was a game-changer for our brand and digital
+              launch. They didn't just help us execute design, they partnered in
+              building a scalable design system and website infrastructure while
+              brand work was still&nbsp;…"
+            </blockquote>
+            <p class="testimonial__attribution">
+              <span>Hagar<span class="spacer">&nbsp;</span>Nahum<span class="spacer">&nbsp;</span>Brockmann</span>
+              <span>Senior<span class="spacer">&nbsp;</span>Director<span class="spacer">&nbsp;</span>of<span class="spacer">&nbsp;</span>Design<span class="spacer">&nbsp;</span>&amp;<span class="spacer">&nbsp;</span>Creative</span>
+              <span class="testimonial__attribution-company">AppsFlyer</span>
+            </p>
+          </div>
+          <div class="testimonial__slide">
+            <blockquote class="testimonial__quote">
+              "Working with Kido was a game-changer for our brand and digital
+              launch. They didn't just help us execute design, they partnered in
+              building a scalable design system and website infrastructure while
+              brand work was still&nbsp;…"
+            </blockquote>
+            <p class="testimonial__attribution">
+              <span>Hagar<span class="spacer">&nbsp;</span>Nahum<span class="spacer">&nbsp;</span>Brockmann</span>
+              <span>Senior<span class="spacer">&nbsp;</span>Director<span class="spacer">&nbsp;</span>of<span class="spacer">&nbsp;</span>Design<span class="spacer">&nbsp;</span>&amp;<span class="spacer">&nbsp;</span>Creative</span>
+              <span class="testimonial__attribution-company">AppsFlyer</span>
+            </p>
+          </div>
+        </div>
+        <div class="testimonial__dots">
+          <button class="testimonial__dot testimonial__dot--active" aria-label="Testimonial 1"></button>
+          <button class="testimonial__dot" aria-label="Testimonial 2"></button>
+          <button class="testimonial__dot" aria-label="Testimonial 3"></button>
+          <button class="testimonial__dot" aria-label="Testimonial 4"></button>
+          <button class="testimonial__dot" aria-label="Testimonial 5"></button>
+          <button class="testimonial__dot" aria-label="Testimonial 6"></button>
         </div>
       </div>
     </section>
@@ -1130,6 +1211,53 @@
         void heroIcon.offsetWidth; // reflow to restart animation
         heroIcon.classList.add("flash");
       });
+
+      // Testimonial slider
+      const tSlides = document.querySelectorAll(".testimonial__slide");
+      const tDots = document.querySelectorAll(".testimonial__dot");
+      let tCurrent = 0;
+      let tCleanup = null;
+      const T_DUR = 380;
+
+      function tGoTo(rawIndex) {
+        const next = ((rawIndex % tSlides.length) + tSlides.length) % tSlides.length;
+        if (next === tCurrent) return;
+
+        const dir = rawIndex >= tCurrent ? 1 : -1;
+        const outSlide = tSlides[tCurrent];
+        const inSlide = tSlides[next];
+
+        clearTimeout(tCleanup);
+        tDots[tCurrent].classList.remove("testimonial__dot--active");
+        tDots[next].classList.add("testimonial__dot--active");
+        tCurrent = next;
+
+        // Animate outgoing
+        outSlide.style.cssText = `transition: opacity ${T_DUR}ms ease, transform ${T_DUR}ms ease; opacity: 0; transform: translateX(${-48 * dir}px); pointer-events: none;`;
+
+        // Set incoming off-screen with no transition, then slide in
+        inSlide.classList.add("testimonial__slide--active");
+        inSlide.style.cssText = `transition: none; opacity: 0; transform: translateX(${48 * dir}px); pointer-events: none;`;
+        requestAnimationFrame(() => requestAnimationFrame(() => {
+          inSlide.style.cssText = `transition: opacity ${T_DUR}ms ease, transform ${T_DUR}ms ease; opacity: 1; transform: translateX(0); pointer-events: auto;`;
+        }));
+
+        tCleanup = setTimeout(() => {
+          outSlide.classList.remove("testimonial__slide--active");
+          outSlide.style.cssText = "";
+          inSlide.style.cssText = "";
+        }, T_DUR + 50);
+      }
+
+      tDots.forEach((dot, i) => dot.addEventListener("click", () => tGoTo(i)));
+
+      let tTouchStartX = 0;
+      const tSlider = document.getElementById("testimonialSlider");
+      tSlider.addEventListener("touchstart", (e) => { tTouchStartX = e.touches[0].clientX; }, { passive: true });
+      tSlider.addEventListener("touchend", (e) => {
+        const diff = tTouchStartX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 40) tGoTo(diff > 0 ? tCurrent + 1 : tCurrent - 1);
+      }, { passive: true });
 
       // Services list: scroll-reveal fade-in
       const svcItems = document.querySelectorAll(".services-list__item");
