@@ -346,17 +346,17 @@
           1fr 1fr clamp(24px, 2.5vw, 40px);
         align-items: center;
         gap: clamp(16px, 2.5vw, 40px);
-        padding: clamp(24px, 3.5vw, 56px) clamp(24px, 6.25vw, 120px);
+        height: clamp(100px, 12vw, 200px);
+        padding: 0 clamp(24px, 6.25vw, 120px);
         text-decoration: none;
         color: #181818;
       }
 
       .svc-num {
-        font-family: "Geist Mono", monospace;
-        font-size: clamp(22px, 2.5vw, 40px);
+        font-family: "haas", sans-serif;
+        font-size: clamp(20px, 2.4vw, 46px);
         font-weight: 400;
         color: #181818;
-        letter-spacing: -0.03em;
         flex-shrink: 0;
       }
 
@@ -374,20 +374,20 @@
       }
 
       .svc-name {
-        font-family: "haas-text", sans-serif;
-        font-size: clamp(18px, 2vw, 32px);
+        font-family: "haas", sans-serif;
+        font-size: clamp(20px, 2.4vw, 46px);
         font-weight: 400;
-        letter-spacing: -0.03em;
         line-height: 1.15;
       }
 
       .svc-desc {
-        font-family: "haas-text", sans-serif;
-        font-size: clamp(14px, 1.3vw, 22px);
+        font-family: "haas", sans-serif;
+        font-size: clamp(20px, 2.4vw, 46px);
         font-weight: 400;
         color: #444;
-        letter-spacing: -0.02em;
-        line-height: 1.3;
+        line-height: 1.15;
+        height: 2ch;
+        margin-left: 5ch;
       }
 
       .services-list__item:hover .svc-desc {
